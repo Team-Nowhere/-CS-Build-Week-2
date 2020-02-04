@@ -8,7 +8,7 @@ AUTH_HEADER = {'Authorization': TOKEN_HEADER}
 base_url = 'https://lambda-treasure-hunt.herokuapp.com/api/adv/'
 bc_url = 'https://lambda-treasure-hunt.herokuapp.com/api/bc/'
 
-def get_room_data():
+def get_current_room():
     return requests.get(
         url=base_url+'init',
         headers={'Authorization': TOKEN_HEADER}
