@@ -32,45 +32,67 @@ class Queue():
 
 
 def cooldown(data):
-    print('Waiting for cooldown')
-    wait_time = int(data['cooldown'])
+    cd = data['cooldown']
+    print(f'Cooldown: {cd} seconds')
+    wait_time = int(cd + 1)  # Add extra second to avoid program updating too fast
     time.sleep(wait_time)
-    print('Cooldown Done')
+    print('Cooldown Done!')
 
-
-def bfs(starting_room, destination_room):
-    """
-    Use to find the shortest path between two room
-
-    Returns a list of directions ['n', 'n', 'e', 's', 's', 'e']
-
-    Starting and destination room are room numbers
-    ie bfs("0", "23")
-    """
+def bfs(starting_room_id, map_graph):
     queue = Queue()
-
+    queue.enqueue([starting_room_id])
     visited = set()
 
-    queue.enqueue([starting_room])
-
     while queue.size() > 0:
-
+        # grab path
         path = queue.dequeue()
+        # take last in path
+        current_room = path[-1]
+        visited.add(current_room)
+        
+        # looks through an array that contains similarities
+        for direction in set(list('nsew')).intersection(map_graph[current_room]):
+            if map_graph[current_room][direction] == '?':
+                return path    
+            elif map_graph[current_room][direction] not in visited:
+                # create a new path to append direction
+                new_path = list(path)
+                new_path.append(map_graph[current_room][direction])
+                queue.enqueue(new_path)
 
-        room = path[-1]
+# def bfs(starting_room, destination_room):
+#     """
+#     Use to find the shortest path between two room
 
-        if room not in visited:
+#     Returns a list of directions ['n', 'n', 'e', 's', 's', 'e']
 
-            if room == destination_room:
-                break
+#     Starting and destination room are room numbers
+#     ie bfs("0", "23")
+#     """
+#     queue = Queue()
 
-            visited.add(room)
+#     visited = set()
 
-            for next_room in list(t_graph.get_rooms(room).values()):
-                if next_room != '?':
-                    new_path = list(path)
-                    new_path.append(next_room)
-                    queue.enqueue(new_path)
+#     queue.enqueue([starting_room])
+
+#     while queue.size() > 0:
+
+#         path = queue.dequeue()
+
+#         room = path[-1]
+
+#         if room not in visited:
+
+#             if room == destination_room:
+#                 break
+
+#             visited.add(room)
+
+#             for next_room in list(t_graph.get_rooms(room).values()):
+#                 if next_room != '?':
+#                     new_path = list(path)
+#                     new_path.append(next_room)
+#                     queue.enqueue(new_path)
 
     directions = []
     for i in range(len(path) - 1):
