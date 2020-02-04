@@ -17,8 +17,8 @@ cooldown(init_res)
 current_room_id = init_res['room_id']
 current_room_title = init_res['title']
 current_room_exits = init_res['exits']
-current_room_messages = init_res['messages']
 prev_room_id = 0
+prev_direction = ''
 
 # Only used on first time boot up or if program ends without entering new room info
 if init_res['room_id'] not in mapped_area:
@@ -45,15 +45,9 @@ while len(mapped_area) != 500:
             data[f'{direction}'] = '?'
         mapped_area[current_room_id] = data
 
-        # Update direction coming from
-        if 'north' in current_room_messages:
-            mapped_area[current_room_id]['s'] = prev_room_id
-        elif 'south' in current_room_messages:
-            mapped_area[current_room_id]['n'] = prev_room_id
-        elif 'east' in current_room_messages:
-            mapped_area[current_room_id]['w'] = prev_room_id
-        elif 'west' in current_room_messages:
-            mapped_area[current_room_id]['e'] = prev_room_id
+        if prev_direction is not '':
+            # Update direction coming from
+            mapped_area[current_room_id][rev_dir[f'{prev_direction}']] = prev_room_id
         
         # Save updated mapped_area
         print('========== Updating map_file...')
@@ -81,7 +75,7 @@ while len(mapped_area) != 500:
         print(f'Heading {direction}...')
         move_res = move(direction)
         cooldown(move_res)
-        print('>>>>>>>>>> Heading into new room...')
+        print('>>>>>>>>>> Heading into an unknown room...')
 
         # Update the ?'s
         new_room_id = move_res['room_id']
@@ -92,7 +86,7 @@ while len(mapped_area) != 500:
         current_room_id = new_room_id
         current_room_title = move_res['title']
         current_room_exits = move_res['exits']
-        current_room_messages = move_res['messages']
+        prev_direction = direction
 
         # Save updated mapped_area
         print('========== Updating map_file...')
@@ -123,6 +117,6 @@ while len(mapped_area) != 500:
                         current_room_id = move_res['room_id']
                         current_room_title = move_res['title']
                         current_room_exits = move_res['exits']
-                        current_room_messages = move_res['messages']
+            print('========== BFS Complete!')
         else:
             break
