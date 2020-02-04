@@ -264,11 +264,115 @@
     "127": {
         "title": "A misty room",
         "e": 184,
-        "w": "?"
+        "w": 120
     },
     "184": {
         "title": "A misty room",
         "e": "?",
-        "w": "?"
+        "w": 127
+    },
+    "221": {
+        "title": "A misty room",
+        "s": 253,
+        "e": 240,
+        "w": 184
+    },
+    "253": {
+        "title": "A misty room",
+        "n": 221,
+        "e": 258
+    },
+    "414": {
+        "title": "A misty room",
+        "w": 386
+    },
+    "386": {
+        "title": "A misty room",
+        "e": 414,
+        "w": 240
+    },
+    "240": {
+        "title": "A misty room",
+        "n": 249,
+        "e": 386,
+        "w": 221
+    },
+    "249": {
+        "title": "A misty room",
+        "n": 265,
+        "s": 240,
+        "e": 282
+    },
+    "265": {
+        "title": "A misty room",
+        "n": 279,
+        "s": 249,
+        "e": 270
+    },
+    "270": {
+        "title": "A misty room",
+        "n": 416,
+        "e": 338,
+        "w": 265
+    },
+    "338": {
+        "title": "A misty room",
+        "s": 379,
+        "w": 270
+    },
+    "379": {
+        "title": "A misty room",
+        "n": 338,
+        "e": 395
+    },
+    "282": {
+        "title": "A misty room",
+        "w": 249
+    },
+    "279": {
+        "title": "A misty room",
+        "s": 265
+    },
+    "395": {
+        "title": "A misty room",
+        "s": 403,
+        "e": 421,
+        "w": 379
+    },
+    "403": {
+        "title": "A misty room",
+        "n": 395
+    },
+    "421": {
+        "title": "A misty room",
+        "n": 440,
+        "w": 395
+    },
+    "440": {
+        "title": "A misty room",
+        "s": 421,
+        "w": 476
+    },
+    "476": {
+        "title": "A misty room",
+        "e": 440
+    },
+    "416": {
+        "title": "A misty room",
+        "s": 270
+    },
+    "258": {
+        "title": "A misty room",
+        "e": 306,
+        "w": 253
+    },
+    "306": {
+        "title": "A misty room",
+        "e": 397,
+        "w": 258
+    },
+    "397": {
+        "title": "A misty room",
+        "w": 306
     }
 }

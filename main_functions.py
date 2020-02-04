@@ -60,13 +60,13 @@ def bfs(starting_room_id, map_graph):
                 new_path.append(map_graph[current_room][direction])
                 queue.enqueue(new_path)
 
+
     directions = []
     for i in range(len(path) - 1):
         for direction, room in t_graph.get_rooms()[path[i]].items():
             if room == path[i+1]:
                 directions.append(direction)
-    
-    return directions
+
 
 def opp_dir(direction: str):
     """
