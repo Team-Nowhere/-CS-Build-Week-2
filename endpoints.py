@@ -196,7 +196,7 @@ def mine(new_proof):
                 'Authorization': TOKEN_HEADER
             },
             json={
-                'proof': f'{new_proof}'
+                "proof": f'{new_proof}'
             }
         ).json()
 
