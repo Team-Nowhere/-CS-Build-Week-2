@@ -1,5 +1,3 @@
-import time
-import json
 import random
 from main_functions import *
 from endpoints import *
@@ -33,7 +31,8 @@ if init_res['room_id'] not in mapped_area:
     with open('traversal_graph.json', 'w') as map_file:
         json.dump(mapped_area, map_file, indent=4)
 
-while len(mapped_area) != 500:
+while True:
+    print(f'Rooms been into: {len(mapped_area)}')
     crd = dict() # current_room_dictonary
 
     # Check to see if player has explored the room already
@@ -72,10 +71,9 @@ while len(mapped_area) != 500:
         # Randomly shuffle since we don't know where we're going anyway
         random.shuffle(unknown_exits)
         direction = unknown_exits[0]
-        print(f'Heading {direction}...')
+        print(f'Heading {direction} into an unknown room...')
         move_res = move(direction)
         cooldown(move_res)
-        print('>>>>>>>>>> Heading into an unknown room...')
 
         # Update the ?'s
         new_room_id = move_res['room_id']
@@ -111,12 +109,6 @@ while len(mapped_area) != 500:
                         cooldown(move_res)
                         bfs_room_id = move_res['room_id']
                         print(f'>>>>>>>>>> Made it to room {bfs_room_id}')
-
-                        # Update the current_room variables and prev_room_id
-                        prev_room_id = current_room_id
-                        current_room_id = move_res['room_id']
-                        current_room_title = move_res['title']
-                        current_room_exits = move_res['exits']
             print('========== BFS Complete!')
         else:
             break
