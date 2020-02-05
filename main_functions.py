@@ -120,14 +120,20 @@ def fast_travel(starting_room_id, destination_room_id, stop_treasure=False):
     print(f'Proposed path: {path_to_next}')
 
     if path_to_next is not None and len(path_to_next) > 0:
+        status_res = status()
         # Have the player travel back to room with unknown exits
         for index in range(len(path_to_next) - 1):
             for direction in map_graph[path_to_next[index]]:
                 if map_graph[path_to_next[index]][direction] == path_to_next[index + 1]:
                     print(f'Heading {direction}...')
                     print(f'Next room should be {path_to_next[index + 1]}...')
-                    move_res = move(direction, path_to_next[index + 1])
+
+                    if 'fly' in status_res['abilities']:
+                        move_res = fly(direction, path_to_next[index + 1])
+                    else:
+                        move_res = move(direction, path_to_next[index + 1])
                     cooldown(move_res)
+                    
                     if stop_treasure == True:
                         if len(move_res['items']) > 0:
                             for item in move_res['items']:

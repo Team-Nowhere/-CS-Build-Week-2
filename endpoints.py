@@ -103,13 +103,20 @@ def pray():
             headers=AUTH_HEADER
         ).json()
 
-def fly(direction:str):
+def fly(direction: str, next_room_id = None):
+    if next_room_id == None:
+        data = {
+                'direction': f'{direction}',
+            }
+    else:
+        data = {
+                'direction': f'{direction}',
+                'next_room_id': f'{next_room_id}'
+            }
     return requests.post(
             url=base_url+'fly/',
             headers=AUTH_HEADER,
-            json={
-                'direction': f'{direction}'
-            }
+            json=data
         ).json()
 
 def dash(direction:str, num_rooms:str, next_room_ids:str):
