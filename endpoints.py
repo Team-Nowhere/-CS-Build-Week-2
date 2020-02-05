@@ -139,7 +139,7 @@ def dash(direction:str, num_rooms:str, next_room_ids:str):
             json={
                 'direction': f'{direction}',
                 'num_rooms': f'{num_rooms}',
-                'next_rooms_id': f'{next_rooms_ids}'
+                'next_room_ids': f'{next_room_ids}'
             }
         ).json()
 
@@ -196,7 +196,7 @@ def mine(new_proof):
                 'Authorization': TOKEN_HEADER
             },
             json={
-                'proof': f'{new_proof}'
+                "proof": f'{new_proof}'
             }
         ).json()
 
