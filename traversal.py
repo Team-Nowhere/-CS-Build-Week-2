@@ -109,6 +109,12 @@ while True:
                         cooldown(move_res)
                         bfs_room_id = move_res['room_id']
                         print(f'>>>>>>>>>> Made it to room {bfs_room_id}')
+
+                        # Update the current_room variables and prev_room_id	
+                        prev_room_id = current_room_id
+                        current_room_id = move_res['room_id']	
+                        current_room_title = move_res['title']	
+                        current_room_exits = move_res['exits']
             print('========== BFS Complete!')
         else:
             break
