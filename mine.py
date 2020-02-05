@@ -7,6 +7,7 @@ from main_functions import cooldown
 from uuid import uuid4
 from timeit import default_timer as timer
 import random
+import random
 SECRET_TOKEN = config('SECRET_TOKEN')
 TOKEN_HEADER = 'Token ' + SECRET_TOKEN
 AUTH_HEADER = {'Authorization': TOKEN_HEADER}
@@ -25,7 +26,7 @@ def proof_of_work(last_proof, difficulty):
     print("Searching for next proof")
     block_string = json.dumps(last_proof, sort_keys=True)
     # print(block_string, last_proof, difficulty)
-    proof = 0
+    proof = random.randint(0, 10000000000)
     while valid_proof(block_string, proof, difficulty) is False:
         proof += 1
     print("Proof found: " + str(proof) + " in " + str(timer() - start))
