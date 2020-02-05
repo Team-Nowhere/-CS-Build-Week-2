@@ -119,8 +119,26 @@ def fast_travel(starting_room_id, destination_room_id, stop_treasure=False):
 
     print(f'Proposed path: {path_to_next}')
 
+    print('Grabbing player info...')
+    status_res = status()
+    cooldown(status_res)
+    print(path_to_next.index(0))
+
+    # Runs if 0 exists and recall exists, and in a position greater-equal than 3 or encumbrance > strength
+    # move: ~7.5cd vs fly: ~6.75cd vs recall: 15cd vs encumbrance: 22.5cd
+    if 0 in path_to_next \
+        and 'recall' in status_res['abilities'] \
+        and path_to_next.index(0) >= 3 \
+        or status_res['encumbrance'] > status_res['strength']:
+        print('>>>>>>>>>> Recalling to starting point...')
+        recall_res = recall()
+        cooldown(recall_res)
+
+        zero_pos = path_to_next.index(0)
+        path_to_next = path_to_next[zero_pos:]
+        print(f'New proposed path: {path_to_next}')
+
     if path_to_next is not None and len(path_to_next) > 0:
-        status_res = status()
         # Have the player travel back to room with unknown exits
         for index in range(len(path_to_next) - 1):
             for direction in map_graph[path_to_next[index]]:
@@ -133,7 +151,7 @@ def fast_travel(starting_room_id, destination_room_id, stop_treasure=False):
                     else:
                         move_res = move(direction, path_to_next[index + 1])
                     cooldown(move_res)
-                    
+
                     if stop_treasure == True:
                         if len(move_res['items']) > 0:
                             for item in move_res['items']:
@@ -142,9 +160,7 @@ def fast_travel(starting_room_id, destination_room_id, stop_treasure=False):
                                 cooldown(take_res)
                     bfs_room_id = move_res['room_id']
                     print(f'>>>>>>>>>> Made it to room {bfs_room_id}')
-
-
-        print('========== Fast Travel Complete!')
+    print('========== Fast Travel Complete!')
 
 def sell_all(current_room_id):
     if current_room_id is not 1:
@@ -167,15 +183,14 @@ def sell_all(current_room_id):
             print('========== Nothing to sell!')
 
 def say_prayer(current_room_id):
-    if current_room_id not in [22, 374, 461, 486, 492, 499]:
+    if current_room_id not in [22, 374, 461, 492, 499]:
         print('You can only pray at shrines.')
     else:
         print('========== You are at a place of worship...')
         status_res = status()
-        abilities = status_res['abilities']
         cooldown(status_res)
 
-        if 'pray' in abilities:
+        if 'pray' in status_res['abilities']:
             print('>>>>>>>>>> Praying...')
             pray_res = pray()
             cooldown(pray_res)

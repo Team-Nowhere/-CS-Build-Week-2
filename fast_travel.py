@@ -22,7 +22,7 @@ Points of Interest:
     374 Fully Shrine (Pray here)
     461 Linh's Shrine (Pray here)
     467 Pirate Ry's (Name Change)
-    486 Arron's Athenaeum (Pray here)
+    486 Arron's Athenaeum (Leaderboard)
     492 Sandofsky's Sanctum (Pray here)
     495 The Transmogriphier (Spend Lambda coins here for powerful stuff)
     499 Glasowyn's Grave (Pray here)
@@ -34,6 +34,7 @@ args = parser.parse_args()
 if not args.room:
     print('Please choose room ($ python fast_travel.py --room <room number>)')
 else:
+    print('Grabbing room data...')
     current_room = get_current_room()
     cooldown(current_room)
 
@@ -46,7 +47,7 @@ else:
         shop_room = get_current_room()
         cooldown(shop_room)
         sell_all(shop_room['room_id'])
-    elif args.room in ['22', '374', '461', '486', '492', '499']:
+    elif args.room in ['22', '374', '461', '492', '499']:
         prayer_room = get_current_room()
         cooldown(prayer_room)
         say_prayer(prayer_room['room_id'])
