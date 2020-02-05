@@ -97,7 +97,7 @@ def change_name(new_name:str):
             }
         ).json()
 
-def pray(item_name:str):
+def pray():
     return requests.post(
             url=base_url+'pray/',
             headers=AUTH_HEADER

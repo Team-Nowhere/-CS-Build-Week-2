@@ -17,15 +17,15 @@ examples:
 Points of Interest:
     0 A brightly lit room (Starting point)
     1 Shop
-    22 The Peak of Mt. Holloway
+    22 The Peak of Mt. Holloway (Pray here)
     55 Wishing Well (Mine quest start)
-    486 Arron's Athenaeum
-    374 Fully Shrine (Pray here to earn powers/abilities)
-    461 Linh's Shrine 
+    374 Fully Shrine (Pray here)
+    461 Linh's Shrine (Pray here)
     467 Pirate Ry's (Name Change)
-    492 Sandofsky's Sanctum
+    486 Arron's Athenaeum (Pray here)
+    492 Sandofsky's Sanctum (Pray here)
     495 The Transmogriphier (Spend Lambda coins here for powerful stuff)
-    499 Glasowyn's Grave
+    499 Glasowyn's Grave (Pray here)
 """
 parser = argparse.ArgumentParser(description='Fast travel')
 parser.add_argument('--room')
@@ -46,3 +46,7 @@ else:
         shop_room = get_current_room()
         cooldown(shop_room)
         sell_all(shop_room['room_id'])
+    elif args.room in ['22', '374', '461', '486', '492', '499']:
+        prayer_room = get_current_room()
+        cooldown(prayer_room)
+        say_prayer(prayer_room['room_id'])

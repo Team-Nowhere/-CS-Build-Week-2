@@ -37,7 +37,6 @@ def cooldown(data):
     print(f'Cooldown: {cd} seconds')
     wait_time = int(cd + 1)  # Add extra second to avoid program updating too fast
     time.sleep(wait_time)
-    print('Cooldown Done!')
 
 def bfs(starting_room_id, map_graph):
     queue = Queue()
@@ -160,3 +159,21 @@ def sell_all(current_room_id):
             print('========== All items sold!')
         else:
             print('========== Nothing to sell!')
+
+def say_prayer(current_room_id):
+    if current_room_id not in [22, 374, 461, 486, 492, 499]:
+        print('You can only pray at shrines.')
+    else:
+        print('========== You are at a place of worship...')
+        status_res = status()
+        abilities = status_res['abilities']
+        cooldown(status_res)
+
+        if 'pray' in abilities:
+            print('>>>>>>>>>> Praying...')
+            pray_res = pray()
+            cooldown(pray_res)
+            messages = pray_res['messages']
+            print(f'!!!!!!!!!! {messages[0]}')
+        else:
+            print('========== You do not have the ability to pray!')
