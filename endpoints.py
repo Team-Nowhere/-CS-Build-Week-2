@@ -11,38 +11,29 @@ bc_url = 'https://lambda-treasure-hunt.herokuapp.com/api/bc/'
 def get_current_room():
     return requests.get(
         url=base_url+'init',
-        headers={'Authorization': TOKEN_HEADER}
+        headers=AUTH_HEADER
     ).json()
 
 def move(move_direction: str, next_room_id = None):
     if next_room_id == None:
-        return requests.post(
-            url=base_url+'move/',
-            headers={
-                'Authorization': TOKEN_HEADER
-            },
-            json={
-                'direction': f'{move_direction}'
-            }
-        ).json()
+        data = {
+            'direction': f'{move_direction}'
+        }
     else:
-        return requests.post(
-            url=base_url+'move/',
-            headers={
-                'Authorization': TOKEN_HEADER
-            },
-            json={
-                'direction': f'{move_direction}',
-                'next_room_id': f'{next_room_id}'
-            }
-        ).json()
+        data ={
+            'direction': f'{move_direction}',
+            'next_room_id': f'{next_room_id}'
+        }
+    return requests.post(
+        url=base_url+'move/',
+        headers=AUTH_HEADER,
+        json=data
+    ).json()
 
 def take(treasure_name:str):
     return requests.post(
             url=base_url+'take/',
-            headers={
-                'Authorization': TOKEN_HEADER
-            },
+            headers=AUTH_HEADER,
             json={
                 'name': f'{treasure_name}'
             }
@@ -51,9 +42,7 @@ def take(treasure_name:str):
 def drop(treasure_name:str):
     return requests.post(
             url=base_url+'drop/',
-            headers={
-                'Authorization': TOKEN_HEADER
-            },
+            headers=AUTH_HEADER,
             json={
                 'name': f'{treasure_name}'
             }
@@ -62,9 +51,7 @@ def drop(treasure_name:str):
 def sell(treasure_name:str):
     return requests.post(
             url=base_url+'sell/',
-            headers={
-                'Authorization': TOKEN_HEADER
-            },
+            headers=AUTH_HEADER,
             json={
                 'name': f'{treasure_name}'
             }
@@ -73,17 +60,13 @@ def sell(treasure_name:str):
 def status():
     return requests.post(
             url=base_url+'status/',
-            headers={
-                'Authorization': TOKEN_HEADER
-            }
+            headers=AUTH_HEADER
         ).json()
 
 def equip(item_name:str):
     return requests.post(
             url=base_url+'wear/',
-            headers={
-                'Authorization': TOKEN_HEADER
-            },
+            headers=AUTH_HEADER,
             json={
                 'name': f'{item_name}'
             }
@@ -92,9 +75,7 @@ def equip(item_name:str):
 def unequip(item_name:str):
     return requests.post(
             url=base_url+'undress/',
-            headers={
-                'Authorization': TOKEN_HEADER
-            },
+            headers=AUTH_HEADER,
             json={
                 'name': f'{item_name}'
             }
@@ -103,9 +84,7 @@ def unequip(item_name:str):
 def change_name(new_name:str):
     return requests.post(
             url=base_url+'change_name/',
-            headers={
-                'Authorization': TOKEN_HEADER
-            },
+            headers=AUTH_HEADER,
             json={
                 'name': f'{new_name}'
             }
@@ -114,28 +93,29 @@ def change_name(new_name:str):
 def pray(item_name:str):
     return requests.post(
             url=base_url+'pray/',
-            headers={
-                'Authorization': TOKEN_HEADER
-            }
+            headers=AUTH_HEADER
         ).json()
 
-def fly(direction:str):
+def fly(move_direction:str, next_room_id = None):
+    if next_room_id == None:
+        data = {
+            'direction': f'{move_direction}'
+        }
+    else:
+        data ={
+            'direction': f'{move_direction}',
+            'next_room_id': f'{next_room_id}'
+        }
     return requests.post(
-            url=base_url+'fly/',
-            headers={
-                'Authorization': TOKEN_HEADER
-            },
-            json={
-                'direction': f'{direction}'
-            }
-        ).json()
+        url=base_url+'move/',
+        headers=AUTH_HEADER,
+        json=data
+    ).json()
 
 def dash(direction:str, num_rooms:str, next_room_ids:str):
     return requests.post(
             url=base_url+'dash/',
-            headers={
-                'Authorization': TOKEN_HEADER
-            },
+            headers=AUTH_HEADER,
             json={
                 'direction': f'{direction}',
                 'num_rooms': f'{num_rooms}',
@@ -146,9 +126,7 @@ def dash(direction:str, num_rooms:str, next_room_ids:str):
 def give_ghost(item_name:str):
     return requests.post(
             url=base_url+'carry/',
-            headers={
-                'Authorization': TOKEN_HEADER
-            },
+            headers=AUTH_HEADER,
             json={
                 'name': f'{item_name}'
             }
@@ -157,33 +135,25 @@ def give_ghost(item_name:str):
 def take_ghost():
     return requests.post(
             url=base_url+'receive/',
-            headers={
-                'Authorization': TOKEN_HEADER
-            }
+            headers=AUTH_HEADER
         ).json()
 
 def warp():
     return requests.post(
             url=base_url+'warp/',
-            headers={
-                'Authorization': TOKEN_HEADER
-            }
+            headers=AUTH_HEADER
         ).json()
 
 def recall():
     return requests.post(
             url=base_url+'recall/',
-            headers={
-                'Authorization': TOKEN_HEADER
-            }
+            headers=AUTH_HEADER
         ).json()
 
 def transmogrify(item_name:str):
     return requests.post(
             url=base_url+'transmogrify/',
-            headers={
-                'Authorization': TOKEN_HEADER
-            },
+            headers=AUTH_HEADER,
             json={
                 'name': f'{item_name}'
             }
@@ -192,9 +162,7 @@ def transmogrify(item_name:str):
 def examine(item_name:str):
     return requests.post(
             url=base_url+'examine/',
-            headers={
-                'Authorization': TOKEN_HEADER
-            },
+            headers=AUTH_HEADER,
             json={
                 'name': f'{item_name}'
             }
@@ -203,9 +171,7 @@ def examine(item_name:str):
 def mine(new_proof):
     return requests.post(
             url=bc_url+'mine/',
-            headers={
-                'Authorization': TOKEN_HEADER
-            },
+            headers=AUTH_HEADER,
             json={
                 "proof": f'{new_proof}'
             }
@@ -214,15 +180,11 @@ def mine(new_proof):
 def last_proof():
     return requests.get(
             url=bc_url+'last_proof/',
-            headers={
-                'Authorization': TOKEN_HEADER
-            }
+            headers=AUTH_HEADER
         ).json()
 
 def get_balance():
     return requests.get(
             url=bc_url+'get_balance/',
-            headers={
-                'Authorization': TOKEN_HEADER
-            }
+            headers=AUTH_HEADER
         ).json()
