@@ -107,18 +107,19 @@ while True:
         
         print(f'Proposed path back: {path_to_next}')
 
-        # Runs if 0 exists AND recall exists, AND in a position greater-equal than 3
-        if 0 in path_to_next and have_recall is True and path_to_next.index(0) >= 3:
-            print('>>>>>>>>>> Recalling to starting point...')
-            recall_res = recall()
-            cooldown(recall_res)
-
-            zero_pos = path_to_next.index(0)
-            path_to_next = path_to_next[zero_pos:]
-            print(f'New proposed path back: {path_to_next}')
-
         # Make sure there's actually something being returned
         if path_to_next is not None and len(path_to_next) > 0:
+            
+            # Runs if 0 exists AND recall exists, AND in a position greater-equal than 3
+            if 0 in path_to_next and have_recall is True and path_to_next.index(0) >= 3:
+                print('>>>>>>>>>> Recalling to starting point...')
+                recall_res = recall()
+                cooldown(recall_res)
+
+                zero_pos = path_to_next.index(0)
+                path_to_next = path_to_next[zero_pos:]
+                print(f'New proposed path back: {path_to_next}')
+
             # Check to see if the paths are dashable
             directions = []	
             for i in range(len(path_to_next) - 1):	
