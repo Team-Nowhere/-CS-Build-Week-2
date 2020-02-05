@@ -122,7 +122,6 @@ def fast_travel(starting_room_id, destination_room_id, stop_treasure=False):
     print('Grabbing player info...')
     status_res = status()
     cooldown(status_res)
-    print(path_to_next.index(0))
 
     # Runs if 0 exists and recall exists, and in a position greater-equal than 3 or encumbrance > strength
     # move: ~7.5cd vs fly: ~6.75cd vs recall: 15cd vs encumbrance: 22.5cd
