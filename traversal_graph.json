@@ -1,0 +1,2510 @@
+{
+    "7": {
+        "title": "A misty room",
+        "n": 8,
+        "e": 6,
+        "w": 56
+    },
+    "56": {
+        "title": "A misty room",
+        "e": 7,
+        "w": 61
+    },
+    "61": {
+        "title": "A misty room",
+        "e": 56,
+        "w": 171
+    },
+    "171": {
+        "title": "A misty room",
+        "e": 61
+    },
+    "8": {
+        "title": "A misty room",
+        "s": 7,
+        "w": 16
+    },
+    "16": {
+        "title": "A misty room",
+        "n": 58,
+        "e": 8,
+        "w": 67
+    },
+    "6": {
+        "title": "A misty room",
+        "n": 2,
+        "w": 7
+    },
+    "2": {
+        "title": "A misty room",
+        "n": 0,
+        "s": 6,
+        "e": 3
+    },
+    "63": {
+        "title": "A misty room",
+        "n": 72,
+        "s": 20,
+        "w": 73
+    },
+    "72": {
+        "title": "A misty room",
+        "s": 63,
+        "w": 76
+    },
+    "73": {
+        "title": "A misty room",
+        "e": 63
+    },
+    "20": {
+        "title": "A misty room",
+        "n": 63,
+        "s": 19,
+        "e": 27,
+        "w": 46
+    },
+    "27": {
+        "title": "A misty room",
+        "n": 40,
+        "s": 28,
+        "e": 30,
+        "w": 20
+    },
+    "19": {
+        "title": "A misty room",
+        "n": 20,
+        "s": 10,
+        "w": 77
+    },
+    "10": {
+        "title": "A misty room",
+        "n": 19,
+        "s": 0,
+        "w": 43
+    },
+    "43": {
+        "title": "A misty room",
+        "e": 10,
+        "w": 47
+    },
+    "0": {
+        "title": "A brightly lit room",
+        "n": 10,
+        "s": 2,
+        "e": 4,
+        "w": 1
+    },
+    "77": {
+        "title": "A misty room",
+        "e": 19
+    },
+    "46": {
+        "title": "A misty room",
+        "e": 20,
+        "w": 62
+    },
+    "62": {
+        "title": "A misty room",
+        "n": 64,
+        "e": 46,
+        "w": 84
+    },
+    "64": {
+        "title": "A misty room",
+        "s": 62,
+        "w": 82
+    },
+    "82": {
+        "title": "A misty room",
+        "n": 191,
+        "e": 64
+    },
+    "191": {
+        "title": "A misty room",
+        "s": 82
+    },
+    "40": {
+        "title": "A misty room",
+        "s": 27
+    },
+    "28": {
+        "title": "A misty room",
+        "n": 27
+    },
+    "30": {
+        "title": "A misty room",
+        "s": 31,
+        "e": 32,
+        "w": 27
+    },
+    "31": {
+        "title": "A misty room",
+        "n": 30,
+        "e": 33
+    },
+    "32": {
+        "title": "A misty room",
+        "n": 39,
+        "e": 54,
+        "w": 30
+    },
+    "39": {
+        "title": "A misty room",
+        "n": 53,
+        "s": 32,
+        "e": 51,
+        "w": 41
+    },
+    "51": {
+        "title": "A misty room",
+        "n": 69,
+        "e": 57,
+        "w": 39
+    },
+    "69": {
+        "title": "A misty room",
+        "n": 94,
+        "s": 51,
+        "e": 103
+    },
+    "103": {
+        "title": "A misty room",
+        "n": 160,
+        "w": 69
+    },
+    "41": {
+        "title": "A misty room",
+        "e": 39
+    },
+    "54": {
+        "title": "A misty room",
+        "w": 32
+    },
+    "33": {
+        "title": "A misty room",
+        "e": 38,
+        "w": 31
+    },
+    "38": {
+        "title": "A misty room",
+        "s": 59,
+        "e": 66,
+        "w": 33
+    },
+    "66": {
+        "title": "A misty room",
+        "n": 169,
+        "e": 123,
+        "w": 38
+    },
+    "169": {
+        "title": "A misty room",
+        "s": 66,
+        "e": 186
+    },
+    "123": {
+        "title": "A misty room",
+        "w": 66
+    },
+    "59": {
+        "title": "A misty room",
+        "n": 38,
+        "s": 104,
+        "e": 92
+    },
+    "92": {
+        "title": "A misty room",
+        "w": 59
+    },
+    "104": {
+        "title": "A misty room",
+        "n": 59,
+        "e": 107
+    },
+    "107": {
+        "title": "A misty room",
+        "s": 120,
+        "e": 121,
+        "w": 104
+    },
+    "120": {
+        "title": "A misty room",
+        "n": 107,
+        "e": 127
+    },
+    "121": {
+        "title": "A misty room",
+        "n": 128,
+        "e": 143,
+        "w": 107
+    },
+    "128": {
+        "title": "A misty room",
+        "s": 121,
+        "e": 189
+    },
+    "143": {
+        "title": "A misty room",
+        "e": 212,
+        "w": 121
+    },
+    "212": {
+        "title": "A misty room",
+        "w": 143
+    },
+    "189": {
+        "title": "A misty room",
+        "e": 255,
+        "w": 128
+    },
+    "255": {
+        "title": "A misty room",
+        "w": 189
+    },
+    "127": {
+        "title": "A misty room",
+        "e": 184,
+        "w": 120
+    },
+    "184": {
+        "title": "A misty room",
+        "e": 221,
+        "w": 127
+    },
+    "221": {
+        "title": "A misty room",
+        "s": 253,
+        "e": 240,
+        "w": 184
+    },
+    "253": {
+        "title": "A misty room",
+        "n": 221,
+        "e": 258
+    },
+    "414": {
+        "title": "A misty room",
+        "w": 386
+    },
+    "386": {
+        "title": "A misty room",
+        "e": 414,
+        "w": 240
+    },
+    "240": {
+        "title": "A misty room",
+        "n": 249,
+        "e": 386,
+        "w": 221
+    },
+    "249": {
+        "title": "A misty room",
+        "n": 265,
+        "s": 240,
+        "e": 282
+    },
+    "265": {
+        "title": "A misty room",
+        "n": 279,
+        "s": 249,
+        "e": 270
+    },
+    "270": {
+        "title": "A misty room",
+        "n": 416,
+        "e": 338,
+        "w": 265
+    },
+    "338": {
+        "title": "A misty room",
+        "s": 379,
+        "w": 270
+    },
+    "379": {
+        "title": "A misty room",
+        "n": 338,
+        "e": 395
+    },
+    "282": {
+        "title": "A misty room",
+        "w": 249
+    },
+    "279": {
+        "title": "A misty room",
+        "s": 265
+    },
+    "395": {
+        "title": "A misty room",
+        "s": 403,
+        "e": 421,
+        "w": 379
+    },
+    "403": {
+        "title": "A misty room",
+        "n": 395
+    },
+    "421": {
+        "title": "A misty room",
+        "n": 440,
+        "w": 395
+    },
+    "440": {
+        "title": "A misty room",
+        "s": 421,
+        "w": 476
+    },
+    "476": {
+        "title": "A misty room",
+        "e": 440
+    },
+    "416": {
+        "title": "A misty room",
+        "s": 270
+    },
+    "258": {
+        "title": "A misty room",
+        "e": 306,
+        "w": 253
+    },
+    "306": {
+        "title": "A misty room",
+        "e": 397,
+        "w": 258
+    },
+    "397": {
+        "title": "A misty room",
+        "w": 306
+    },
+    "186": {
+        "title": "A misty room",
+        "e": 205,
+        "w": 169
+    },
+    "205": {
+        "title": "A misty room",
+        "s": 241,
+        "e": 479,
+        "w": 186
+    },
+    "241": {
+        "title": "A misty room",
+        "n": 205,
+        "e": 266
+    },
+    "266": {
+        "title": "A misty room",
+        "w": 241
+    },
+    "479": {
+        "title": "A misty room",
+        "w": 205
+    },
+    "53": {
+        "title": "A misty room",
+        "n": 95,
+        "s": 39,
+        "w": 88
+    },
+    "88": {
+        "title": "A misty room",
+        "e": 53,
+        "w": 122
+    },
+    "122": {
+        "title": "A misty room",
+        "n": 124,
+        "e": 88
+    },
+    "124": {
+        "title": "A misty room",
+        "n": 157,
+        "s": 122
+    },
+    "95": {
+        "title": "A misty room",
+        "n": 119,
+        "s": 53,
+        "w": 115
+    },
+    "119": {
+        "title": "A misty room",
+        "n": 134,
+        "s": 95
+    },
+    "134": {
+        "title": "A misty room",
+        "n": 147,
+        "s": 119,
+        "e": 144
+    },
+    "147": {
+        "title": "A misty room",
+        "n": 200,
+        "s": 134,
+        "e": 153,
+        "w": 151
+    },
+    "200": {
+        "title": "A misty room",
+        "n": 227,
+        "s": 147,
+        "e": 206
+    },
+    "227": {
+        "title": "A misty room",
+        "n": 269,
+        "s": 200
+    },
+    "206": {
+        "title": "A misty room",
+        "n": 288,
+        "e": 380,
+        "w": 200
+    },
+    "288": {
+        "title": "A misty room",
+        "s": 206
+    },
+    "380": {
+        "title": "A misty room",
+        "n": 424,
+        "w": 206
+    },
+    "144": {
+        "title": "A misty room",
+        "e": 155,
+        "w": 134
+    },
+    "153": {
+        "title": "A misty room",
+        "e": 329,
+        "w": 147
+    },
+    "329": {
+        "title": "A misty room",
+        "w": 153
+    },
+    "151": {
+        "title": "A misty room",
+        "n": 172,
+        "e": 147,
+        "w": 207
+    },
+    "172": {
+        "title": "A misty room",
+        "n": 267,
+        "s": 151
+    },
+    "115": {
+        "title": "A misty room",
+        "n": 116,
+        "e": 95
+    },
+    "116": {
+        "title": "A misty room",
+        "n": 132,
+        "s": 115
+    },
+    "132": {
+        "title": "A misty room",
+        "s": 116
+    },
+    "57": {
+        "title": "A misty room",
+        "e": 145,
+        "w": 51
+    },
+    "145": {
+        "title": "A misty room",
+        "n": 174,
+        "e": 220,
+        "w": 57
+    },
+    "220": {
+        "title": "A misty room",
+        "w": 145
+    },
+    "174": {
+        "title": "A misty room",
+        "n": 192,
+        "s": 145,
+        "e": 224
+    },
+    "192": {
+        "title": "A misty room",
+        "n": 201,
+        "s": 174,
+        "e": 223
+    },
+    "224": {
+        "title": "A misty room",
+        "w": 174
+    },
+    "201": {
+        "title": "A misty room",
+        "s": 192
+    },
+    "223": {
+        "title": "A misty room",
+        "n": 283,
+        "w": 192
+    },
+    "283": {
+        "title": "A misty room",
+        "n": 331,
+        "s": 223,
+        "e": 313
+    },
+    "331": {
+        "title": "A misty room",
+        "s": 283,
+        "e": 446
+    },
+    "446": {
+        "title": "A misty room",
+        "e": 466,
+        "w": 331
+    },
+    "466": {
+        "title": "A misty room",
+        "s": 486,
+        "e": 472,
+        "w": 446
+    },
+    "472": {
+        "title": "A misty room",
+        "w": 466
+    },
+    "486": {
+        "title": "Arron's Athenaeum",
+        "n": 466
+    },
+    "313": {
+        "title": "A misty room",
+        "w": 283
+    },
+    "94": {
+        "title": "A misty room",
+        "n": 152,
+        "s": 69
+    },
+    "152": {
+        "title": "A misty room",
+        "s": 94
+    },
+    "160": {
+        "title": "A misty room",
+        "s": 103
+    },
+    "157": {
+        "title": "A misty room",
+        "n": 210,
+        "s": 124,
+        "w": 182
+    },
+    "210": {
+        "title": "A misty room",
+        "s": 157
+    },
+    "182": {
+        "title": "A misty room",
+        "e": 157,
+        "w": 208
+    },
+    "208": {
+        "title": "A misty room",
+        "e": 182
+    },
+    "155": {
+        "title": "A misty room",
+        "s": 187,
+        "e": 316,
+        "w": 144
+    },
+    "187": {
+        "title": "A misty room",
+        "n": 155
+    },
+    "316": {
+        "title": "A misty room",
+        "n": 344,
+        "w": 155
+    },
+    "344": {
+        "title": "A misty room",
+        "n": 392,
+        "s": 316,
+        "e": 390
+    },
+    "392": {
+        "title": "A misty room",
+        "s": 344,
+        "e": 462
+    },
+    "462": {
+        "title": "A misty room",
+        "w": 392
+    },
+    "390": {
+        "title": "A misty room",
+        "w": 344
+    },
+    "207": {
+        "title": "A misty room",
+        "n": 231,
+        "e": 151,
+        "w": 290
+    },
+    "290": {
+        "title": "A misty room",
+        "e": 207
+    },
+    "231": {
+        "title": "A misty room",
+        "s": 207,
+        "w": 248
+    },
+    "248": {
+        "title": "A misty room",
+        "n": 296,
+        "e": 231,
+        "w": 280
+    },
+    "296": {
+        "title": "A misty room",
+        "s": 248
+    },
+    "280": {
+        "title": "A misty room",
+        "n": 325,
+        "e": 248
+    },
+    "325": {
+        "title": "A misty room",
+        "n": 353,
+        "s": 280,
+        "w": 374
+    },
+    "353": {
+        "title": "A misty room",
+        "s": 325
+    },
+    "374": {
+        "title": "Fully Shrine",
+        "e": 325
+    },
+    "267": {
+        "title": "A misty room",
+        "n": 285,
+        "s": 172,
+        "w": 271
+    },
+    "285": {
+        "title": "A misty room",
+        "n": 286,
+        "s": 267
+    },
+    "286": {
+        "title": "A misty room",
+        "n": 336,
+        "s": 285,
+        "w": 291
+    },
+    "291": {
+        "title": "A misty room",
+        "n": 410,
+        "e": 286,
+        "w": 347
+    },
+    "347": {
+        "title": "A misty room",
+        "n": 452,
+        "s": 442,
+        "e": 291
+    },
+    "442": {
+        "title": "A misty room",
+        "n": 347
+    },
+    "452": {
+        "title": "A misty room",
+        "s": 347
+    },
+    "410": {
+        "title": "A misty room",
+        "s": 291
+    },
+    "336": {
+        "title": "A misty room",
+        "s": 286
+    },
+    "271": {
+        "title": "A misty room",
+        "n": 337,
+        "e": 267
+    },
+    "337": {
+        "title": "A misty room",
+        "s": 271
+    },
+    "269": {
+        "title": "A misty room",
+        "n": 319,
+        "s": 227
+    },
+    "319": {
+        "title": "A misty room",
+        "n": 359,
+        "s": 269,
+        "e": 345
+    },
+    "345": {
+        "title": "A misty room",
+        "s": 375,
+        "w": 319
+    },
+    "375": {
+        "title": "A misty room",
+        "n": 345,
+        "e": 385
+    },
+    "385": {
+        "title": "A misty room",
+        "w": 375
+    },
+    "359": {
+        "title": "A misty room",
+        "s": 319
+    },
+    "424": {
+        "title": "A misty room",
+        "s": 380,
+        "e": 473
+    },
+    "473": {
+        "title": "A misty room",
+        "e": 494,
+        "w": 424
+    },
+    "494": {
+        "title": "A misty room",
+        "w": 473
+    },
+    "3": {
+        "title": "Mt. Holloway",
+        "s": 9,
+        "e": 5,
+        "w": 2
+    },
+    "9": {
+        "title": "Mt. Holloway",
+        "n": 3,
+        "s": 12,
+        "e": 11
+    },
+    "12": {
+        "title": "Mt. Holloway",
+        "n": 9,
+        "s": 18,
+        "e": 14,
+        "w": 21
+    },
+    "21": {
+        "title": "Mt. Holloway",
+        "e": 12,
+        "w": 29
+    },
+    "29": {
+        "title": "Mt. Holloway",
+        "s": 45,
+        "e": 21,
+        "w": 49
+    },
+    "49": {
+        "title": "A misty room",
+        "s": 79,
+        "e": 29,
+        "w": 136
+    },
+    "136": {
+        "title": "A misty room",
+        "e": 49,
+        "w": 148
+    },
+    "148": {
+        "title": "A misty room",
+        "e": 136,
+        "w": 292
+    },
+    "292": {
+        "title": "A misty room",
+        "n": 301,
+        "e": 148
+    },
+    "301": {
+        "title": "A misty room",
+        "n": 304,
+        "s": 292
+    },
+    "304": {
+        "title": "A misty room",
+        "s": 301
+    },
+    "79": {
+        "title": "A misty room",
+        "n": 49
+    },
+    "45": {
+        "title": "Mt. Holloway",
+        "n": 29,
+        "s": 60
+    },
+    "60": {
+        "title": "Mt. Holloway",
+        "n": 45,
+        "e": 36,
+        "w": 70
+    },
+    "36": {
+        "title": "Mt. Holloway",
+        "s": 48,
+        "e": 22,
+        "w": 60
+    },
+    "48": {
+        "title": "Mt. Holloway",
+        "n": 36,
+        "s": 105,
+        "w": 149
+    },
+    "149": {
+        "title": "Mt. Holloway",
+        "e": 48
+    },
+    "105": {
+        "title": "Mt. Holloway",
+        "n": 48,
+        "w": 202
+    },
+    "202": {
+        "title": "Mt. Holloway",
+        "e": 105
+    },
+    "22": {
+        "title": "The Peak of Mt. Holloway",
+        "n": 18,
+        "s": 78,
+        "w": 36
+    },
+    "18": {
+        "title": "Mt. Holloway",
+        "n": 12,
+        "s": 22,
+        "w": 25
+    },
+    "25": {
+        "title": "Mt. Holloway",
+        "e": 18
+    },
+    "78": {
+        "title": "Mt. Holloway",
+        "n": 22,
+        "s": 108
+    },
+    "108": {
+        "title": "Mt. Holloway",
+        "n": 78,
+        "s": 117,
+        "e": 93
+    },
+    "117": {
+        "title": "Mt. Holloway",
+        "n": 108,
+        "s": 131,
+        "e": 166,
+        "w": 133
+    },
+    "131": {
+        "title": "Mt. Holloway",
+        "n": 117,
+        "s": 244,
+        "w": 138
+    },
+    "244": {
+        "title": "A misty room",
+        "n": 131,
+        "e": 239
+    },
+    "239": {
+        "title": "A misty room",
+        "n": 198,
+        "w": 244
+    },
+    "198": {
+        "title": "A misty room",
+        "n": 166,
+        "s": 239,
+        "e": 199
+    },
+    "199": {
+        "title": "A misty room",
+        "s": 230,
+        "w": 198
+    },
+    "230": {
+        "title": "A misty room",
+        "n": 199,
+        "s": 307,
+        "e": 297
+    },
+    "297": {
+        "title": "A misty room",
+        "w": 230
+    },
+    "307": {
+        "title": "A misty room",
+        "n": 230,
+        "s": 373,
+        "e": 371,
+        "w": 321
+    },
+    "371": {
+        "title": "A misty room",
+        "s": 475,
+        "w": 307
+    },
+    "475": {
+        "title": "A misty room",
+        "n": 371,
+        "s": 484
+    },
+    "484": {
+        "title": "A misty room",
+        "n": 475
+    },
+    "321": {
+        "title": "A misty room",
+        "s": 413,
+        "e": 307
+    },
+    "413": {
+        "title": "A misty room",
+        "n": 321
+    },
+    "373": {
+        "title": "A misty room",
+        "n": 307,
+        "s": 480
+    },
+    "480": {
+        "title": "A misty room",
+        "n": 373
+    },
+    "166": {
+        "title": "Mt. Holloway",
+        "s": 198,
+        "e": 150,
+        "w": 117
+    },
+    "150": {
+        "title": "A misty room",
+        "n": 135,
+        "w": 166
+    },
+    "135": {
+        "title": "A misty room",
+        "s": 150,
+        "e": 106
+    },
+    "106": {
+        "title": "A misty room",
+        "n": 100,
+        "s": 111,
+        "w": 135
+    },
+    "111": {
+        "title": "A misty room",
+        "n": 106,
+        "s": 367,
+        "e": 158
+    },
+    "158": {
+        "title": "A misty room",
+        "s": 167,
+        "w": 111
+    },
+    "167": {
+        "title": "A misty room",
+        "n": 158,
+        "s": 262,
+        "e": 260
+    },
+    "260": {
+        "title": "A misty room",
+        "w": 167
+    },
+    "262": {
+        "title": "A misty room",
+        "n": 167,
+        "s": 370,
+        "e": 358
+    },
+    "370": {
+        "title": "A misty room",
+        "n": 262,
+        "s": 434,
+        "e": 407
+    },
+    "407": {
+        "title": "A misty room",
+        "s": 496,
+        "w": 370
+    },
+    "496": {
+        "title": "A misty room",
+        "n": 407
+    },
+    "434": {
+        "title": "A misty room",
+        "n": 370
+    },
+    "358": {
+        "title": "A misty room",
+        "e": 401,
+        "w": 262
+    },
+    "401": {
+        "title": "A misty room",
+        "w": 358
+    },
+    "367": {
+        "title": "A misty room",
+        "n": 111
+    },
+    "100": {
+        "title": "A misty room",
+        "s": 106,
+        "e": 112,
+        "w": 68
+    },
+    "112": {
+        "title": "A misty room",
+        "s": 141,
+        "e": 140,
+        "w": 100
+    },
+    "140": {
+        "title": "A misty room",
+        "w": 112
+    },
+    "141": {
+        "title": "A misty room",
+        "n": 112,
+        "e": 156
+    },
+    "156": {
+        "title": "A misty room",
+        "s": 168,
+        "e": 164,
+        "w": 141
+    },
+    "164": {
+        "title": "A misty room",
+        "n": 217,
+        "e": 298,
+        "w": 156
+    },
+    "217": {
+        "title": "A misty room",
+        "s": 164,
+        "e": 247
+    },
+    "247": {
+        "title": "A misty room",
+        "e": 261,
+        "w": 217
+    },
+    "261": {
+        "title": "A misty room",
+        "s": 277,
+        "e": 322,
+        "w": 247
+    },
+    "277": {
+        "title": "A misty room",
+        "n": 261,
+        "e": 323
+    },
+    "323": {
+        "title": "A misty room",
+        "e": 433,
+        "w": 277
+    },
+    "433": {
+        "title": "A misty room",
+        "s": 455,
+        "e": 460,
+        "w": 323
+    },
+    "460": {
+        "title": "A misty room",
+        "w": 433
+    },
+    "455": {
+        "title": "A misty room",
+        "n": 433
+    },
+    "322": {
+        "title": "A misty room",
+        "n": 382,
+        "e": 435,
+        "w": 261
+    },
+    "435": {
+        "title": "A misty room",
+        "w": 322
+    },
+    "382": {
+        "title": "A misty room",
+        "s": 322,
+        "e": 388
+    },
+    "388": {
+        "title": "A misty room",
+        "e": 477,
+        "w": 382
+    },
+    "477": {
+        "title": "A misty room",
+        "e": 483,
+        "w": 388
+    },
+    "483": {
+        "title": "A misty room",
+        "w": 477
+    },
+    "298": {
+        "title": "A misty room",
+        "s": 324,
+        "w": 164
+    },
+    "324": {
+        "title": "A misty room",
+        "n": 298,
+        "s": 349,
+        "e": 354
+    },
+    "349": {
+        "title": "A misty room",
+        "n": 324,
+        "s": 352,
+        "e": 384,
+        "w": 356
+    },
+    "356": {
+        "title": "A misty room",
+        "e": 349
+    },
+    "384": {
+        "title": "A misty room",
+        "w": 349
+    },
+    "352": {
+        "title": "A misty room",
+        "n": 349,
+        "s": 362,
+        "e": 485
+    },
+    "485": {
+        "title": "A misty room",
+        "w": 352
+    },
+    "362": {
+        "title": "A misty room",
+        "n": 352,
+        "s": 399,
+        "w": 463
+    },
+    "399": {
+        "title": "A misty room",
+        "n": 362,
+        "s": 467
+    },
+    "467": {
+        "title": "Pirate Ry's",
+        "n": 399
+    },
+    "463": {
+        "title": "A misty room",
+        "s": 468,
+        "e": 362
+    },
+    "468": {
+        "title": "A misty room",
+        "n": 463
+    },
+    "354": {
+        "title": "A misty room",
+        "w": 324
+    },
+    "168": {
+        "title": "A misty room",
+        "n": 156,
+        "e": 340
+    },
+    "340": {
+        "title": "A misty room",
+        "w": 168
+    },
+    "68": {
+        "title": "A misty room",
+        "n": 52,
+        "e": 100
+    },
+    "52": {
+        "title": "A misty room",
+        "n": 35,
+        "s": 68,
+        "e": 75
+    },
+    "35": {
+        "title": "A misty room",
+        "s": 52,
+        "w": 34
+    },
+    "34": {
+        "title": "Mt. Holloway",
+        "n": 14,
+        "s": 50,
+        "e": 35
+    },
+    "50": {
+        "title": "A misty room",
+        "n": 34,
+        "s": 89
+    },
+    "89": {
+        "title": "Mt. Holloway",
+        "n": 50,
+        "s": 93
+    },
+    "93": {
+        "title": "Mt. Holloway",
+        "n": 89,
+        "w": 108
+    },
+    "133": {
+        "title": "Mt. Holloway",
+        "e": 117,
+        "w": 173
+    },
+    "173": {
+        "title": "A misty room",
+        "e": 133,
+        "w": 214
+    },
+    "214": {
+        "title": "A misty room",
+        "n": 194,
+        "e": 173,
+        "w": 226
+    },
+    "194": {
+        "title": "A misty room",
+        "s": 214,
+        "w": 129
+    },
+    "129": {
+        "title": "A misty room",
+        "n": 126,
+        "e": 194,
+        "w": 170
+    },
+    "126": {
+        "title": "A misty room",
+        "n": 98,
+        "s": 129
+    },
+    "98": {
+        "title": "Mt. Holloway",
+        "n": 102,
+        "s": 126,
+        "e": 70,
+        "w": 109
+    },
+    "109": {
+        "title": "A misty room",
+        "s": 185,
+        "e": 98,
+        "w": 175
+    },
+    "175": {
+        "title": "A misty room",
+        "s": 183,
+        "e": 109,
+        "w": 179
+    },
+    "179": {
+        "title": "A misty room",
+        "s": 233,
+        "e": 175,
+        "w": 213
+    },
+    "233": {
+        "title": "A misty room",
+        "n": 179,
+        "w": 238
+    },
+    "238": {
+        "title": "A misty room",
+        "e": 233
+    },
+    "213": {
+        "title": "A misty room",
+        "e": 179,
+        "w": 420
+    },
+    "420": {
+        "title": "A misty room",
+        "s": 444,
+        "e": 213,
+        "w": 437
+    },
+    "444": {
+        "title": "A misty room",
+        "n": 420,
+        "w": 490
+    },
+    "490": {
+        "title": "A misty room",
+        "e": 444,
+        "w": 493
+    },
+    "493": {
+        "title": "A misty room",
+        "e": 490
+    },
+    "37": {
+        "title": "Mt. Holloway",
+        "w": 14
+    },
+    "14": {
+        "title": "Mt. Holloway",
+        "s": 34,
+        "e": 37,
+        "w": 12
+    },
+    "15": {
+        "title": "A misty room",
+        "w": 13
+    },
+    "13": {
+        "title": "A misty room",
+        "e": 15,
+        "w": 4
+    },
+    "4": {
+        "title": "A misty room",
+        "n": 23,
+        "e": 13,
+        "w": 0
+    },
+    "23": {
+        "title": "A misty room",
+        "s": 4,
+        "e": 26
+    },
+    "26": {
+        "title": "A misty room",
+        "e": 55,
+        "w": 23
+    },
+    "55": {
+        "title": "Wishing Well",
+        "w": 26
+    },
+    "1": {
+        "title": "Shop",
+        "e": 0
+    },
+    "47": {
+        "title": "A misty room",
+        "n": 71,
+        "e": 43
+    },
+    "71": {
+        "title": "A misty room",
+        "s": 47
+    },
+    "5": {
+        "title": "A misty room",
+        "w": 3
+    },
+    "11": {
+        "title": "Mt. Holloway",
+        "e": 17,
+        "w": 9
+    },
+    "17": {
+        "title": "A misty room",
+        "n": 24,
+        "e": 42,
+        "w": 11
+    },
+    "24": {
+        "title": "A misty room",
+        "s": 17
+    },
+    "42": {
+        "title": "A misty room",
+        "n": 44,
+        "s": 80,
+        "e": 118,
+        "w": 17
+    },
+    "44": {
+        "title": "A misty room",
+        "s": 42
+    },
+    "80": {
+        "title": "A misty room",
+        "n": 42,
+        "s": 81,
+        "e": 86
+    },
+    "86": {
+        "title": "A misty room",
+        "s": 96,
+        "e": 90,
+        "w": 80
+    },
+    "90": {
+        "title": "A misty room",
+        "e": 178,
+        "w": 86
+    },
+    "178": {
+        "title": "A misty room",
+        "n": 209,
+        "e": 243,
+        "w": 90
+    },
+    "243": {
+        "title": "A misty room",
+        "s": 293,
+        "e": 256,
+        "w": 178
+    },
+    "256": {
+        "title": "A misty room",
+        "s": 360,
+        "e": 327,
+        "w": 243
+    },
+    "360": {
+        "title": "A misty room",
+        "n": 256,
+        "e": 398
+    },
+    "398": {
+        "title": "A misty room",
+        "e": 438,
+        "w": 360
+    },
+    "438": {
+        "title": "A misty room",
+        "e": 465,
+        "w": 398
+    },
+    "465": {
+        "title": "A misty room",
+        "e": 498,
+        "w": 438
+    },
+    "498": {
+        "title": "A misty room",
+        "w": 465
+    },
+    "327": {
+        "title": "A misty room",
+        "e": 427,
+        "w": 256
+    },
+    "427": {
+        "title": "A misty room",
+        "e": 430,
+        "w": 327
+    },
+    "430": {
+        "title": "A misty room",
+        "n": 443,
+        "e": 439,
+        "w": 427
+    },
+    "439": {
+        "title": "A misty room",
+        "w": 430
+    },
+    "443": {
+        "title": "A misty room",
+        "s": 430,
+        "e": 471
+    },
+    "471": {
+        "title": "A misty room",
+        "w": 443
+    },
+    "293": {
+        "title": "A misty room",
+        "n": 243
+    },
+    "209": {
+        "title": "A misty room",
+        "s": 178
+    },
+    "96": {
+        "title": "A misty room",
+        "n": 86,
+        "e": 97
+    },
+    "97": {
+        "title": "A misty room",
+        "e": 181,
+        "w": 96
+    },
+    "181": {
+        "title": "A misty room",
+        "w": 97
+    },
+    "81": {
+        "title": "A misty room",
+        "n": 80
+    },
+    "118": {
+        "title": "A misty room",
+        "e": 137,
+        "w": 42
+    },
+    "137": {
+        "title": "A misty room",
+        "w": 118
+    },
+    "70": {
+        "title": "Mt. Holloway",
+        "s": 163,
+        "e": 60,
+        "w": 98
+    },
+    "163": {
+        "title": "Mt. Holloway",
+        "n": 70
+    },
+    "102": {
+        "title": "A misty room",
+        "s": 98,
+        "w": 142
+    },
+    "142": {
+        "title": "A misty room",
+        "e": 102,
+        "w": 159
+    },
+    "159": {
+        "title": "A misty room",
+        "e": 142,
+        "w": 196
+    },
+    "196": {
+        "title": "A misty room",
+        "n": 222,
+        "e": 159,
+        "w": 197
+    },
+    "222": {
+        "title": "A misty room",
+        "n": 305,
+        "s": 196
+    },
+    "305": {
+        "title": "A misty room",
+        "n": 365,
+        "s": 222
+    },
+    "365": {
+        "title": "A misty room",
+        "s": 305
+    },
+    "197": {
+        "title": "A misty room",
+        "n": 232,
+        "e": 196,
+        "w": 276
+    },
+    "232": {
+        "title": "A misty room",
+        "n": 272,
+        "s": 197,
+        "w": 235
+    },
+    "235": {
+        "title": "A misty room",
+        "n": 330,
+        "e": 232,
+        "w": 355
+    },
+    "330": {
+        "title": "A misty room",
+        "n": 369,
+        "s": 235,
+        "w": 383
+    },
+    "383": {
+        "title": "A misty room",
+        "e": 330,
+        "w": 495
+    },
+    "495": {
+        "title": "The Transmogriphier",
+        "e": 383
+    },
+    "369": {
+        "title": "A misty room",
+        "n": 400,
+        "s": 330,
+        "w": 376
+    },
+    "376": {
+        "title": "A misty room",
+        "e": 369
+    },
+    "400": {
+        "title": "A misty room",
+        "s": 369
+    },
+    "355": {
+        "title": "A misty room",
+        "e": 235
+    },
+    "272": {
+        "title": "A misty room",
+        "n": 295,
+        "s": 232
+    },
+    "295": {
+        "title": "A misty room",
+        "s": 272
+    },
+    "276": {
+        "title": "A misty room",
+        "e": 197,
+        "w": 419
+    },
+    "419": {
+        "title": "A misty room",
+        "e": 276
+    },
+    "185": {
+        "title": "A misty room",
+        "n": 109
+    },
+    "183": {
+        "title": "A misty room",
+        "n": 175,
+        "s": 229
+    },
+    "229": {
+        "title": "A misty room",
+        "n": 183,
+        "s": 250,
+        "w": 236
+    },
+    "250": {
+        "title": "A misty room",
+        "n": 229,
+        "s": 294,
+        "e": 289
+    },
+    "294": {
+        "title": "A misty room",
+        "n": 250,
+        "s": 334
+    },
+    "334": {
+        "title": "A misty room",
+        "n": 294,
+        "s": 393,
+        "e": 341,
+        "w": 391
+    },
+    "391": {
+        "title": "A misty room",
+        "s": 396,
+        "e": 334,
+        "w": 428
+    },
+    "428": {
+        "title": "A misty room",
+        "e": 391
+    },
+    "396": {
+        "title": "A misty room",
+        "n": 391
+    },
+    "393": {
+        "title": "A misty room",
+        "n": 334,
+        "s": 482
+    },
+    "482": {
+        "title": "A misty room",
+        "n": 393
+    },
+    "341": {
+        "title": "A misty room",
+        "s": 449,
+        "w": 334
+    },
+    "449": {
+        "title": "A misty room",
+        "n": 341
+    },
+    "289": {
+        "title": "A misty room",
+        "w": 250
+    },
+    "236": {
+        "title": "A misty room",
+        "s": 264,
+        "e": 229
+    },
+    "264": {
+        "title": "A misty room",
+        "n": 236,
+        "s": 274,
+        "w": 273
+    },
+    "274": {
+        "title": "A misty room",
+        "n": 264,
+        "w": 308
+    },
+    "308": {
+        "title": "A misty room",
+        "e": 274
+    },
+    "273": {
+        "title": "A misty room",
+        "n": 343,
+        "e": 264
+    },
+    "343": {
+        "title": "A misty room",
+        "s": 273,
+        "w": 351
+    },
+    "351": {
+        "title": "A misty room",
+        "s": 491,
+        "e": 343,
+        "w": 478
+    },
+    "478": {
+        "title": "A misty room",
+        "e": 351
+    },
+    "491": {
+        "title": "A misty room",
+        "n": 351
+    },
+    "437": {
+        "title": "A misty room",
+        "e": 420,
+        "w": 497
+    },
+    "497": {
+        "title": "A misty room",
+        "e": 437
+    },
+    "170": {
+        "title": "A misty room",
+        "e": 129
+    },
+    "226": {
+        "title": "A misty room",
+        "s": 300,
+        "e": 214
+    },
+    "300": {
+        "title": "A misty room",
+        "n": 226,
+        "s": 377,
+        "w": 389
+    },
+    "389": {
+        "title": "A misty room",
+        "e": 300
+    },
+    "377": {
+        "title": "A misty room",
+        "n": 300
+    },
+    "138": {
+        "title": "A misty room",
+        "s": 211,
+        "e": 131,
+        "w": 195
+    },
+    "195": {
+        "title": "A misty room",
+        "s": 228,
+        "e": 138,
+        "w": 225
+    },
+    "225": {
+        "title": "A misty room",
+        "s": 278,
+        "e": 195
+    },
+    "278": {
+        "title": "A misty room",
+        "n": 225
+    },
+    "228": {
+        "title": "A misty room",
+        "n": 195,
+        "s": 281
+    },
+    "281": {
+        "title": "A misty room",
+        "n": 228,
+        "s": 318,
+        "e": 309,
+        "w": 317
+    },
+    "318": {
+        "title": "A misty room",
+        "n": 281,
+        "s": 487
+    },
+    "487": {
+        "title": "A misty room",
+        "n": 318,
+        "s": 489
+    },
+    "489": {
+        "title": "A misty room",
+        "n": 487
+    },
+    "309": {
+        "title": "A misty room",
+        "s": 333,
+        "e": 326,
+        "w": 281
+    },
+    "333": {
+        "title": "A misty room",
+        "n": 309,
+        "s": 378
+    },
+    "378": {
+        "title": "A misty room",
+        "n": 333
+    },
+    "326": {
+        "title": "A misty room",
+        "s": 342,
+        "w": 309
+    },
+    "342": {
+        "title": "A misty room",
+        "n": 326,
+        "s": 432
+    },
+    "432": {
+        "title": "A misty room",
+        "n": 342
+    },
+    "317": {
+        "title": "A misty room",
+        "s": 387,
+        "e": 281,
+        "w": 409
+    },
+    "409": {
+        "title": "A misty room",
+        "e": 317
+    },
+    "387": {
+        "title": "A misty room",
+        "n": 317,
+        "s": 417,
+        "w": 431
+    },
+    "417": {
+        "title": "A misty room",
+        "n": 387
+    },
+    "431": {
+        "title": "A misty room",
+        "e": 387,
+        "w": 492
+    },
+    "492": {
+        "title": "Sandofsky's Sanctum",
+        "e": 431
+    },
+    "211": {
+        "title": "A misty room",
+        "n": 138
+    },
+    "75": {
+        "title": "A misty room",
+        "e": 85,
+        "w": 52
+    },
+    "85": {
+        "title": "A misty room",
+        "e": 154,
+        "w": 75
+    },
+    "154": {
+        "title": "A misty room",
+        "e": 193,
+        "w": 85
+    },
+    "193": {
+        "title": "A misty room",
+        "e": 251,
+        "w": 154
+    },
+    "251": {
+        "title": "A misty room",
+        "e": 315,
+        "w": 193
+    },
+    "315": {
+        "title": "A misty room",
+        "w": 251
+    },
+    "58": {
+        "title": "A misty room",
+        "s": 16,
+        "w": 65
+    },
+    "65": {
+        "title": "A misty room",
+        "n": 74,
+        "e": 58,
+        "w": 139
+    },
+    "74": {
+        "title": "A misty room",
+        "n": 87,
+        "s": 65,
+        "w": 161
+    },
+    "87": {
+        "title": "A misty room",
+        "s": 74
+    },
+    "161": {
+        "title": "A misty room",
+        "e": 74
+    },
+    "139": {
+        "title": "A misty room",
+        "e": 65,
+        "w": 188
+    },
+    "188": {
+        "title": "A misty room",
+        "e": 139,
+        "w": 335
+    },
+    "335": {
+        "title": "A misty room",
+        "e": 188,
+        "w": 366
+    },
+    "366": {
+        "title": "A misty room",
+        "e": 335
+    },
+    "67": {
+        "title": "A misty room",
+        "e": 16,
+        "w": 162
+    },
+    "162": {
+        "title": "A misty room",
+        "e": 67
+    },
+    "84": {
+        "title": "A misty room",
+        "e": 62,
+        "w": 91
+    },
+    "91": {
+        "title": "A misty room",
+        "n": 180,
+        "s": 101,
+        "e": 84,
+        "w": 99
+    },
+    "101": {
+        "title": "A misty room",
+        "n": 91,
+        "w": 113
+    },
+    "113": {
+        "title": "A misty room",
+        "s": 114,
+        "e": 101
+    },
+    "114": {
+        "title": "A misty room",
+        "n": 113,
+        "w": 176
+    },
+    "176": {
+        "title": "A misty room",
+        "e": 114,
+        "w": 402
+    },
+    "402": {
+        "title": "A misty room",
+        "e": 176,
+        "w": 451
+    },
+    "451": {
+        "title": "A misty room",
+        "e": 402,
+        "w": 453
+    },
+    "453": {
+        "title": "A misty room",
+        "s": 464,
+        "e": 451
+    },
+    "464": {
+        "title": "A misty room",
+        "n": 453
+    },
+    "99": {
+        "title": "A misty room",
+        "n": 190,
+        "e": 91,
+        "w": 146
+    },
+    "190": {
+        "title": "A misty room",
+        "s": 99
+    },
+    "146": {
+        "title": "A misty room",
+        "n": 215,
+        "s": 177,
+        "e": 99,
+        "w": 257
+    },
+    "215": {
+        "title": "A misty room",
+        "n": 246,
+        "s": 146
+    },
+    "246": {
+        "title": "A misty room",
+        "s": 215
+    },
+    "177": {
+        "title": "A misty room",
+        "n": 146,
+        "w": 346
+    },
+    "346": {
+        "title": "A misty room",
+        "e": 177
+    },
+    "257": {
+        "title": "A misty room",
+        "n": 320,
+        "e": 146,
+        "w": 364
+    },
+    "364": {
+        "title": "A misty room",
+        "n": 429,
+        "s": 381,
+        "e": 257,
+        "w": 448
+    },
+    "429": {
+        "title": "A misty room",
+        "s": 364
+    },
+    "381": {
+        "title": "A misty room",
+        "n": 364,
+        "w": 394
+    },
+    "394": {
+        "title": "A misty room",
+        "e": 381
+    },
+    "448": {
+        "title": "A misty room",
+        "e": 364
+    },
+    "320": {
+        "title": "A misty room",
+        "n": 348,
+        "s": 257
+    },
+    "348": {
+        "title": "A misty room",
+        "s": 320
+    },
+    "180": {
+        "title": "A misty room",
+        "s": 91
+    },
+    "76": {
+        "title": "A misty room",
+        "n": 83,
+        "e": 72,
+        "w": 110
+    },
+    "110": {
+        "title": "A misty room",
+        "e": 76
+    },
+    "83": {
+        "title": "A misty room",
+        "s": 76,
+        "e": 130,
+        "w": 125
+    },
+    "130": {
+        "title": "A misty room",
+        "w": 83
+    },
+    "125": {
+        "title": "A misty room",
+        "n": 165,
+        "e": 83,
+        "w": 237
+    },
+    "165": {
+        "title": "A misty room",
+        "n": 203,
+        "s": 125,
+        "w": 204
+    },
+    "204": {
+        "title": "A misty room",
+        "n": 219,
+        "e": 165,
+        "w": 216
+    },
+    "216": {
+        "title": "A Dark Cave",
+        "n": 234,
+        "e": 204,
+        "w": 218
+    },
+    "218": {
+        "title": "A Dark Cave",
+        "s": 263,
+        "e": 216,
+        "w": 242
+    },
+    "242": {
+        "title": "A Dark Cave",
+        "n": 287,
+        "s": 259,
+        "e": 218,
+        "w": 275
+    },
+    "275": {
+        "title": "A misty room",
+        "e": 242,
+        "w": 456
+    },
+    "456": {
+        "title": "A misty room",
+        "e": 275,
+        "w": 499
+    },
+    "499": {
+        "title": "Glasowyn's Grave",
+        "e": 456
+    },
+    "287": {
+        "title": "A Dark Cave",
+        "s": 242,
+        "w": 339
+    },
+    "339": {
+        "title": "A Dark Cave",
+        "e": 287,
+        "w": 445
+    },
+    "445": {
+        "title": "A Dark Cave",
+        "n": 447,
+        "e": 339,
+        "w": 450
+    },
+    "447": {
+        "title": "A Dark Cave",
+        "s": 445
+    },
+    "450": {
+        "title": "A Dark Cave",
+        "e": 445
+    },
+    "259": {
+        "title": "A Dark Cave",
+        "n": 242,
+        "w": 310
+    },
+    "310": {
+        "title": "A Dark Cave",
+        "e": 259,
+        "w": 412
+    },
+    "412": {
+        "title": "A Dark Cave",
+        "s": 488,
+        "e": 310
+    },
+    "488": {
+        "title": "A Dark Cave",
+        "n": 412
+    },
+    "263": {
+        "title": "A Dark Cave",
+        "n": 218
+    },
+    "234": {
+        "title": "A Dark Cave",
+        "n": 368,
+        "s": 216,
+        "w": 252
+    },
+    "252": {
+        "title": "A Dark Cave",
+        "n": 284,
+        "e": 234
+    },
+    "284": {
+        "title": "A Dark Cave",
+        "n": 302,
+        "s": 252,
+        "w": 303
+    },
+    "303": {
+        "title": "A Dark Cave",
+        "n": 361,
+        "e": 284,
+        "w": 405
+    },
+    "361": {
+        "title": "A Dark Cave",
+        "n": 408,
+        "s": 303
+    },
+    "408": {
+        "title": "A Dark Cave",
+        "n": 458,
+        "s": 361,
+        "w": 423
+    },
+    "423": {
+        "title": "A Dark Cave",
+        "e": 408,
+        "w": 454
+    },
+    "454": {
+        "title": "A Dark Cave",
+        "n": 470,
+        "e": 423
+    },
+    "470": {
+        "title": "A Dark Cave",
+        "s": 454
+    },
+    "458": {
+        "title": "A Dark Cave",
+        "s": 408,
+        "w": 459
+    },
+    "459": {
+        "title": "A Dark Cave",
+        "e": 458
+    },
+    "405": {
+        "title": "A Dark Cave",
+        "n": 406,
+        "e": 303
+    },
+    "406": {
+        "title": "A Dark Cave",
+        "s": 405,
+        "w": 415
+    },
+    "415": {
+        "title": "A Dark Cave",
+        "e": 406,
+        "w": 418
+    },
+    "418": {
+        "title": "A Dark Cave",
+        "n": 425,
+        "s": 474,
+        "e": 415
+    },
+    "474": {
+        "title": "A Dark Cave",
+        "n": 418
+    },
+    "425": {
+        "title": "A Dark Cave",
+        "s": 418,
+        "w": 469
+    },
+    "469": {
+        "title": "A Dark Cave",
+        "e": 425
+    },
+    "302": {
+        "title": "A Dark Cave",
+        "n": 422,
+        "s": 284
+    },
+    "422": {
+        "title": "A Dark Cave",
+        "n": 426,
+        "s": 302
+    },
+    "426": {
+        "title": "A Dark Cave",
+        "n": 457,
+        "s": 422
+    },
+    "457": {
+        "title": "A Dark Cave",
+        "n": 461,
+        "s": 426
+    },
+    "461": {
+        "title": "Linh's Shrine",
+        "s": 457
+    },
+    "368": {
+        "title": "A Dark Cave",
+        "s": 234
+    },
+    "219": {
+        "title": "A misty room",
+        "s": 204
+    },
+    "203": {
+        "title": "A misty room",
+        "n": 268,
+        "s": 165,
+        "e": 299
+    },
+    "299": {
+        "title": "A misty room",
+        "e": 311,
+        "w": 203
+    },
+    "311": {
+        "title": "A misty room",
+        "w": 299
+    },
+    "268": {
+        "title": "A misty room",
+        "s": 203,
+        "e": 411,
+        "w": 312
+    },
+    "312": {
+        "title": "A misty room",
+        "n": 328,
+        "e": 268
+    },
+    "328": {
+        "title": "A misty room",
+        "n": 332,
+        "s": 312,
+        "e": 357,
+        "w": 363
+    },
+    "357": {
+        "title": "A misty room",
+        "w": 328
+    },
+    "363": {
+        "title": "A misty room",
+        "n": 372,
+        "e": 328
+    },
+    "372": {
+        "title": "A misty room",
+        "n": 441,
+        "s": 363
+    },
+    "441": {
+        "title": "A misty room",
+        "s": 372
+    },
+    "332": {
+        "title": "A misty room",
+        "n": 350,
+        "s": 328
+    },
+    "350": {
+        "title": "A misty room",
+        "n": 436,
+        "s": 332,
+        "e": 404
+    },
+    "436": {
+        "title": "A misty room",
+        "s": 350
+    },
+    "404": {
+        "title": "A misty room",
+        "n": 481,
+        "w": 350
+    },
+    "481": {
+        "title": "A misty room",
+        "s": 404
+    },
+    "411": {
+        "title": "A misty room",
+        "w": 268
+    },
+    "237": {
+        "title": "A misty room",
+        "e": 125,
+        "w": 245
+    },
+    "245": {
+        "title": "A misty room",
+        "s": 254,
+        "e": 237
+    },
+    "254": {
+        "title": "A misty room",
+        "n": 245,
+        "w": 314
+    },
+    "314": {
+        "title": "A misty room",
+        "e": 254
+    }
+}
