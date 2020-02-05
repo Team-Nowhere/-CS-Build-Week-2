@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>{% block title %} <!-- You can set a default inbetween incase nothing is passed --> {% endblock %}</title>
+  {% block style %}
+  {% endblock %}
+</head>
+<body>
+  <div class="container">
+    <div class="navbar">
+      <!-- logo? -->
+      Treasure Hunting Nowhere
+      <nav>
+        <a href="./homepage.html"><img src="../../img/earth.png" alt="">Game</a>
+        <a href="./about.html"><img src="../../img/earth.png" alt="">About</a>
+      </nav>
+    </div>
+    <!-- Blocks allow for things to be passed into the template without having to recreate everything that is required on the page -->
+    {% block content %}
+    
+    {% endblock %}
+    
+  </div>
+  {% block script %}
+  {% endblock %}
+</body>
+</html>

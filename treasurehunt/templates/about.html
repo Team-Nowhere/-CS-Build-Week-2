@@ -1,12 +1,24 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
-</head>
-<body>
-  
-</body>
-</html>
+<!-- Extend imports the base file -->
+{% extends 'templates/base.html' %} 
+<!-- You can then add code depending on what you want for the specific page -->
+<!-- Simply input a block wherever it is necessary on the base file and then input the code here -->
+{% block title %}
+{% endblock %}
+
+{% block style %}
+{% endblock %}
+
+{% block content %}
+
+  <!-- You can write Python code by just adding a line of brackets with % in it{%%}, do not use (), use a end <name of used python item> -->
+  {% for ... %}
+  {% endfor %}  
+  <!-- You can use passed variables from views with double brackets {{}} -->
+  {{}}
+
+  Icons made by <a href="https://www.flaticon.com/authors/geotatah" title="geotatah">geotatah</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
+  Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
+{% endblock %}
+
+{% block script %}
+{% endblock %}
