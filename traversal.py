@@ -117,4 +117,5 @@ while True:
                         current_room_exits = move_res['exits']
             print('========== BFS Complete!')
         else:
+            print('********** The map has been fully explored!')
             break
