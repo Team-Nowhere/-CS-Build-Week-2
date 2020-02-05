@@ -189,6 +189,17 @@ def transmogrify(item_name:str):
             }
         ).json()
 
+def examine(item_name:str):
+    return requests.post(
+            url=base_url+'examine/',
+            headers={
+                'Authorization': TOKEN_HEADER
+            },
+            json={
+                'name': f'{item_name}'
+            }
+        ).json()
+
 def mine(new_proof):
     return requests.post(
             url=bc_url+'mine/',
