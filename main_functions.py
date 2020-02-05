@@ -118,6 +118,8 @@ def fast_travel(starting_room_id, destination_room_id, stop_treasure=False):
                 new_path.append(map_graph[current_room][direction])
                 queue.enqueue(new_path)
 
+    print(f'Proposed path: {path_to_next}')
+
     if path_to_next is not None and len(path_to_next) > 0:
         # Have the player travel back to room with unknown exits
         for index in range(len(path_to_next) - 1):
@@ -138,3 +140,23 @@ def fast_travel(starting_room_id, destination_room_id, stop_treasure=False):
 
 
         print('========== Fast Travel Complete!')
+
+def sell_all(current_room_id):
+    if current_room_id is not 1:
+        print('You can only sell at the shop.')
+    else:
+        print('========== Welcome to the shop!')
+        status_res = status()
+        inventory = status_res['inventory']
+        print(f'Current inventory: {inventory}')
+        cooldown(status_res)
+
+        if len(inventory) > 0 and inventory is not None:
+            for item in inventory:
+                print(f'>>>>>>>>>> Selling {item}...')
+                sell_res = sell(item, True)
+                cooldown(sell_res)
+                print(f'!!!!!!!!!! Sold {item}!')
+            print('========== All items sold!')
+        else:
+            print('========== Nothing to sell!')
