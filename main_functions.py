@@ -1,7 +1,8 @@
 import time
 import random
-import endpoints as actions
+from endpoints import *
 import t_graph
+import json
 
 class Stack():
     def __init__(self):
@@ -88,7 +89,7 @@ def get_paths(room_id: str):
 
     return paths
 
-def fast_travel(starting_room_id, destination_room_id):
+def fast_travel(starting_room_id, destination_room_id, stop_treasure=False):
     with open('traversal_graph.json', 'r') as map_file:
         map_graph = json.load(map_file)
 
@@ -126,6 +127,12 @@ def fast_travel(starting_room_id, destination_room_id):
                     print(f'Next room should be {path_to_next[index + 1]}...')
                     move_res = move(direction, path_to_next[index + 1])
                     cooldown(move_res)
+                    if stop_treasure == True:
+                        if len(move_res['items']) > 0:
+                            for item in move_res['items']:
+                                take_res = take(item)
+                                print(take_res['messages'])
+                                cooldown(take_res)
                     bfs_room_id = move_res['room_id']
                     print(f'>>>>>>>>>> Made it to room {bfs_room_id}')
 
