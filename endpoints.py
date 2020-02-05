@@ -119,14 +119,14 @@ def fly(direction: str, next_room_id = None):
             json=data
         ).json()
 
-def dash(direction:str, num_rooms:str, next_room_ids:str):
+def dash(direction:str, num_rooms:str, next_rooms_ids:str):
     return requests.post(
             url=base_url+'dash/',
             headers=AUTH_HEADER,
             json={
                 'direction': f'{direction}',
                 'num_rooms': f'{num_rooms}',
-                'next_rooms_id': f'{next_rooms_ids}'
+                'next_room_ids': f'{next_rooms_ids}'
             }
         ).json()
 

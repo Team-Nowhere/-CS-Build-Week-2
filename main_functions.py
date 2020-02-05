@@ -3,6 +3,7 @@ import random
 from endpoints import *
 import t_graph
 import json
+from itertools import groupby
 
 class Stack():
     def __init__(self):
@@ -121,12 +122,16 @@ def fast_travel(starting_room_id, destination_room_id, stop_treasure=False):
 
     print('Grabbing player info...')
     status_res = status()
+    have_fly = 'fly' in status_res['abilities']
+    have_dash = 'dash' in status_res['abilities']
+    have_recall = 'recall' in status_res['abilities']
+    have_warp = 'warp' in status_res['abilities']
     cooldown(status_res)
 
-    # Runs if 0 exists and recall exists, and in a position greater-equal than 3 or encumbrance > strength
+    # Runs if 0 exists AND recall exists, AND in a position greater-equal than 3 OR encumbrance > strength
     # move: ~7.5cd vs fly: ~6.75cd vs recall: 15cd vs encumbrance: 22.5cd
     if 0 in path_to_next \
-        and 'recall' in status_res['abilities'] \
+        and have_recall is True \
         and path_to_next.index(0) >= 3 \
         or status_res['encumbrance'] > status_res['strength']:
         print('>>>>>>>>>> Recalling to starting point...')
@@ -139,16 +144,26 @@ def fast_travel(starting_room_id, destination_room_id, stop_treasure=False):
 
     if path_to_next is not None and len(path_to_next) > 0:
         # Have the player travel back to room with unknown exits
-        for index in range(len(path_to_next) - 1):
-            for direction in map_graph[path_to_next[index]]:
-                if map_graph[path_to_next[index]][direction] == path_to_next[index + 1]:
-                    print(f'Heading {direction}...')
-                    print(f'Next room should be {path_to_next[index + 1]}...')
 
-                    if 'fly' in status_res['abilities']:
-                        move_res = fly(direction, path_to_next[index + 1])
+        # Check to see if the paths are dashable
+        directions = []	
+        for i in range(len(path_to_next) - 1):	
+            for direction in map_graph[path_to_next[i]]:	
+                if map_graph[path_to_next[i]][direction] == path_to_next[i+ 1]:	
+                    directions.append(direction)
+        dash_groups = dash_check(path_to_next, directions)
+
+        # Dash activates when dash path is shorter AND have dash ability
+        if len(dash_groups) != len(path_to_next)-2 and have_dash is True:
+            for subgroup in dash_groups:
+                if len(subgroup) == 1:
+                    print(f'Heading {subgroup[0][1]}...')
+                    print(f'Next room should be {subgroup[0][0]}...')
+
+                    if have_fly is True:
+                        move_res = fly(subgroup[0][1], subgroup[0][0])
                     else:
-                        move_res = move(direction, path_to_next[index + 1])
+                        move_res = move(subgroup[0][1], subgroup[0][0])
                     cooldown(move_res)
 
                     if stop_treasure == True:
@@ -159,7 +174,66 @@ def fast_travel(starting_room_id, destination_room_id, stop_treasure=False):
                                 cooldown(take_res)
                     bfs_room_id = move_res['room_id']
                     print(f'>>>>>>>>>> Made it to room {bfs_room_id}')
+                else:
+                    arr_len = len(subgroup)
+                    room_id_arr = []
+                    for tup in subgroup:
+                        room_id_arr.append(str(tup[0]))
+                    room_arr_str = ','.join(room_id_arr)
+                    print(room_arr_str)
+        
+                    print(f'Dashing {subgroup[0][1]}...')
+                    print(f'Next room should be {subgroup[arr_len-1][0]}...')
+
+                    dash_res = dash(subgroup[0][1], arr_len, room_arr_str)
+                    cooldown(dash_res)
+
+                    if stop_treasure == True:
+                        if len(move_res['items']) > 0:
+                            for item in move_res['items']:
+                                take_res = take(item)
+                                print(take_res['messages'])
+                                cooldown(take_res)
+                    bfs_room_id = dash_res['room_id']
+                    print(f'>>>>>>>>>> Made it to room {bfs_room_id}')
+        else:
+            for index in range(len(path_to_next) - 1):
+                for direction in map_graph[path_to_next[index]]:
+                    if map_graph[path_to_next[index]][direction] == path_to_next[index + 1]:
+                        print(f'Heading {direction}...')
+                        print(f'Next room should be {path_to_next[index + 1]}...')
+
+                        if have_fly is True:
+                            move_res = fly(direction, path_to_next[index + 1])
+                        else:
+                            move_res = move(direction, path_to_next[index + 1])
+                        cooldown(move_res)
+
+                        if stop_treasure == True:
+                            if len(move_res['items']) > 0:
+                                for item in move_res['items']:
+                                    take_res = take(item)
+                                    print(take_res['messages'])
+                                    cooldown(take_res)
+                        bfs_room_id = move_res['room_id']
+                        print(f'>>>>>>>>>> Made it to room {bfs_room_id}')
     print('========== Fast Travel Complete!')
+
+def dash_check(room_arr, dir_arr):
+    last = dir_arr[0]
+    new_path = []
+    temp_path = []
+    for i, direction in enumerate(dir_arr):
+        if direction == last:
+            tup = (room_arr[i+1], direction)
+            temp_path.append(tup)
+        else:
+            new_path.append(temp_path)
+            temp_path = []
+            tup = (room_arr[i+1], direction)
+            temp_path.append(tup)
+        last = direction
+    return new_path
 
 def sell_all(current_room_id):
     if current_room_id is not 1:
