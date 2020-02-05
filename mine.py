@@ -3,6 +3,7 @@ import requests
 from decouple import config
 import sys
 import json
+from main_functions import cooldown
 from uuid import uuid4
 from timeit import default_timer as timer
 import random
@@ -61,6 +62,7 @@ if __name__ == '__main__':
         print(post_data)
         r = requests.post(url=node + "/mine", json=post_data, headers={'Authorization': TOKEN_HEADER})
         data = r.json()
+        cooldown(data)
         print('data', data)
         if data.get('message') == 'New Block Forged':
             coins_mined += 1
