@@ -10,9 +10,22 @@ add the --stop_treasure flag
 default for treasure is False
 
 examples:
-python fast_travel.py --room 80
-python fast_travel.py --room 1
-python fast_travel.py --room 12 --stop_treasure True
+    python fast_travel.py --room 80
+    python fast_travel.py --room 1
+    python fast_travel.py --room 12 --stop_treasure True
+
+Points of Interest:
+    0 A brightly lit room (Starting point)
+    1 Shop
+    22 The Peak of Mt. Holloway
+    55 Wishing Well (Mine quest start)
+    486 Arron's Athenaeum
+    374 Fully Shrine (Pray here to earn powers/abilities)
+    461 Linh's Shrine 
+    467 Pirate Ry's (Name Change)
+    492 Sandofsky's Sanctum
+    495 The Transmogriphier (Spend Lambda coins here for powerful stuff)
+    499 Glasowyn's Grave
 """
 parser = argparse.ArgumentParser(description='Fast travel')
 parser.add_argument('--room')
