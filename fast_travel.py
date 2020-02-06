@@ -30,6 +30,7 @@ python fast_travel.py --room 12 --collect_treasure True
 parser = argparse.ArgumentParser(description='Fast travel')
 parser.add_argument('--room')
 parser.add_argument('--collect_treasure', default=False)
+parser.add_argument('--abilities', default=None, nargs='+')
 args = parser.parse_args()
 
 if not args.room:
@@ -45,14 +46,18 @@ else:
         current_room = get_current_room()
         cooldown(current_room)
     else:
-        print('Getting current room id...')
+        print('Getting current room id...\n')
         cooldown(current_room)
-    
+
     print('\n== STARTING FAST TRAVEL ==\n')
+
     
+
+
     fast_travel(current_room['room_id'],
                 str(args.room),
-                collect_treasure=bool(args.collect_treasure))
+                collect_treasure=bool(args.collect_treasure),
+                abilities=args.abilities)
 
     # Comment out if not selling all or praying
     # if args.room is '1':

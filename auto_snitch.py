@@ -64,6 +64,11 @@ def well_number():
 captured = 0
 wait_for_snitch = False
 
+# Get abilities
+status_res = status()
+print('\nGetting abilities...\n')
+cooldown(status_res)
+
 while captured < want:
     # Examine the well
     start_snitch, data = well_number()
@@ -73,7 +78,13 @@ while captured < want:
         while new_num == start_snitch:
             new_num, data = well_number()
 
-    os.system(f'python fast_travel.py --room {new_num}')
+    run_script = f'python fast_travel.py --room {new_num}'
+    if status_res['abilities']:
+        run_script += ' --abilities'
+        for ability in status_res['abilities']:
+            run_script += f' {ability}'
+        
+    os.system(run_script)
 
     current_room = get_current_room()
     cooldown(current_room)
@@ -83,26 +94,33 @@ while captured < want:
             if i.upper() == 'GOLDEN SNITCH':
                 take_res = take(i)
                 cooldown(take_res)
-                if take_res['messages']:
-                    if 'warmth' in take_res['messages'][0]:
-                        print('''
+                if not take_res['errors']:
+                    if take_res['messages']:
+                        if 'warmth' in take_res['messages'][0]:
+                            print('''
 >!!!!!!!!!!!!!!!!!!!!!!!<
 >!!!                 !!!<
 >!!! Snitch Captured !!!<
 >!!!                 !!!<
 >!!!!!!!!!!!!!!!!!!!!!!!<
-                        ''')
-                        captured += 1
-                        print(f'Snitches Captured: {captured}\n')
-                        wait_for_snitch = False
-                    else:
-                        print('\nThere is no snitch here\n')
-                        wait_for_snitch = True
+                            ''')
+                            captured += 1
+                            print(f'Snitches Captured: {captured}\n')
+                            wait_for_snitch = False
+                        else:
+                            print('\nThere is no snitch here\n')
+                            wait_for_snitch = True
     else:
         print('\nThere is no snitch here\n')
         wait_for_snitch = True
 
-    os.system(f'python fast_travel.py --room 555')
+    run_script = 'python fast_travel.py --room 555'
+    if status_res['abilities']:
+        run_script += ' --abilities'
+        for ability in status_res['abilities']:
+            run_script += f' {ability}'
+        
+    os.system(run_script)
 
 
 

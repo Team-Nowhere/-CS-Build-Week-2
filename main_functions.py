@@ -93,20 +93,26 @@ def get_paths(room_id: str):
 
     return paths
 
-def fast_travel(starting_room_id, destination_room_id, collect_treasure=False):
+def fast_travel(starting_room_id, destination_room_id, collect_treasure=False, abilities=None):
     with open('traversal_graph.json', 'r') as map_file:
         map_graph = json.load(map_file)
 
     map_graph = {int(k):v for k,v in map_graph.items()}
 
     # Check abilites
-    stats = status()
-    print('Checking abilities...')
-    have_fly = 'fly' in stats['abilities']
-    have_dash = 'dash' in stats['abilities']
-    have_recall = 'recall' in stats['abilities']
-    have_warp = 'warp' in stats['abilities']
-    cooldown(stats)
+    if abilities:
+        have_fly = 'fly' in abilities
+        have_dash = 'dash' in abilities
+        have_recall = 'recall' in abilities
+        have_warp = 'warp' in abilities
+    else:
+        stats = status()
+        print('Checking abilities...')
+        have_fly = 'fly' in stats['abilities']
+        have_dash = 'dash' in stats['abilities']
+        have_recall = 'recall' in stats['abilities']
+        have_warp = 'warp' in stats['abilities']
+        cooldown(stats)
 
     # Check if destination is starting point
     if int(destination_room_id) == 0 and have_recall is True and collect_treasure is False:
@@ -244,7 +250,7 @@ def fast_travel(starting_room_id, destination_room_id, collect_treasure=False):
                 print(f'>>>>>>>>>> Made it to room {dash_room_id}\n')
 
 
-        print('============> Fast travel complete')
+        print('============> Fast travel complete\n')
 
     elif have_dash is True and have_fly is False and collect_treasure==False:
         for chunk in range(len(direction_chunks)):
@@ -273,7 +279,7 @@ def fast_travel(starting_room_id, destination_room_id, collect_treasure=False):
                 print(f'>>>>>>>>>> Made it to room {dash_room_id}\n')
 
 
-        print('============> Fast travel complete')
+        print('============> Fast travel complete\n')
 
     elif have_dash is False and have_fly is True and collect_treasure == False:
         if path_to_next is not None and len(path_to_next) > 0:
@@ -297,7 +303,7 @@ def fast_travel(starting_room_id, destination_room_id, collect_treasure=False):
                         bfs_room_id = move_res['room_id']
                         print(f'>>>>>>>>>> Made it to room {bfs_room_id}\n')
 
-            print('============> Fast travel complete')
+            print('============> Fast travel complete\n')
 
     else:
         if path_to_next is not None and len(path_to_next) > 0:
@@ -329,7 +335,7 @@ def fast_travel(starting_room_id, destination_room_id, collect_treasure=False):
                         bfs_room_id = move_res['room_id']
                         print(f'>>>>>>>>>> Made it to room {bfs_room_id}\n')
 
-            print('============> Fast travel complete')
+            print('============> Fast travel complete\n')
 
 def dash_check(room_arr, dir_arr):
     last = dir_arr[0]
