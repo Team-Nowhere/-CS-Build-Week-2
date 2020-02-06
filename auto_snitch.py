@@ -88,7 +88,9 @@ while captured < want:
                     print(take_res['messages'][0])
 
     res = recall()
+    print('Recalling...')
     cooldown(res)
+    print('Warping to underworld...')
     res = warp()
     cooldown(res)
 

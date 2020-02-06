@@ -154,16 +154,35 @@ def fast_travel(starting_room_id, destination_room_id, collect_treasure=False):
         number_chunks.append(temp[:chunk_length])
         temp = temp[chunk_length:]
 
-    if 'dash' in abilities and collect_treasure==False:
-
+    if 'dash' in abilities and 'fly' in abilities and collect_treasure==False:
         for chunk in range(len(direction_chunks)):
             if len(direction_chunks[chunk]) < 2:
                 path_to_next = number_chunks[chunk][0]
 
-                print(f'Heading {direction_chunks[chunk][0]}...')
-                print(f'Next room should be {number_chunks[chunk][0]}...')
-                move_res = move(direction_chunks[chunk][0], number_chunks[chunk][0])
-                cooldown(move_res)
+                try:
+                    next_terrain = map_graph[number_chunks[chunk + 1][0]]['terrain']
+                    if next_terrain == 'CAVE':
+                        print(f'Walking {direction_chunks[chunk][0]}...')
+                        print(f'Next room should be {number_chunks[chunk][0]}...')
+                        move_res = move(direction_chunks[chunk][0], number_chunks[chunk][0])
+                        cooldown(move_res)
+                    else:
+                        print(f'Flying {direction_chunks[chunk][0]}...')
+                        print(f'Next room should be {number_chunks[chunk][0]}...')
+                        move_res = fly(direction_chunks[chunk][0], number_chunks[chunk][0])
+                        cooldown(move_res)
+                except:
+                    next_terrain = map_graph[int(destination_room_id)]['terrain']
+                    if next_terrain == 'CAVE':
+                        print(f'Walking {direction_chunks[chunk][0]}...')
+                        print(f'Next room should be {number_chunks[chunk][0]}...')
+                        move_res = move(direction_chunks[chunk][0], number_chunks[chunk][0])
+                        cooldown(move_res)
+                    else:
+                        print(f'Flying {direction_chunks[chunk][0]}...')
+                        print(f'Next room should be {number_chunks[chunk][0]}...')
+                        move_res = fly(direction_chunks[chunk][0], number_chunks[chunk][0])
+                        cooldown(move_res)
 
                 bfs_room_id = move_res['room_id']
                 print(f'>>>>>>>>>> Made it to room {bfs_room_id}')
@@ -183,6 +202,60 @@ def fast_travel(starting_room_id, destination_room_id, collect_treasure=False):
 
         print('============> Fast travel complete')
 
+    elif 'dash' in abilities and 'fly' not in abilities and collect_treasure==False:
+        for chunk in range(len(direction_chunks)):
+            if len(direction_chunks[chunk]) < 2:
+                path_to_next = number_chunks[chunk][0]
+
+                print(f'Walking {direction_chunks[chunk][0]}...')
+                print(f'Next room should be {number_chunks[chunk][0]}...')
+
+                move_res = move(direction_chunks[chunk][0], number_chunks[chunk][0])
+                cooldown(move_res)
+
+                bfs_room_id = move_res['room_id']
+                print(f'>>>>>>>>>> Made it to room {bfs_room_id}')
+
+            else:
+                number_of_rooms = len(direction_chunks[chunk])
+                dash_direction = direction_chunks[chunk][0]
+                dash_room_ids = ','.join([str(x) for x in number_chunks[chunk]])
+
+
+                print(f'Dashing {dash_direction.upper()} through {number_of_rooms} rooms...')
+                dash_res = dash(dash_direction, number_of_rooms, dash_room_ids)
+                cooldown(dash_res)
+                last_movement = 'dash'
+                dash_room_id = dash_res["room_id"]
+                print(f'>>>>>>>>>> Made it to room {dash_room_id}')
+
+
+        print('============> Fast travel complete')
+
+    elif 'dash' not in abilities and 'fly' in abilities and collect_treasure == False:
+        if path_to_next is not None and len(path_to_next) > 0:
+            # Have the player travel back to room with unknown exits
+            for index in range(len(path_to_next) - 1):
+                for direction in map_graph[path_to_next[index]]:
+                    if map_graph[path_to_next[index]][direction] == path_to_next[index + 1]:
+                        next_terrain = map_graph[path_to_next[index + 1]]['terrain']
+                        
+                        if next_terrain == 'CAVE':
+                            print(f'Walking {direction}...')
+                            print(f'Next room should be {path_to_next[index + 1]}...')
+                            move_res = move(direction, path_to_next[index + 1])
+                            cooldown(move_res)
+                        else:
+                            print(f'Flying {direction}...')
+                            print(f'Next room should be {path_to_next[index + 1]}...')
+                            move_res = fly(direction, path_to_next[index + 1])
+                            cooldown(move_res)
+
+                        bfs_room_id = move_res['room_id']
+                        print(f'>>>>>>>>>> Made it to room {bfs_room_id}')
+
+            print('============> Fast travel complete')
+
     else:
         if path_to_next is not None and len(path_to_next) > 0:
             # Have the player travel back to room with unknown exits
@@ -190,7 +263,7 @@ def fast_travel(starting_room_id, destination_room_id, collect_treasure=False):
                 for direction in map_graph[path_to_next[index]]:
                     if map_graph[path_to_next[index]][direction] == path_to_next[index + 1]:
 
-                        print(f'Heading {direction}...')
+                        print(f'Walking {direction}...')
                         print(f'Next room should be {path_to_next[index + 1]}...')
                         move_res = move(direction, path_to_next[index + 1])
                         cooldown(move_res)
