@@ -3506,5 +3506,3503 @@
         "coordinates": "(59,64)",
         "terrain": "NORMAL",
         "e": 63
+    },
+    "500": {
+        "title": "Darkness",
+        "coordinates": "(60,60)",
+        "terrain": "NORMAL",
+        "n": 504,
+        "s": 502,
+        "e": 503,
+        "w": 501
+    },
+    "502": {
+        "title": "Darkness",
+        "coordinates": "(60,59)",
+        "terrain": "NORMAL",
+        "n": 500,
+        "s": 508,
+        "e": 505,
+        "w": 509
+    },
+    "508": {
+        "title": "Darkness",
+        "coordinates": "(60,58)",
+        "terrain": "NORMAL",
+        "n": 502,
+        "s": 561
+    },
+    "561": {
+        "title": "Darkness",
+        "coordinates": "(60,57)",
+        "terrain": "NORMAL",
+        "n": 508,
+        "s": 571
+    },
+    "571": {
+        "title": "Darkness",
+        "coordinates": "(60,56)",
+        "terrain": "NORMAL",
+        "n": 561,
+        "s": 584
+    },
+    "584": {
+        "title": "Darkness",
+        "coordinates": "(60,55)",
+        "terrain": "NORMAL",
+        "n": 571,
+        "s": 669
+    },
+    "669": {
+        "title": "Darkness",
+        "coordinates": "(60,54)",
+        "terrain": "NORMAL",
+        "n": 584,
+        "s": 695
+    },
+    "695": {
+        "title": "Darkness",
+        "coordinates": "(60,53)",
+        "terrain": "NORMAL",
+        "n": 669,
+        "s": 757,
+        "e": 696
+    },
+    "696": {
+        "title": "Darkness",
+        "coordinates": "(61,53)",
+        "terrain": "NORMAL",
+        "s": 753,
+        "w": 695
+    },
+    "753": {
+        "title": "Darkness",
+        "coordinates": "(61,52)",
+        "terrain": "NORMAL",
+        "n": 696,
+        "s": 784,
+        "e": 775
+    },
+    "784": {
+        "title": "Darkness",
+        "coordinates": "(61,51)",
+        "terrain": "NORMAL",
+        "n": 753
+    },
+    "775": {
+        "title": "Darkness",
+        "coordinates": "(62,52)",
+        "terrain": "NORMAL",
+        "s": 823,
+        "e": 790,
+        "w": 753
+    },
+    "790": {
+        "title": "Darkness",
+        "coordinates": "(63,52)",
+        "terrain": "NORMAL",
+        "e": 835,
+        "w": 775
+    },
+    "835": {
+        "title": "Darkness",
+        "coordinates": "(64,52)",
+        "terrain": "NORMAL",
+        "e": 883,
+        "w": 790
+    },
+    "883": {
+        "title": "Darkness",
+        "coordinates": "(65,52)",
+        "terrain": "NORMAL",
+        "s": 890,
+        "e": 891,
+        "w": 835
+    },
+    "890": {
+        "title": "Darkness",
+        "coordinates": "(65,51)",
+        "terrain": "NORMAL",
+        "n": 883,
+        "w": 926
+    },
+    "926": {
+        "title": "Darkness",
+        "coordinates": "(64,51)",
+        "terrain": "NORMAL",
+        "e": 890
+    },
+    "891": {
+        "title": "Darkness",
+        "coordinates": "(66,52)",
+        "terrain": "NORMAL",
+        "s": 969,
+        "w": 883
+    },
+    "969": {
+        "title": "Darkness",
+        "coordinates": "(66,51)",
+        "terrain": "NORMAL",
+        "n": 891,
+        "e": 984
+    },
+    "984": {
+        "title": "Darkness",
+        "coordinates": "(67,51)",
+        "terrain": "NORMAL",
+        "w": 969
+    },
+    "823": {
+        "title": "Darkness",
+        "coordinates": "(62,51)",
+        "terrain": "NORMAL",
+        "n": 775,
+        "e": 824
+    },
+    "824": {
+        "title": "Darkness",
+        "coordinates": "(63,51)",
+        "terrain": "NORMAL",
+        "s": 827,
+        "w": 823
+    },
+    "827": {
+        "title": "Darkness",
+        "coordinates": "(63,50)",
+        "terrain": "NORMAL",
+        "n": 824,
+        "s": 832,
+        "e": 904,
+        "w": 985
+    },
+    "985": {
+        "title": "Darkness",
+        "coordinates": "(62,50)",
+        "terrain": "NORMAL",
+        "e": 827
+    },
+    "832": {
+        "title": "Darkness",
+        "coordinates": "(63,49)",
+        "terrain": "NORMAL",
+        "n": 827,
+        "s": 932,
+        "e": 844,
+        "w": 888
+    },
+    "888": {
+        "title": "Darkness",
+        "coordinates": "(62,49)",
+        "terrain": "NORMAL",
+        "e": 832,
+        "w": 936
+    },
+    "936": {
+        "title": "Darkness",
+        "coordinates": "(61,49)",
+        "terrain": "NORMAL",
+        "s": 988,
+        "e": 888
+    },
+    "988": {
+        "title": "Darkness",
+        "coordinates": "(61,48)",
+        "terrain": "NORMAL",
+        "n": 936
+    },
+    "932": {
+        "title": "Darkness",
+        "coordinates": "(63,48)",
+        "terrain": "NORMAL",
+        "n": 832,
+        "e": 950
+    },
+    "950": {
+        "title": "Darkness",
+        "coordinates": "(64,48)",
+        "terrain": "NORMAL",
+        "w": 932
+    },
+    "844": {
+        "title": "Darkness",
+        "coordinates": "(64,49)",
+        "terrain": "NORMAL",
+        "w": 832
+    },
+    "904": {
+        "title": "Darkness",
+        "coordinates": "(64,50)",
+        "terrain": "NORMAL",
+        "e": 976,
+        "w": 827
+    },
+    "976": {
+        "title": "Darkness",
+        "coordinates": "(65,50)",
+        "terrain": "NORMAL",
+        "w": 904
+    },
+    "757": {
+        "title": "Darkness",
+        "coordinates": "(60,52)",
+        "terrain": "NORMAL",
+        "n": 695,
+        "s": 814
+    },
+    "814": {
+        "title": "Darkness",
+        "coordinates": "(60,51)",
+        "terrain": "NORMAL",
+        "n": 757,
+        "s": 849
+    },
+    "849": {
+        "title": "Darkness",
+        "coordinates": "(60,50)",
+        "terrain": "NORMAL",
+        "n": 814,
+        "e": 955
+    },
+    "955": {
+        "title": "Darkness",
+        "coordinates": "(61,50)",
+        "terrain": "NORMAL",
+        "w": 849
+    },
+    "505": {
+        "title": "Darkness",
+        "coordinates": "(61,59)",
+        "terrain": "NORMAL",
+        "e": 525,
+        "w": 502
+    },
+    "525": {
+        "title": "Darkness",
+        "coordinates": "(62,59)",
+        "terrain": "NORMAL",
+        "n": 560,
+        "s": 542,
+        "e": 533,
+        "w": 505
+    },
+    "533": {
+        "title": "Darkness",
+        "coordinates": "(63,59)",
+        "terrain": "NORMAL",
+        "s": 539,
+        "w": 525
+    },
+    "539": {
+        "title": "Darkness",
+        "coordinates": "(63,58)",
+        "terrain": "NORMAL",
+        "n": 533,
+        "s": 540
+    },
+    "540": {
+        "title": "Darkness",
+        "coordinates": "(63,57)",
+        "terrain": "NORMAL",
+        "n": 539,
+        "e": 585
+    },
+    "585": {
+        "title": "Darkness",
+        "coordinates": "(64,57)",
+        "terrain": "NORMAL",
+        "e": 682,
+        "w": 540
+    },
+    "682": {
+        "title": "Darkness",
+        "coordinates": "(65,57)",
+        "terrain": "NORMAL",
+        "w": 585
+    },
+    "560": {
+        "title": "Darkness",
+        "coordinates": "(62,60)",
+        "terrain": "NORMAL",
+        "s": 525,
+        "e": 602
+    },
+    "602": {
+        "title": "Darkness",
+        "coordinates": "(63,60)",
+        "terrain": "NORMAL",
+        "e": 612,
+        "w": 560
+    },
+    "612": {
+        "title": "Darkness",
+        "coordinates": "(64,60)",
+        "terrain": "NORMAL",
+        "s": 637,
+        "e": 635,
+        "w": 602
+    },
+    "635": {
+        "title": "Darkness",
+        "coordinates": "(65,60)",
+        "terrain": "NORMAL",
+        "e": 720,
+        "w": 612
+    },
+    "720": {
+        "title": "Darkness",
+        "coordinates": "(66,60)",
+        "terrain": "NORMAL",
+        "w": 635
+    },
+    "637": {
+        "title": "Darkness",
+        "coordinates": "(64,59)",
+        "terrain": "NORMAL",
+        "n": 612,
+        "s": 651,
+        "e": 650
+    },
+    "650": {
+        "title": "Darkness",
+        "coordinates": "(65,59)",
+        "terrain": "NORMAL",
+        "e": 758,
+        "w": 637
+    },
+    "758": {
+        "title": "Darkness",
+        "coordinates": "(66,59)",
+        "terrain": "NORMAL",
+        "w": 650
+    },
+    "651": {
+        "title": "Darkness",
+        "coordinates": "(64,58)",
+        "terrain": "NORMAL",
+        "n": 637,
+        "e": 674
+    },
+    "674": {
+        "title": "Darkness",
+        "coordinates": "(65,58)",
+        "terrain": "NORMAL",
+        "e": 778,
+        "w": 651
+    },
+    "778": {
+        "title": "Darkness",
+        "coordinates": "(66,58)",
+        "terrain": "NORMAL",
+        "s": 815,
+        "w": 674
+    },
+    "815": {
+        "title": "Darkness",
+        "coordinates": "(66,57)",
+        "terrain": "NORMAL",
+        "n": 778,
+        "s": 825
+    },
+    "825": {
+        "title": "Darkness",
+        "coordinates": "(66,56)",
+        "terrain": "NORMAL",
+        "n": 815,
+        "s": 854
+    },
+    "854": {
+        "title": "Darkness",
+        "coordinates": "(66,55)",
+        "terrain": "NORMAL",
+        "n": 825
+    },
+    "542": {
+        "title": "Darkness",
+        "coordinates": "(62,58)",
+        "terrain": "NORMAL",
+        "n": 525,
+        "s": 549,
+        "w": 554
+    },
+    "554": {
+        "title": "Darkness",
+        "coordinates": "(61,58)",
+        "terrain": "NORMAL",
+        "s": 567,
+        "e": 542
+    },
+    "567": {
+        "title": "Darkness",
+        "coordinates": "(61,57)",
+        "terrain": "NORMAL",
+        "n": 554,
+        "s": 574
+    },
+    "574": {
+        "title": "Darkness",
+        "coordinates": "(61,56)",
+        "terrain": "NORMAL",
+        "n": 567,
+        "s": 588
+    },
+    "588": {
+        "title": "Darkness",
+        "coordinates": "(61,55)",
+        "terrain": "NORMAL",
+        "n": 574
+    },
+    "549": {
+        "title": "Darkness",
+        "coordinates": "(62,57)",
+        "terrain": "NORMAL",
+        "n": 542,
+        "s": 556
+    },
+    "556": {
+        "title": "Darkness",
+        "coordinates": "(62,56)",
+        "terrain": "NORMAL",
+        "n": 549,
+        "s": 600,
+        "e": 598
+    },
+    "598": {
+        "title": "Darkness",
+        "coordinates": "(63,56)",
+        "terrain": "NORMAL",
+        "e": 659,
+        "w": 556
+    },
+    "659": {
+        "title": "Darkness",
+        "coordinates": "(64,56)",
+        "terrain": "NORMAL",
+        "s": 665,
+        "e": 754,
+        "w": 598
+    },
+    "754": {
+        "title": "Darkness",
+        "coordinates": "(65,56)",
+        "terrain": "NORMAL",
+        "w": 659
+    },
+    "665": {
+        "title": "Darkness",
+        "coordinates": "(64,55)",
+        "terrain": "NORMAL",
+        "n": 659,
+        "s": 723,
+        "e": 700
+    },
+    "723": {
+        "title": "Darkness",
+        "coordinates": "(64,54)",
+        "terrain": "NORMAL",
+        "n": 665,
+        "s": 816
+    },
+    "816": {
+        "title": "Darkness",
+        "coordinates": "(64,53)",
+        "terrain": "NORMAL",
+        "n": 723
+    },
+    "700": {
+        "title": "Darkness",
+        "coordinates": "(65,55)",
+        "terrain": "NORMAL",
+        "s": 813,
+        "w": 665
+    },
+    "813": {
+        "title": "Darkness",
+        "coordinates": "(65,54)",
+        "terrain": "NORMAL",
+        "n": 700,
+        "s": 831,
+        "e": 858
+    },
+    "831": {
+        "title": "Darkness",
+        "coordinates": "(65,53)",
+        "terrain": "NORMAL",
+        "n": 813
+    },
+    "858": {
+        "title": "Darkness",
+        "coordinates": "(66,54)",
+        "terrain": "NORMAL",
+        "s": 907,
+        "e": 879,
+        "w": 813
+    },
+    "907": {
+        "title": "Darkness",
+        "coordinates": "(66,53)",
+        "terrain": "NORMAL",
+        "n": 858,
+        "e": 925
+    },
+    "925": {
+        "title": "Darkness",
+        "coordinates": "(67,53)",
+        "terrain": "NORMAL",
+        "s": 965,
+        "w": 907
+    },
+    "965": {
+        "title": "Darkness",
+        "coordinates": "(67,52)",
+        "terrain": "NORMAL",
+        "n": 925,
+        "e": 980
+    },
+    "980": {
+        "title": "Darkness",
+        "coordinates": "(68,52)",
+        "terrain": "NORMAL",
+        "s": 999,
+        "w": 965
+    },
+    "999": {
+        "title": "Darkness",
+        "coordinates": "(68,51)",
+        "terrain": "NORMAL",
+        "n": 980
+    },
+    "879": {
+        "title": "Darkness",
+        "coordinates": "(67,54)",
+        "terrain": "NORMAL",
+        "w": 858
+    },
+    "600": {
+        "title": "Darkness",
+        "coordinates": "(62,55)",
+        "terrain": "NORMAL",
+        "n": 556,
+        "s": 648,
+        "e": 610
+    },
+    "648": {
+        "title": "Darkness",
+        "coordinates": "(62,54)",
+        "terrain": "NORMAL",
+        "n": 600,
+        "s": 735,
+        "w": 673
+    },
+    "673": {
+        "title": "Darkness",
+        "coordinates": "(61,54)",
+        "terrain": "NORMAL",
+        "e": 648
+    },
+    "735": {
+        "title": "Darkness",
+        "coordinates": "(62,53)",
+        "terrain": "NORMAL",
+        "n": 648
+    },
+    "610": {
+        "title": "Darkness",
+        "coordinates": "(63,55)",
+        "terrain": "NORMAL",
+        "s": 732,
+        "w": 600
+    },
+    "732": {
+        "title": "Darkness",
+        "coordinates": "(63,54)",
+        "terrain": "NORMAL",
+        "n": 610,
+        "s": 779
+    },
+    "779": {
+        "title": "Darkness",
+        "coordinates": "(63,53)",
+        "terrain": "NORMAL",
+        "n": 732
+    },
+    "509": {
+        "title": "Darkness",
+        "coordinates": "(59,59)",
+        "terrain": "NORMAL",
+        "s": 524,
+        "e": 502,
+        "w": 510
+    },
+    "510": {
+        "title": "Darkness",
+        "coordinates": "(58,59)",
+        "terrain": "NORMAL",
+        "n": 517,
+        "e": 509,
+        "w": 513
+    },
+    "513": {
+        "title": "Darkness",
+        "coordinates": "(57,59)",
+        "terrain": "NORMAL",
+        "n": 550,
+        "e": 510,
+        "w": 532
+    },
+    "532": {
+        "title": "Darkness",
+        "coordinates": "(56,59)",
+        "terrain": "NORMAL",
+        "n": 553,
+        "e": 513,
+        "w": 568
+    },
+    "568": {
+        "title": "Darkness",
+        "coordinates": "(55,59)",
+        "terrain": "NORMAL",
+        "n": 573,
+        "e": 532,
+        "w": 580
+    },
+    "573": {
+        "title": "Darkness",
+        "coordinates": "(55,60)",
+        "terrain": "NORMAL",
+        "s": 568
+    },
+    "580": {
+        "title": "Darkness",
+        "coordinates": "(54,59)",
+        "terrain": "NORMAL",
+        "e": 568,
+        "w": 606
+    },
+    "606": {
+        "title": "Darkness",
+        "coordinates": "(53,59)",
+        "terrain": "NORMAL",
+        "s": 608,
+        "e": 580,
+        "w": 722
+    },
+    "722": {
+        "title": "Darkness",
+        "coordinates": "(52,59)",
+        "terrain": "NORMAL",
+        "e": 606,
+        "w": 763
+    },
+    "763": {
+        "title": "Darkness",
+        "coordinates": "(51,59)",
+        "terrain": "NORMAL",
+        "s": 826,
+        "e": 722,
+        "w": 846
+    },
+    "846": {
+        "title": "Darkness",
+        "coordinates": "(50,59)",
+        "terrain": "NORMAL",
+        "e": 763
+    },
+    "826": {
+        "title": "Darkness",
+        "coordinates": "(51,58)",
+        "terrain": "NORMAL",
+        "n": 763
+    },
+    "608": {
+        "title": "Darkness",
+        "coordinates": "(53,58)",
+        "terrain": "NORMAL",
+        "n": 606,
+        "w": 752
+    },
+    "752": {
+        "title": "Darkness",
+        "coordinates": "(52,58)",
+        "terrain": "NORMAL",
+        "e": 608
+    },
+    "553": {
+        "title": "Darkness",
+        "coordinates": "(56,60)",
+        "terrain": "NORMAL",
+        "n": 593,
+        "s": 532
+    },
+    "593": {
+        "title": "Darkness",
+        "coordinates": "(56,61)",
+        "terrain": "NORMAL",
+        "s": 553
+    },
+    "550": {
+        "title": "Darkness",
+        "coordinates": "(57,60)",
+        "terrain": "NORMAL",
+        "n": 570,
+        "s": 513
+    },
+    "570": {
+        "title": "Darkness",
+        "coordinates": "(57,61)",
+        "terrain": "NORMAL",
+        "s": 550
+    },
+    "517": {
+        "title": "Darkness",
+        "coordinates": "(58,60)",
+        "terrain": "NORMAL",
+        "s": 510
+    },
+    "524": {
+        "title": "Darkness",
+        "coordinates": "(59,58)",
+        "terrain": "NORMAL",
+        "n": 509,
+        "s": 545,
+        "w": 526
+    },
+    "545": {
+        "title": "Darkness",
+        "coordinates": "(59,57)",
+        "terrain": "NORMAL",
+        "n": 524,
+        "s": 565
+    },
+    "565": {
+        "title": "Darkness",
+        "coordinates": "(59,56)",
+        "terrain": "NORMAL",
+        "n": 545,
+        "s": 590
+    },
+    "590": {
+        "title": "Darkness",
+        "coordinates": "(59,55)",
+        "terrain": "NORMAL",
+        "n": 565,
+        "s": 625
+    },
+    "625": {
+        "title": "Darkness",
+        "coordinates": "(59,54)",
+        "terrain": "NORMAL",
+        "n": 590,
+        "s": 699
+    },
+    "699": {
+        "title": "Darkness",
+        "coordinates": "(59,53)",
+        "terrain": "NORMAL",
+        "n": 625,
+        "s": 809
+    },
+    "809": {
+        "title": "Darkness",
+        "coordinates": "(59,52)",
+        "terrain": "NORMAL",
+        "n": 699
+    },
+    "526": {
+        "title": "Darkness",
+        "coordinates": "(58,58)",
+        "terrain": "NORMAL",
+        "s": 538,
+        "e": 524,
+        "w": 530
+    },
+    "530": {
+        "title": "Darkness",
+        "coordinates": "(57,58)",
+        "terrain": "NORMAL",
+        "s": 577,
+        "e": 526,
+        "w": 559
+    },
+    "559": {
+        "title": "Darkness",
+        "coordinates": "(56,58)",
+        "terrain": "NORMAL",
+        "s": 572,
+        "e": 530,
+        "w": 569
+    },
+    "569": {
+        "title": "Darkness",
+        "coordinates": "(55,58)",
+        "terrain": "NORMAL",
+        "e": 559,
+        "w": 615
+    },
+    "615": {
+        "title": "Darkness",
+        "coordinates": "(54,58)",
+        "terrain": "NORMAL",
+        "e": 569
+    },
+    "572": {
+        "title": "Darkness",
+        "coordinates": "(56,57)",
+        "terrain": "NORMAL",
+        "n": 559,
+        "s": 621,
+        "w": 607
+    },
+    "607": {
+        "title": "Darkness",
+        "coordinates": "(55,57)",
+        "terrain": "NORMAL",
+        "s": 640,
+        "e": 572,
+        "w": 630
+    },
+    "630": {
+        "title": "Darkness",
+        "coordinates": "(54,57)",
+        "terrain": "NORMAL",
+        "e": 607,
+        "w": 755
+    },
+    "755": {
+        "title": "Darkness",
+        "coordinates": "(53,57)",
+        "terrain": "NORMAL",
+        "e": 630,
+        "w": 766
+    },
+    "766": {
+        "title": "Darkness",
+        "coordinates": "(52,57)",
+        "terrain": "NORMAL",
+        "s": 931,
+        "e": 755,
+        "w": 857
+    },
+    "857": {
+        "title": "Darkness",
+        "coordinates": "(51,57)",
+        "terrain": "NORMAL",
+        "s": 875,
+        "e": 766,
+        "w": 918
+    },
+    "875": {
+        "title": "Darkness",
+        "coordinates": "(51,56)",
+        "terrain": "NORMAL",
+        "n": 857,
+        "s": 989
+    },
+    "989": {
+        "title": "Darkness",
+        "coordinates": "(51,55)",
+        "terrain": "NORMAL",
+        "n": 875
+    },
+    "918": {
+        "title": "Darkness",
+        "coordinates": "(50,57)",
+        "terrain": "NORMAL",
+        "n": 933,
+        "e": 857,
+        "w": 994
+    },
+    "994": {
+        "title": "Darkness",
+        "coordinates": "(49,57)",
+        "terrain": "NORMAL",
+        "e": 918
+    },
+    "933": {
+        "title": "Darkness",
+        "coordinates": "(50,58)",
+        "terrain": "NORMAL",
+        "s": 918
+    },
+    "931": {
+        "title": "Darkness",
+        "coordinates": "(52,56)",
+        "terrain": "NORMAL",
+        "n": 766
+    },
+    "640": {
+        "title": "Darkness",
+        "coordinates": "(55,56)",
+        "terrain": "NORMAL",
+        "n": 607,
+        "w": 693
+    },
+    "693": {
+        "title": "Darkness",
+        "coordinates": "(54,56)",
+        "terrain": "NORMAL",
+        "s": 694,
+        "e": 640,
+        "w": 765
+    },
+    "765": {
+        "title": "Darkness",
+        "coordinates": "(53,56)",
+        "terrain": "NORMAL",
+        "s": 870,
+        "e": 693
+    },
+    "870": {
+        "title": "Darkness",
+        "coordinates": "(53,55)",
+        "terrain": "NORMAL",
+        "n": 765,
+        "w": 882
+    },
+    "882": {
+        "title": "Darkness",
+        "coordinates": "(52,55)",
+        "terrain": "NORMAL",
+        "e": 870
+    },
+    "694": {
+        "title": "Darkness",
+        "coordinates": "(54,55)",
+        "terrain": "NORMAL",
+        "n": 693
+    },
+    "621": {
+        "title": "Darkness",
+        "coordinates": "(56,56)",
+        "terrain": "NORMAL",
+        "n": 572,
+        "s": 634
+    },
+    "634": {
+        "title": "Darkness",
+        "coordinates": "(56,55)",
+        "terrain": "NORMAL",
+        "n": 621,
+        "s": 639,
+        "w": 636
+    },
+    "636": {
+        "title": "Darkness",
+        "coordinates": "(55,55)",
+        "terrain": "NORMAL",
+        "e": 634
+    },
+    "639": {
+        "title": "Darkness",
+        "coordinates": "(56,54)",
+        "terrain": "NORMAL",
+        "n": 634,
+        "s": 653,
+        "w": 702
+    },
+    "702": {
+        "title": "Darkness",
+        "coordinates": "(55,54)",
+        "terrain": "NORMAL",
+        "e": 639,
+        "w": 715
+    },
+    "715": {
+        "title": "Darkness",
+        "coordinates": "(54,54)",
+        "terrain": "NORMAL",
+        "e": 702,
+        "w": 791
+    },
+    "791": {
+        "title": "Darkness",
+        "coordinates": "(53,54)",
+        "terrain": "NORMAL",
+        "s": 855,
+        "e": 715,
+        "w": 852
+    },
+    "852": {
+        "title": "Darkness",
+        "coordinates": "(52,54)",
+        "terrain": "NORMAL",
+        "s": 903,
+        "e": 791,
+        "w": 978
+    },
+    "978": {
+        "title": "Darkness",
+        "coordinates": "(51,54)",
+        "terrain": "NORMAL",
+        "e": 852
+    },
+    "903": {
+        "title": "Darkness",
+        "coordinates": "(52,53)",
+        "terrain": "NORMAL",
+        "n": 852,
+        "w": 951
+    },
+    "951": {
+        "title": "Darkness",
+        "coordinates": "(51,53)",
+        "terrain": "NORMAL",
+        "e": 903
+    },
+    "855": {
+        "title": "Darkness",
+        "coordinates": "(53,53)",
+        "terrain": "NORMAL",
+        "n": 791
+    },
+    "653": {
+        "title": "Darkness",
+        "coordinates": "(56,53)",
+        "terrain": "NORMAL",
+        "n": 639,
+        "s": 661,
+        "w": 690
+    },
+    "690": {
+        "title": "Darkness",
+        "coordinates": "(55,53)",
+        "terrain": "NORMAL",
+        "e": 653,
+        "w": 817
+    },
+    "817": {
+        "title": "Darkness",
+        "coordinates": "(54,53)",
+        "terrain": "NORMAL",
+        "e": 690
+    },
+    "661": {
+        "title": "Darkness",
+        "coordinates": "(56,52)",
+        "terrain": "NORMAL",
+        "n": 653,
+        "w": 788
+    },
+    "788": {
+        "title": "Darkness",
+        "coordinates": "(55,52)",
+        "terrain": "NORMAL",
+        "e": 661,
+        "w": 867
+    },
+    "867": {
+        "title": "Darkness",
+        "coordinates": "(54,52)",
+        "terrain": "NORMAL",
+        "e": 788,
+        "w": 881
+    },
+    "881": {
+        "title": "Darkness",
+        "coordinates": "(53,52)",
+        "terrain": "NORMAL",
+        "s": 898,
+        "e": 867,
+        "w": 884
+    },
+    "898": {
+        "title": "Darkness",
+        "coordinates": "(53,51)",
+        "terrain": "NORMAL",
+        "n": 881
+    },
+    "884": {
+        "title": "Darkness",
+        "coordinates": "(52,52)",
+        "terrain": "NORMAL",
+        "e": 881
+    },
+    "577": {
+        "title": "Darkness",
+        "coordinates": "(57,57)",
+        "terrain": "NORMAL",
+        "n": 530,
+        "s": 589
+    },
+    "589": {
+        "title": "Darkness",
+        "coordinates": "(57,56)",
+        "terrain": "NORMAL",
+        "n": 577
+    },
+    "538": {
+        "title": "Darkness",
+        "coordinates": "(58,57)",
+        "terrain": "NORMAL",
+        "n": 526,
+        "s": 564
+    },
+    "564": {
+        "title": "Darkness",
+        "coordinates": "(58,56)",
+        "terrain": "NORMAL",
+        "n": 538,
+        "s": 586
+    },
+    "586": {
+        "title": "Darkness",
+        "coordinates": "(58,55)",
+        "terrain": "NORMAL",
+        "n": 564,
+        "s": 619,
+        "w": 599
+    },
+    "619": {
+        "title": "Darkness",
+        "coordinates": "(58,54)",
+        "terrain": "NORMAL",
+        "n": 586,
+        "s": 670
+    },
+    "670": {
+        "title": "Darkness",
+        "coordinates": "(58,53)",
+        "terrain": "NORMAL",
+        "n": 619,
+        "s": 707
+    },
+    "707": {
+        "title": "Darkness",
+        "coordinates": "(58,52)",
+        "terrain": "NORMAL",
+        "n": 670,
+        "s": 719
+    },
+    "719": {
+        "title": "Darkness",
+        "coordinates": "(58,51)",
+        "terrain": "NORMAL",
+        "n": 707,
+        "s": 749,
+        "e": 800
+    },
+    "800": {
+        "title": "Darkness",
+        "coordinates": "(59,51)",
+        "terrain": "NORMAL",
+        "w": 719
+    },
+    "749": {
+        "title": "Darkness",
+        "coordinates": "(58,50)",
+        "terrain": "NORMAL",
+        "n": 719,
+        "s": 859,
+        "e": 822
+    },
+    "822": {
+        "title": "Darkness",
+        "coordinates": "(59,50)",
+        "terrain": "NORMAL",
+        "s": 872,
+        "w": 749
+    },
+    "872": {
+        "title": "Darkness",
+        "coordinates": "(59,49)",
+        "terrain": "NORMAL",
+        "n": 822,
+        "s": 906,
+        "e": 968
+    },
+    "968": {
+        "title": "Darkness",
+        "coordinates": "(60,49)",
+        "terrain": "NORMAL",
+        "w": 872
+    },
+    "906": {
+        "title": "Darkness",
+        "coordinates": "(59,48)",
+        "terrain": "NORMAL",
+        "n": 872
+    },
+    "859": {
+        "title": "Darkness",
+        "coordinates": "(58,49)",
+        "terrain": "NORMAL",
+        "n": 749,
+        "s": 938
+    },
+    "938": {
+        "title": "Darkness",
+        "coordinates": "(58,48)",
+        "terrain": "NORMAL",
+        "n": 859,
+        "s": 975
+    },
+    "975": {
+        "title": "Darkness",
+        "coordinates": "(58,47)",
+        "terrain": "NORMAL",
+        "n": 938,
+        "s": 983
+    },
+    "983": {
+        "title": "Darkness",
+        "coordinates": "(58,46)",
+        "terrain": "NORMAL",
+        "n": 975
+    },
+    "599": {
+        "title": "Darkness",
+        "coordinates": "(57,55)",
+        "terrain": "NORMAL",
+        "s": 632,
+        "e": 586
+    },
+    "632": {
+        "title": "Darkness",
+        "coordinates": "(57,54)",
+        "terrain": "NORMAL",
+        "n": 599,
+        "s": 654
+    },
+    "654": {
+        "title": "Darkness",
+        "coordinates": "(57,53)",
+        "terrain": "NORMAL",
+        "n": 632,
+        "s": 677
+    },
+    "677": {
+        "title": "Darkness",
+        "coordinates": "(57,52)",
+        "terrain": "NORMAL",
+        "n": 654,
+        "s": 691
+    },
+    "691": {
+        "title": "Darkness",
+        "coordinates": "(57,51)",
+        "terrain": "NORMAL",
+        "n": 677,
+        "s": 716,
+        "w": 704
+    },
+    "716": {
+        "title": "Darkness",
+        "coordinates": "(57,50)",
+        "terrain": "NORMAL",
+        "n": 691,
+        "s": 836,
+        "w": 761
+    },
+    "836": {
+        "title": "Darkness",
+        "coordinates": "(57,49)",
+        "terrain": "NORMAL",
+        "n": 716,
+        "s": 860
+    },
+    "860": {
+        "title": "Darkness",
+        "coordinates": "(57,48)",
+        "terrain": "NORMAL",
+        "n": 836,
+        "s": 941
+    },
+    "941": {
+        "title": "Darkness",
+        "coordinates": "(57,47)",
+        "terrain": "NORMAL",
+        "n": 860,
+        "s": 947
+    },
+    "947": {
+        "title": "Darkness",
+        "coordinates": "(57,46)",
+        "terrain": "NORMAL",
+        "n": 941
+    },
+    "761": {
+        "title": "Darkness",
+        "coordinates": "(56,50)",
+        "terrain": "NORMAL",
+        "s": 863,
+        "e": 716,
+        "w": 837
+    },
+    "863": {
+        "title": "Darkness",
+        "coordinates": "(56,49)",
+        "terrain": "NORMAL",
+        "n": 761,
+        "s": 913,
+        "w": 873
+    },
+    "913": {
+        "title": "Darkness",
+        "coordinates": "(56,48)",
+        "terrain": "NORMAL",
+        "n": 863,
+        "s": 922
+    },
+    "922": {
+        "title": "Darkness",
+        "coordinates": "(56,47)",
+        "terrain": "NORMAL",
+        "n": 913,
+        "s": 964,
+        "w": 959
+    },
+    "964": {
+        "title": "Darkness",
+        "coordinates": "(56,46)",
+        "terrain": "NORMAL",
+        "n": 922
+    },
+    "959": {
+        "title": "Darkness",
+        "coordinates": "(55,47)",
+        "terrain": "NORMAL",
+        "e": 922
+    },
+    "873": {
+        "title": "Darkness",
+        "coordinates": "(55,49)",
+        "terrain": "NORMAL",
+        "s": 914,
+        "e": 863,
+        "w": 899
+    },
+    "914": {
+        "title": "Darkness",
+        "coordinates": "(55,48)",
+        "terrain": "NORMAL",
+        "n": 873
+    },
+    "899": {
+        "title": "Darkness",
+        "coordinates": "(54,49)",
+        "terrain": "NORMAL",
+        "e": 873
+    },
+    "837": {
+        "title": "Darkness",
+        "coordinates": "(55,50)",
+        "terrain": "NORMAL",
+        "e": 761,
+        "w": 948
+    },
+    "948": {
+        "title": "Darkness",
+        "coordinates": "(54,50)",
+        "terrain": "NORMAL",
+        "e": 837,
+        "w": 998
+    },
+    "998": {
+        "title": "Darkness",
+        "coordinates": "(53,50)",
+        "terrain": "NORMAL",
+        "e": 948
+    },
+    "704": {
+        "title": "Darkness",
+        "coordinates": "(56,51)",
+        "terrain": "NORMAL",
+        "e": 691,
+        "w": 774
+    },
+    "774": {
+        "title": "Darkness",
+        "coordinates": "(55,51)",
+        "terrain": "NORMAL",
+        "e": 704,
+        "w": 842
+    },
+    "842": {
+        "title": "Darkness",
+        "coordinates": "(54,51)",
+        "terrain": "NORMAL",
+        "e": 774
+    },
+    "501": {
+        "title": "Darkness",
+        "coordinates": "(59,60)",
+        "terrain": "NORMAL",
+        "e": 500
+    },
+    "504": {
+        "title": "Darkness",
+        "coordinates": "(60,61)",
+        "terrain": "NORMAL",
+        "n": 506,
+        "s": 500,
+        "e": 544,
+        "w": 523
+    },
+    "544": {
+        "title": "Darkness",
+        "coordinates": "(61,61)",
+        "terrain": "NORMAL",
+        "e": 552,
+        "w": 504
+    },
+    "552": {
+        "title": "Darkness",
+        "coordinates": "(62,61)",
+        "terrain": "NORMAL",
+        "e": 604,
+        "w": 544
+    },
+    "604": {
+        "title": "Darkness",
+        "coordinates": "(63,61)",
+        "terrain": "NORMAL",
+        "w": 552
+    },
+    "523": {
+        "title": "Darkness",
+        "coordinates": "(59,61)",
+        "terrain": "NORMAL",
+        "e": 504
+    },
+    "506": {
+        "title": "Darkness",
+        "coordinates": "(60,62)",
+        "terrain": "NORMAL",
+        "n": 507,
+        "s": 504,
+        "e": 531,
+        "w": 529
+    },
+    "531": {
+        "title": "Darkness",
+        "coordinates": "(61,62)",
+        "terrain": "NORMAL",
+        "w": 506
+    },
+    "529": {
+        "title": "Darkness",
+        "coordinates": "(59,62)",
+        "terrain": "NORMAL",
+        "e": 506
+    },
+    "507": {
+        "title": "Darkness",
+        "coordinates": "(60,63)",
+        "terrain": "NORMAL",
+        "n": 514,
+        "s": 506,
+        "e": 518,
+        "w": 511
+    },
+    "511": {
+        "title": "Darkness",
+        "coordinates": "(59,63)",
+        "terrain": "NORMAL",
+        "n": 512,
+        "e": 507,
+        "w": 516
+    },
+    "516": {
+        "title": "Darkness",
+        "coordinates": "(58,63)",
+        "terrain": "NORMAL",
+        "s": 528,
+        "e": 511,
+        "w": 527
+    },
+    "528": {
+        "title": "Darkness",
+        "coordinates": "(58,62)",
+        "terrain": "NORMAL",
+        "n": 516,
+        "s": 555,
+        "w": 535
+    },
+    "555": {
+        "title": "Wishing Well",
+        "coordinates": "(58,61)",
+        "terrain": "NORMAL",
+        "n": 528
+    },
+    "535": {
+        "title": "Darkness",
+        "coordinates": "(57,62)",
+        "terrain": "NORMAL",
+        "e": 528,
+        "w": 562
+    },
+    "562": {
+        "title": "Darkness",
+        "coordinates": "(56,62)",
+        "terrain": "NORMAL",
+        "e": 535,
+        "w": 566
+    },
+    "566": {
+        "title": "Darkness",
+        "coordinates": "(55,62)",
+        "terrain": "NORMAL",
+        "s": 596,
+        "e": 562,
+        "w": 581
+    },
+    "596": {
+        "title": "Darkness",
+        "coordinates": "(55,61)",
+        "terrain": "NORMAL",
+        "n": 566,
+        "w": 597
+    },
+    "597": {
+        "title": "Darkness",
+        "coordinates": "(54,61)",
+        "terrain": "NORMAL",
+        "s": 626,
+        "e": 596,
+        "w": 657
+    },
+    "657": {
+        "title": "Darkness",
+        "coordinates": "(53,61)",
+        "terrain": "NORMAL",
+        "s": 705,
+        "e": 597
+    },
+    "705": {
+        "title": "Darkness",
+        "coordinates": "(53,60)",
+        "terrain": "NORMAL",
+        "n": 657,
+        "w": 708
+    },
+    "708": {
+        "title": "Darkness",
+        "coordinates": "(52,60)",
+        "terrain": "NORMAL",
+        "e": 705
+    },
+    "626": {
+        "title": "Darkness",
+        "coordinates": "(54,60)",
+        "terrain": "NORMAL",
+        "n": 597
+    },
+    "581": {
+        "title": "Darkness",
+        "coordinates": "(54,62)",
+        "terrain": "NORMAL",
+        "e": 566,
+        "w": 614
+    },
+    "614": {
+        "title": "Darkness",
+        "coordinates": "(53,62)",
+        "terrain": "NORMAL",
+        "e": 581
+    },
+    "527": {
+        "title": "Darkness",
+        "coordinates": "(57,63)",
+        "terrain": "NORMAL",
+        "e": 516,
+        "w": 537
+    },
+    "537": {
+        "title": "Darkness",
+        "coordinates": "(56,63)",
+        "terrain": "NORMAL",
+        "e": 527,
+        "w": 547
+    },
+    "547": {
+        "title": "Darkness",
+        "coordinates": "(55,63)",
+        "terrain": "NORMAL",
+        "e": 537,
+        "w": 575
+    },
+    "575": {
+        "title": "Darkness",
+        "coordinates": "(54,63)",
+        "terrain": "NORMAL",
+        "e": 547,
+        "w": 613
+    },
+    "613": {
+        "title": "Darkness",
+        "coordinates": "(53,63)",
+        "terrain": "NORMAL",
+        "e": 575,
+        "w": 616
+    },
+    "616": {
+        "title": "Darkness",
+        "coordinates": "(52,63)",
+        "terrain": "NORMAL",
+        "n": 638,
+        "s": 620,
+        "e": 613,
+        "w": 628
+    },
+    "620": {
+        "title": "Darkness",
+        "coordinates": "(52,62)",
+        "terrain": "NORMAL",
+        "n": 616,
+        "s": 660,
+        "w": 692
+    },
+    "692": {
+        "title": "Darkness",
+        "coordinates": "(51,62)",
+        "terrain": "NORMAL",
+        "s": 698,
+        "e": 620,
+        "w": 710
+    },
+    "710": {
+        "title": "Darkness",
+        "coordinates": "(50,62)",
+        "terrain": "NORMAL",
+        "e": 692
+    },
+    "698": {
+        "title": "Darkness",
+        "coordinates": "(51,61)",
+        "terrain": "NORMAL",
+        "n": 692,
+        "s": 714,
+        "w": 742
+    },
+    "742": {
+        "title": "Darkness",
+        "coordinates": "(50,61)",
+        "terrain": "NORMAL",
+        "e": 698,
+        "w": 843
+    },
+    "843": {
+        "title": "Darkness",
+        "coordinates": "(49,61)",
+        "terrain": "NORMAL",
+        "e": 742
+    },
+    "714": {
+        "title": "Darkness",
+        "coordinates": "(51,60)",
+        "terrain": "NORMAL",
+        "n": 698,
+        "w": 783
+    },
+    "783": {
+        "title": "Darkness",
+        "coordinates": "(50,60)",
+        "terrain": "NORMAL",
+        "e": 714,
+        "w": 871
+    },
+    "871": {
+        "title": "Darkness",
+        "coordinates": "(49,60)",
+        "terrain": "NORMAL",
+        "s": 942,
+        "e": 783
+    },
+    "942": {
+        "title": "Darkness",
+        "coordinates": "(49,59)",
+        "terrain": "NORMAL",
+        "n": 871
+    },
+    "660": {
+        "title": "Darkness",
+        "coordinates": "(52,61)",
+        "terrain": "NORMAL",
+        "n": 620
+    },
+    "628": {
+        "title": "Darkness",
+        "coordinates": "(51,63)",
+        "terrain": "NORMAL",
+        "n": 671,
+        "e": 616,
+        "w": 681
+    },
+    "681": {
+        "title": "Darkness",
+        "coordinates": "(50,63)",
+        "terrain": "NORMAL",
+        "e": 628,
+        "w": 685
+    },
+    "685": {
+        "title": "Darkness",
+        "coordinates": "(49,63)",
+        "terrain": "NORMAL",
+        "n": 767,
+        "s": 744,
+        "e": 681,
+        "w": 725
+    },
+    "767": {
+        "title": "Darkness",
+        "coordinates": "(49,64)",
+        "terrain": "NORMAL",
+        "n": 796,
+        "s": 685,
+        "w": 819
+    },
+    "796": {
+        "title": "Darkness",
+        "coordinates": "(49,65)",
+        "terrain": "NORMAL",
+        "s": 767,
+        "w": 850
+    },
+    "850": {
+        "title": "Darkness",
+        "coordinates": "(48,65)",
+        "terrain": "NORMAL",
+        "n": 954,
+        "e": 796,
+        "w": 973
+    },
+    "954": {
+        "title": "Darkness",
+        "coordinates": "(48,66)",
+        "terrain": "NORMAL",
+        "s": 850
+    },
+    "973": {
+        "title": "Darkness",
+        "coordinates": "(47,65)",
+        "terrain": "NORMAL",
+        "n": 981,
+        "e": 850
+    },
+    "981": {
+        "title": "Darkness",
+        "coordinates": "(47,66)",
+        "terrain": "NORMAL",
+        "s": 973
+    },
+    "819": {
+        "title": "Darkness",
+        "coordinates": "(48,64)",
+        "terrain": "NORMAL",
+        "e": 767,
+        "w": 893
+    },
+    "893": {
+        "title": "Darkness",
+        "coordinates": "(47,64)",
+        "terrain": "NORMAL",
+        "e": 819,
+        "w": 944
+    },
+    "944": {
+        "title": "Darkness",
+        "coordinates": "(46,64)",
+        "terrain": "NORMAL",
+        "e": 893
+    },
+    "725": {
+        "title": "Darkness",
+        "coordinates": "(48,63)",
+        "terrain": "NORMAL",
+        "e": 685
+    },
+    "744": {
+        "title": "Darkness",
+        "coordinates": "(49,62)",
+        "terrain": "NORMAL",
+        "n": 685,
+        "w": 797
+    },
+    "797": {
+        "title": "Darkness",
+        "coordinates": "(48,62)",
+        "terrain": "NORMAL",
+        "s": 812,
+        "e": 744,
+        "w": 807
+    },
+    "807": {
+        "title": "Darkness",
+        "coordinates": "(47,62)",
+        "terrain": "NORMAL",
+        "n": 856,
+        "s": 864,
+        "e": 797,
+        "w": 869
+    },
+    "864": {
+        "title": "Darkness",
+        "coordinates": "(47,61)",
+        "terrain": "NORMAL",
+        "n": 807,
+        "s": 927
+    },
+    "927": {
+        "title": "Darkness",
+        "coordinates": "(47,60)",
+        "terrain": "NORMAL",
+        "n": 864
+    },
+    "869": {
+        "title": "Darkness",
+        "coordinates": "(46,62)",
+        "terrain": "NORMAL",
+        "e": 807
+    },
+    "856": {
+        "title": "Darkness",
+        "coordinates": "(47,63)",
+        "terrain": "NORMAL",
+        "s": 807
+    },
+    "812": {
+        "title": "Darkness",
+        "coordinates": "(48,61)",
+        "terrain": "NORMAL",
+        "n": 797,
+        "s": 892
+    },
+    "892": {
+        "title": "Darkness",
+        "coordinates": "(48,60)",
+        "terrain": "NORMAL",
+        "n": 812,
+        "s": 943
+    },
+    "943": {
+        "title": "Darkness",
+        "coordinates": "(48,59)",
+        "terrain": "NORMAL",
+        "n": 892,
+        "w": 952
+    },
+    "952": {
+        "title": "Darkness",
+        "coordinates": "(47,59)",
+        "terrain": "NORMAL",
+        "e": 943
+    },
+    "671": {
+        "title": "Darkness",
+        "coordinates": "(51,64)",
+        "terrain": "NORMAL",
+        "s": 628,
+        "w": 781
+    },
+    "781": {
+        "title": "Darkness",
+        "coordinates": "(50,64)",
+        "terrain": "NORMAL",
+        "n": 787,
+        "e": 671
+    },
+    "787": {
+        "title": "Darkness",
+        "coordinates": "(50,65)",
+        "terrain": "NORMAL",
+        "n": 861,
+        "s": 781
+    },
+    "861": {
+        "title": "Darkness",
+        "coordinates": "(50,66)",
+        "terrain": "NORMAL",
+        "n": 930,
+        "s": 787,
+        "w": 862
+    },
+    "862": {
+        "title": "Darkness",
+        "coordinates": "(49,66)",
+        "terrain": "NORMAL",
+        "n": 878,
+        "e": 861
+    },
+    "878": {
+        "title": "Darkness",
+        "coordinates": "(49,67)",
+        "terrain": "NORMAL",
+        "s": 862
+    },
+    "930": {
+        "title": "Darkness",
+        "coordinates": "(50,67)",
+        "terrain": "NORMAL",
+        "s": 861
+    },
+    "638": {
+        "title": "Darkness",
+        "coordinates": "(52,64)",
+        "terrain": "NORMAL",
+        "n": 647,
+        "s": 616
+    },
+    "647": {
+        "title": "Darkness",
+        "coordinates": "(52,65)",
+        "terrain": "NORMAL",
+        "n": 666,
+        "s": 638,
+        "w": 701
+    },
+    "701": {
+        "title": "Darkness",
+        "coordinates": "(51,65)",
+        "terrain": "NORMAL",
+        "e": 647
+    },
+    "666": {
+        "title": "Darkness",
+        "coordinates": "(52,66)",
+        "terrain": "NORMAL",
+        "n": 833,
+        "s": 647,
+        "e": 729,
+        "w": 803
+    },
+    "833": {
+        "title": "Darkness",
+        "coordinates": "(52,67)",
+        "terrain": "NORMAL",
+        "n": 900,
+        "s": 666
+    },
+    "900": {
+        "title": "Darkness",
+        "coordinates": "(52,68)",
+        "terrain": "NORMAL",
+        "n": 928,
+        "s": 833
+    },
+    "928": {
+        "title": "Darkness",
+        "coordinates": "(52,69)",
+        "terrain": "NORMAL",
+        "s": 900
+    },
+    "803": {
+        "title": "Darkness",
+        "coordinates": "(51,66)",
+        "terrain": "NORMAL",
+        "n": 834,
+        "e": 666
+    },
+    "834": {
+        "title": "Darkness",
+        "coordinates": "(51,67)",
+        "terrain": "NORMAL",
+        "n": 905,
+        "s": 803
+    },
+    "905": {
+        "title": "Darkness",
+        "coordinates": "(51,68)",
+        "terrain": "NORMAL",
+        "n": 977,
+        "s": 834
+    },
+    "977": {
+        "title": "Darkness",
+        "coordinates": "(51,69)",
+        "terrain": "NORMAL",
+        "s": 905
+    },
+    "729": {
+        "title": "Darkness",
+        "coordinates": "(53,66)",
+        "terrain": "NORMAL",
+        "n": 731,
+        "w": 666
+    },
+    "731": {
+        "title": "Darkness",
+        "coordinates": "(53,67)",
+        "terrain": "NORMAL",
+        "s": 729
+    },
+    "512": {
+        "title": "Darkness",
+        "coordinates": "(59,64)",
+        "terrain": "NORMAL",
+        "n": 534,
+        "s": 511,
+        "w": 541
+    },
+    "534": {
+        "title": "Darkness",
+        "coordinates": "(59,65)",
+        "terrain": "NORMAL",
+        "n": 551,
+        "s": 512
+    },
+    "551": {
+        "title": "Darkness",
+        "coordinates": "(59,66)",
+        "terrain": "NORMAL",
+        "n": 591,
+        "s": 534,
+        "w": 558
+    },
+    "591": {
+        "title": "Darkness",
+        "coordinates": "(59,67)",
+        "terrain": "NORMAL",
+        "n": 627,
+        "s": 551
+    },
+    "627": {
+        "title": "Darkness",
+        "coordinates": "(59,68)",
+        "terrain": "NORMAL",
+        "n": 643,
+        "s": 591
+    },
+    "643": {
+        "title": "Darkness",
+        "coordinates": "(59,69)",
+        "terrain": "NORMAL",
+        "n": 676,
+        "s": 627,
+        "w": 668
+    },
+    "668": {
+        "title": "Darkness",
+        "coordinates": "(58,69)",
+        "terrain": "NORMAL",
+        "n": 706,
+        "s": 738,
+        "e": 643,
+        "w": 688
+    },
+    "688": {
+        "title": "Darkness",
+        "coordinates": "(57,69)",
+        "terrain": "NORMAL",
+        "n": 745,
+        "e": 668,
+        "w": 730
+    },
+    "745": {
+        "title": "Darkness",
+        "coordinates": "(57,70)",
+        "terrain": "NORMAL",
+        "s": 688,
+        "w": 792
+    },
+    "792": {
+        "title": "Darkness",
+        "coordinates": "(56,70)",
+        "terrain": "NORMAL",
+        "e": 745
+    },
+    "730": {
+        "title": "Darkness",
+        "coordinates": "(56,69)",
+        "terrain": "NORMAL",
+        "e": 688
+    },
+    "738": {
+        "title": "Darkness",
+        "coordinates": "(58,68)",
+        "terrain": "NORMAL",
+        "n": 668
+    },
+    "706": {
+        "title": "Darkness",
+        "coordinates": "(58,70)",
+        "terrain": "NORMAL",
+        "n": 743,
+        "s": 668
+    },
+    "743": {
+        "title": "Darkness",
+        "coordinates": "(58,71)",
+        "terrain": "NORMAL",
+        "n": 760,
+        "s": 706,
+        "w": 750
+    },
+    "760": {
+        "title": "Darkness",
+        "coordinates": "(58,72)",
+        "terrain": "NORMAL",
+        "s": 743
+    },
+    "750": {
+        "title": "Darkness",
+        "coordinates": "(57,71)",
+        "terrain": "NORMAL",
+        "n": 776,
+        "e": 743,
+        "w": 840
+    },
+    "776": {
+        "title": "Darkness",
+        "coordinates": "(57,72)",
+        "terrain": "NORMAL",
+        "n": 777,
+        "s": 750,
+        "w": 805
+    },
+    "805": {
+        "title": "Darkness",
+        "coordinates": "(56,72)",
+        "terrain": "NORMAL",
+        "e": 776,
+        "w": 838
+    },
+    "838": {
+        "title": "Darkness",
+        "coordinates": "(55,72)",
+        "terrain": "NORMAL",
+        "n": 851,
+        "e": 805,
+        "w": 845
+    },
+    "845": {
+        "title": "Darkness",
+        "coordinates": "(54,72)",
+        "terrain": "NORMAL",
+        "n": 895,
+        "e": 838
+    },
+    "895": {
+        "title": "Darkness",
+        "coordinates": "(54,73)",
+        "terrain": "NORMAL",
+        "s": 845,
+        "w": 916
+    },
+    "916": {
+        "title": "Darkness",
+        "coordinates": "(53,73)",
+        "terrain": "NORMAL",
+        "s": 993,
+        "e": 895,
+        "w": 987
+    },
+    "993": {
+        "title": "Darkness",
+        "coordinates": "(53,72)",
+        "terrain": "NORMAL",
+        "n": 916
+    },
+    "987": {
+        "title": "Darkness",
+        "coordinates": "(52,73)",
+        "terrain": "NORMAL",
+        "e": 916
+    },
+    "851": {
+        "title": "Darkness",
+        "coordinates": "(55,73)",
+        "terrain": "NORMAL",
+        "n": 940,
+        "s": 838
+    },
+    "940": {
+        "title": "Darkness",
+        "coordinates": "(55,74)",
+        "terrain": "NORMAL",
+        "s": 851
+    },
+    "777": {
+        "title": "Darkness",
+        "coordinates": "(57,73)",
+        "terrain": "NORMAL",
+        "s": 776,
+        "e": 785,
+        "w": 894
+    },
+    "894": {
+        "title": "Darkness",
+        "coordinates": "(56,73)",
+        "terrain": "NORMAL",
+        "n": 935,
+        "e": 777
+    },
+    "935": {
+        "title": "Darkness",
+        "coordinates": "(56,74)",
+        "terrain": "NORMAL",
+        "n": 957,
+        "s": 894
+    },
+    "957": {
+        "title": "Darkness",
+        "coordinates": "(56,75)",
+        "terrain": "NORMAL",
+        "s": 935
+    },
+    "785": {
+        "title": "Darkness",
+        "coordinates": "(58,73)",
+        "terrain": "NORMAL",
+        "w": 777
+    },
+    "840": {
+        "title": "Darkness",
+        "coordinates": "(56,71)",
+        "terrain": "NORMAL",
+        "e": 750,
+        "w": 887
+    },
+    "887": {
+        "title": "Darkness",
+        "coordinates": "(55,71)",
+        "terrain": "NORMAL",
+        "e": 840,
+        "w": 949
+    },
+    "949": {
+        "title": "Darkness",
+        "coordinates": "(54,71)",
+        "terrain": "NORMAL",
+        "e": 887
+    },
+    "676": {
+        "title": "Darkness",
+        "coordinates": "(59,70)",
+        "terrain": "NORMAL",
+        "n": 726,
+        "s": 643,
+        "e": 686
+    },
+    "726": {
+        "title": "Darkness",
+        "coordinates": "(59,71)",
+        "terrain": "NORMAL",
+        "n": 773,
+        "s": 676,
+        "e": 746
+    },
+    "773": {
+        "title": "Darkness",
+        "coordinates": "(59,72)",
+        "terrain": "NORMAL",
+        "n": 789,
+        "s": 726
+    },
+    "789": {
+        "title": "Darkness",
+        "coordinates": "(59,73)",
+        "terrain": "NORMAL",
+        "s": 773,
+        "e": 795
+    },
+    "795": {
+        "title": "Darkness",
+        "coordinates": "(60,73)",
+        "terrain": "NORMAL",
+        "n": 804,
+        "w": 789
+    },
+    "804": {
+        "title": "Darkness",
+        "coordinates": "(60,74)",
+        "terrain": "NORMAL",
+        "n": 971,
+        "s": 795,
+        "e": 970,
+        "w": 811
+    },
+    "970": {
+        "title": "Darkness",
+        "coordinates": "(61,74)",
+        "terrain": "NORMAL",
+        "w": 804
+    },
+    "811": {
+        "title": "Darkness",
+        "coordinates": "(59,74)",
+        "terrain": "NORMAL",
+        "e": 804,
+        "w": 934
+    },
+    "934": {
+        "title": "Darkness",
+        "coordinates": "(58,74)",
+        "terrain": "NORMAL",
+        "n": 945,
+        "e": 811
+    },
+    "945": {
+        "title": "Darkness",
+        "coordinates": "(58,75)",
+        "terrain": "NORMAL",
+        "n": 967,
+        "s": 934
+    },
+    "967": {
+        "title": "Darkness",
+        "coordinates": "(58,76)",
+        "terrain": "NORMAL",
+        "s": 945
+    },
+    "971": {
+        "title": "Darkness",
+        "coordinates": "(60,75)",
+        "terrain": "NORMAL",
+        "s": 804
+    },
+    "746": {
+        "title": "Darkness",
+        "coordinates": "(60,71)",
+        "terrain": "NORMAL",
+        "n": 771,
+        "w": 726
+    },
+    "771": {
+        "title": "Darkness",
+        "coordinates": "(60,72)",
+        "terrain": "NORMAL",
+        "s": 746,
+        "e": 801
+    },
+    "801": {
+        "title": "Darkness",
+        "coordinates": "(61,72)",
+        "terrain": "NORMAL",
+        "w": 771
+    },
+    "686": {
+        "title": "Darkness",
+        "coordinates": "(60,70)",
+        "terrain": "NORMAL",
+        "w": 676
+    },
+    "558": {
+        "title": "Darkness",
+        "coordinates": "(58,66)",
+        "terrain": "NORMAL",
+        "e": 551,
+        "w": 587
+    },
+    "587": {
+        "title": "Darkness",
+        "coordinates": "(57,66)",
+        "terrain": "NORMAL",
+        "n": 594,
+        "e": 558,
+        "w": 592
+    },
+    "592": {
+        "title": "Darkness",
+        "coordinates": "(56,66)",
+        "terrain": "NORMAL",
+        "e": 587,
+        "w": 697
+    },
+    "697": {
+        "title": "Darkness",
+        "coordinates": "(55,66)",
+        "terrain": "NORMAL",
+        "e": 592
+    },
+    "594": {
+        "title": "Darkness",
+        "coordinates": "(57,67)",
+        "terrain": "NORMAL",
+        "n": 649,
+        "s": 587,
+        "e": 622,
+        "w": 641
+    },
+    "622": {
+        "title": "Darkness",
+        "coordinates": "(58,67)",
+        "terrain": "NORMAL",
+        "w": 594
+    },
+    "649": {
+        "title": "Darkness",
+        "coordinates": "(57,68)",
+        "terrain": "NORMAL",
+        "s": 594
+    },
+    "641": {
+        "title": "Darkness",
+        "coordinates": "(56,67)",
+        "terrain": "NORMAL",
+        "n": 663,
+        "e": 594,
+        "w": 683
+    },
+    "663": {
+        "title": "Darkness",
+        "coordinates": "(56,68)",
+        "terrain": "NORMAL",
+        "s": 641
+    },
+    "683": {
+        "title": "Darkness",
+        "coordinates": "(55,67)",
+        "terrain": "NORMAL",
+        "n": 713,
+        "e": 641
+    },
+    "713": {
+        "title": "Darkness",
+        "coordinates": "(55,68)",
+        "terrain": "NORMAL",
+        "n": 747,
+        "s": 683
+    },
+    "747": {
+        "title": "Darkness",
+        "coordinates": "(55,69)",
+        "terrain": "NORMAL",
+        "n": 839,
+        "s": 713,
+        "w": 828
+    },
+    "828": {
+        "title": "Darkness",
+        "coordinates": "(54,69)",
+        "terrain": "NORMAL",
+        "e": 747
+    },
+    "839": {
+        "title": "Darkness",
+        "coordinates": "(55,70)",
+        "terrain": "NORMAL",
+        "s": 747,
+        "w": 911
+    },
+    "911": {
+        "title": "Darkness",
+        "coordinates": "(54,70)",
+        "terrain": "NORMAL",
+        "e": 839,
+        "w": 921
+    },
+    "921": {
+        "title": "Darkness",
+        "coordinates": "(53,70)",
+        "terrain": "NORMAL",
+        "e": 911,
+        "w": 990
+    },
+    "990": {
+        "title": "Darkness",
+        "coordinates": "(52,70)",
+        "terrain": "NORMAL",
+        "e": 921,
+        "w": 991
+    },
+    "991": {
+        "title": "Darkness",
+        "coordinates": "(51,70)",
+        "terrain": "NORMAL",
+        "e": 990
+    },
+    "541": {
+        "title": "Darkness",
+        "coordinates": "(58,64)",
+        "terrain": "NORMAL",
+        "n": 543,
+        "e": 512,
+        "w": 546
+    },
+    "543": {
+        "title": "Darkness",
+        "coordinates": "(58,65)",
+        "terrain": "NORMAL",
+        "s": 541
+    },
+    "546": {
+        "title": "Darkness",
+        "coordinates": "(57,64)",
+        "terrain": "NORMAL",
+        "n": 557,
+        "e": 541,
+        "w": 548
+    },
+    "548": {
+        "title": "Darkness",
+        "coordinates": "(56,64)",
+        "terrain": "NORMAL",
+        "n": 655,
+        "e": 546,
+        "w": 605
+    },
+    "655": {
+        "title": "Darkness",
+        "coordinates": "(56,65)",
+        "terrain": "NORMAL",
+        "s": 548
+    },
+    "605": {
+        "title": "Darkness",
+        "coordinates": "(55,64)",
+        "terrain": "NORMAL",
+        "n": 679,
+        "e": 548,
+        "w": 611
+    },
+    "611": {
+        "title": "Darkness",
+        "coordinates": "(54,64)",
+        "terrain": "NORMAL",
+        "n": 656,
+        "e": 605,
+        "w": 624
+    },
+    "624": {
+        "title": "Darkness",
+        "coordinates": "(53,64)",
+        "terrain": "NORMAL",
+        "n": 689,
+        "e": 611
+    },
+    "689": {
+        "title": "Darkness",
+        "coordinates": "(53,65)",
+        "terrain": "NORMAL",
+        "s": 624
+    },
+    "656": {
+        "title": "Darkness",
+        "coordinates": "(54,65)",
+        "terrain": "NORMAL",
+        "n": 727,
+        "s": 611
+    },
+    "727": {
+        "title": "Darkness",
+        "coordinates": "(54,66)",
+        "terrain": "NORMAL",
+        "n": 759,
+        "s": 656
+    },
+    "759": {
+        "title": "Darkness",
+        "coordinates": "(54,67)",
+        "terrain": "NORMAL",
+        "n": 880,
+        "s": 727
+    },
+    "880": {
+        "title": "Darkness",
+        "coordinates": "(54,68)",
+        "terrain": "NORMAL",
+        "s": 759,
+        "w": 886
+    },
+    "886": {
+        "title": "Darkness",
+        "coordinates": "(53,68)",
+        "terrain": "NORMAL",
+        "e": 880
+    },
+    "679": {
+        "title": "Darkness",
+        "coordinates": "(55,65)",
+        "terrain": "NORMAL",
+        "s": 605
+    },
+    "557": {
+        "title": "Darkness",
+        "coordinates": "(57,65)",
+        "terrain": "NORMAL",
+        "s": 546
+    },
+    "518": {
+        "title": "Darkness",
+        "coordinates": "(61,63)",
+        "terrain": "NORMAL",
+        "e": 519,
+        "w": 507
+    },
+    "519": {
+        "title": "Darkness",
+        "coordinates": "(62,63)",
+        "terrain": "NORMAL",
+        "n": 563,
+        "s": 583,
+        "e": 520,
+        "w": 518
+    },
+    "563": {
+        "title": "Darkness",
+        "coordinates": "(62,64)",
+        "terrain": "NORMAL",
+        "s": 519
+    },
+    "520": {
+        "title": "Darkness",
+        "coordinates": "(63,63)",
+        "terrain": "NORMAL",
+        "n": 579,
+        "e": 603,
+        "w": 519
+    },
+    "603": {
+        "title": "Darkness",
+        "coordinates": "(64,63)",
+        "terrain": "NORMAL",
+        "n": 618,
+        "s": 609,
+        "w": 520
+    },
+    "618": {
+        "title": "Darkness",
+        "coordinates": "(64,64)",
+        "terrain": "NORMAL",
+        "s": 603,
+        "e": 631
+    },
+    "631": {
+        "title": "Darkness",
+        "coordinates": "(65,64)",
+        "terrain": "NORMAL",
+        "s": 646,
+        "w": 618
+    },
+    "646": {
+        "title": "Darkness",
+        "coordinates": "(65,63)",
+        "terrain": "NORMAL",
+        "n": 631,
+        "e": 662
+    },
+    "662": {
+        "title": "Darkness",
+        "coordinates": "(66,63)",
+        "terrain": "NORMAL",
+        "n": 675,
+        "w": 646
+    },
+    "675": {
+        "title": "Darkness",
+        "coordinates": "(66,64)",
+        "terrain": "NORMAL",
+        "s": 662,
+        "e": 768
+    },
+    "768": {
+        "title": "Darkness",
+        "coordinates": "(67,64)",
+        "terrain": "NORMAL",
+        "w": 675
+    },
+    "609": {
+        "title": "Darkness",
+        "coordinates": "(64,62)",
+        "terrain": "NORMAL",
+        "n": 603,
+        "s": 623,
+        "e": 652
+    },
+    "652": {
+        "title": "Darkness",
+        "coordinates": "(65,62)",
+        "terrain": "NORMAL",
+        "w": 609
+    },
+    "623": {
+        "title": "Darkness",
+        "coordinates": "(64,61)",
+        "terrain": "NORMAL",
+        "n": 609,
+        "e": 633
+    },
+    "633": {
+        "title": "Darkness",
+        "coordinates": "(65,61)",
+        "terrain": "NORMAL",
+        "e": 711,
+        "w": 623
+    },
+    "711": {
+        "title": "Darkness",
+        "coordinates": "(66,61)",
+        "terrain": "NORMAL",
+        "n": 721,
+        "e": 724,
+        "w": 633
+    },
+    "721": {
+        "title": "Darkness",
+        "coordinates": "(66,62)",
+        "terrain": "NORMAL",
+        "s": 711
+    },
+    "724": {
+        "title": "Darkness",
+        "coordinates": "(67,61)",
+        "terrain": "NORMAL",
+        "n": 737,
+        "s": 748,
+        "e": 728,
+        "w": 711
+    },
+    "737": {
+        "title": "Darkness",
+        "coordinates": "(67,62)",
+        "terrain": "NORMAL",
+        "n": 756,
+        "s": 724
+    },
+    "756": {
+        "title": "Darkness",
+        "coordinates": "(67,63)",
+        "terrain": "NORMAL",
+        "s": 737,
+        "e": 868
+    },
+    "868": {
+        "title": "Darkness",
+        "coordinates": "(68,63)",
+        "terrain": "NORMAL",
+        "n": 885,
+        "w": 756
+    },
+    "885": {
+        "title": "Darkness",
+        "coordinates": "(68,64)",
+        "terrain": "NORMAL",
+        "s": 868
+    },
+    "728": {
+        "title": "Darkness",
+        "coordinates": "(68,61)",
+        "terrain": "NORMAL",
+        "n": 741,
+        "e": 762,
+        "w": 724
+    },
+    "762": {
+        "title": "Darkness",
+        "coordinates": "(69,61)",
+        "terrain": "NORMAL",
+        "e": 874,
+        "w": 728
+    },
+    "874": {
+        "title": "Darkness",
+        "coordinates": "(70,61)",
+        "terrain": "NORMAL",
+        "e": 902,
+        "w": 762
+    },
+    "902": {
+        "title": "Darkness",
+        "coordinates": "(71,61)",
+        "terrain": "NORMAL",
+        "e": 956,
+        "w": 874
+    },
+    "956": {
+        "title": "Darkness",
+        "coordinates": "(72,61)",
+        "terrain": "NORMAL",
+        "e": 960,
+        "w": 902
+    },
+    "960": {
+        "title": "Darkness",
+        "coordinates": "(73,61)",
+        "terrain": "NORMAL",
+        "e": 966,
+        "w": 956
+    },
+    "966": {
+        "title": "Darkness",
+        "coordinates": "(74,61)",
+        "terrain": "NORMAL",
+        "e": 992,
+        "w": 960
+    },
+    "992": {
+        "title": "Darkness",
+        "coordinates": "(75,61)",
+        "terrain": "NORMAL",
+        "w": 966
+    },
+    "741": {
+        "title": "Darkness",
+        "coordinates": "(68,62)",
+        "terrain": "NORMAL",
+        "s": 728,
+        "e": 793
+    },
+    "793": {
+        "title": "Darkness",
+        "coordinates": "(69,62)",
+        "terrain": "NORMAL",
+        "n": 808,
+        "e": 901,
+        "w": 741
+    },
+    "901": {
+        "title": "Darkness",
+        "coordinates": "(70,62)",
+        "terrain": "NORMAL",
+        "w": 793
+    },
+    "808": {
+        "title": "Darkness",
+        "coordinates": "(69,63)",
+        "terrain": "NORMAL",
+        "n": 821,
+        "s": 793,
+        "e": 920
+    },
+    "920": {
+        "title": "Darkness",
+        "coordinates": "(70,63)",
+        "terrain": "NORMAL",
+        "e": 946,
+        "w": 808
+    },
+    "946": {
+        "title": "Darkness",
+        "coordinates": "(71,63)",
+        "terrain": "NORMAL",
+        "w": 920
+    },
+    "821": {
+        "title": "Darkness",
+        "coordinates": "(69,64)",
+        "terrain": "NORMAL",
+        "n": 974,
+        "s": 808,
+        "e": 953
+    },
+    "974": {
+        "title": "Darkness",
+        "coordinates": "(69,65)",
+        "terrain": "NORMAL",
+        "s": 821
+    },
+    "953": {
+        "title": "Darkness",
+        "coordinates": "(70,64)",
+        "terrain": "NORMAL",
+        "w": 821
+    },
+    "748": {
+        "title": "Darkness",
+        "coordinates": "(67,60)",
+        "terrain": "NORMAL",
+        "n": 724,
+        "s": 772,
+        "e": 764
+    },
+    "772": {
+        "title": "Darkness",
+        "coordinates": "(67,59)",
+        "terrain": "NORMAL",
+        "n": 748,
+        "s": 780
+    },
+    "780": {
+        "title": "Darkness",
+        "coordinates": "(67,58)",
+        "terrain": "NORMAL",
+        "n": 772,
+        "s": 818
+    },
+    "818": {
+        "title": "Darkness",
+        "coordinates": "(67,57)",
+        "terrain": "NORMAL",
+        "n": 780,
+        "s": 877,
+        "e": 829
+    },
+    "877": {
+        "title": "Darkness",
+        "coordinates": "(67,56)",
+        "terrain": "NORMAL",
+        "n": 818,
+        "s": 997,
+        "e": 937
+    },
+    "937": {
+        "title": "Darkness",
+        "coordinates": "(68,56)",
+        "terrain": "NORMAL",
+        "w": 877
+    },
+    "997": {
+        "title": "Darkness",
+        "coordinates": "(67,55)",
+        "terrain": "NORMAL",
+        "n": 877
+    },
+    "829": {
+        "title": "Darkness",
+        "coordinates": "(68,57)",
+        "terrain": "NORMAL",
+        "e": 912,
+        "w": 818
+    },
+    "912": {
+        "title": "Darkness",
+        "coordinates": "(69,57)",
+        "terrain": "NORMAL",
+        "w": 829
+    },
+    "764": {
+        "title": "Darkness",
+        "coordinates": "(68,60)",
+        "terrain": "NORMAL",
+        "s": 769,
+        "e": 848,
+        "w": 748
+    },
+    "769": {
+        "title": "Darkness",
+        "coordinates": "(68,59)",
+        "terrain": "NORMAL",
+        "n": 764,
+        "s": 799,
+        "e": 847
+    },
+    "799": {
+        "title": "Darkness",
+        "coordinates": "(68,58)",
+        "terrain": "NORMAL",
+        "n": 769,
+        "e": 908
+    },
+    "908": {
+        "title": "Darkness",
+        "coordinates": "(69,58)",
+        "terrain": "NORMAL",
+        "w": 799
+    },
+    "847": {
+        "title": "Darkness",
+        "coordinates": "(69,59)",
+        "terrain": "NORMAL",
+        "w": 769
+    },
+    "848": {
+        "title": "Darkness",
+        "coordinates": "(69,60)",
+        "terrain": "NORMAL",
+        "e": 853,
+        "w": 764
+    },
+    "853": {
+        "title": "Darkness",
+        "coordinates": "(70,60)",
+        "terrain": "NORMAL",
+        "s": 958,
+        "e": 939,
+        "w": 848
+    },
+    "939": {
+        "title": "Darkness",
+        "coordinates": "(71,60)",
+        "terrain": "NORMAL",
+        "w": 853
+    },
+    "958": {
+        "title": "Darkness",
+        "coordinates": "(70,59)",
+        "terrain": "NORMAL",
+        "n": 853,
+        "s": 972
+    },
+    "972": {
+        "title": "Darkness",
+        "coordinates": "(70,58)",
+        "terrain": "NORMAL",
+        "n": 958
+    },
+    "579": {
+        "title": "Darkness",
+        "coordinates": "(63,64)",
+        "terrain": "NORMAL",
+        "n": 601,
+        "s": 520
+    },
+    "601": {
+        "title": "Darkness",
+        "coordinates": "(63,65)",
+        "terrain": "NORMAL",
+        "n": 617,
+        "s": 579,
+        "e": 629
+    },
+    "629": {
+        "title": "Darkness",
+        "coordinates": "(64,65)",
+        "terrain": "NORMAL",
+        "n": 684,
+        "e": 667,
+        "w": 601
+    },
+    "684": {
+        "title": "Darkness",
+        "coordinates": "(64,66)",
+        "terrain": "NORMAL",
+        "n": 718,
+        "s": 629,
+        "e": 687
+    },
+    "687": {
+        "title": "Darkness",
+        "coordinates": "(65,66)",
+        "terrain": "NORMAL",
+        "e": 806,
+        "w": 684
+    },
+    "806": {
+        "title": "Darkness",
+        "coordinates": "(66,66)",
+        "terrain": "NORMAL",
+        "n": 909,
+        "w": 687
+    },
+    "909": {
+        "title": "Darkness",
+        "coordinates": "(66,67)",
+        "terrain": "NORMAL",
+        "n": 910,
+        "s": 806,
+        "e": 917
+    },
+    "917": {
+        "title": "Darkness",
+        "coordinates": "(67,67)",
+        "terrain": "NORMAL",
+        "e": 929,
+        "w": 909
+    },
+    "929": {
+        "title": "Darkness",
+        "coordinates": "(68,67)",
+        "terrain": "NORMAL",
+        "w": 917
+    },
+    "910": {
+        "title": "Darkness",
+        "coordinates": "(66,68)",
+        "terrain": "NORMAL",
+        "s": 909
+    },
+    "718": {
+        "title": "Darkness",
+        "coordinates": "(64,67)",
+        "terrain": "NORMAL",
+        "n": 734,
+        "s": 684,
+        "e": 782
+    },
+    "782": {
+        "title": "Darkness",
+        "coordinates": "(65,67)",
+        "terrain": "NORMAL",
+        "w": 718
+    },
+    "734": {
+        "title": "Darkness",
+        "coordinates": "(64,68)",
+        "terrain": "NORMAL",
+        "s": 718
+    },
+    "667": {
+        "title": "Darkness",
+        "coordinates": "(65,65)",
+        "terrain": "NORMAL",
+        "e": 717,
+        "w": 629
+    },
+    "717": {
+        "title": "Darkness",
+        "coordinates": "(66,65)",
+        "terrain": "NORMAL",
+        "e": 820,
+        "w": 667
+    },
+    "820": {
+        "title": "Darkness",
+        "coordinates": "(67,65)",
+        "terrain": "NORMAL",
+        "n": 866,
+        "e": 876,
+        "w": 717
+    },
+    "866": {
+        "title": "Darkness",
+        "coordinates": "(67,66)",
+        "terrain": "NORMAL",
+        "s": 820
+    },
+    "876": {
+        "title": "Darkness",
+        "coordinates": "(68,65)",
+        "terrain": "NORMAL",
+        "w": 820
+    },
+    "617": {
+        "title": "Darkness",
+        "coordinates": "(63,66)",
+        "terrain": "NORMAL",
+        "n": 645,
+        "s": 601
+    },
+    "645": {
+        "title": "Darkness",
+        "coordinates": "(63,67)",
+        "terrain": "NORMAL",
+        "s": 617
+    },
+    "583": {
+        "title": "Darkness",
+        "coordinates": "(62,62)",
+        "terrain": "NORMAL",
+        "n": 519,
+        "e": 595
+    },
+    "595": {
+        "title": "Darkness",
+        "coordinates": "(63,62)",
+        "terrain": "NORMAL",
+        "w": 583
+    },
+    "514": {
+        "title": "Darkness",
+        "coordinates": "(60,64)",
+        "terrain": "NORMAL",
+        "n": 521,
+        "s": 507,
+        "e": 515
+    },
+    "515": {
+        "title": "Darkness",
+        "coordinates": "(61,64)",
+        "terrain": "NORMAL",
+        "n": 576,
+        "w": 514
+    },
+    "576": {
+        "title": "Darkness",
+        "coordinates": "(61,65)",
+        "terrain": "NORMAL",
+        "n": 582,
+        "s": 515,
+        "e": 578
+    },
+    "582": {
+        "title": "Darkness",
+        "coordinates": "(61,66)",
+        "terrain": "NORMAL",
+        "n": 642,
+        "s": 576,
+        "e": 644
+    },
+    "644": {
+        "title": "Darkness",
+        "coordinates": "(62,66)",
+        "terrain": "NORMAL",
+        "n": 664,
+        "w": 582
+    },
+    "664": {
+        "title": "Darkness",
+        "coordinates": "(62,67)",
+        "terrain": "NORMAL",
+        "n": 680,
+        "s": 644
+    },
+    "680": {
+        "title": "Darkness",
+        "coordinates": "(62,68)",
+        "terrain": "NORMAL",
+        "s": 664
+    },
+    "642": {
+        "title": "Darkness",
+        "coordinates": "(61,67)",
+        "terrain": "NORMAL",
+        "s": 582
+    },
+    "578": {
+        "title": "Darkness",
+        "coordinates": "(62,65)",
+        "terrain": "NORMAL",
+        "w": 576
+    },
+    "521": {
+        "title": "Darkness",
+        "coordinates": "(60,65)",
+        "terrain": "NORMAL",
+        "n": 522,
+        "s": 514
+    },
+    "522": {
+        "title": "Darkness",
+        "coordinates": "(60,66)",
+        "terrain": "NORMAL",
+        "n": 536,
+        "s": 521
+    },
+    "536": {
+        "title": "Darkness",
+        "coordinates": "(60,67)",
+        "terrain": "NORMAL",
+        "n": 658,
+        "s": 522
+    },
+    "658": {
+        "title": "Darkness",
+        "coordinates": "(60,68)",
+        "terrain": "NORMAL",
+        "n": 678,
+        "s": 536,
+        "e": 672
+    },
+    "672": {
+        "title": "Darkness",
+        "coordinates": "(61,68)",
+        "terrain": "NORMAL",
+        "w": 658
+    },
+    "678": {
+        "title": "Darkness",
+        "coordinates": "(60,69)",
+        "terrain": "NORMAL",
+        "s": 658,
+        "e": 703
+    },
+    "703": {
+        "title": "Darkness",
+        "coordinates": "(61,69)",
+        "terrain": "NORMAL",
+        "n": 709,
+        "e": 733,
+        "w": 678
+    },
+    "733": {
+        "title": "Darkness",
+        "coordinates": "(62,69)",
+        "terrain": "NORMAL",
+        "e": 740,
+        "w": 703
+    },
+    "740": {
+        "title": "Darkness",
+        "coordinates": "(63,69)",
+        "terrain": "NORMAL",
+        "s": 770,
+        "e": 751,
+        "w": 733
+    },
+    "770": {
+        "title": "Darkness",
+        "coordinates": "(63,68)",
+        "terrain": "NORMAL",
+        "n": 740
+    },
+    "751": {
+        "title": "Darkness",
+        "coordinates": "(64,69)",
+        "terrain": "NORMAL",
+        "n": 810,
+        "e": 794,
+        "w": 740
+    },
+    "810": {
+        "title": "Darkness",
+        "coordinates": "(64,70)",
+        "terrain": "NORMAL",
+        "s": 751
+    },
+    "794": {
+        "title": "Darkness",
+        "coordinates": "(65,69)",
+        "terrain": "NORMAL",
+        "n": 802,
+        "s": 896,
+        "e": 841,
+        "w": 751
+    },
+    "896": {
+        "title": "Darkness",
+        "coordinates": "(65,68)",
+        "terrain": "NORMAL",
+        "n": 794
+    },
+    "802": {
+        "title": "Darkness",
+        "coordinates": "(65,70)",
+        "terrain": "NORMAL",
+        "n": 830,
+        "s": 794,
+        "e": 865
+    },
+    "865": {
+        "title": "Darkness",
+        "coordinates": "(66,70)",
+        "terrain": "NORMAL",
+        "n": 924,
+        "e": 897,
+        "w": 802
+    },
+    "897": {
+        "title": "Darkness",
+        "coordinates": "(67,70)",
+        "terrain": "NORMAL",
+        "e": 986,
+        "w": 865
+    },
+    "986": {
+        "title": "Darkness",
+        "coordinates": "(68,70)",
+        "terrain": "NORMAL",
+        "w": 897
+    },
+    "924": {
+        "title": "Darkness",
+        "coordinates": "(66,71)",
+        "terrain": "NORMAL",
+        "s": 865,
+        "e": 979
+    },
+    "979": {
+        "title": "Darkness",
+        "coordinates": "(67,71)",
+        "terrain": "NORMAL",
+        "w": 924
+    },
+    "830": {
+        "title": "Darkness",
+        "coordinates": "(65,71)",
+        "terrain": "NORMAL",
+        "s": 802
+    },
+    "841": {
+        "title": "Darkness",
+        "coordinates": "(66,69)",
+        "terrain": "NORMAL",
+        "e": 962,
+        "w": 794
+    },
+    "962": {
+        "title": "Darkness",
+        "coordinates": "(67,69)",
+        "terrain": "NORMAL",
+        "s": 963,
+        "w": 841
+    },
+    "963": {
+        "title": "Darkness",
+        "coordinates": "(67,68)",
+        "terrain": "NORMAL",
+        "n": 962,
+        "e": 982
+    },
+    "982": {
+        "title": "Darkness",
+        "coordinates": "(68,68)",
+        "terrain": "NORMAL",
+        "n": 995,
+        "w": 963
+    },
+    "995": {
+        "title": "Darkness",
+        "coordinates": "(68,69)",
+        "terrain": "NORMAL",
+        "s": 982,
+        "e": 996
+    },
+    "996": {
+        "title": "Darkness",
+        "coordinates": "(69,69)",
+        "terrain": "NORMAL",
+        "w": 995
+    },
+    "709": {
+        "title": "Darkness",
+        "coordinates": "(61,70)",
+        "terrain": "NORMAL",
+        "n": 736,
+        "s": 703,
+        "e": 712
+    },
+    "736": {
+        "title": "Darkness",
+        "coordinates": "(61,71)",
+        "terrain": "NORMAL",
+        "s": 709,
+        "e": 786
+    },
+    "786": {
+        "title": "Darkness",
+        "coordinates": "(62,71)",
+        "terrain": "NORMAL",
+        "n": 798,
+        "e": 961,
+        "w": 736
+    },
+    "961": {
+        "title": "Darkness",
+        "coordinates": "(63,71)",
+        "terrain": "NORMAL",
+        "w": 786
+    },
+    "798": {
+        "title": "Darkness",
+        "coordinates": "(62,72)",
+        "terrain": "NORMAL",
+        "n": 889,
+        "s": 786
+    },
+    "889": {
+        "title": "Darkness",
+        "coordinates": "(62,73)",
+        "terrain": "NORMAL",
+        "n": 919,
+        "s": 798,
+        "e": 923,
+        "w": 915
+    },
+    "915": {
+        "title": "Darkness",
+        "coordinates": "(61,73)",
+        "terrain": "NORMAL",
+        "e": 889
+    },
+    "923": {
+        "title": "Darkness",
+        "coordinates": "(63,73)",
+        "terrain": "NORMAL",
+        "w": 889
+    },
+    "919": {
+        "title": "Darkness",
+        "coordinates": "(62,74)",
+        "terrain": "NORMAL",
+        "s": 889
+    },
+    "712": {
+        "title": "Darkness",
+        "coordinates": "(62,70)",
+        "terrain": "NORMAL",
+        "e": 739,
+        "w": 709
+    },
+    "739": {
+        "title": "Darkness",
+        "coordinates": "(63,70)",
+        "terrain": "NORMAL",
+        "w": 712
+    },
+    "503": {
+        "title": "Darkness",
+        "coordinates": "(61,60)",
+        "terrain": "NORMAL",
+        "w": 500
     }
 }
