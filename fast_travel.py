@@ -36,6 +36,7 @@ if not args.room:
     print('Please choose room ($ python fast_travel.py --room <room number>)')
 else:
     current_room = get_current_room()
+    start_room = current_room['room_id']
     if current_room['errors'] is not None and len(current_room['errors']) > 0:
         print('!!! Cooldown Penalty !!!')
         cooldown(current_room)
@@ -48,8 +49,24 @@ else:
     
     print('\n== STARTING FAST TRAVEL ==\n')
 
+    # If dest in other realm, warp
+    if int(current_room['room_id']) < 500:
+        if int(args.room) < 500:
+            pass
+        elif int(args.room) > 499:
+            warp_res = warp()
+            start_room = warp_res['room_id']
+            cooldown(warp_res)
+    elif int(current_room['room_id']) > 499:
+        if int(args.room) > 499:
+            pass
+        elif int(args.room) < 500:
+            warp_res = warp()
+            start_room = warp_res['room_id']
+            cooldown(warp_res)
 
-    fast_travel(current_room['room_id'],
+    
+    fast_travel(start_room,
                 str(args.room),
                 collect_treasure=bool(args.collect_treasure))
 
