@@ -317,7 +317,7 @@ def dash_check(room_arr, dir_arr):
         last = direction
 
 def sell_all(current_room_id):
-    if current_room_id is not 1:
+    if current_room_id != 1:
         print('You can only sell at the shop.')
     else:
         print('========== Welcome to the shop!')
