@@ -102,7 +102,7 @@ def fast_travel(starting_room_id, destination_room_id, collect_treasure=False):
 
     # Check abilites
     stats = status()
-    print('Checking abilites')
+    print('Checking abilities')
     cooldown(stats)
     abilities = stats['abilities']
 
