@@ -1,1332 +1,1523 @@
 {
-    "7": {
+    "413": {
         "title": "A misty room",
-        "n": 8,
-        "e": 6,
-        "w": 56
+        "coordinates": "(62,48)",
+        "terrain": "NORMAL",
+        "n": 321
     },
-    "56": {
+    "321": {
         "title": "A misty room",
-        "e": 7,
-        "w": 61
+        "coordinates": "(62,49)",
+        "terrain": "NORMAL",
+        "s": 413,
+        "e": 307
     },
-    "61": {
+    "307": {
         "title": "A misty room",
-        "e": 56,
-        "w": 171
+        "coordinates": "(63,49)",
+        "terrain": "NORMAL",
+        "n": 230,
+        "s": 373,
+        "e": 371,
+        "w": 321
     },
-    "171": {
+    "373": {
         "title": "A misty room",
-        "e": 61
+        "coordinates": "(63,48)",
+        "terrain": "NORMAL",
+        "n": 307,
+        "s": 480
     },
-    "8": {
+    "480": {
         "title": "A misty room",
-        "s": 7,
-        "w": 16
+        "coordinates": "(63,47)",
+        "terrain": "NORMAL",
+        "n": 373
     },
-    "16": {
+    "230": {
         "title": "A misty room",
-        "n": 58,
-        "e": 8,
-        "w": 67
+        "coordinates": "(63,50)",
+        "terrain": "NORMAL",
+        "n": 199,
+        "s": 307,
+        "e": 297
     },
-    "6": {
+    "199": {
         "title": "A misty room",
-        "n": 2,
-        "w": 7
+        "coordinates": "(63,51)",
+        "terrain": "NORMAL",
+        "s": 230,
+        "w": 198
     },
-    "2": {
+    "198": {
         "title": "A misty room",
-        "n": 0,
-        "s": 6,
-        "e": 3
+        "coordinates": "(62,51)",
+        "terrain": "NORMAL",
+        "n": 166,
+        "s": 239,
+        "e": 199
+    },
+    "239": {
+        "title": "A misty room",
+        "coordinates": "(62,50)",
+        "terrain": "NORMAL",
+        "n": 198,
+        "w": 244
+    },
+    "244": {
+        "title": "A misty room",
+        "coordinates": "(61,50)",
+        "terrain": "NORMAL",
+        "n": 131,
+        "e": 239
+    },
+    "131": {
+        "title": "Mt. Holloway",
+        "coordinates": "(61,51)",
+        "terrain": "MOUNTAIN",
+        "n": 117,
+        "s": 244,
+        "w": 138
+    },
+    "138": {
+        "title": "A misty room",
+        "coordinates": "(60,51)",
+        "terrain": "NORMAL",
+        "s": 211,
+        "e": 131,
+        "w": 195
+    },
+    "211": {
+        "title": "A misty room",
+        "coordinates": "(60,50)",
+        "terrain": "NORMAL",
+        "n": 138
+    },
+    "195": {
+        "title": "A misty room",
+        "coordinates": "(59,51)",
+        "terrain": "NORMAL",
+        "s": 228,
+        "e": 138,
+        "w": 225
+    },
+    "228": {
+        "title": "A misty room",
+        "coordinates": "(59,50)",
+        "terrain": "NORMAL",
+        "n": 195,
+        "s": 281
+    },
+    "281": {
+        "title": "A misty room",
+        "coordinates": "(59,49)",
+        "terrain": "NORMAL",
+        "n": 228,
+        "s": 318,
+        "e": 309,
+        "w": 317
+    },
+    "317": {
+        "title": "A misty room",
+        "coordinates": "(58,49)",
+        "terrain": "NORMAL",
+        "s": 387,
+        "e": 281,
+        "w": 409
+    },
+    "387": {
+        "title": "A misty room",
+        "coordinates": "(58,48)",
+        "terrain": "NORMAL",
+        "n": 317,
+        "s": 417,
+        "w": 431
+    },
+    "417": {
+        "title": "A misty room",
+        "coordinates": "(58,47)",
+        "terrain": "NORMAL",
+        "n": 387
+    },
+    "431": {
+        "title": "A misty room",
+        "coordinates": "(57,48)",
+        "terrain": "NORMAL",
+        "e": 387,
+        "w": 492
+    },
+    "492": {
+        "title": "Sandofsky's Sanctum",
+        "coordinates": "(56,48)",
+        "terrain": "NORMAL",
+        "e": 431
+    },
+    "216": {
+        "title": "A Dark Cave",
+        "coordinates": "(56,67)",
+        "terrain": "CAVE",
+        "n": 234,
+        "e": 204,
+        "w": 218
+    },
+    "234": {
+        "title": "A Dark Cave",
+        "coordinates": "(56,68)",
+        "terrain": "CAVE",
+        "n": 368,
+        "s": 216,
+        "w": 252
+    },
+    "368": {
+        "title": "A Dark Cave",
+        "coordinates": "(56,69)",
+        "terrain": "CAVE",
+        "s": 234
+    },
+    "252": {
+        "title": "A Dark Cave",
+        "coordinates": "(55,68)",
+        "terrain": "CAVE",
+        "n": 284,
+        "e": 234
+    },
+    "284": {
+        "title": "A Dark Cave",
+        "coordinates": "(55,69)",
+        "terrain": "CAVE",
+        "n": 302,
+        "s": 252,
+        "w": 303
+    },
+    "303": {
+        "title": "A Dark Cave",
+        "coordinates": "(54,69)",
+        "terrain": "CAVE",
+        "n": 361,
+        "e": 284,
+        "w": 405
+    },
+    "361": {
+        "title": "A Dark Cave",
+        "coordinates": "(54,70)",
+        "terrain": "TRAP",
+        "n": 408,
+        "s": 303
+    },
+    "408": {
+        "title": "A Dark Cave",
+        "coordinates": "(54,71)",
+        "terrain": "CAVE",
+        "n": 458,
+        "s": 361,
+        "w": 423
+    },
+    "458": {
+        "title": "A Dark Cave",
+        "coordinates": "(54,72)",
+        "terrain": "CAVE",
+        "s": 408,
+        "w": 459
+    },
+    "459": {
+        "title": "A Dark Cave",
+        "coordinates": "(53,72)",
+        "terrain": "CAVE",
+        "e": 458
+    },
+    "423": {
+        "title": "A Dark Cave",
+        "coordinates": "(53,71)",
+        "terrain": "CAVE",
+        "e": 408,
+        "w": 454
+    },
+    "454": {
+        "title": "A Dark Cave",
+        "coordinates": "(52,71)",
+        "terrain": "CAVE",
+        "n": 470,
+        "e": 423
+    },
+    "470": {
+        "title": "A Dark Cave",
+        "coordinates": "(52,72)",
+        "terrain": "CAVE",
+        "s": 454
+    },
+    "405": {
+        "title": "A Dark Cave",
+        "coordinates": "(53,69)",
+        "terrain": "CAVE",
+        "n": 406,
+        "e": 303
+    },
+    "406": {
+        "title": "A Dark Cave",
+        "coordinates": "(53,70)",
+        "terrain": "CAVE",
+        "s": 405,
+        "w": 415
+    },
+    "415": {
+        "title": "A Dark Cave",
+        "coordinates": "(52,70)",
+        "terrain": "TRAP",
+        "e": 406,
+        "w": 418
+    },
+    "418": {
+        "title": "A Dark Cave",
+        "coordinates": "(51,70)",
+        "terrain": "CAVE",
+        "n": 425,
+        "s": 474,
+        "e": 415
+    },
+    "474": {
+        "title": "A Dark Cave",
+        "coordinates": "(51,69)",
+        "terrain": "CAVE",
+        "n": 418
+    },
+    "425": {
+        "title": "A Dark Cave",
+        "coordinates": "(51,71)",
+        "terrain": "CAVE",
+        "s": 418,
+        "w": 469
+    },
+    "469": {
+        "title": "A Dark Cave",
+        "coordinates": "(50,71)",
+        "terrain": "CAVE",
+        "e": 425
+    },
+    "302": {
+        "title": "A Dark Cave",
+        "coordinates": "(55,70)",
+        "terrain": "TRAP",
+        "n": 422,
+        "s": 284
+    },
+    "422": {
+        "title": "A Dark Cave",
+        "coordinates": "(55,71)",
+        "terrain": "TRAP",
+        "n": 426,
+        "s": 302
+    },
+    "426": {
+        "title": "A Dark Cave",
+        "coordinates": "(55,72)",
+        "terrain": "TRAP",
+        "n": 457,
+        "s": 422
+    },
+    "457": {
+        "title": "A Dark Cave",
+        "coordinates": "(55,73)",
+        "terrain": "TRAP",
+        "n": 461,
+        "s": 426
+    },
+    "461": {
+        "title": "Linh's Shrine",
+        "coordinates": "(55,74)",
+        "terrain": "CAVE",
+        "s": 457
+    },
+    "218": {
+        "title": "A Dark Cave",
+        "coordinates": "(55,67)",
+        "terrain": "CAVE",
+        "s": 263,
+        "e": 216,
+        "w": 242
+    },
+    "263": {
+        "title": "A Dark Cave",
+        "coordinates": "(55,66)",
+        "terrain": "CAVE",
+        "n": 218
+    },
+    "242": {
+        "title": "A Dark Cave",
+        "coordinates": "(54,67)",
+        "terrain": "TRAP",
+        "n": 287,
+        "s": 259,
+        "e": 218,
+        "w": 275
+    },
+    "259": {
+        "title": "A Dark Cave",
+        "coordinates": "(54,66)",
+        "terrain": "CAVE",
+        "n": 242,
+        "w": 310
+    },
+    "310": {
+        "title": "A Dark Cave",
+        "coordinates": "(53,66)",
+        "terrain": "CAVE",
+        "e": 259,
+        "w": 412
+    },
+    "412": {
+        "title": "A Dark Cave",
+        "coordinates": "(52,66)",
+        "terrain": "CAVE",
+        "s": 488,
+        "e": 310
+    },
+    "488": {
+        "title": "A Dark Cave",
+        "coordinates": "(52,65)",
+        "terrain": "CAVE",
+        "n": 412
+    },
+    "287": {
+        "title": "A Dark Cave",
+        "coordinates": "(54,68)",
+        "terrain": "CAVE",
+        "s": 242,
+        "w": 339
+    },
+    "339": {
+        "title": "A Dark Cave",
+        "coordinates": "(53,68)",
+        "terrain": "TRAP",
+        "e": 287,
+        "w": 445
+    },
+    "445": {
+        "title": "A Dark Cave",
+        "coordinates": "(52,68)",
+        "terrain": "CAVE",
+        "n": 447,
+        "e": 339,
+        "w": 450
+    },
+    "447": {
+        "title": "A Dark Cave",
+        "coordinates": "(52,69)",
+        "terrain": "CAVE",
+        "s": 445
+    },
+    "450": {
+        "title": "A Dark Cave",
+        "coordinates": "(51,68)",
+        "terrain": "CAVE",
+        "e": 445
+    },
+    "275": {
+        "title": "A misty room",
+        "coordinates": "(53,67)",
+        "terrain": "NORMAL",
+        "e": 242,
+        "w": 456
+    },
+    "456": {
+        "title": "A misty room",
+        "coordinates": "(52,67)",
+        "terrain": "NORMAL",
+        "e": 275,
+        "w": 499
+    },
+    "499": {
+        "title": "Glasowyn's Grave",
+        "coordinates": "(51,67)",
+        "terrain": "NORMAL",
+        "e": 456
+    },
+    "204": {
+        "title": "A misty room",
+        "coordinates": "(57,67)",
+        "terrain": "NORMAL",
+        "n": 219,
+        "e": 165,
+        "w": 216
+    },
+    "219": {
+        "title": "A misty room",
+        "coordinates": "(57,68)",
+        "terrain": "NORMAL",
+        "s": 204
+    },
+    "165": {
+        "title": "A misty room",
+        "coordinates": "(58,67)",
+        "terrain": "NORMAL",
+        "n": 203,
+        "s": 125,
+        "w": 204
+    },
+    "125": {
+        "title": "A misty room",
+        "coordinates": "(58,66)",
+        "terrain": "NORMAL",
+        "n": 165,
+        "e": 83,
+        "w": 237
+    },
+    "83": {
+        "title": "A misty room",
+        "coordinates": "(59,66)",
+        "terrain": "NORMAL",
+        "s": 76,
+        "e": 130,
+        "w": 125
+    },
+    "130": {
+        "title": "A misty room",
+        "coordinates": "(60,66)",
+        "terrain": "NORMAL",
+        "w": 83
+    },
+    "237": {
+        "title": "A misty room",
+        "coordinates": "(57,66)",
+        "terrain": "NORMAL",
+        "e": 125,
+        "w": 245
+    },
+    "245": {
+        "title": "A misty room",
+        "coordinates": "(56,66)",
+        "terrain": "NORMAL",
+        "s": 254,
+        "e": 237
+    },
+    "254": {
+        "title": "A misty room",
+        "coordinates": "(56,65)",
+        "terrain": "NORMAL",
+        "n": 245,
+        "w": 314
+    },
+    "314": {
+        "title": "A misty room",
+        "coordinates": "(55,65)",
+        "terrain": "NORMAL",
+        "e": 254
+    },
+    "203": {
+        "title": "A misty room",
+        "coordinates": "(58,68)",
+        "terrain": "NORMAL",
+        "n": 268,
+        "s": 165,
+        "e": 299
+    },
+    "299": {
+        "title": "A misty room",
+        "coordinates": "(59,68)",
+        "terrain": "NORMAL",
+        "e": 311,
+        "w": 203
+    },
+    "311": {
+        "title": "A misty room",
+        "coordinates": "(60,68)",
+        "terrain": "NORMAL",
+        "w": 299
+    },
+    "268": {
+        "title": "A misty room",
+        "coordinates": "(58,69)",
+        "terrain": "NORMAL",
+        "s": 203,
+        "e": 411,
+        "w": 312
+    },
+    "312": {
+        "title": "A misty room",
+        "coordinates": "(57,69)",
+        "terrain": "NORMAL",
+        "n": 328,
+        "e": 268
+    },
+    "328": {
+        "title": "A misty room",
+        "coordinates": "(57,70)",
+        "terrain": "NORMAL",
+        "n": 332,
+        "s": 312,
+        "e": 357,
+        "w": 363
+    },
+    "363": {
+        "title": "A misty room",
+        "coordinates": "(56,70)",
+        "terrain": "NORMAL",
+        "n": 372,
+        "e": 328
+    },
+    "372": {
+        "title": "A misty room",
+        "coordinates": "(56,71)",
+        "terrain": "NORMAL",
+        "n": 441,
+        "s": 363
+    },
+    "441": {
+        "title": "A misty room",
+        "coordinates": "(56,72)",
+        "terrain": "NORMAL",
+        "s": 372
+    },
+    "332": {
+        "title": "A misty room",
+        "coordinates": "(57,71)",
+        "terrain": "NORMAL",
+        "n": 350,
+        "s": 328
+    },
+    "350": {
+        "title": "A misty room",
+        "coordinates": "(57,72)",
+        "terrain": "NORMAL",
+        "n": 436,
+        "s": 332,
+        "e": 404
+    },
+    "404": {
+        "title": "A misty room",
+        "coordinates": "(58,72)",
+        "terrain": "NORMAL",
+        "n": 481,
+        "w": 350
+    },
+    "481": {
+        "title": "A misty room",
+        "coordinates": "(58,73)",
+        "terrain": "NORMAL",
+        "s": 404
+    },
+    "436": {
+        "title": "A misty room",
+        "coordinates": "(57,73)",
+        "terrain": "NORMAL",
+        "s": 350
+    },
+    "357": {
+        "title": "A misty room",
+        "coordinates": "(58,70)",
+        "terrain": "NORMAL",
+        "w": 328
+    },
+    "411": {
+        "title": "A misty room",
+        "coordinates": "(59,69)",
+        "terrain": "NORMAL",
+        "w": 268
+    },
+    "76": {
+        "title": "A misty room",
+        "coordinates": "(59,65)",
+        "terrain": "NORMAL",
+        "n": 83,
+        "e": 72,
+        "w": 110
+    },
+    "110": {
+        "title": "A misty room",
+        "coordinates": "(58,65)",
+        "terrain": "NORMAL",
+        "e": 76
+    },
+    "72": {
+        "title": "A misty room",
+        "coordinates": "(60,65)",
+        "terrain": "NORMAL",
+        "s": 63,
+        "w": 76
     },
     "63": {
         "title": "A misty room",
+        "coordinates": "(60,64)",
+        "terrain": "NORMAL",
         "n": 72,
         "s": 20,
         "w": 73
     },
-    "72": {
-        "title": "A misty room",
-        "s": 63,
-        "w": 76
-    },
-    "73": {
-        "title": "A misty room",
-        "e": 63
-    },
     "20": {
         "title": "A misty room",
+        "coordinates": "(60,63)",
+        "terrain": "NORMAL",
         "n": 63,
         "s": 19,
         "e": 27,
         "w": 46
     },
-    "27": {
-        "title": "A misty room",
-        "n": 40,
-        "s": 28,
-        "e": 30,
-        "w": 20
-    },
     "19": {
         "title": "A misty room",
+        "coordinates": "(60,62)",
+        "terrain": "NORMAL",
         "n": 20,
         "s": 10,
         "w": 77
     },
+    "77": {
+        "title": "A misty room",
+        "coordinates": "(59,62)",
+        "terrain": "NORMAL",
+        "e": 19
+    },
     "10": {
         "title": "A misty room",
+        "coordinates": "(60,61)",
+        "terrain": "NORMAL",
         "n": 19,
         "s": 0,
         "w": 43
     },
     "43": {
         "title": "A misty room",
+        "coordinates": "(59,61)",
+        "terrain": "NORMAL",
         "e": 10,
         "w": 47
     },
+    "47": {
+        "title": "A misty room",
+        "coordinates": "(58,61)",
+        "terrain": "NORMAL",
+        "n": 71,
+        "e": 43
+    },
+    "71": {
+        "title": "A misty room",
+        "coordinates": "(58,62)",
+        "terrain": "NORMAL",
+        "s": 47
+    },
     "0": {
         "title": "A brightly lit room",
+        "coordinates": "(60,60)",
+        "terrain": "NORMAL",
         "n": 10,
         "s": 2,
         "e": 4,
         "w": 1
     },
-    "77": {
+    "2": {
         "title": "A misty room",
-        "e": 19
+        "coordinates": "(60,59)",
+        "terrain": "NORMAL",
+        "n": 0,
+        "s": 6,
+        "e": 3
     },
-    "46": {
+    "6": {
         "title": "A misty room",
-        "e": 20,
-        "w": 62
+        "coordinates": "(60,58)",
+        "terrain": "NORMAL",
+        "n": 2,
+        "w": 7
     },
-    "62": {
+    "7": {
         "title": "A misty room",
-        "n": 64,
-        "e": 46,
-        "w": 84
+        "coordinates": "(59,58)",
+        "terrain": "NORMAL",
+        "n": 8,
+        "e": 6,
+        "w": 56
     },
-    "64": {
+    "8": {
         "title": "A misty room",
-        "s": 62,
-        "w": 82
+        "coordinates": "(59,59)",
+        "terrain": "NORMAL",
+        "s": 7,
+        "w": 16
     },
-    "82": {
+    "16": {
         "title": "A misty room",
-        "n": 191,
-        "e": 64
+        "coordinates": "(58,59)",
+        "terrain": "NORMAL",
+        "n": 58,
+        "e": 8,
+        "w": 67
     },
-    "191": {
+    "67": {
         "title": "A misty room",
-        "s": 82
+        "coordinates": "(57,59)",
+        "terrain": "NORMAL",
+        "e": 16,
+        "w": 162
     },
-    "40": {
+    "162": {
         "title": "A misty room",
-        "s": 27
+        "coordinates": "(56,59)",
+        "terrain": "NORMAL",
+        "e": 67
     },
-    "28": {
+    "58": {
         "title": "A misty room",
-        "n": 27
+        "coordinates": "(58,60)",
+        "terrain": "NORMAL",
+        "s": 16,
+        "w": 65
     },
-    "30": {
+    "65": {
         "title": "A misty room",
-        "s": 31,
-        "e": 32,
-        "w": 27
+        "coordinates": "(57,60)",
+        "terrain": "NORMAL",
+        "n": 74,
+        "e": 58,
+        "w": 139
     },
-    "31": {
+    "139": {
         "title": "A misty room",
-        "n": 30,
-        "e": 33
+        "coordinates": "(56,60)",
+        "terrain": "NORMAL",
+        "e": 65,
+        "w": 188
     },
-    "32": {
+    "188": {
         "title": "A misty room",
-        "n": 39,
-        "e": 54,
-        "w": 30
+        "coordinates": "(55,60)",
+        "terrain": "NORMAL",
+        "e": 139,
+        "w": 335
     },
-    "39": {
+    "335": {
         "title": "A misty room",
-        "n": 53,
-        "s": 32,
-        "e": 51,
-        "w": 41
+        "coordinates": "(54,60)",
+        "terrain": "NORMAL",
+        "e": 188,
+        "w": 366
     },
-    "51": {
+    "366": {
         "title": "A misty room",
-        "n": 69,
-        "e": 57,
-        "w": 39
+        "coordinates": "(53,60)",
+        "terrain": "NORMAL",
+        "e": 335
     },
-    "69": {
+    "74": {
         "title": "A misty room",
-        "n": 94,
-        "s": 51,
-        "e": 103
+        "coordinates": "(57,61)",
+        "terrain": "NORMAL",
+        "n": 87,
+        "s": 65,
+        "w": 161
     },
-    "103": {
+    "161": {
         "title": "A misty room",
-        "n": 160,
-        "w": 69
+        "coordinates": "(56,61)",
+        "terrain": "NORMAL",
+        "e": 74
     },
-    "41": {
+    "87": {
         "title": "A misty room",
-        "e": 39
+        "coordinates": "(57,62)",
+        "terrain": "NORMAL",
+        "s": 74
     },
-    "54": {
+    "56": {
         "title": "A misty room",
-        "w": 32
+        "coordinates": "(58,58)",
+        "terrain": "NORMAL",
+        "e": 7,
+        "w": 61
     },
-    "33": {
+    "61": {
         "title": "A misty room",
-        "e": 38,
-        "w": 31
+        "coordinates": "(57,58)",
+        "terrain": "NORMAL",
+        "e": 56,
+        "w": 171
     },
-    "38": {
+    "171": {
         "title": "A misty room",
-        "s": 59,
-        "e": 66,
-        "w": 33
-    },
-    "66": {
-        "title": "A misty room",
-        "n": 169,
-        "e": 123,
-        "w": 38
-    },
-    "169": {
-        "title": "A misty room",
-        "s": 66,
-        "e": 186
-    },
-    "123": {
-        "title": "A misty room",
-        "w": 66
-    },
-    "59": {
-        "title": "A misty room",
-        "n": 38,
-        "s": 104,
-        "e": 92
-    },
-    "92": {
-        "title": "A misty room",
-        "w": 59
-    },
-    "104": {
-        "title": "A misty room",
-        "n": 59,
-        "e": 107
-    },
-    "107": {
-        "title": "A misty room",
-        "s": 120,
-        "e": 121,
-        "w": 104
-    },
-    "120": {
-        "title": "A misty room",
-        "n": 107,
-        "e": 127
-    },
-    "121": {
-        "title": "A misty room",
-        "n": 128,
-        "e": 143,
-        "w": 107
-    },
-    "128": {
-        "title": "A misty room",
-        "s": 121,
-        "e": 189
-    },
-    "143": {
-        "title": "A misty room",
-        "e": 212,
-        "w": 121
-    },
-    "212": {
-        "title": "A misty room",
-        "w": 143
-    },
-    "189": {
-        "title": "A misty room",
-        "e": 255,
-        "w": 128
-    },
-    "255": {
-        "title": "A misty room",
-        "w": 189
-    },
-    "127": {
-        "title": "A misty room",
-        "e": 184,
-        "w": 120
-    },
-    "184": {
-        "title": "A misty room",
-        "e": 221,
-        "w": 127
-    },
-    "221": {
-        "title": "A misty room",
-        "s": 253,
-        "e": 240,
-        "w": 184
-    },
-    "253": {
-        "title": "A misty room",
-        "n": 221,
-        "e": 258
-    },
-    "414": {
-        "title": "A misty room",
-        "w": 386
-    },
-    "386": {
-        "title": "A misty room",
-        "e": 414,
-        "w": 240
-    },
-    "240": {
-        "title": "A misty room",
-        "n": 249,
-        "e": 386,
-        "w": 221
-    },
-    "249": {
-        "title": "A misty room",
-        "n": 265,
-        "s": 240,
-        "e": 282
-    },
-    "265": {
-        "title": "A misty room",
-        "n": 279,
-        "s": 249,
-        "e": 270
-    },
-    "270": {
-        "title": "A misty room",
-        "n": 416,
-        "e": 338,
-        "w": 265
-    },
-    "338": {
-        "title": "A misty room",
-        "s": 379,
-        "w": 270
-    },
-    "379": {
-        "title": "A misty room",
-        "n": 338,
-        "e": 395
-    },
-    "282": {
-        "title": "A misty room",
-        "w": 249
-    },
-    "279": {
-        "title": "A misty room",
-        "s": 265
-    },
-    "395": {
-        "title": "A misty room",
-        "s": 403,
-        "e": 421,
-        "w": 379
-    },
-    "403": {
-        "title": "A misty room",
-        "n": 395
-    },
-    "421": {
-        "title": "A misty room",
-        "n": 440,
-        "w": 395
-    },
-    "440": {
-        "title": "A misty room",
-        "s": 421,
-        "w": 476
-    },
-    "476": {
-        "title": "A misty room",
-        "e": 440
-    },
-    "416": {
-        "title": "A misty room",
-        "s": 270
-    },
-    "258": {
-        "title": "A misty room",
-        "e": 306,
-        "w": 253
-    },
-    "306": {
-        "title": "A misty room",
-        "e": 397,
-        "w": 258
-    },
-    "397": {
-        "title": "A misty room",
-        "w": 306
-    },
-    "186": {
-        "title": "A misty room",
-        "e": 205,
-        "w": 169
-    },
-    "205": {
-        "title": "A misty room",
-        "s": 241,
-        "e": 479,
-        "w": 186
-    },
-    "241": {
-        "title": "A misty room",
-        "n": 205,
-        "e": 266
-    },
-    "266": {
-        "title": "A misty room",
-        "w": 241
-    },
-    "479": {
-        "title": "A misty room",
-        "w": 205
-    },
-    "53": {
-        "title": "A misty room",
-        "n": 95,
-        "s": 39,
-        "w": 88
-    },
-    "88": {
-        "title": "A misty room",
-        "e": 53,
-        "w": 122
-    },
-    "122": {
-        "title": "A misty room",
-        "n": 124,
-        "e": 88
-    },
-    "124": {
-        "title": "A misty room",
-        "n": 157,
-        "s": 122
-    },
-    "95": {
-        "title": "A misty room",
-        "n": 119,
-        "s": 53,
-        "w": 115
-    },
-    "119": {
-        "title": "A misty room",
-        "n": 134,
-        "s": 95
-    },
-    "134": {
-        "title": "A misty room",
-        "n": 147,
-        "s": 119,
-        "e": 144
-    },
-    "147": {
-        "title": "A misty room",
-        "n": 200,
-        "s": 134,
-        "e": 153,
-        "w": 151
-    },
-    "200": {
-        "title": "A misty room",
-        "n": 227,
-        "s": 147,
-        "e": 206
-    },
-    "227": {
-        "title": "A misty room",
-        "n": 269,
-        "s": 200
-    },
-    "206": {
-        "title": "A misty room",
-        "n": 288,
-        "e": 380,
-        "w": 200
-    },
-    "288": {
-        "title": "A misty room",
-        "s": 206
-    },
-    "380": {
-        "title": "A misty room",
-        "n": 424,
-        "w": 206
-    },
-    "144": {
-        "title": "A misty room",
-        "e": 155,
-        "w": 134
-    },
-    "153": {
-        "title": "A misty room",
-        "e": 329,
-        "w": 147
-    },
-    "329": {
-        "title": "A misty room",
-        "w": 153
-    },
-    "151": {
-        "title": "A misty room",
-        "n": 172,
-        "e": 147,
-        "w": 207
-    },
-    "172": {
-        "title": "A misty room",
-        "n": 267,
-        "s": 151
-    },
-    "115": {
-        "title": "A misty room",
-        "n": 116,
-        "e": 95
-    },
-    "116": {
-        "title": "A misty room",
-        "n": 132,
-        "s": 115
-    },
-    "132": {
-        "title": "A misty room",
-        "s": 116
-    },
-    "57": {
-        "title": "A misty room",
-        "e": 145,
-        "w": 51
-    },
-    "145": {
-        "title": "A misty room",
-        "n": 174,
-        "e": 220,
-        "w": 57
-    },
-    "220": {
-        "title": "A misty room",
-        "w": 145
-    },
-    "174": {
-        "title": "A misty room",
-        "n": 192,
-        "s": 145,
-        "e": 224
-    },
-    "192": {
-        "title": "A misty room",
-        "n": 201,
-        "s": 174,
-        "e": 223
-    },
-    "224": {
-        "title": "A misty room",
-        "w": 174
-    },
-    "201": {
-        "title": "A misty room",
-        "s": 192
-    },
-    "223": {
-        "title": "A misty room",
-        "n": 283,
-        "w": 192
-    },
-    "283": {
-        "title": "A misty room",
-        "n": 331,
-        "s": 223,
-        "e": 313
-    },
-    "331": {
-        "title": "A misty room",
-        "s": 283,
-        "e": 446
-    },
-    "446": {
-        "title": "A misty room",
-        "e": 466,
-        "w": 331
-    },
-    "466": {
-        "title": "A misty room",
-        "s": 486,
-        "e": 472,
-        "w": 446
-    },
-    "472": {
-        "title": "A misty room",
-        "w": 466
-    },
-    "486": {
-        "title": "Arron's Athenaeum",
-        "n": 466
-    },
-    "313": {
-        "title": "A misty room",
-        "w": 283
-    },
-    "94": {
-        "title": "A misty room",
-        "n": 152,
-        "s": 69
-    },
-    "152": {
-        "title": "A misty room",
-        "s": 94
-    },
-    "160": {
-        "title": "A misty room",
-        "s": 103
-    },
-    "157": {
-        "title": "A misty room",
-        "n": 210,
-        "s": 124,
-        "w": 182
-    },
-    "210": {
-        "title": "A misty room",
-        "s": 157
-    },
-    "182": {
-        "title": "A misty room",
-        "e": 157,
-        "w": 208
-    },
-    "208": {
-        "title": "A misty room",
-        "e": 182
-    },
-    "155": {
-        "title": "A misty room",
-        "s": 187,
-        "e": 316,
-        "w": 144
-    },
-    "187": {
-        "title": "A misty room",
-        "n": 155
-    },
-    "316": {
-        "title": "A misty room",
-        "n": 344,
-        "w": 155
-    },
-    "344": {
-        "title": "A misty room",
-        "n": 392,
-        "s": 316,
-        "e": 390
-    },
-    "392": {
-        "title": "A misty room",
-        "s": 344,
-        "e": 462
-    },
-    "462": {
-        "title": "A misty room",
-        "w": 392
-    },
-    "390": {
-        "title": "A misty room",
-        "w": 344
-    },
-    "207": {
-        "title": "A misty room",
-        "n": 231,
-        "e": 151,
-        "w": 290
-    },
-    "290": {
-        "title": "A misty room",
-        "e": 207
-    },
-    "231": {
-        "title": "A misty room",
-        "s": 207,
-        "w": 248
-    },
-    "248": {
-        "title": "A misty room",
-        "n": 296,
-        "e": 231,
-        "w": 280
-    },
-    "296": {
-        "title": "A misty room",
-        "s": 248
-    },
-    "280": {
-        "title": "A misty room",
-        "n": 325,
-        "e": 248
-    },
-    "325": {
-        "title": "A misty room",
-        "n": 353,
-        "s": 280,
-        "w": 374
-    },
-    "353": {
-        "title": "A misty room",
-        "s": 325
-    },
-    "374": {
-        "title": "Fully Shrine",
-        "e": 325
-    },
-    "267": {
-        "title": "A misty room",
-        "n": 285,
-        "s": 172,
-        "w": 271
-    },
-    "285": {
-        "title": "A misty room",
-        "n": 286,
-        "s": 267
-    },
-    "286": {
-        "title": "A misty room",
-        "n": 336,
-        "s": 285,
-        "w": 291
-    },
-    "291": {
-        "title": "A misty room",
-        "n": 410,
-        "e": 286,
-        "w": 347
-    },
-    "347": {
-        "title": "A misty room",
-        "n": 452,
-        "s": 442,
-        "e": 291
-    },
-    "442": {
-        "title": "A misty room",
-        "n": 347
-    },
-    "452": {
-        "title": "A misty room",
-        "s": 347
-    },
-    "410": {
-        "title": "A misty room",
-        "s": 291
-    },
-    "336": {
-        "title": "A misty room",
-        "s": 286
-    },
-    "271": {
-        "title": "A misty room",
-        "n": 337,
-        "e": 267
-    },
-    "337": {
-        "title": "A misty room",
-        "s": 271
-    },
-    "269": {
-        "title": "A misty room",
-        "n": 319,
-        "s": 227
-    },
-    "319": {
-        "title": "A misty room",
-        "n": 359,
-        "s": 269,
-        "e": 345
-    },
-    "345": {
-        "title": "A misty room",
-        "s": 375,
-        "w": 319
-    },
-    "375": {
-        "title": "A misty room",
-        "n": 345,
-        "e": 385
-    },
-    "385": {
-        "title": "A misty room",
-        "w": 375
-    },
-    "359": {
-        "title": "A misty room",
-        "s": 319
-    },
-    "424": {
-        "title": "A misty room",
-        "s": 380,
-        "e": 473
-    },
-    "473": {
-        "title": "A misty room",
-        "e": 494,
-        "w": 424
-    },
-    "494": {
-        "title": "A misty room",
-        "w": 473
+        "coordinates": "(56,58)",
+        "terrain": "NORMAL",
+        "e": 61
     },
     "3": {
         "title": "Mt. Holloway",
+        "coordinates": "(61,59)",
+        "terrain": "MOUNTAIN",
         "s": 9,
         "e": 5,
         "w": 2
     },
     "9": {
         "title": "Mt. Holloway",
+        "coordinates": "(61,58)",
+        "terrain": "MOUNTAIN",
         "n": 3,
         "s": 12,
         "e": 11
     },
+    "11": {
+        "title": "Mt. Holloway",
+        "coordinates": "(62,58)",
+        "terrain": "MOUNTAIN",
+        "e": 17,
+        "w": 9
+    },
+    "17": {
+        "title": "A misty room",
+        "coordinates": "(63,58)",
+        "terrain": "NORMAL",
+        "n": 24,
+        "e": 42,
+        "w": 11
+    },
+    "42": {
+        "title": "A misty room",
+        "coordinates": "(64,58)",
+        "terrain": "NORMAL",
+        "n": 44,
+        "s": 80,
+        "e": 118,
+        "w": 17
+    },
+    "80": {
+        "title": "A misty room",
+        "coordinates": "(64,57)",
+        "terrain": "NORMAL",
+        "n": 42,
+        "s": 81,
+        "e": 86
+    },
+    "81": {
+        "title": "A misty room",
+        "coordinates": "(64,56)",
+        "terrain": "NORMAL",
+        "n": 80
+    },
+    "86": {
+        "title": "A misty room",
+        "coordinates": "(65,57)",
+        "terrain": "NORMAL",
+        "s": 96,
+        "e": 90,
+        "w": 80
+    },
+    "96": {
+        "title": "A misty room",
+        "coordinates": "(65,56)",
+        "terrain": "NORMAL",
+        "n": 86,
+        "e": 97
+    },
+    "97": {
+        "title": "A misty room",
+        "coordinates": "(66,56)",
+        "terrain": "NORMAL",
+        "e": 181,
+        "w": 96
+    },
+    "181": {
+        "title": "A misty room",
+        "coordinates": "(67,56)",
+        "terrain": "NORMAL",
+        "w": 97
+    },
+    "90": {
+        "title": "A misty room",
+        "coordinates": "(66,57)",
+        "terrain": "NORMAL",
+        "e": 178,
+        "w": 86
+    },
+    "178": {
+        "title": "A misty room",
+        "coordinates": "(67,57)",
+        "terrain": "NORMAL",
+        "n": 209,
+        "e": 243,
+        "w": 90
+    },
+    "209": {
+        "title": "A misty room",
+        "coordinates": "(67,58)",
+        "terrain": "NORMAL",
+        "s": 178
+    },
+    "243": {
+        "title": "A misty room",
+        "coordinates": "(68,57)",
+        "terrain": "NORMAL",
+        "s": 293,
+        "e": 256,
+        "w": 178
+    },
+    "293": {
+        "title": "A misty room",
+        "coordinates": "(68,56)",
+        "terrain": "NORMAL",
+        "n": 243
+    },
+    "256": {
+        "title": "A misty room",
+        "coordinates": "(69,57)",
+        "terrain": "NORMAL",
+        "s": 360,
+        "e": 327,
+        "w": 243
+    },
+    "360": {
+        "title": "A misty room",
+        "coordinates": "(69,56)",
+        "terrain": "NORMAL",
+        "n": 256,
+        "e": 398
+    },
+    "398": {
+        "title": "A misty room",
+        "coordinates": "(70,56)",
+        "terrain": "NORMAL",
+        "e": 438,
+        "w": 360
+    },
+    "438": {
+        "title": "A misty room",
+        "coordinates": "(71,56)",
+        "terrain": "NORMAL",
+        "e": 465,
+        "w": 398
+    },
+    "465": {
+        "title": "A misty room",
+        "coordinates": "(72,56)",
+        "terrain": "NORMAL",
+        "e": 498,
+        "w": 438
+    },
+    "498": {
+        "title": "A misty room",
+        "coordinates": "(73,56)",
+        "terrain": "NORMAL",
+        "w": 465
+    },
+    "327": {
+        "title": "A misty room",
+        "coordinates": "(70,57)",
+        "terrain": "NORMAL",
+        "e": 427,
+        "w": 256
+    },
+    "427": {
+        "title": "A misty room",
+        "coordinates": "(71,57)",
+        "terrain": "NORMAL",
+        "e": 430,
+        "w": 327
+    },
+    "430": {
+        "title": "A misty room",
+        "coordinates": "(72,57)",
+        "terrain": "NORMAL",
+        "n": 443,
+        "e": 439,
+        "w": 427
+    },
+    "443": {
+        "title": "A misty room",
+        "coordinates": "(72,58)",
+        "terrain": "NORMAL",
+        "s": 430,
+        "e": 471
+    },
+    "471": {
+        "title": "A misty room",
+        "coordinates": "(73,58)",
+        "terrain": "NORMAL",
+        "w": 443
+    },
+    "439": {
+        "title": "A misty room",
+        "coordinates": "(73,57)",
+        "terrain": "NORMAL",
+        "w": 430
+    },
+    "44": {
+        "title": "A misty room",
+        "coordinates": "(64,59)",
+        "terrain": "NORMAL",
+        "s": 42
+    },
+    "118": {
+        "title": "A misty room",
+        "coordinates": "(65,58)",
+        "terrain": "NORMAL",
+        "e": 137,
+        "w": 42
+    },
+    "137": {
+        "title": "A misty room",
+        "coordinates": "(66,58)",
+        "terrain": "NORMAL",
+        "w": 118
+    },
+    "24": {
+        "title": "A misty room",
+        "coordinates": "(63,59)",
+        "terrain": "NORMAL",
+        "s": 17
+    },
     "12": {
         "title": "Mt. Holloway",
+        "coordinates": "(61,57)",
+        "terrain": "MOUNTAIN",
         "n": 9,
         "s": 18,
         "e": 14,
         "w": 21
     },
-    "21": {
+    "14": {
         "title": "Mt. Holloway",
-        "e": 12,
-        "w": 29
-    },
-    "29": {
-        "title": "Mt. Holloway",
-        "s": 45,
-        "e": 21,
-        "w": 49
-    },
-    "49": {
-        "title": "A misty room",
-        "s": 79,
-        "e": 29,
-        "w": 136
-    },
-    "136": {
-        "title": "A misty room",
-        "e": 49,
-        "w": 148
-    },
-    "148": {
-        "title": "A misty room",
-        "e": 136,
-        "w": 292
-    },
-    "292": {
-        "title": "A misty room",
-        "n": 301,
-        "e": 148
-    },
-    "301": {
-        "title": "A misty room",
-        "n": 304,
-        "s": 292
-    },
-    "304": {
-        "title": "A misty room",
-        "s": 301
-    },
-    "79": {
-        "title": "A misty room",
-        "n": 49
-    },
-    "45": {
-        "title": "Mt. Holloway",
-        "n": 29,
-        "s": 60
-    },
-    "60": {
-        "title": "Mt. Holloway",
-        "n": 45,
-        "e": 36,
-        "w": 70
-    },
-    "36": {
-        "title": "Mt. Holloway",
-        "s": 48,
-        "e": 22,
-        "w": 60
-    },
-    "48": {
-        "title": "Mt. Holloway",
-        "n": 36,
-        "s": 105,
-        "w": 149
-    },
-    "149": {
-        "title": "Mt. Holloway",
-        "e": 48
-    },
-    "105": {
-        "title": "Mt. Holloway",
-        "n": 48,
-        "w": 202
-    },
-    "202": {
-        "title": "Mt. Holloway",
-        "e": 105
-    },
-    "22": {
-        "title": "The Peak of Mt. Holloway",
-        "n": 18,
-        "s": 78,
-        "w": 36
-    },
-    "18": {
-        "title": "Mt. Holloway",
-        "n": 12,
-        "s": 22,
-        "w": 25
-    },
-    "25": {
-        "title": "Mt. Holloway",
-        "e": 18
-    },
-    "78": {
-        "title": "Mt. Holloway",
-        "n": 22,
-        "s": 108
-    },
-    "108": {
-        "title": "Mt. Holloway",
-        "n": 78,
-        "s": 117,
-        "e": 93
-    },
-    "117": {
-        "title": "Mt. Holloway",
-        "n": 108,
-        "s": 131,
-        "e": 166,
-        "w": 133
-    },
-    "131": {
-        "title": "Mt. Holloway",
-        "n": 117,
-        "s": 244,
-        "w": 138
-    },
-    "244": {
-        "title": "A misty room",
-        "n": 131,
-        "e": 239
-    },
-    "239": {
-        "title": "A misty room",
-        "n": 198,
-        "w": 244
-    },
-    "198": {
-        "title": "A misty room",
-        "n": 166,
-        "s": 239,
-        "e": 199
-    },
-    "199": {
-        "title": "A misty room",
-        "s": 230,
-        "w": 198
-    },
-    "230": {
-        "title": "A misty room",
-        "n": 199,
-        "s": 307,
-        "e": 297
-    },
-    "297": {
-        "title": "A misty room",
-        "w": 230
-    },
-    "307": {
-        "title": "A misty room",
-        "n": 230,
-        "s": 373,
-        "e": 371,
-        "w": 321
-    },
-    "371": {
-        "title": "A misty room",
-        "s": 475,
-        "w": 307
-    },
-    "475": {
-        "title": "A misty room",
-        "n": 371,
-        "s": 484
-    },
-    "484": {
-        "title": "A misty room",
-        "n": 475
-    },
-    "321": {
-        "title": "A misty room",
-        "s": 413,
-        "e": 307
-    },
-    "413": {
-        "title": "A misty room",
-        "n": 321
-    },
-    "373": {
-        "title": "A misty room",
-        "n": 307,
-        "s": 480
-    },
-    "480": {
-        "title": "A misty room",
-        "n": 373
-    },
-    "166": {
-        "title": "Mt. Holloway",
-        "s": 198,
-        "e": 150,
-        "w": 117
-    },
-    "150": {
-        "title": "A misty room",
-        "n": 135,
-        "w": 166
-    },
-    "135": {
-        "title": "A misty room",
-        "s": 150,
-        "e": 106
-    },
-    "106": {
-        "title": "A misty room",
-        "n": 100,
-        "s": 111,
-        "w": 135
-    },
-    "111": {
-        "title": "A misty room",
-        "n": 106,
-        "s": 367,
-        "e": 158
-    },
-    "158": {
-        "title": "A misty room",
-        "s": 167,
-        "w": 111
-    },
-    "167": {
-        "title": "A misty room",
-        "n": 158,
-        "s": 262,
-        "e": 260
-    },
-    "260": {
-        "title": "A misty room",
-        "w": 167
-    },
-    "262": {
-        "title": "A misty room",
-        "n": 167,
-        "s": 370,
-        "e": 358
-    },
-    "370": {
-        "title": "A misty room",
-        "n": 262,
-        "s": 434,
-        "e": 407
-    },
-    "407": {
-        "title": "A misty room",
-        "s": 496,
-        "w": 370
-    },
-    "496": {
-        "title": "A misty room",
-        "n": 407
-    },
-    "434": {
-        "title": "A misty room",
-        "n": 370
-    },
-    "358": {
-        "title": "A misty room",
-        "e": 401,
-        "w": 262
-    },
-    "401": {
-        "title": "A misty room",
-        "w": 358
-    },
-    "367": {
-        "title": "A misty room",
-        "n": 111
-    },
-    "100": {
-        "title": "A misty room",
-        "s": 106,
-        "e": 112,
-        "w": 68
-    },
-    "112": {
-        "title": "A misty room",
-        "s": 141,
-        "e": 140,
-        "w": 100
-    },
-    "140": {
-        "title": "A misty room",
-        "w": 112
-    },
-    "141": {
-        "title": "A misty room",
-        "n": 112,
-        "e": 156
-    },
-    "156": {
-        "title": "A misty room",
-        "s": 168,
-        "e": 164,
-        "w": 141
-    },
-    "164": {
-        "title": "A misty room",
-        "n": 217,
-        "e": 298,
-        "w": 156
-    },
-    "217": {
-        "title": "A misty room",
-        "s": 164,
-        "e": 247
-    },
-    "247": {
-        "title": "A misty room",
-        "e": 261,
-        "w": 217
-    },
-    "261": {
-        "title": "A misty room",
-        "s": 277,
-        "e": 322,
-        "w": 247
-    },
-    "277": {
-        "title": "A misty room",
-        "n": 261,
-        "e": 323
-    },
-    "323": {
-        "title": "A misty room",
-        "e": 433,
-        "w": 277
-    },
-    "433": {
-        "title": "A misty room",
-        "s": 455,
-        "e": 460,
-        "w": 323
-    },
-    "460": {
-        "title": "A misty room",
-        "w": 433
-    },
-    "455": {
-        "title": "A misty room",
-        "n": 433
-    },
-    "322": {
-        "title": "A misty room",
-        "n": 382,
-        "e": 435,
-        "w": 261
-    },
-    "435": {
-        "title": "A misty room",
-        "w": 322
-    },
-    "382": {
-        "title": "A misty room",
-        "s": 322,
-        "e": 388
-    },
-    "388": {
-        "title": "A misty room",
-        "e": 477,
-        "w": 382
-    },
-    "477": {
-        "title": "A misty room",
-        "e": 483,
-        "w": 388
-    },
-    "483": {
-        "title": "A misty room",
-        "w": 477
-    },
-    "298": {
-        "title": "A misty room",
-        "s": 324,
-        "w": 164
-    },
-    "324": {
-        "title": "A misty room",
-        "n": 298,
-        "s": 349,
-        "e": 354
-    },
-    "349": {
-        "title": "A misty room",
-        "n": 324,
-        "s": 352,
-        "e": 384,
-        "w": 356
-    },
-    "356": {
-        "title": "A misty room",
-        "e": 349
-    },
-    "384": {
-        "title": "A misty room",
-        "w": 349
-    },
-    "352": {
-        "title": "A misty room",
-        "n": 349,
-        "s": 362,
-        "e": 485
-    },
-    "485": {
-        "title": "A misty room",
-        "w": 352
-    },
-    "362": {
-        "title": "A misty room",
-        "n": 352,
-        "s": 399,
-        "w": 463
-    },
-    "399": {
-        "title": "A misty room",
-        "n": 362,
-        "s": 467
-    },
-    "467": {
-        "title": "Pirate Ry's",
-        "n": 399
-    },
-    "463": {
-        "title": "A misty room",
-        "s": 468,
-        "e": 362
-    },
-    "468": {
-        "title": "A misty room",
-        "n": 463
-    },
-    "354": {
-        "title": "A misty room",
-        "w": 324
-    },
-    "168": {
-        "title": "A misty room",
-        "n": 156,
-        "e": 340
-    },
-    "340": {
-        "title": "A misty room",
-        "w": 168
-    },
-    "68": {
-        "title": "A misty room",
-        "n": 52,
-        "e": 100
-    },
-    "52": {
-        "title": "A misty room",
-        "n": 35,
-        "s": 68,
-        "e": 75
-    },
-    "35": {
-        "title": "A misty room",
-        "s": 52,
-        "w": 34
+        "coordinates": "(62,57)",
+        "terrain": "MOUNTAIN",
+        "s": 34,
+        "e": 37,
+        "w": 12
     },
     "34": {
         "title": "Mt. Holloway",
+        "coordinates": "(62,56)",
+        "terrain": "MOUNTAIN",
         "n": 14,
         "s": 50,
         "e": 35
     },
     "50": {
         "title": "A misty room",
+        "coordinates": "(62,55)",
+        "terrain": "NORMAL",
         "n": 34,
         "s": 89
     },
     "89": {
         "title": "Mt. Holloway",
+        "coordinates": "(62,54)",
+        "terrain": "MOUNTAIN",
         "n": 50,
         "s": 93
     },
     "93": {
         "title": "Mt. Holloway",
+        "coordinates": "(62,53)",
+        "terrain": "MOUNTAIN",
         "n": 89,
         "w": 108
     },
-    "133": {
+    "108": {
         "title": "Mt. Holloway",
-        "e": 117,
-        "w": 173
+        "coordinates": "(61,53)",
+        "terrain": "MOUNTAIN",
+        "n": 78,
+        "s": 117,
+        "e": 93
     },
-    "173": {
-        "title": "A misty room",
-        "e": 133,
-        "w": 214
+    "117": {
+        "title": "Mt. Holloway",
+        "coordinates": "(61,52)",
+        "terrain": "MOUNTAIN",
+        "n": 108,
+        "s": 131,
+        "e": 166,
+        "w": 133
     },
-    "214": {
-        "title": "A misty room",
-        "n": 194,
-        "e": 173,
-        "w": 226
+    "166": {
+        "title": "Mt. Holloway",
+        "coordinates": "(62,52)",
+        "terrain": "MOUNTAIN",
+        "s": 198,
+        "e": 150,
+        "w": 117
     },
-    "194": {
+    "150": {
         "title": "A misty room",
-        "s": 214,
-        "w": 129
+        "coordinates": "(63,52)",
+        "terrain": "NORMAL",
+        "n": 135,
+        "w": 166
     },
-    "129": {
+    "135": {
         "title": "A misty room",
-        "n": 126,
-        "e": 194,
-        "w": 170
+        "coordinates": "(63,53)",
+        "terrain": "NORMAL",
+        "s": 150,
+        "e": 106
     },
-    "126": {
+    "106": {
         "title": "A misty room",
-        "n": 98,
-        "s": 129
+        "coordinates": "(64,53)",
+        "terrain": "NORMAL",
+        "n": 100,
+        "s": 111,
+        "w": 135
+    },
+    "100": {
+        "title": "A misty room",
+        "coordinates": "(64,54)",
+        "terrain": "NORMAL",
+        "s": 106,
+        "e": 112,
+        "w": 68
+    },
+    "112": {
+        "title": "A misty room",
+        "coordinates": "(65,54)",
+        "terrain": "NORMAL",
+        "s": 141,
+        "e": 140,
+        "w": 100
+    },
+    "141": {
+        "title": "A misty room",
+        "coordinates": "(65,53)",
+        "terrain": "NORMAL",
+        "n": 112,
+        "e": 156
+    },
+    "156": {
+        "title": "A misty room",
+        "coordinates": "(66,53)",
+        "terrain": "NORMAL",
+        "s": 168,
+        "e": 164,
+        "w": 141
+    },
+    "168": {
+        "title": "A misty room",
+        "coordinates": "(66,52)",
+        "terrain": "NORMAL",
+        "n": 156,
+        "e": 340
+    },
+    "340": {
+        "title": "A misty room",
+        "coordinates": "(67,52)",
+        "terrain": "NORMAL",
+        "w": 168
+    },
+    "164": {
+        "title": "A misty room",
+        "coordinates": "(67,53)",
+        "terrain": "NORMAL",
+        "n": 217,
+        "e": 298,
+        "w": 156
+    },
+    "298": {
+        "title": "A misty room",
+        "coordinates": "(68,53)",
+        "terrain": "NORMAL",
+        "s": 324,
+        "w": 164
+    },
+    "324": {
+        "title": "A misty room",
+        "coordinates": "(68,52)",
+        "terrain": "NORMAL",
+        "n": 298,
+        "s": 349,
+        "e": 354
+    },
+    "354": {
+        "title": "A misty room",
+        "coordinates": "(69,52)",
+        "terrain": "NORMAL",
+        "w": 324
+    },
+    "349": {
+        "title": "A misty room",
+        "coordinates": "(68,51)",
+        "terrain": "NORMAL",
+        "n": 324,
+        "s": 352,
+        "e": 384,
+        "w": 356
+    },
+    "352": {
+        "title": "A misty room",
+        "coordinates": "(68,50)",
+        "terrain": "NORMAL",
+        "n": 349,
+        "s": 362,
+        "e": 485
+    },
+    "485": {
+        "title": "A misty room",
+        "coordinates": "(69,50)",
+        "terrain": "NORMAL",
+        "w": 352
+    },
+    "362": {
+        "title": "A misty room",
+        "coordinates": "(68,49)",
+        "terrain": "NORMAL",
+        "n": 352,
+        "s": 399,
+        "w": 463
+    },
+    "399": {
+        "title": "A misty room",
+        "coordinates": "(68,48)",
+        "terrain": "NORMAL",
+        "n": 362,
+        "s": 467
+    },
+    "467": {
+        "title": "Pirate Ry's",
+        "coordinates": "(68,47)",
+        "terrain": "NORMAL",
+        "n": 399
+    },
+    "463": {
+        "title": "A misty room",
+        "coordinates": "(67,49)",
+        "terrain": "NORMAL",
+        "s": 468,
+        "e": 362
+    },
+    "468": {
+        "title": "A misty room",
+        "coordinates": "(67,48)",
+        "terrain": "NORMAL",
+        "n": 463
+    },
+    "384": {
+        "title": "A misty room",
+        "coordinates": "(69,51)",
+        "terrain": "NORMAL",
+        "w": 349
+    },
+    "356": {
+        "title": "A misty room",
+        "coordinates": "(67,51)",
+        "terrain": "NORMAL",
+        "e": 349
+    },
+    "217": {
+        "title": "A misty room",
+        "coordinates": "(67,54)",
+        "terrain": "NORMAL",
+        "s": 164,
+        "e": 247
+    },
+    "247": {
+        "title": "A misty room",
+        "coordinates": "(68,54)",
+        "terrain": "NORMAL",
+        "e": 261,
+        "w": 217
+    },
+    "261": {
+        "title": "A misty room",
+        "coordinates": "(69,54)",
+        "terrain": "NORMAL",
+        "s": 277,
+        "e": 322,
+        "w": 247
+    },
+    "277": {
+        "title": "A misty room",
+        "coordinates": "(69,53)",
+        "terrain": "NORMAL",
+        "n": 261,
+        "e": 323
+    },
+    "323": {
+        "title": "A misty room",
+        "coordinates": "(70,53)",
+        "terrain": "NORMAL",
+        "e": 433,
+        "w": 277
+    },
+    "433": {
+        "title": "A misty room",
+        "coordinates": "(71,53)",
+        "terrain": "NORMAL",
+        "s": 455,
+        "e": 460,
+        "w": 323
+    },
+    "455": {
+        "title": "A misty room",
+        "coordinates": "(71,52)",
+        "terrain": "NORMAL",
+        "n": 433
+    },
+    "460": {
+        "title": "A misty room",
+        "coordinates": "(72,53)",
+        "terrain": "NORMAL",
+        "w": 433
+    },
+    "322": {
+        "title": "A misty room",
+        "coordinates": "(70,54)",
+        "terrain": "NORMAL",
+        "n": 382,
+        "e": 435,
+        "w": 261
+    },
+    "435": {
+        "title": "A misty room",
+        "coordinates": "(71,54)",
+        "terrain": "NORMAL",
+        "w": 322
+    },
+    "382": {
+        "title": "A misty room",
+        "coordinates": "(70,55)",
+        "terrain": "NORMAL",
+        "s": 322,
+        "e": 388
+    },
+    "388": {
+        "title": "A misty room",
+        "coordinates": "(71,55)",
+        "terrain": "NORMAL",
+        "e": 477,
+        "w": 382
+    },
+    "477": {
+        "title": "A misty room",
+        "coordinates": "(72,55)",
+        "terrain": "NORMAL",
+        "e": 483,
+        "w": 388
+    },
+    "483": {
+        "title": "A misty room",
+        "coordinates": "(73,55)",
+        "terrain": "NORMAL",
+        "w": 477
+    },
+    "140": {
+        "title": "A misty room",
+        "coordinates": "(66,54)",
+        "terrain": "NORMAL",
+        "w": 112
+    },
+    "68": {
+        "title": "A misty room",
+        "coordinates": "(63,54)",
+        "terrain": "NORMAL",
+        "n": 52,
+        "e": 100
+    },
+    "52": {
+        "title": "A misty room",
+        "coordinates": "(63,55)",
+        "terrain": "NORMAL",
+        "n": 35,
+        "s": 68,
+        "e": 75
+    },
+    "75": {
+        "title": "A misty room",
+        "coordinates": "(64,55)",
+        "terrain": "NORMAL",
+        "e": 85,
+        "w": 52
+    },
+    "85": {
+        "title": "A misty room",
+        "coordinates": "(65,55)",
+        "terrain": "NORMAL",
+        "e": 154,
+        "w": 75
+    },
+    "154": {
+        "title": "A misty room",
+        "coordinates": "(66,55)",
+        "terrain": "NORMAL",
+        "e": 193,
+        "w": 85
+    },
+    "193": {
+        "title": "A misty room",
+        "coordinates": "(67,55)",
+        "terrain": "NORMAL",
+        "e": 251,
+        "w": 154
+    },
+    "251": {
+        "title": "A misty room",
+        "coordinates": "(68,55)",
+        "terrain": "NORMAL",
+        "e": 315,
+        "w": 193
+    },
+    "315": {
+        "title": "A misty room",
+        "coordinates": "(69,55)",
+        "terrain": "NORMAL",
+        "w": 251
+    },
+    "35": {
+        "title": "A misty room",
+        "coordinates": "(63,56)",
+        "terrain": "NORMAL",
+        "s": 52,
+        "w": 34
+    },
+    "37": {
+        "title": "Mt. Holloway",
+        "coordinates": "(63,57)",
+        "terrain": "MOUNTAIN",
+        "w": 14
+    },
+    "18": {
+        "title": "Mt. Holloway",
+        "coordinates": "(61,56)",
+        "terrain": "MOUNTAIN",
+        "n": 12,
+        "s": 22,
+        "w": 25
+    },
+    "22": {
+        "title": "The Peak of Mt. Holloway",
+        "coordinates": "(61,55)",
+        "terrain": "MOUNTAIN",
+        "n": 18,
+        "s": 78,
+        "w": 36
+    },
+    "78": {
+        "title": "Mt. Holloway",
+        "coordinates": "(61,54)",
+        "terrain": "MOUNTAIN",
+        "n": 22,
+        "s": 108
+    },
+    "36": {
+        "title": "Mt. Holloway",
+        "coordinates": "(60,55)",
+        "terrain": "MOUNTAIN",
+        "s": 48,
+        "e": 22,
+        "w": 60
+    },
+    "60": {
+        "title": "Mt. Holloway",
+        "coordinates": "(59,55)",
+        "terrain": "MOUNTAIN",
+        "n": 45,
+        "e": 36,
+        "w": 70
+    },
+    "70": {
+        "title": "Mt. Holloway",
+        "coordinates": "(58,55)",
+        "terrain": "MOUNTAIN",
+        "s": 163,
+        "e": 60,
+        "w": 98
     },
     "98": {
         "title": "Mt. Holloway",
+        "coordinates": "(57,55)",
+        "terrain": "MOUNTAIN",
         "n": 102,
         "s": 126,
         "e": 70,
@@ -1334,1177 +1525,5484 @@
     },
     "109": {
         "title": "A misty room",
+        "coordinates": "(56,55)",
+        "terrain": "NORMAL",
         "s": 185,
         "e": 98,
         "w": 175
     },
     "175": {
         "title": "A misty room",
+        "coordinates": "(55,55)",
+        "terrain": "NORMAL",
         "s": 183,
         "e": 109,
         "w": 179
     },
     "179": {
         "title": "A misty room",
+        "coordinates": "(54,55)",
+        "terrain": "NORMAL",
         "s": 233,
         "e": 175,
         "w": 213
     },
-    "233": {
-        "title": "A misty room",
-        "n": 179,
-        "w": 238
-    },
-    "238": {
-        "title": "A misty room",
-        "e": 233
-    },
     "213": {
         "title": "A misty room",
+        "coordinates": "(53,55)",
+        "terrain": "NORMAL",
         "e": 179,
         "w": 420
     },
     "420": {
         "title": "A misty room",
+        "coordinates": "(52,55)",
+        "terrain": "NORMAL",
         "s": 444,
         "e": 213,
         "w": 437
     },
+    "437": {
+        "title": "A misty room",
+        "coordinates": "(51,55)",
+        "terrain": "NORMAL",
+        "e": 420,
+        "w": 497
+    },
+    "497": {
+        "title": "A misty room",
+        "coordinates": "(50,55)",
+        "terrain": "NORMAL",
+        "e": 437
+    },
     "444": {
         "title": "A misty room",
+        "coordinates": "(52,54)",
+        "terrain": "NORMAL",
         "n": 420,
         "w": 490
     },
     "490": {
         "title": "A misty room",
+        "coordinates": "(51,54)",
+        "terrain": "NORMAL",
         "e": 444,
         "w": 493
     },
     "493": {
         "title": "A misty room",
+        "coordinates": "(50,54)",
+        "terrain": "NORMAL",
         "e": 490
     },
-    "37": {
-        "title": "Mt. Holloway",
-        "w": 14
-    },
-    "14": {
-        "title": "Mt. Holloway",
-        "s": 34,
-        "e": 37,
-        "w": 12
-    },
-    "15": {
+    "233": {
         "title": "A misty room",
-        "w": 13
+        "coordinates": "(54,54)",
+        "terrain": "NORMAL",
+        "n": 179,
+        "w": 238
     },
-    "13": {
+    "238": {
         "title": "A misty room",
-        "e": 15,
-        "w": 4
-    },
-    "4": {
-        "title": "A misty room",
-        "n": 23,
-        "e": 13,
-        "w": 0
-    },
-    "23": {
-        "title": "A misty room",
-        "s": 4,
-        "e": 26
-    },
-    "26": {
-        "title": "A misty room",
-        "e": 55,
-        "w": 23
-    },
-    "55": {
-        "title": "Wishing Well",
-        "w": 26
-    },
-    "1": {
-        "title": "Shop",
-        "e": 0
-    },
-    "47": {
-        "title": "A misty room",
-        "n": 71,
-        "e": 43
-    },
-    "71": {
-        "title": "A misty room",
-        "s": 47
-    },
-    "5": {
-        "title": "A misty room",
-        "w": 3
-    },
-    "11": {
-        "title": "Mt. Holloway",
-        "e": 17,
-        "w": 9
-    },
-    "17": {
-        "title": "A misty room",
-        "n": 24,
-        "e": 42,
-        "w": 11
-    },
-    "24": {
-        "title": "A misty room",
-        "s": 17
-    },
-    "42": {
-        "title": "A misty room",
-        "n": 44,
-        "s": 80,
-        "e": 118,
-        "w": 17
-    },
-    "44": {
-        "title": "A misty room",
-        "s": 42
-    },
-    "80": {
-        "title": "A misty room",
-        "n": 42,
-        "s": 81,
-        "e": 86
-    },
-    "86": {
-        "title": "A misty room",
-        "s": 96,
-        "e": 90,
-        "w": 80
-    },
-    "90": {
-        "title": "A misty room",
-        "e": 178,
-        "w": 86
-    },
-    "178": {
-        "title": "A misty room",
-        "n": 209,
-        "e": 243,
-        "w": 90
-    },
-    "243": {
-        "title": "A misty room",
-        "s": 293,
-        "e": 256,
-        "w": 178
-    },
-    "256": {
-        "title": "A misty room",
-        "s": 360,
-        "e": 327,
-        "w": 243
-    },
-    "360": {
-        "title": "A misty room",
-        "n": 256,
-        "e": 398
-    },
-    "398": {
-        "title": "A misty room",
-        "e": 438,
-        "w": 360
-    },
-    "438": {
-        "title": "A misty room",
-        "e": 465,
-        "w": 398
-    },
-    "465": {
-        "title": "A misty room",
-        "e": 498,
-        "w": 438
-    },
-    "498": {
-        "title": "A misty room",
-        "w": 465
-    },
-    "327": {
-        "title": "A misty room",
-        "e": 427,
-        "w": 256
-    },
-    "427": {
-        "title": "A misty room",
-        "e": 430,
-        "w": 327
-    },
-    "430": {
-        "title": "A misty room",
-        "n": 443,
-        "e": 439,
-        "w": 427
-    },
-    "439": {
-        "title": "A misty room",
-        "w": 430
-    },
-    "443": {
-        "title": "A misty room",
-        "s": 430,
-        "e": 471
-    },
-    "471": {
-        "title": "A misty room",
-        "w": 443
-    },
-    "293": {
-        "title": "A misty room",
-        "n": 243
-    },
-    "209": {
-        "title": "A misty room",
-        "s": 178
-    },
-    "96": {
-        "title": "A misty room",
-        "n": 86,
-        "e": 97
-    },
-    "97": {
-        "title": "A misty room",
-        "e": 181,
-        "w": 96
-    },
-    "181": {
-        "title": "A misty room",
-        "w": 97
-    },
-    "81": {
-        "title": "A misty room",
-        "n": 80
-    },
-    "118": {
-        "title": "A misty room",
-        "e": 137,
-        "w": 42
-    },
-    "137": {
-        "title": "A misty room",
-        "w": 118
-    },
-    "70": {
-        "title": "Mt. Holloway",
-        "s": 163,
-        "e": 60,
-        "w": 98
-    },
-    "163": {
-        "title": "Mt. Holloway",
-        "n": 70
-    },
-    "102": {
-        "title": "A misty room",
-        "s": 98,
-        "w": 142
-    },
-    "142": {
-        "title": "A misty room",
-        "e": 102,
-        "w": 159
-    },
-    "159": {
-        "title": "A misty room",
-        "e": 142,
-        "w": 196
-    },
-    "196": {
-        "title": "A misty room",
-        "n": 222,
-        "e": 159,
-        "w": 197
-    },
-    "222": {
-        "title": "A misty room",
-        "n": 305,
-        "s": 196
-    },
-    "305": {
-        "title": "A misty room",
-        "n": 365,
-        "s": 222
-    },
-    "365": {
-        "title": "A misty room",
-        "s": 305
-    },
-    "197": {
-        "title": "A misty room",
-        "n": 232,
-        "e": 196,
-        "w": 276
-    },
-    "232": {
-        "title": "A misty room",
-        "n": 272,
-        "s": 197,
-        "w": 235
-    },
-    "235": {
-        "title": "A misty room",
-        "n": 330,
-        "e": 232,
-        "w": 355
-    },
-    "330": {
-        "title": "A misty room",
-        "n": 369,
-        "s": 235,
-        "w": 383
-    },
-    "383": {
-        "title": "A misty room",
-        "e": 330,
-        "w": 495
-    },
-    "495": {
-        "title": "The Transmogriphier",
-        "e": 383
-    },
-    "369": {
-        "title": "A misty room",
-        "n": 400,
-        "s": 330,
-        "w": 376
-    },
-    "376": {
-        "title": "A misty room",
-        "e": 369
-    },
-    "400": {
-        "title": "A misty room",
-        "s": 369
-    },
-    "355": {
-        "title": "A misty room",
-        "e": 235
-    },
-    "272": {
-        "title": "A misty room",
-        "n": 295,
-        "s": 232
-    },
-    "295": {
-        "title": "A misty room",
-        "s": 272
-    },
-    "276": {
-        "title": "A misty room",
-        "e": 197,
-        "w": 419
-    },
-    "419": {
-        "title": "A misty room",
-        "e": 276
-    },
-    "185": {
-        "title": "A misty room",
-        "n": 109
+        "coordinates": "(53,54)",
+        "terrain": "NORMAL",
+        "e": 233
     },
     "183": {
         "title": "A misty room",
+        "coordinates": "(55,54)",
+        "terrain": "NORMAL",
         "n": 175,
         "s": 229
     },
     "229": {
         "title": "A misty room",
+        "coordinates": "(55,53)",
+        "terrain": "NORMAL",
         "n": 183,
         "s": 250,
         "w": 236
     },
-    "250": {
-        "title": "A misty room",
-        "n": 229,
-        "s": 294,
-        "e": 289
-    },
-    "294": {
-        "title": "A misty room",
-        "n": 250,
-        "s": 334
-    },
-    "334": {
-        "title": "A misty room",
-        "n": 294,
-        "s": 393,
-        "e": 341,
-        "w": 391
-    },
-    "391": {
-        "title": "A misty room",
-        "s": 396,
-        "e": 334,
-        "w": 428
-    },
-    "428": {
-        "title": "A misty room",
-        "e": 391
-    },
-    "396": {
-        "title": "A misty room",
-        "n": 391
-    },
-    "393": {
-        "title": "A misty room",
-        "n": 334,
-        "s": 482
-    },
-    "482": {
-        "title": "A misty room",
-        "n": 393
-    },
-    "341": {
-        "title": "A misty room",
-        "s": 449,
-        "w": 334
-    },
-    "449": {
-        "title": "A misty room",
-        "n": 341
-    },
-    "289": {
-        "title": "A misty room",
-        "w": 250
-    },
     "236": {
         "title": "A misty room",
+        "coordinates": "(54,53)",
+        "terrain": "NORMAL",
         "s": 264,
         "e": 229
     },
     "264": {
         "title": "A misty room",
+        "coordinates": "(54,52)",
+        "terrain": "NORMAL",
         "n": 236,
         "s": 274,
         "w": 273
     },
-    "274": {
-        "title": "A misty room",
-        "n": 264,
-        "w": 308
-    },
-    "308": {
-        "title": "A misty room",
-        "e": 274
-    },
     "273": {
         "title": "A misty room",
+        "coordinates": "(53,52)",
+        "terrain": "NORMAL",
         "n": 343,
         "e": 264
     },
     "343": {
         "title": "A misty room",
+        "coordinates": "(53,53)",
+        "terrain": "NORMAL",
         "s": 273,
         "w": 351
     },
     "351": {
         "title": "A misty room",
+        "coordinates": "(52,53)",
+        "terrain": "NORMAL",
         "s": 491,
         "e": 343,
         "w": 478
     },
     "478": {
         "title": "A misty room",
+        "coordinates": "(51,53)",
+        "terrain": "NORMAL",
         "e": 351
     },
     "491": {
         "title": "A misty room",
+        "coordinates": "(52,52)",
+        "terrain": "NORMAL",
         "n": 351
     },
-    "437": {
+    "274": {
         "title": "A misty room",
-        "e": 420,
-        "w": 497
+        "coordinates": "(54,51)",
+        "terrain": "NORMAL",
+        "n": 264,
+        "w": 308
     },
-    "497": {
+    "308": {
         "title": "A misty room",
-        "e": 437
+        "coordinates": "(53,51)",
+        "terrain": "NORMAL",
+        "e": 274
+    },
+    "250": {
+        "title": "A misty room",
+        "coordinates": "(55,52)",
+        "terrain": "NORMAL",
+        "n": 229,
+        "s": 294,
+        "e": 289
+    },
+    "294": {
+        "title": "A misty room",
+        "coordinates": "(55,51)",
+        "terrain": "NORMAL",
+        "n": 250,
+        "s": 334
+    },
+    "334": {
+        "title": "A misty room",
+        "coordinates": "(55,50)",
+        "terrain": "NORMAL",
+        "n": 294,
+        "s": 393,
+        "e": 341,
+        "w": 391
+    },
+    "393": {
+        "title": "A misty room",
+        "coordinates": "(55,49)",
+        "terrain": "NORMAL",
+        "n": 334,
+        "s": 482
+    },
+    "482": {
+        "title": "A misty room",
+        "coordinates": "(55,48)",
+        "terrain": "NORMAL",
+        "n": 393
+    },
+    "341": {
+        "title": "A misty room",
+        "coordinates": "(56,50)",
+        "terrain": "NORMAL",
+        "s": 449,
+        "w": 334
+    },
+    "449": {
+        "title": "A misty room",
+        "coordinates": "(56,49)",
+        "terrain": "NORMAL",
+        "n": 341
+    },
+    "391": {
+        "title": "A misty room",
+        "coordinates": "(54,50)",
+        "terrain": "NORMAL",
+        "s": 396,
+        "e": 334,
+        "w": 428
+    },
+    "428": {
+        "title": "A misty room",
+        "coordinates": "(53,50)",
+        "terrain": "NORMAL",
+        "e": 391
+    },
+    "396": {
+        "title": "A misty room",
+        "coordinates": "(54,49)",
+        "terrain": "NORMAL",
+        "n": 391
+    },
+    "289": {
+        "title": "A misty room",
+        "coordinates": "(56,52)",
+        "terrain": "NORMAL",
+        "w": 250
+    },
+    "185": {
+        "title": "A misty room",
+        "coordinates": "(56,54)",
+        "terrain": "NORMAL",
+        "n": 109
+    },
+    "126": {
+        "title": "A misty room",
+        "coordinates": "(57,54)",
+        "terrain": "NORMAL",
+        "n": 98,
+        "s": 129
+    },
+    "129": {
+        "title": "A misty room",
+        "coordinates": "(57,53)",
+        "terrain": "NORMAL",
+        "n": 126,
+        "e": 194,
+        "w": 170
     },
     "170": {
         "title": "A misty room",
+        "coordinates": "(56,53)",
+        "terrain": "NORMAL",
         "e": 129
     },
-    "226": {
+    "194": {
         "title": "A misty room",
-        "s": 300,
-        "e": 214
+        "coordinates": "(58,53)",
+        "terrain": "NORMAL",
+        "s": 214,
+        "w": 129
     },
-    "300": {
+    "214": {
         "title": "A misty room",
-        "n": 226,
-        "s": 377,
-        "w": 389
+        "coordinates": "(58,52)",
+        "terrain": "NORMAL",
+        "n": 194,
+        "e": 173,
+        "w": 226
     },
-    "389": {
+    "173": {
         "title": "A misty room",
-        "e": 300
+        "coordinates": "(59,52)",
+        "terrain": "NORMAL",
+        "e": 133,
+        "w": 214
     },
-    "377": {
-        "title": "A misty room",
-        "n": 300
+    "133": {
+        "title": "Mt. Holloway",
+        "coordinates": "(60,52)",
+        "terrain": "MOUNTAIN",
+        "e": 117,
+        "w": 173
     },
-    "138": {
+    "297": {
         "title": "A misty room",
-        "s": 211,
-        "e": 131,
-        "w": 195
+        "coordinates": "(64,50)",
+        "terrain": "NORMAL",
+        "w": 230
     },
-    "195": {
+    "371": {
         "title": "A misty room",
-        "s": 228,
-        "e": 138,
-        "w": 225
+        "coordinates": "(64,49)",
+        "terrain": "NORMAL",
+        "s": 475,
+        "w": 307
+    },
+    "475": {
+        "title": "A misty room",
+        "coordinates": "(64,48)",
+        "terrain": "NORMAL",
+        "n": 371,
+        "s": 484
+    },
+    "484": {
+        "title": "A misty room",
+        "coordinates": "(64,47)",
+        "terrain": "NORMAL",
+        "n": 475
+    },
+    "111": {
+        "title": "A misty room",
+        "coordinates": "(64,52)",
+        "terrain": "NORMAL",
+        "n": 106,
+        "s": 367,
+        "e": 158
+    },
+    "158": {
+        "title": "A misty room",
+        "coordinates": "(65,52)",
+        "terrain": "NORMAL",
+        "s": 167,
+        "w": 111
+    },
+    "167": {
+        "title": "A misty room",
+        "coordinates": "(65,51)",
+        "terrain": "NORMAL",
+        "n": 158,
+        "s": 262,
+        "e": 260
+    },
+    "262": {
+        "title": "A misty room",
+        "coordinates": "(65,50)",
+        "terrain": "NORMAL",
+        "n": 167,
+        "s": 370,
+        "e": 358
+    },
+    "370": {
+        "title": "A misty room",
+        "coordinates": "(65,49)",
+        "terrain": "NORMAL",
+        "n": 262,
+        "s": 434,
+        "e": 407
+    },
+    "407": {
+        "title": "A misty room",
+        "coordinates": "(66,49)",
+        "terrain": "NORMAL",
+        "s": 496,
+        "w": 370
+    },
+    "496": {
+        "title": "A misty room",
+        "coordinates": "(66,48)",
+        "terrain": "NORMAL",
+        "n": 407
+    },
+    "434": {
+        "title": "A misty room",
+        "coordinates": "(65,48)",
+        "terrain": "NORMAL",
+        "n": 370
+    },
+    "358": {
+        "title": "A misty room",
+        "coordinates": "(66,50)",
+        "terrain": "NORMAL",
+        "e": 401,
+        "w": 262
+    },
+    "401": {
+        "title": "A misty room",
+        "coordinates": "(67,50)",
+        "terrain": "NORMAL",
+        "w": 358
+    },
+    "260": {
+        "title": "A misty room",
+        "coordinates": "(66,51)",
+        "terrain": "NORMAL",
+        "w": 167
+    },
+    "367": {
+        "title": "A misty room",
+        "coordinates": "(64,51)",
+        "terrain": "NORMAL",
+        "n": 111
     },
     "225": {
         "title": "A misty room",
+        "coordinates": "(58,51)",
+        "terrain": "NORMAL",
         "s": 278,
         "e": 195
     },
     "278": {
         "title": "A misty room",
+        "coordinates": "(58,50)",
+        "terrain": "NORMAL",
         "n": 225
-    },
-    "228": {
-        "title": "A misty room",
-        "n": 195,
-        "s": 281
-    },
-    "281": {
-        "title": "A misty room",
-        "n": 228,
-        "s": 318,
-        "e": 309,
-        "w": 317
-    },
-    "318": {
-        "title": "A misty room",
-        "n": 281,
-        "s": 487
-    },
-    "487": {
-        "title": "A misty room",
-        "n": 318,
-        "s": 489
-    },
-    "489": {
-        "title": "A misty room",
-        "n": 487
     },
     "309": {
         "title": "A misty room",
+        "coordinates": "(60,49)",
+        "terrain": "NORMAL",
         "s": 333,
         "e": 326,
         "w": 281
     },
     "333": {
         "title": "A misty room",
+        "coordinates": "(60,48)",
+        "terrain": "NORMAL",
         "n": 309,
         "s": 378
     },
     "378": {
         "title": "A misty room",
+        "coordinates": "(60,47)",
+        "terrain": "NORMAL",
         "n": 333
     },
     "326": {
         "title": "A misty room",
+        "coordinates": "(61,49)",
+        "terrain": "NORMAL",
         "s": 342,
         "w": 309
     },
     "342": {
         "title": "A misty room",
+        "coordinates": "(61,48)",
+        "terrain": "NORMAL",
         "n": 326,
         "s": 432
     },
     "432": {
         "title": "A misty room",
+        "coordinates": "(61,47)",
+        "terrain": "NORMAL",
         "n": 342
     },
-    "317": {
+    "318": {
         "title": "A misty room",
-        "s": 387,
-        "e": 281,
-        "w": 409
+        "coordinates": "(59,48)",
+        "terrain": "NORMAL",
+        "n": 281,
+        "s": 487
+    },
+    "487": {
+        "title": "A misty room",
+        "coordinates": "(59,47)",
+        "terrain": "NORMAL",
+        "n": 318,
+        "s": 489
+    },
+    "489": {
+        "title": "A misty room",
+        "coordinates": "(59,46)",
+        "terrain": "NORMAL",
+        "n": 487
     },
     "409": {
         "title": "A misty room",
+        "coordinates": "(57,49)",
+        "terrain": "NORMAL",
         "e": 317
     },
-    "387": {
+    "226": {
         "title": "A misty room",
-        "n": 317,
-        "s": 417,
-        "w": 431
+        "coordinates": "(57,52)",
+        "terrain": "NORMAL",
+        "s": 300,
+        "e": 214
     },
-    "417": {
+    "300": {
         "title": "A misty room",
-        "n": 387
+        "coordinates": "(57,51)",
+        "terrain": "NORMAL",
+        "n": 226,
+        "s": 377,
+        "w": 389
     },
-    "431": {
+    "377": {
         "title": "A misty room",
-        "e": 387,
-        "w": 492
+        "coordinates": "(57,50)",
+        "terrain": "NORMAL",
+        "n": 300
     },
-    "492": {
-        "title": "Sandofsky's Sanctum",
-        "e": 431
-    },
-    "211": {
+    "389": {
         "title": "A misty room",
-        "n": 138
+        "coordinates": "(56,51)",
+        "terrain": "NORMAL",
+        "e": 300
     },
-    "75": {
+    "102": {
         "title": "A misty room",
-        "e": 85,
-        "w": 52
+        "coordinates": "(57,56)",
+        "terrain": "NORMAL",
+        "s": 98,
+        "w": 142
     },
-    "85": {
+    "142": {
         "title": "A misty room",
-        "e": 154,
-        "w": 75
+        "coordinates": "(56,56)",
+        "terrain": "NORMAL",
+        "e": 102,
+        "w": 159
     },
-    "154": {
+    "159": {
         "title": "A misty room",
-        "e": 193,
-        "w": 85
+        "coordinates": "(55,56)",
+        "terrain": "NORMAL",
+        "e": 142,
+        "w": 196
     },
-    "193": {
+    "196": {
         "title": "A misty room",
-        "e": 251,
-        "w": 154
+        "coordinates": "(54,56)",
+        "terrain": "NORMAL",
+        "n": 222,
+        "e": 159,
+        "w": 197
     },
-    "251": {
+    "222": {
         "title": "A misty room",
-        "e": 315,
-        "w": 193
+        "coordinates": "(54,57)",
+        "terrain": "NORMAL",
+        "n": 305,
+        "s": 196
     },
-    "315": {
+    "305": {
         "title": "A misty room",
-        "w": 251
+        "coordinates": "(54,58)",
+        "terrain": "NORMAL",
+        "n": 365,
+        "s": 222
     },
-    "58": {
+    "365": {
         "title": "A misty room",
-        "s": 16,
-        "w": 65
+        "coordinates": "(54,59)",
+        "terrain": "NORMAL",
+        "s": 305
     },
-    "65": {
+    "197": {
         "title": "A misty room",
-        "n": 74,
-        "e": 58,
-        "w": 139
+        "coordinates": "(53,56)",
+        "terrain": "NORMAL",
+        "n": 232,
+        "e": 196,
+        "w": 276
     },
-    "74": {
+    "232": {
         "title": "A misty room",
-        "n": 87,
-        "s": 65,
-        "w": 161
+        "coordinates": "(53,57)",
+        "terrain": "NORMAL",
+        "n": 272,
+        "s": 197,
+        "w": 235
     },
-    "87": {
+    "235": {
         "title": "A misty room",
-        "s": 74
+        "coordinates": "(52,57)",
+        "terrain": "NORMAL",
+        "n": 330,
+        "e": 232,
+        "w": 355
     },
-    "161": {
+    "330": {
         "title": "A misty room",
-        "e": 74
+        "coordinates": "(52,58)",
+        "terrain": "NORMAL",
+        "n": 369,
+        "s": 235,
+        "w": 383
     },
-    "139": {
+    "369": {
         "title": "A misty room",
-        "e": 65,
-        "w": 188
+        "coordinates": "(52,59)",
+        "terrain": "NORMAL",
+        "n": 400,
+        "s": 330,
+        "w": 376
     },
-    "188": {
+    "376": {
         "title": "A misty room",
-        "e": 139,
-        "w": 335
+        "coordinates": "(51,59)",
+        "terrain": "NORMAL",
+        "e": 369
     },
-    "335": {
+    "400": {
         "title": "A misty room",
-        "e": 188,
-        "w": 366
+        "coordinates": "(52,60)",
+        "terrain": "NORMAL",
+        "s": 369
     },
-    "366": {
+    "383": {
         "title": "A misty room",
-        "e": 335
+        "coordinates": "(51,58)",
+        "terrain": "NORMAL",
+        "e": 330,
+        "w": 495
     },
-    "67": {
-        "title": "A misty room",
-        "e": 16,
-        "w": 162
+    "495": {
+        "title": "The Transmogriphier",
+        "coordinates": "(50,58)",
+        "terrain": "NORMAL",
+        "e": 383
     },
-    "162": {
+    "355": {
         "title": "A misty room",
-        "e": 67
+        "coordinates": "(51,57)",
+        "terrain": "NORMAL",
+        "e": 235
+    },
+    "272": {
+        "title": "A misty room",
+        "coordinates": "(53,58)",
+        "terrain": "NORMAL",
+        "n": 295,
+        "s": 232
+    },
+    "295": {
+        "title": "A misty room",
+        "coordinates": "(53,59)",
+        "terrain": "NORMAL",
+        "s": 272
+    },
+    "276": {
+        "title": "A misty room",
+        "coordinates": "(52,56)",
+        "terrain": "NORMAL",
+        "e": 197,
+        "w": 419
+    },
+    "419": {
+        "title": "A misty room",
+        "coordinates": "(51,56)",
+        "terrain": "NORMAL",
+        "e": 276
+    },
+    "163": {
+        "title": "Mt. Holloway",
+        "coordinates": "(58,54)",
+        "terrain": "MOUNTAIN",
+        "n": 70
+    },
+    "45": {
+        "title": "Mt. Holloway",
+        "coordinates": "(59,56)",
+        "terrain": "MOUNTAIN",
+        "n": 29,
+        "s": 60
+    },
+    "29": {
+        "title": "Mt. Holloway",
+        "coordinates": "(59,57)",
+        "terrain": "MOUNTAIN",
+        "s": 45,
+        "e": 21,
+        "w": 49
+    },
+    "21": {
+        "title": "Mt. Holloway",
+        "coordinates": "(60,57)",
+        "terrain": "MOUNTAIN",
+        "e": 12,
+        "w": 29
+    },
+    "49": {
+        "title": "A misty room",
+        "coordinates": "(58,57)",
+        "terrain": "NORMAL",
+        "s": 79,
+        "e": 29,
+        "w": 136
+    },
+    "79": {
+        "title": "A misty room",
+        "coordinates": "(58,56)",
+        "terrain": "NORMAL",
+        "n": 49
+    },
+    "136": {
+        "title": "A misty room",
+        "coordinates": "(57,57)",
+        "terrain": "NORMAL",
+        "e": 49,
+        "w": 148
+    },
+    "148": {
+        "title": "A misty room",
+        "coordinates": "(56,57)",
+        "terrain": "NORMAL",
+        "e": 136,
+        "w": 292
+    },
+    "292": {
+        "title": "A misty room",
+        "coordinates": "(55,57)",
+        "terrain": "NORMAL",
+        "n": 301,
+        "e": 148
+    },
+    "301": {
+        "title": "A misty room",
+        "coordinates": "(55,58)",
+        "terrain": "NORMAL",
+        "n": 304,
+        "s": 292
+    },
+    "304": {
+        "title": "A misty room",
+        "coordinates": "(55,59)",
+        "terrain": "NORMAL",
+        "s": 301
+    },
+    "25": {
+        "title": "Mt. Holloway",
+        "coordinates": "(60,56)",
+        "terrain": "MOUNTAIN",
+        "e": 18
+    },
+    "48": {
+        "title": "Mt. Holloway",
+        "coordinates": "(60,54)",
+        "terrain": "MOUNTAIN",
+        "n": 36,
+        "s": 105,
+        "w": 149
+    },
+    "105": {
+        "title": "Mt. Holloway",
+        "coordinates": "(60,53)",
+        "terrain": "MOUNTAIN",
+        "n": 48,
+        "w": 202
+    },
+    "202": {
+        "title": "Mt. Holloway",
+        "coordinates": "(59,53)",
+        "terrain": "MOUNTAIN",
+        "e": 105
+    },
+    "149": {
+        "title": "Mt. Holloway",
+        "coordinates": "(59,54)",
+        "terrain": "MOUNTAIN",
+        "e": 48
+    },
+    "5": {
+        "title": "A misty room",
+        "coordinates": "(62,59)",
+        "terrain": "NORMAL",
+        "w": 3
+    },
+    "4": {
+        "title": "A misty room",
+        "coordinates": "(61,60)",
+        "terrain": "NORMAL",
+        "n": 23,
+        "e": 13,
+        "w": 0
+    },
+    "23": {
+        "title": "A misty room",
+        "coordinates": "(61,61)",
+        "terrain": "NORMAL",
+        "s": 4,
+        "e": 26
+    },
+    "26": {
+        "title": "A misty room",
+        "coordinates": "(62,61)",
+        "terrain": "NORMAL",
+        "e": 55,
+        "w": 23
+    },
+    "55": {
+        "title": "Wishing Well",
+        "coordinates": "(63,61)",
+        "terrain": "NORMAL",
+        "w": 26
+    },
+    "13": {
+        "title": "A misty room",
+        "coordinates": "(62,60)",
+        "terrain": "NORMAL",
+        "e": 15,
+        "w": 4
+    },
+    "15": {
+        "title": "A misty room",
+        "coordinates": "(63,60)",
+        "terrain": "NORMAL",
+        "w": 13
+    },
+    "1": {
+        "title": "Shop",
+        "coordinates": "(59,60)",
+        "terrain": "NORMAL",
+        "e": 0
+    },
+    "46": {
+        "title": "A misty room",
+        "coordinates": "(59,63)",
+        "terrain": "NORMAL",
+        "e": 20,
+        "w": 62
+    },
+    "62": {
+        "title": "A misty room",
+        "coordinates": "(58,63)",
+        "terrain": "NORMAL",
+        "n": 64,
+        "e": 46,
+        "w": 84
     },
     "84": {
         "title": "A misty room",
+        "coordinates": "(57,63)",
+        "terrain": "NORMAL",
         "e": 62,
         "w": 91
     },
     "91": {
         "title": "A misty room",
+        "coordinates": "(56,63)",
+        "terrain": "NORMAL",
         "n": 180,
         "s": 101,
         "e": 84,
         "w": 99
     },
-    "101": {
-        "title": "A misty room",
-        "n": 91,
-        "w": 113
-    },
-    "113": {
-        "title": "A misty room",
-        "s": 114,
-        "e": 101
-    },
-    "114": {
-        "title": "A misty room",
-        "n": 113,
-        "w": 176
-    },
-    "176": {
-        "title": "A misty room",
-        "e": 114,
-        "w": 402
-    },
-    "402": {
-        "title": "A misty room",
-        "e": 176,
-        "w": 451
-    },
-    "451": {
-        "title": "A misty room",
-        "e": 402,
-        "w": 453
-    },
-    "453": {
-        "title": "A misty room",
-        "s": 464,
-        "e": 451
-    },
-    "464": {
-        "title": "A misty room",
-        "n": 453
-    },
     "99": {
         "title": "A misty room",
+        "coordinates": "(55,63)",
+        "terrain": "NORMAL",
         "n": 190,
         "e": 91,
         "w": 146
     },
     "190": {
         "title": "A misty room",
+        "coordinates": "(55,64)",
+        "terrain": "NORMAL",
         "s": 99
     },
     "146": {
         "title": "A misty room",
+        "coordinates": "(54,63)",
+        "terrain": "NORMAL",
         "n": 215,
         "s": 177,
         "e": 99,
         "w": 257
     },
-    "215": {
-        "title": "A misty room",
-        "n": 246,
-        "s": 146
-    },
-    "246": {
-        "title": "A misty room",
-        "s": 215
-    },
-    "177": {
-        "title": "A misty room",
-        "n": 146,
-        "w": 346
-    },
-    "346": {
-        "title": "A misty room",
-        "e": 177
-    },
     "257": {
         "title": "A misty room",
+        "coordinates": "(53,63)",
+        "terrain": "NORMAL",
         "n": 320,
         "e": 146,
         "w": 364
     },
     "364": {
         "title": "A misty room",
+        "coordinates": "(52,63)",
+        "terrain": "NORMAL",
         "n": 429,
         "s": 381,
         "e": 257,
         "w": 448
     },
-    "429": {
+    "448": {
         "title": "A misty room",
-        "s": 364
+        "coordinates": "(51,63)",
+        "terrain": "NORMAL",
+        "e": 364
     },
     "381": {
         "title": "A misty room",
+        "coordinates": "(52,62)",
+        "terrain": "NORMAL",
         "n": 364,
         "w": 394
     },
     "394": {
         "title": "A misty room",
+        "coordinates": "(51,62)",
+        "terrain": "NORMAL",
         "e": 381
     },
-    "448": {
+    "429": {
         "title": "A misty room",
-        "e": 364
+        "coordinates": "(52,64)",
+        "terrain": "NORMAL",
+        "s": 364
     },
     "320": {
         "title": "A misty room",
+        "coordinates": "(53,64)",
+        "terrain": "NORMAL",
         "n": 348,
         "s": 257
     },
     "348": {
         "title": "A misty room",
+        "coordinates": "(53,65)",
+        "terrain": "NORMAL",
         "s": 320
+    },
+    "215": {
+        "title": "A misty room",
+        "coordinates": "(54,64)",
+        "terrain": "NORMAL",
+        "n": 246,
+        "s": 146
+    },
+    "246": {
+        "title": "A misty room",
+        "coordinates": "(54,65)",
+        "terrain": "NORMAL",
+        "s": 215
+    },
+    "177": {
+        "title": "A misty room",
+        "coordinates": "(54,62)",
+        "terrain": "NORMAL",
+        "n": 146,
+        "w": 346
+    },
+    "346": {
+        "title": "A misty room",
+        "coordinates": "(53,62)",
+        "terrain": "NORMAL",
+        "e": 177
+    },
+    "101": {
+        "title": "A misty room",
+        "coordinates": "(56,62)",
+        "terrain": "NORMAL",
+        "n": 91,
+        "w": 113
+    },
+    "113": {
+        "title": "A misty room",
+        "coordinates": "(55,62)",
+        "terrain": "NORMAL",
+        "s": 114,
+        "e": 101
+    },
+    "114": {
+        "title": "A misty room",
+        "coordinates": "(55,61)",
+        "terrain": "NORMAL",
+        "n": 113,
+        "w": 176
+    },
+    "176": {
+        "title": "A misty room",
+        "coordinates": "(54,61)",
+        "terrain": "NORMAL",
+        "e": 114,
+        "w": 402
+    },
+    "402": {
+        "title": "A misty room",
+        "coordinates": "(53,61)",
+        "terrain": "NORMAL",
+        "e": 176,
+        "w": 451
+    },
+    "451": {
+        "title": "A misty room",
+        "coordinates": "(52,61)",
+        "terrain": "NORMAL",
+        "e": 402,
+        "w": 453
+    },
+    "453": {
+        "title": "A misty room",
+        "coordinates": "(51,61)",
+        "terrain": "NORMAL",
+        "s": 464,
+        "e": 451
+    },
+    "464": {
+        "title": "A misty room",
+        "coordinates": "(51,60)",
+        "terrain": "NORMAL",
+        "n": 453
     },
     "180": {
         "title": "A misty room",
+        "coordinates": "(56,64)",
+        "terrain": "NORMAL",
         "s": 91
     },
-    "76": {
+    "64": {
         "title": "A misty room",
-        "n": 83,
-        "e": 72,
-        "w": 110
+        "coordinates": "(58,64)",
+        "terrain": "NORMAL",
+        "s": 62,
+        "w": 82
     },
-    "110": {
+    "82": {
         "title": "A misty room",
-        "e": 76
+        "coordinates": "(57,64)",
+        "terrain": "NORMAL",
+        "n": 191,
+        "e": 64
     },
-    "83": {
+    "191": {
         "title": "A misty room",
-        "s": 76,
-        "e": 130,
-        "w": 125
+        "coordinates": "(57,65)",
+        "terrain": "NORMAL",
+        "s": 82
     },
-    "130": {
+    "27": {
         "title": "A misty room",
-        "w": 83
+        "coordinates": "(61,63)",
+        "terrain": "NORMAL",
+        "n": 40,
+        "s": 28,
+        "e": 30,
+        "w": 20
     },
-    "125": {
+    "30": {
         "title": "A misty room",
-        "n": 165,
-        "e": 83,
-        "w": 237
+        "coordinates": "(62,63)",
+        "terrain": "NORMAL",
+        "s": 31,
+        "e": 32,
+        "w": 27
     },
-    "165": {
+    "32": {
         "title": "A misty room",
-        "n": 203,
-        "s": 125,
-        "w": 204
+        "coordinates": "(63,63)",
+        "terrain": "NORMAL",
+        "n": 39,
+        "e": 54,
+        "w": 30
     },
-    "204": {
+    "39": {
         "title": "A misty room",
-        "n": 219,
-        "e": 165,
-        "w": 216
+        "coordinates": "(63,64)",
+        "terrain": "NORMAL",
+        "n": 53,
+        "s": 32,
+        "e": 51,
+        "w": 41
     },
-    "216": {
-        "title": "A Dark Cave",
-        "n": 234,
-        "e": 204,
-        "w": 218
-    },
-    "218": {
-        "title": "A Dark Cave",
-        "s": 263,
-        "e": 216,
-        "w": 242
-    },
-    "242": {
-        "title": "A Dark Cave",
-        "n": 287,
-        "s": 259,
-        "e": 218,
-        "w": 275
-    },
-    "275": {
+    "53": {
         "title": "A misty room",
-        "e": 242,
-        "w": 456
+        "coordinates": "(63,65)",
+        "terrain": "NORMAL",
+        "n": 95,
+        "s": 39,
+        "w": 88
     },
-    "456": {
+    "95": {
         "title": "A misty room",
-        "e": 275,
-        "w": 499
+        "coordinates": "(63,66)",
+        "terrain": "NORMAL",
+        "n": 119,
+        "s": 53,
+        "w": 115
     },
-    "499": {
-        "title": "Glasowyn's Grave",
-        "e": 456
-    },
-    "287": {
-        "title": "A Dark Cave",
-        "s": 242,
-        "w": 339
-    },
-    "339": {
-        "title": "A Dark Cave",
-        "e": 287,
-        "w": 445
-    },
-    "445": {
-        "title": "A Dark Cave",
-        "n": 447,
-        "e": 339,
-        "w": 450
-    },
-    "447": {
-        "title": "A Dark Cave",
-        "s": 445
-    },
-    "450": {
-        "title": "A Dark Cave",
-        "e": 445
-    },
-    "259": {
-        "title": "A Dark Cave",
-        "n": 242,
-        "w": 310
-    },
-    "310": {
-        "title": "A Dark Cave",
-        "e": 259,
-        "w": 412
-    },
-    "412": {
-        "title": "A Dark Cave",
-        "s": 488,
-        "e": 310
-    },
-    "488": {
-        "title": "A Dark Cave",
-        "n": 412
-    },
-    "263": {
-        "title": "A Dark Cave",
-        "n": 218
-    },
-    "234": {
-        "title": "A Dark Cave",
-        "n": 368,
-        "s": 216,
-        "w": 252
-    },
-    "252": {
-        "title": "A Dark Cave",
-        "n": 284,
-        "e": 234
-    },
-    "284": {
-        "title": "A Dark Cave",
-        "n": 302,
-        "s": 252,
-        "w": 303
-    },
-    "303": {
-        "title": "A Dark Cave",
-        "n": 361,
-        "e": 284,
-        "w": 405
-    },
-    "361": {
-        "title": "A Dark Cave",
-        "n": 408,
-        "s": 303
-    },
-    "408": {
-        "title": "A Dark Cave",
-        "n": 458,
-        "s": 361,
-        "w": 423
-    },
-    "423": {
-        "title": "A Dark Cave",
-        "e": 408,
-        "w": 454
-    },
-    "454": {
-        "title": "A Dark Cave",
-        "n": 470,
-        "e": 423
-    },
-    "470": {
-        "title": "A Dark Cave",
-        "s": 454
-    },
-    "458": {
-        "title": "A Dark Cave",
-        "s": 408,
-        "w": 459
-    },
-    "459": {
-        "title": "A Dark Cave",
-        "e": 458
-    },
-    "405": {
-        "title": "A Dark Cave",
-        "n": 406,
-        "e": 303
-    },
-    "406": {
-        "title": "A Dark Cave",
-        "s": 405,
-        "w": 415
-    },
-    "415": {
-        "title": "A Dark Cave",
-        "e": 406,
-        "w": 418
-    },
-    "418": {
-        "title": "A Dark Cave",
-        "n": 425,
-        "s": 474,
-        "e": 415
-    },
-    "474": {
-        "title": "A Dark Cave",
-        "n": 418
-    },
-    "425": {
-        "title": "A Dark Cave",
-        "s": 418,
-        "w": 469
-    },
-    "469": {
-        "title": "A Dark Cave",
-        "e": 425
-    },
-    "302": {
-        "title": "A Dark Cave",
-        "n": 422,
-        "s": 284
-    },
-    "422": {
-        "title": "A Dark Cave",
-        "n": 426,
-        "s": 302
-    },
-    "426": {
-        "title": "A Dark Cave",
-        "n": 457,
-        "s": 422
-    },
-    "457": {
-        "title": "A Dark Cave",
-        "n": 461,
-        "s": 426
-    },
-    "461": {
-        "title": "Linh's Shrine",
-        "s": 457
-    },
-    "368": {
-        "title": "A Dark Cave",
-        "s": 234
-    },
-    "219": {
+    "119": {
         "title": "A misty room",
-        "s": 204
+        "coordinates": "(63,67)",
+        "terrain": "NORMAL",
+        "n": 134,
+        "s": 95
     },
-    "203": {
+    "134": {
         "title": "A misty room",
-        "n": 268,
-        "s": 165,
-        "e": 299
+        "coordinates": "(63,68)",
+        "terrain": "NORMAL",
+        "n": 147,
+        "s": 119,
+        "e": 144
     },
-    "299": {
+    "147": {
         "title": "A misty room",
-        "e": 311,
-        "w": 203
+        "coordinates": "(63,69)",
+        "terrain": "NORMAL",
+        "n": 200,
+        "s": 134,
+        "e": 153,
+        "w": 151
     },
-    "311": {
+    "200": {
         "title": "A misty room",
-        "w": 299
+        "coordinates": "(63,70)",
+        "terrain": "NORMAL",
+        "n": 227,
+        "s": 147,
+        "e": 206
     },
-    "268": {
+    "227": {
         "title": "A misty room",
-        "s": 203,
-        "e": 411,
-        "w": 312
+        "coordinates": "(63,71)",
+        "terrain": "NORMAL",
+        "n": 269,
+        "s": 200
     },
-    "312": {
+    "269": {
         "title": "A misty room",
-        "n": 328,
-        "e": 268
+        "coordinates": "(63,72)",
+        "terrain": "NORMAL",
+        "n": 319,
+        "s": 227
     },
-    "328": {
+    "319": {
         "title": "A misty room",
-        "n": 332,
-        "s": 312,
-        "e": 357,
-        "w": 363
+        "coordinates": "(63,73)",
+        "terrain": "NORMAL",
+        "n": 359,
+        "s": 269,
+        "e": 345
     },
-    "357": {
+    "345": {
         "title": "A misty room",
-        "w": 328
+        "coordinates": "(64,73)",
+        "terrain": "NORMAL",
+        "s": 375,
+        "w": 319
     },
-    "363": {
+    "375": {
         "title": "A misty room",
-        "n": 372,
-        "e": 328
+        "coordinates": "(64,72)",
+        "terrain": "NORMAL",
+        "n": 345,
+        "e": 385
     },
-    "372": {
+    "385": {
         "title": "A misty room",
-        "n": 441,
-        "s": 363
+        "coordinates": "(65,72)",
+        "terrain": "NORMAL",
+        "w": 375
     },
-    "441": {
+    "359": {
         "title": "A misty room",
-        "s": 372
+        "coordinates": "(63,74)",
+        "terrain": "NORMAL",
+        "s": 319
     },
-    "332": {
+    "206": {
         "title": "A misty room",
-        "n": 350,
-        "s": 328
+        "coordinates": "(64,70)",
+        "terrain": "NORMAL",
+        "n": 288,
+        "e": 380,
+        "w": 200
     },
-    "350": {
+    "288": {
         "title": "A misty room",
-        "n": 436,
-        "s": 332,
-        "e": 404
+        "coordinates": "(64,71)",
+        "terrain": "NORMAL",
+        "s": 206
     },
-    "436": {
+    "380": {
         "title": "A misty room",
-        "s": 350
+        "coordinates": "(65,70)",
+        "terrain": "NORMAL",
+        "n": 424,
+        "w": 206
     },
-    "404": {
+    "424": {
         "title": "A misty room",
-        "n": 481,
-        "w": 350
+        "coordinates": "(65,71)",
+        "terrain": "NORMAL",
+        "s": 380,
+        "e": 473
     },
-    "481": {
+    "473": {
         "title": "A misty room",
-        "s": 404
+        "coordinates": "(66,71)",
+        "terrain": "NORMAL",
+        "e": 494,
+        "w": 424
     },
-    "411": {
+    "494": {
         "title": "A misty room",
-        "w": 268
+        "coordinates": "(67,71)",
+        "terrain": "NORMAL",
+        "w": 473
     },
-    "237": {
+    "153": {
         "title": "A misty room",
-        "e": 125,
-        "w": 245
+        "coordinates": "(64,69)",
+        "terrain": "NORMAL",
+        "e": 329,
+        "w": 147
     },
-    "245": {
+    "329": {
         "title": "A misty room",
-        "s": 254,
-        "e": 237
+        "coordinates": "(65,69)",
+        "terrain": "NORMAL",
+        "w": 153
     },
-    "254": {
+    "151": {
         "title": "A misty room",
-        "n": 245,
-        "w": 314
+        "coordinates": "(62,69)",
+        "terrain": "NORMAL",
+        "n": 172,
+        "e": 147,
+        "w": 207
     },
-    "314": {
+    "172": {
         "title": "A misty room",
-        "e": 254
+        "coordinates": "(62,70)",
+        "terrain": "NORMAL",
+        "n": 267,
+        "s": 151
+    },
+    "267": {
+        "title": "A misty room",
+        "coordinates": "(62,71)",
+        "terrain": "NORMAL",
+        "n": 285,
+        "s": 172,
+        "w": 271
+    },
+    "271": {
+        "title": "A misty room",
+        "coordinates": "(61,71)",
+        "terrain": "NORMAL",
+        "n": 337,
+        "e": 267
+    },
+    "337": {
+        "title": "A misty room",
+        "coordinates": "(61,72)",
+        "terrain": "NORMAL",
+        "s": 271
+    },
+    "285": {
+        "title": "A misty room",
+        "coordinates": "(62,72)",
+        "terrain": "NORMAL",
+        "n": 286,
+        "s": 267
+    },
+    "286": {
+        "title": "A misty room",
+        "coordinates": "(62,73)",
+        "terrain": "NORMAL",
+        "n": 336,
+        "s": 285,
+        "w": 291
+    },
+    "291": {
+        "title": "A misty room",
+        "coordinates": "(61,73)",
+        "terrain": "NORMAL",
+        "n": 410,
+        "e": 286,
+        "w": 347
+    },
+    "347": {
+        "title": "A misty room",
+        "coordinates": "(60,73)",
+        "terrain": "NORMAL",
+        "n": 452,
+        "s": 442,
+        "e": 291
+    },
+    "442": {
+        "title": "A misty room",
+        "coordinates": "(60,72)",
+        "terrain": "NORMAL",
+        "n": 347
+    },
+    "452": {
+        "title": "A misty room",
+        "coordinates": "(60,74)",
+        "terrain": "NORMAL",
+        "s": 347
+    },
+    "410": {
+        "title": "A misty room",
+        "coordinates": "(61,74)",
+        "terrain": "NORMAL",
+        "s": 291
+    },
+    "336": {
+        "title": "A misty room",
+        "coordinates": "(62,74)",
+        "terrain": "NORMAL",
+        "s": 286
+    },
+    "207": {
+        "title": "A misty room",
+        "coordinates": "(61,69)",
+        "terrain": "NORMAL",
+        "n": 231,
+        "e": 151,
+        "w": 290
+    },
+    "231": {
+        "title": "A misty room",
+        "coordinates": "(61,70)",
+        "terrain": "NORMAL",
+        "s": 207,
+        "w": 248
+    },
+    "248": {
+        "title": "A misty room",
+        "coordinates": "(60,70)",
+        "terrain": "NORMAL",
+        "n": 296,
+        "e": 231,
+        "w": 280
+    },
+    "296": {
+        "title": "A misty room",
+        "coordinates": "(60,71)",
+        "terrain": "NORMAL",
+        "s": 248
+    },
+    "280": {
+        "title": "A misty room",
+        "coordinates": "(59,70)",
+        "terrain": "NORMAL",
+        "n": 325,
+        "e": 248
+    },
+    "325": {
+        "title": "A misty room",
+        "coordinates": "(59,71)",
+        "terrain": "NORMAL",
+        "n": 353,
+        "s": 280,
+        "w": 374
+    },
+    "353": {
+        "title": "A misty room",
+        "coordinates": "(59,72)",
+        "terrain": "NORMAL",
+        "s": 325
+    },
+    "374": {
+        "title": "Fully Shrine",
+        "coordinates": "(58,71)",
+        "terrain": "NORMAL",
+        "e": 325
+    },
+    "290": {
+        "title": "A misty room",
+        "coordinates": "(60,69)",
+        "terrain": "NORMAL",
+        "e": 207
+    },
+    "144": {
+        "title": "A misty room",
+        "coordinates": "(64,68)",
+        "terrain": "NORMAL",
+        "e": 155,
+        "w": 134
+    },
+    "155": {
+        "title": "A misty room",
+        "coordinates": "(65,68)",
+        "terrain": "NORMAL",
+        "s": 187,
+        "e": 316,
+        "w": 144
+    },
+    "187": {
+        "title": "A misty room",
+        "coordinates": "(65,67)",
+        "terrain": "NORMAL",
+        "n": 155
+    },
+    "316": {
+        "title": "A misty room",
+        "coordinates": "(66,68)",
+        "terrain": "NORMAL",
+        "n": 344,
+        "w": 155
+    },
+    "344": {
+        "title": "A misty room",
+        "coordinates": "(66,69)",
+        "terrain": "NORMAL",
+        "n": 392,
+        "s": 316,
+        "e": 390
+    },
+    "390": {
+        "title": "A misty room",
+        "coordinates": "(67,69)",
+        "terrain": "NORMAL",
+        "w": 344
+    },
+    "392": {
+        "title": "A misty room",
+        "coordinates": "(66,70)",
+        "terrain": "NORMAL",
+        "s": 344,
+        "e": 462
+    },
+    "462": {
+        "title": "A misty room",
+        "coordinates": "(67,70)",
+        "terrain": "NORMAL",
+        "w": 392
+    },
+    "115": {
+        "title": "A misty room",
+        "coordinates": "(62,66)",
+        "terrain": "NORMAL",
+        "n": 116,
+        "e": 95
+    },
+    "116": {
+        "title": "A misty room",
+        "coordinates": "(62,67)",
+        "terrain": "NORMAL",
+        "n": 132,
+        "s": 115
+    },
+    "132": {
+        "title": "A misty room",
+        "coordinates": "(62,68)",
+        "terrain": "NORMAL",
+        "s": 116
+    },
+    "88": {
+        "title": "A misty room",
+        "coordinates": "(62,65)",
+        "terrain": "NORMAL",
+        "e": 53,
+        "w": 122
+    },
+    "122": {
+        "title": "A misty room",
+        "coordinates": "(61,65)",
+        "terrain": "NORMAL",
+        "n": 124,
+        "e": 88
+    },
+    "124": {
+        "title": "A misty room",
+        "coordinates": "(61,66)",
+        "terrain": "NORMAL",
+        "n": 157,
+        "s": 122
+    },
+    "157": {
+        "title": "A misty room",
+        "coordinates": "(61,67)",
+        "terrain": "NORMAL",
+        "n": 210,
+        "s": 124,
+        "w": 182
+    },
+    "182": {
+        "title": "A misty room",
+        "coordinates": "(60,67)",
+        "terrain": "NORMAL",
+        "e": 157,
+        "w": 208
+    },
+    "208": {
+        "title": "A misty room",
+        "coordinates": "(59,67)",
+        "terrain": "NORMAL",
+        "e": 182
+    },
+    "210": {
+        "title": "A misty room",
+        "coordinates": "(61,68)",
+        "terrain": "NORMAL",
+        "s": 157
+    },
+    "41": {
+        "title": "A misty room",
+        "coordinates": "(62,64)",
+        "terrain": "NORMAL",
+        "e": 39
+    },
+    "51": {
+        "title": "A misty room",
+        "coordinates": "(64,64)",
+        "terrain": "NORMAL",
+        "n": 69,
+        "e": 57,
+        "w": 39
+    },
+    "69": {
+        "title": "A misty room",
+        "coordinates": "(64,65)",
+        "terrain": "NORMAL",
+        "n": 94,
+        "s": 51,
+        "e": 103
+    },
+    "103": {
+        "title": "A misty room",
+        "coordinates": "(65,65)",
+        "terrain": "NORMAL",
+        "n": 160,
+        "w": 69
+    },
+    "160": {
+        "title": "A misty room",
+        "coordinates": "(65,66)",
+        "terrain": "NORMAL",
+        "s": 103
+    },
+    "94": {
+        "title": "A misty room",
+        "coordinates": "(64,66)",
+        "terrain": "NORMAL",
+        "n": 152,
+        "s": 69
+    },
+    "152": {
+        "title": "A misty room",
+        "coordinates": "(64,67)",
+        "terrain": "NORMAL",
+        "s": 94
+    },
+    "57": {
+        "title": "A misty room",
+        "coordinates": "(65,64)",
+        "terrain": "NORMAL",
+        "e": 145,
+        "w": 51
+    },
+    "145": {
+        "title": "A misty room",
+        "coordinates": "(66,64)",
+        "terrain": "NORMAL",
+        "n": 174,
+        "e": 220,
+        "w": 57
+    },
+    "220": {
+        "title": "A misty room",
+        "coordinates": "(67,64)",
+        "terrain": "NORMAL",
+        "w": 145
+    },
+    "174": {
+        "title": "A misty room",
+        "coordinates": "(66,65)",
+        "terrain": "NORMAL",
+        "n": 192,
+        "s": 145,
+        "e": 224
+    },
+    "192": {
+        "title": "A misty room",
+        "coordinates": "(66,66)",
+        "terrain": "NORMAL",
+        "n": 201,
+        "s": 174,
+        "e": 223
+    },
+    "201": {
+        "title": "A misty room",
+        "coordinates": "(66,67)",
+        "terrain": "NORMAL",
+        "s": 192
+    },
+    "223": {
+        "title": "A misty room",
+        "coordinates": "(67,66)",
+        "terrain": "NORMAL",
+        "n": 283,
+        "w": 192
+    },
+    "283": {
+        "title": "A misty room",
+        "coordinates": "(67,67)",
+        "terrain": "NORMAL",
+        "n": 331,
+        "s": 223,
+        "e": 313
+    },
+    "331": {
+        "title": "A misty room",
+        "coordinates": "(67,68)",
+        "terrain": "NORMAL",
+        "s": 283,
+        "e": 446
+    },
+    "446": {
+        "title": "A misty room",
+        "coordinates": "(68,68)",
+        "terrain": "NORMAL",
+        "e": 466,
+        "w": 331
+    },
+    "466": {
+        "title": "A misty room",
+        "coordinates": "(69,68)",
+        "terrain": "NORMAL",
+        "s": 486,
+        "e": 472,
+        "w": 446
+    },
+    "486": {
+        "title": "Arron's Athenaeum",
+        "coordinates": "(69,67)",
+        "terrain": "NORMAL",
+        "n": 466
+    },
+    "472": {
+        "title": "A misty room",
+        "coordinates": "(70,68)",
+        "terrain": "NORMAL",
+        "w": 466
+    },
+    "313": {
+        "title": "A misty room",
+        "coordinates": "(68,67)",
+        "terrain": "NORMAL",
+        "w": 283
+    },
+    "224": {
+        "title": "A misty room",
+        "coordinates": "(67,65)",
+        "terrain": "NORMAL",
+        "w": 174
+    },
+    "54": {
+        "title": "A misty room",
+        "coordinates": "(64,63)",
+        "terrain": "NORMAL",
+        "w": 32
+    },
+    "31": {
+        "title": "A misty room",
+        "coordinates": "(62,62)",
+        "terrain": "NORMAL",
+        "n": 30,
+        "e": 33
+    },
+    "33": {
+        "title": "A misty room",
+        "coordinates": "(63,62)",
+        "terrain": "NORMAL",
+        "e": 38,
+        "w": 31
+    },
+    "38": {
+        "title": "A misty room",
+        "coordinates": "(64,62)",
+        "terrain": "NORMAL",
+        "s": 59,
+        "e": 66,
+        "w": 33
+    },
+    "66": {
+        "title": "A misty room",
+        "coordinates": "(65,62)",
+        "terrain": "NORMAL",
+        "n": 169,
+        "e": 123,
+        "w": 38
+    },
+    "123": {
+        "title": "A misty room",
+        "coordinates": "(66,62)",
+        "terrain": "NORMAL",
+        "w": 66
+    },
+    "169": {
+        "title": "A misty room",
+        "coordinates": "(65,63)",
+        "terrain": "NORMAL",
+        "s": 66,
+        "e": 186
+    },
+    "186": {
+        "title": "A misty room",
+        "coordinates": "(66,63)",
+        "terrain": "NORMAL",
+        "e": 205,
+        "w": 169
+    },
+    "205": {
+        "title": "A misty room",
+        "coordinates": "(67,63)",
+        "terrain": "NORMAL",
+        "s": 241,
+        "e": 479,
+        "w": 186
+    },
+    "479": {
+        "title": "A misty room",
+        "coordinates": "(68,63)",
+        "terrain": "NORMAL",
+        "w": 205
+    },
+    "241": {
+        "title": "A misty room",
+        "coordinates": "(67,62)",
+        "terrain": "NORMAL",
+        "n": 205,
+        "e": 266
+    },
+    "266": {
+        "title": "A misty room",
+        "coordinates": "(68,62)",
+        "terrain": "NORMAL",
+        "w": 241
+    },
+    "59": {
+        "title": "A misty room",
+        "coordinates": "(64,61)",
+        "terrain": "NORMAL",
+        "n": 38,
+        "s": 104,
+        "e": 92
+    },
+    "92": {
+        "title": "A misty room",
+        "coordinates": "(65,61)",
+        "terrain": "NORMAL",
+        "w": 59
+    },
+    "104": {
+        "title": "A misty room",
+        "coordinates": "(64,60)",
+        "terrain": "NORMAL",
+        "n": 59,
+        "e": 107
+    },
+    "107": {
+        "title": "A misty room",
+        "coordinates": "(65,60)",
+        "terrain": "NORMAL",
+        "s": 120,
+        "e": 121,
+        "w": 104
+    },
+    "121": {
+        "title": "A misty room",
+        "coordinates": "(66,60)",
+        "terrain": "NORMAL",
+        "n": 128,
+        "e": 143,
+        "w": 107
+    },
+    "128": {
+        "title": "A misty room",
+        "coordinates": "(66,61)",
+        "terrain": "NORMAL",
+        "s": 121,
+        "e": 189
+    },
+    "189": {
+        "title": "A misty room",
+        "coordinates": "(67,61)",
+        "terrain": "NORMAL",
+        "e": 255,
+        "w": 128
+    },
+    "255": {
+        "title": "A misty room",
+        "coordinates": "(68,61)",
+        "terrain": "NORMAL",
+        "w": 189
+    },
+    "143": {
+        "title": "A misty room",
+        "coordinates": "(67,60)",
+        "terrain": "NORMAL",
+        "e": 212,
+        "w": 121
+    },
+    "212": {
+        "title": "A misty room",
+        "coordinates": "(68,60)",
+        "terrain": "NORMAL",
+        "w": 143
+    },
+    "120": {
+        "title": "A misty room",
+        "coordinates": "(65,59)",
+        "terrain": "NORMAL",
+        "n": 107,
+        "e": 127
+    },
+    "127": {
+        "title": "A misty room",
+        "coordinates": "(66,59)",
+        "terrain": "NORMAL",
+        "e": 184,
+        "w": 120
+    },
+    "184": {
+        "title": "A misty room",
+        "coordinates": "(67,59)",
+        "terrain": "NORMAL",
+        "e": 221,
+        "w": 127
+    },
+    "221": {
+        "title": "A misty room",
+        "coordinates": "(68,59)",
+        "terrain": "NORMAL",
+        "s": 253,
+        "e": 240,
+        "w": 184
+    },
+    "253": {
+        "title": "A misty room",
+        "coordinates": "(68,58)",
+        "terrain": "NORMAL",
+        "n": 221,
+        "e": 258
+    },
+    "258": {
+        "title": "A misty room",
+        "coordinates": "(69,58)",
+        "terrain": "NORMAL",
+        "e": 306,
+        "w": 253
+    },
+    "306": {
+        "title": "A misty room",
+        "coordinates": "(70,58)",
+        "terrain": "NORMAL",
+        "e": 397,
+        "w": 258
+    },
+    "397": {
+        "title": "A misty room",
+        "coordinates": "(71,58)",
+        "terrain": "NORMAL",
+        "w": 306
+    },
+    "240": {
+        "title": "A misty room",
+        "coordinates": "(69,59)",
+        "terrain": "NORMAL",
+        "n": 249,
+        "e": 386,
+        "w": 221
+    },
+    "386": {
+        "title": "A misty room",
+        "coordinates": "(70,59)",
+        "terrain": "NORMAL",
+        "e": 414,
+        "w": 240
+    },
+    "414": {
+        "title": "A misty room",
+        "coordinates": "(71,59)",
+        "terrain": "NORMAL",
+        "w": 386
+    },
+    "249": {
+        "title": "A misty room",
+        "coordinates": "(69,60)",
+        "terrain": "NORMAL",
+        "n": 265,
+        "s": 240,
+        "e": 282
+    },
+    "265": {
+        "title": "A misty room",
+        "coordinates": "(69,61)",
+        "terrain": "NORMAL",
+        "n": 279,
+        "s": 249,
+        "e": 270
+    },
+    "279": {
+        "title": "A misty room",
+        "coordinates": "(69,62)",
+        "terrain": "NORMAL",
+        "s": 265
+    },
+    "270": {
+        "title": "A misty room",
+        "coordinates": "(70,61)",
+        "terrain": "NORMAL",
+        "n": 416,
+        "e": 338,
+        "w": 265
+    },
+    "338": {
+        "title": "A misty room",
+        "coordinates": "(71,61)",
+        "terrain": "NORMAL",
+        "s": 379,
+        "w": 270
+    },
+    "379": {
+        "title": "A misty room",
+        "coordinates": "(71,60)",
+        "terrain": "NORMAL",
+        "n": 338,
+        "e": 395
+    },
+    "395": {
+        "title": "A misty room",
+        "coordinates": "(72,60)",
+        "terrain": "NORMAL",
+        "s": 403,
+        "e": 421,
+        "w": 379
+    },
+    "421": {
+        "title": "A misty room",
+        "coordinates": "(73,60)",
+        "terrain": "NORMAL",
+        "n": 440,
+        "w": 395
+    },
+    "440": {
+        "title": "A misty room",
+        "coordinates": "(73,61)",
+        "terrain": "NORMAL",
+        "s": 421,
+        "w": 476
+    },
+    "476": {
+        "title": "A misty room",
+        "coordinates": "(72,61)",
+        "terrain": "NORMAL",
+        "e": 440
+    },
+    "403": {
+        "title": "A misty room",
+        "coordinates": "(72,59)",
+        "terrain": "NORMAL",
+        "n": 395
+    },
+    "416": {
+        "title": "A misty room",
+        "coordinates": "(70,62)",
+        "terrain": "NORMAL",
+        "s": 270
+    },
+    "282": {
+        "title": "A misty room",
+        "coordinates": "(70,60)",
+        "terrain": "NORMAL",
+        "w": 249
+    },
+    "28": {
+        "title": "A misty room",
+        "coordinates": "(61,62)",
+        "terrain": "NORMAL",
+        "n": 27
+    },
+    "40": {
+        "title": "A misty room",
+        "coordinates": "(61,64)",
+        "terrain": "NORMAL",
+        "s": 27
+    },
+    "73": {
+        "title": "A misty room",
+        "coordinates": "(59,64)",
+        "terrain": "NORMAL",
+        "e": 63
+    },
+    "500": {
+        "title": "Darkness",
+        "coordinates": "(60,60)",
+        "terrain": "NORMAL",
+        "n": 504,
+        "s": 502,
+        "e": 503,
+        "w": 501
+    },
+    "502": {
+        "title": "Darkness",
+        "coordinates": "(60,59)",
+        "terrain": "NORMAL",
+        "n": 500,
+        "s": 508,
+        "e": 505,
+        "w": 509
+    },
+    "508": {
+        "title": "Darkness",
+        "coordinates": "(60,58)",
+        "terrain": "NORMAL",
+        "n": 502,
+        "s": 561
+    },
+    "561": {
+        "title": "Darkness",
+        "coordinates": "(60,57)",
+        "terrain": "NORMAL",
+        "n": 508,
+        "s": 571
+    },
+    "571": {
+        "title": "Darkness",
+        "coordinates": "(60,56)",
+        "terrain": "NORMAL",
+        "n": 561,
+        "s": 584
+    },
+    "584": {
+        "title": "Darkness",
+        "coordinates": "(60,55)",
+        "terrain": "NORMAL",
+        "n": 571,
+        "s": 669
+    },
+    "669": {
+        "title": "Darkness",
+        "coordinates": "(60,54)",
+        "terrain": "NORMAL",
+        "n": 584,
+        "s": 695
+    },
+    "695": {
+        "title": "Darkness",
+        "coordinates": "(60,53)",
+        "terrain": "NORMAL",
+        "n": 669,
+        "s": 757,
+        "e": 696
+    },
+    "696": {
+        "title": "Darkness",
+        "coordinates": "(61,53)",
+        "terrain": "NORMAL",
+        "s": 753,
+        "w": 695
+    },
+    "753": {
+        "title": "Darkness",
+        "coordinates": "(61,52)",
+        "terrain": "NORMAL",
+        "n": 696,
+        "s": 784,
+        "e": 775
+    },
+    "784": {
+        "title": "Darkness",
+        "coordinates": "(61,51)",
+        "terrain": "NORMAL",
+        "n": 753
+    },
+    "775": {
+        "title": "Darkness",
+        "coordinates": "(62,52)",
+        "terrain": "NORMAL",
+        "s": 823,
+        "e": 790,
+        "w": 753
+    },
+    "790": {
+        "title": "Darkness",
+        "coordinates": "(63,52)",
+        "terrain": "NORMAL",
+        "e": 835,
+        "w": 775
+    },
+    "835": {
+        "title": "Darkness",
+        "coordinates": "(64,52)",
+        "terrain": "NORMAL",
+        "e": 883,
+        "w": 790
+    },
+    "883": {
+        "title": "Darkness",
+        "coordinates": "(65,52)",
+        "terrain": "NORMAL",
+        "s": 890,
+        "e": 891,
+        "w": 835
+    },
+    "890": {
+        "title": "Darkness",
+        "coordinates": "(65,51)",
+        "terrain": "NORMAL",
+        "n": 883,
+        "w": 926
+    },
+    "926": {
+        "title": "Darkness",
+        "coordinates": "(64,51)",
+        "terrain": "NORMAL",
+        "e": 890
+    },
+    "891": {
+        "title": "Darkness",
+        "coordinates": "(66,52)",
+        "terrain": "NORMAL",
+        "s": 969,
+        "w": 883
+    },
+    "969": {
+        "title": "Darkness",
+        "coordinates": "(66,51)",
+        "terrain": "NORMAL",
+        "n": 891,
+        "e": 984
+    },
+    "984": {
+        "title": "Darkness",
+        "coordinates": "(67,51)",
+        "terrain": "NORMAL",
+        "w": 969
+    },
+    "823": {
+        "title": "Darkness",
+        "coordinates": "(62,51)",
+        "terrain": "NORMAL",
+        "n": 775,
+        "e": 824
+    },
+    "824": {
+        "title": "Darkness",
+        "coordinates": "(63,51)",
+        "terrain": "NORMAL",
+        "s": 827,
+        "w": 823
+    },
+    "827": {
+        "title": "Darkness",
+        "coordinates": "(63,50)",
+        "terrain": "NORMAL",
+        "n": 824,
+        "s": 832,
+        "e": 904,
+        "w": 985
+    },
+    "985": {
+        "title": "Darkness",
+        "coordinates": "(62,50)",
+        "terrain": "NORMAL",
+        "e": 827
+    },
+    "832": {
+        "title": "Darkness",
+        "coordinates": "(63,49)",
+        "terrain": "NORMAL",
+        "n": 827,
+        "s": 932,
+        "e": 844,
+        "w": 888
+    },
+    "888": {
+        "title": "Darkness",
+        "coordinates": "(62,49)",
+        "terrain": "NORMAL",
+        "e": 832,
+        "w": 936
+    },
+    "936": {
+        "title": "Darkness",
+        "coordinates": "(61,49)",
+        "terrain": "NORMAL",
+        "s": 988,
+        "e": 888
+    },
+    "988": {
+        "title": "Darkness",
+        "coordinates": "(61,48)",
+        "terrain": "NORMAL",
+        "n": 936
+    },
+    "932": {
+        "title": "Darkness",
+        "coordinates": "(63,48)",
+        "terrain": "NORMAL",
+        "n": 832,
+        "e": 950
+    },
+    "950": {
+        "title": "Darkness",
+        "coordinates": "(64,48)",
+        "terrain": "NORMAL",
+        "w": 932
+    },
+    "844": {
+        "title": "Darkness",
+        "coordinates": "(64,49)",
+        "terrain": "NORMAL",
+        "w": 832
+    },
+    "904": {
+        "title": "Darkness",
+        "coordinates": "(64,50)",
+        "terrain": "NORMAL",
+        "e": 976,
+        "w": 827
+    },
+    "976": {
+        "title": "Darkness",
+        "coordinates": "(65,50)",
+        "terrain": "NORMAL",
+        "w": 904
+    },
+    "757": {
+        "title": "Darkness",
+        "coordinates": "(60,52)",
+        "terrain": "NORMAL",
+        "n": 695,
+        "s": 814
+    },
+    "814": {
+        "title": "Darkness",
+        "coordinates": "(60,51)",
+        "terrain": "NORMAL",
+        "n": 757,
+        "s": 849
+    },
+    "849": {
+        "title": "Darkness",
+        "coordinates": "(60,50)",
+        "terrain": "NORMAL",
+        "n": 814,
+        "e": 955
+    },
+    "955": {
+        "title": "Darkness",
+        "coordinates": "(61,50)",
+        "terrain": "NORMAL",
+        "w": 849
+    },
+    "505": {
+        "title": "Darkness",
+        "coordinates": "(61,59)",
+        "terrain": "NORMAL",
+        "e": 525,
+        "w": 502
+    },
+    "525": {
+        "title": "Darkness",
+        "coordinates": "(62,59)",
+        "terrain": "NORMAL",
+        "n": 560,
+        "s": 542,
+        "e": 533,
+        "w": 505
+    },
+    "533": {
+        "title": "Darkness",
+        "coordinates": "(63,59)",
+        "terrain": "NORMAL",
+        "s": 539,
+        "w": 525
+    },
+    "539": {
+        "title": "Darkness",
+        "coordinates": "(63,58)",
+        "terrain": "NORMAL",
+        "n": 533,
+        "s": 540
+    },
+    "540": {
+        "title": "Darkness",
+        "coordinates": "(63,57)",
+        "terrain": "NORMAL",
+        "n": 539,
+        "e": 585
+    },
+    "585": {
+        "title": "Darkness",
+        "coordinates": "(64,57)",
+        "terrain": "NORMAL",
+        "e": 682,
+        "w": 540
+    },
+    "682": {
+        "title": "Darkness",
+        "coordinates": "(65,57)",
+        "terrain": "NORMAL",
+        "w": 585
+    },
+    "560": {
+        "title": "Darkness",
+        "coordinates": "(62,60)",
+        "terrain": "NORMAL",
+        "s": 525,
+        "e": 602
+    },
+    "602": {
+        "title": "Darkness",
+        "coordinates": "(63,60)",
+        "terrain": "NORMAL",
+        "e": 612,
+        "w": 560
+    },
+    "612": {
+        "title": "Darkness",
+        "coordinates": "(64,60)",
+        "terrain": "NORMAL",
+        "s": 637,
+        "e": 635,
+        "w": 602
+    },
+    "635": {
+        "title": "Darkness",
+        "coordinates": "(65,60)",
+        "terrain": "NORMAL",
+        "e": 720,
+        "w": 612
+    },
+    "720": {
+        "title": "Darkness",
+        "coordinates": "(66,60)",
+        "terrain": "NORMAL",
+        "w": 635
+    },
+    "637": {
+        "title": "Darkness",
+        "coordinates": "(64,59)",
+        "terrain": "NORMAL",
+        "n": 612,
+        "s": 651,
+        "e": 650
+    },
+    "650": {
+        "title": "Darkness",
+        "coordinates": "(65,59)",
+        "terrain": "NORMAL",
+        "e": 758,
+        "w": 637
+    },
+    "758": {
+        "title": "Darkness",
+        "coordinates": "(66,59)",
+        "terrain": "NORMAL",
+        "w": 650
+    },
+    "651": {
+        "title": "Darkness",
+        "coordinates": "(64,58)",
+        "terrain": "NORMAL",
+        "n": 637,
+        "e": 674
+    },
+    "674": {
+        "title": "Darkness",
+        "coordinates": "(65,58)",
+        "terrain": "NORMAL",
+        "e": 778,
+        "w": 651
+    },
+    "778": {
+        "title": "Darkness",
+        "coordinates": "(66,58)",
+        "terrain": "NORMAL",
+        "s": 815,
+        "w": 674
+    },
+    "815": {
+        "title": "Darkness",
+        "coordinates": "(66,57)",
+        "terrain": "NORMAL",
+        "n": 778,
+        "s": 825
+    },
+    "825": {
+        "title": "Darkness",
+        "coordinates": "(66,56)",
+        "terrain": "NORMAL",
+        "n": 815,
+        "s": 854
+    },
+    "854": {
+        "title": "Darkness",
+        "coordinates": "(66,55)",
+        "terrain": "NORMAL",
+        "n": 825
+    },
+    "542": {
+        "title": "Darkness",
+        "coordinates": "(62,58)",
+        "terrain": "NORMAL",
+        "n": 525,
+        "s": 549,
+        "w": 554
+    },
+    "554": {
+        "title": "Darkness",
+        "coordinates": "(61,58)",
+        "terrain": "NORMAL",
+        "s": 567,
+        "e": 542
+    },
+    "567": {
+        "title": "Darkness",
+        "coordinates": "(61,57)",
+        "terrain": "NORMAL",
+        "n": 554,
+        "s": 574
+    },
+    "574": {
+        "title": "Darkness",
+        "coordinates": "(61,56)",
+        "terrain": "NORMAL",
+        "n": 567,
+        "s": 588
+    },
+    "588": {
+        "title": "Darkness",
+        "coordinates": "(61,55)",
+        "terrain": "NORMAL",
+        "n": 574
+    },
+    "549": {
+        "title": "Darkness",
+        "coordinates": "(62,57)",
+        "terrain": "NORMAL",
+        "n": 542,
+        "s": 556
+    },
+    "556": {
+        "title": "Darkness",
+        "coordinates": "(62,56)",
+        "terrain": "NORMAL",
+        "n": 549,
+        "s": 600,
+        "e": 598
+    },
+    "598": {
+        "title": "Darkness",
+        "coordinates": "(63,56)",
+        "terrain": "NORMAL",
+        "e": 659,
+        "w": 556
+    },
+    "659": {
+        "title": "Darkness",
+        "coordinates": "(64,56)",
+        "terrain": "NORMAL",
+        "s": 665,
+        "e": 754,
+        "w": 598
+    },
+    "754": {
+        "title": "Darkness",
+        "coordinates": "(65,56)",
+        "terrain": "NORMAL",
+        "w": 659
+    },
+    "665": {
+        "title": "Darkness",
+        "coordinates": "(64,55)",
+        "terrain": "NORMAL",
+        "n": 659,
+        "s": 723,
+        "e": 700
+    },
+    "723": {
+        "title": "Darkness",
+        "coordinates": "(64,54)",
+        "terrain": "NORMAL",
+        "n": 665,
+        "s": 816
+    },
+    "816": {
+        "title": "Darkness",
+        "coordinates": "(64,53)",
+        "terrain": "NORMAL",
+        "n": 723
+    },
+    "700": {
+        "title": "Darkness",
+        "coordinates": "(65,55)",
+        "terrain": "NORMAL",
+        "s": 813,
+        "w": 665
+    },
+    "813": {
+        "title": "Darkness",
+        "coordinates": "(65,54)",
+        "terrain": "NORMAL",
+        "n": 700,
+        "s": 831,
+        "e": 858
+    },
+    "831": {
+        "title": "Darkness",
+        "coordinates": "(65,53)",
+        "terrain": "NORMAL",
+        "n": 813
+    },
+    "858": {
+        "title": "Darkness",
+        "coordinates": "(66,54)",
+        "terrain": "NORMAL",
+        "s": 907,
+        "e": 879,
+        "w": 813
+    },
+    "907": {
+        "title": "Darkness",
+        "coordinates": "(66,53)",
+        "terrain": "NORMAL",
+        "n": 858,
+        "e": 925
+    },
+    "925": {
+        "title": "Darkness",
+        "coordinates": "(67,53)",
+        "terrain": "NORMAL",
+        "s": 965,
+        "w": 907
+    },
+    "965": {
+        "title": "Darkness",
+        "coordinates": "(67,52)",
+        "terrain": "NORMAL",
+        "n": 925,
+        "e": 980
+    },
+    "980": {
+        "title": "Darkness",
+        "coordinates": "(68,52)",
+        "terrain": "NORMAL",
+        "s": 999,
+        "w": 965
+    },
+    "999": {
+        "title": "Darkness",
+        "coordinates": "(68,51)",
+        "terrain": "NORMAL",
+        "n": 980
+    },
+    "879": {
+        "title": "Darkness",
+        "coordinates": "(67,54)",
+        "terrain": "NORMAL",
+        "w": 858
+    },
+    "600": {
+        "title": "Darkness",
+        "coordinates": "(62,55)",
+        "terrain": "NORMAL",
+        "n": 556,
+        "s": 648,
+        "e": 610
+    },
+    "648": {
+        "title": "Darkness",
+        "coordinates": "(62,54)",
+        "terrain": "NORMAL",
+        "n": 600,
+        "s": 735,
+        "w": 673
+    },
+    "673": {
+        "title": "Darkness",
+        "coordinates": "(61,54)",
+        "terrain": "NORMAL",
+        "e": 648
+    },
+    "735": {
+        "title": "Darkness",
+        "coordinates": "(62,53)",
+        "terrain": "NORMAL",
+        "n": 648
+    },
+    "610": {
+        "title": "Darkness",
+        "coordinates": "(63,55)",
+        "terrain": "NORMAL",
+        "s": 732,
+        "w": 600
+    },
+    "732": {
+        "title": "Darkness",
+        "coordinates": "(63,54)",
+        "terrain": "NORMAL",
+        "n": 610,
+        "s": 779
+    },
+    "779": {
+        "title": "Darkness",
+        "coordinates": "(63,53)",
+        "terrain": "NORMAL",
+        "n": 732
+    },
+    "509": {
+        "title": "Darkness",
+        "coordinates": "(59,59)",
+        "terrain": "NORMAL",
+        "s": 524,
+        "e": 502,
+        "w": 510
+    },
+    "510": {
+        "title": "Darkness",
+        "coordinates": "(58,59)",
+        "terrain": "NORMAL",
+        "n": 517,
+        "e": 509,
+        "w": 513
+    },
+    "513": {
+        "title": "Darkness",
+        "coordinates": "(57,59)",
+        "terrain": "NORMAL",
+        "n": 550,
+        "e": 510,
+        "w": 532
+    },
+    "532": {
+        "title": "Darkness",
+        "coordinates": "(56,59)",
+        "terrain": "NORMAL",
+        "n": 553,
+        "e": 513,
+        "w": 568
+    },
+    "568": {
+        "title": "Darkness",
+        "coordinates": "(55,59)",
+        "terrain": "NORMAL",
+        "n": 573,
+        "e": 532,
+        "w": 580
+    },
+    "573": {
+        "title": "Darkness",
+        "coordinates": "(55,60)",
+        "terrain": "NORMAL",
+        "s": 568
+    },
+    "580": {
+        "title": "Darkness",
+        "coordinates": "(54,59)",
+        "terrain": "NORMAL",
+        "e": 568,
+        "w": 606
+    },
+    "606": {
+        "title": "Darkness",
+        "coordinates": "(53,59)",
+        "terrain": "NORMAL",
+        "s": 608,
+        "e": 580,
+        "w": 722
+    },
+    "722": {
+        "title": "Darkness",
+        "coordinates": "(52,59)",
+        "terrain": "NORMAL",
+        "e": 606,
+        "w": 763
+    },
+    "763": {
+        "title": "Darkness",
+        "coordinates": "(51,59)",
+        "terrain": "NORMAL",
+        "s": 826,
+        "e": 722,
+        "w": 846
+    },
+    "846": {
+        "title": "Darkness",
+        "coordinates": "(50,59)",
+        "terrain": "NORMAL",
+        "e": 763
+    },
+    "826": {
+        "title": "Darkness",
+        "coordinates": "(51,58)",
+        "terrain": "NORMAL",
+        "n": 763
+    },
+    "608": {
+        "title": "Darkness",
+        "coordinates": "(53,58)",
+        "terrain": "NORMAL",
+        "n": 606,
+        "w": 752
+    },
+    "752": {
+        "title": "Darkness",
+        "coordinates": "(52,58)",
+        "terrain": "NORMAL",
+        "e": 608
+    },
+    "553": {
+        "title": "Darkness",
+        "coordinates": "(56,60)",
+        "terrain": "NORMAL",
+        "n": 593,
+        "s": 532
+    },
+    "593": {
+        "title": "Darkness",
+        "coordinates": "(56,61)",
+        "terrain": "NORMAL",
+        "s": 553
+    },
+    "550": {
+        "title": "Darkness",
+        "coordinates": "(57,60)",
+        "terrain": "NORMAL",
+        "n": 570,
+        "s": 513
+    },
+    "570": {
+        "title": "Darkness",
+        "coordinates": "(57,61)",
+        "terrain": "NORMAL",
+        "s": 550
+    },
+    "517": {
+        "title": "Darkness",
+        "coordinates": "(58,60)",
+        "terrain": "NORMAL",
+        "s": 510
+    },
+    "524": {
+        "title": "Darkness",
+        "coordinates": "(59,58)",
+        "terrain": "NORMAL",
+        "n": 509,
+        "s": 545,
+        "w": 526
+    },
+    "545": {
+        "title": "Darkness",
+        "coordinates": "(59,57)",
+        "terrain": "NORMAL",
+        "n": 524,
+        "s": 565
+    },
+    "565": {
+        "title": "Darkness",
+        "coordinates": "(59,56)",
+        "terrain": "NORMAL",
+        "n": 545,
+        "s": 590
+    },
+    "590": {
+        "title": "Darkness",
+        "coordinates": "(59,55)",
+        "terrain": "NORMAL",
+        "n": 565,
+        "s": 625
+    },
+    "625": {
+        "title": "Darkness",
+        "coordinates": "(59,54)",
+        "terrain": "NORMAL",
+        "n": 590,
+        "s": 699
+    },
+    "699": {
+        "title": "Darkness",
+        "coordinates": "(59,53)",
+        "terrain": "NORMAL",
+        "n": 625,
+        "s": 809
+    },
+    "809": {
+        "title": "Darkness",
+        "coordinates": "(59,52)",
+        "terrain": "NORMAL",
+        "n": 699
+    },
+    "526": {
+        "title": "Darkness",
+        "coordinates": "(58,58)",
+        "terrain": "NORMAL",
+        "s": 538,
+        "e": 524,
+        "w": 530
+    },
+    "530": {
+        "title": "Darkness",
+        "coordinates": "(57,58)",
+        "terrain": "NORMAL",
+        "s": 577,
+        "e": 526,
+        "w": 559
+    },
+    "559": {
+        "title": "Darkness",
+        "coordinates": "(56,58)",
+        "terrain": "NORMAL",
+        "s": 572,
+        "e": 530,
+        "w": 569
+    },
+    "569": {
+        "title": "Darkness",
+        "coordinates": "(55,58)",
+        "terrain": "NORMAL",
+        "e": 559,
+        "w": 615
+    },
+    "615": {
+        "title": "Darkness",
+        "coordinates": "(54,58)",
+        "terrain": "NORMAL",
+        "e": 569
+    },
+    "572": {
+        "title": "Darkness",
+        "coordinates": "(56,57)",
+        "terrain": "NORMAL",
+        "n": 559,
+        "s": 621,
+        "w": 607
+    },
+    "607": {
+        "title": "Darkness",
+        "coordinates": "(55,57)",
+        "terrain": "NORMAL",
+        "s": 640,
+        "e": 572,
+        "w": 630
+    },
+    "630": {
+        "title": "Darkness",
+        "coordinates": "(54,57)",
+        "terrain": "NORMAL",
+        "e": 607,
+        "w": 755
+    },
+    "755": {
+        "title": "Darkness",
+        "coordinates": "(53,57)",
+        "terrain": "NORMAL",
+        "e": 630,
+        "w": 766
+    },
+    "766": {
+        "title": "Darkness",
+        "coordinates": "(52,57)",
+        "terrain": "NORMAL",
+        "s": 931,
+        "e": 755,
+        "w": 857
+    },
+    "857": {
+        "title": "Darkness",
+        "coordinates": "(51,57)",
+        "terrain": "NORMAL",
+        "s": 875,
+        "e": 766,
+        "w": 918
+    },
+    "875": {
+        "title": "Darkness",
+        "coordinates": "(51,56)",
+        "terrain": "NORMAL",
+        "n": 857,
+        "s": 989
+    },
+    "989": {
+        "title": "Darkness",
+        "coordinates": "(51,55)",
+        "terrain": "NORMAL",
+        "n": 875
+    },
+    "918": {
+        "title": "Darkness",
+        "coordinates": "(50,57)",
+        "terrain": "NORMAL",
+        "n": 933,
+        "e": 857,
+        "w": 994
+    },
+    "994": {
+        "title": "Darkness",
+        "coordinates": "(49,57)",
+        "terrain": "NORMAL",
+        "e": 918
+    },
+    "933": {
+        "title": "Darkness",
+        "coordinates": "(50,58)",
+        "terrain": "NORMAL",
+        "s": 918
+    },
+    "931": {
+        "title": "Darkness",
+        "coordinates": "(52,56)",
+        "terrain": "NORMAL",
+        "n": 766
+    },
+    "640": {
+        "title": "Darkness",
+        "coordinates": "(55,56)",
+        "terrain": "NORMAL",
+        "n": 607,
+        "w": 693
+    },
+    "693": {
+        "title": "Darkness",
+        "coordinates": "(54,56)",
+        "terrain": "NORMAL",
+        "s": 694,
+        "e": 640,
+        "w": 765
+    },
+    "765": {
+        "title": "Darkness",
+        "coordinates": "(53,56)",
+        "terrain": "NORMAL",
+        "s": 870,
+        "e": 693
+    },
+    "870": {
+        "title": "Darkness",
+        "coordinates": "(53,55)",
+        "terrain": "NORMAL",
+        "n": 765,
+        "w": 882
+    },
+    "882": {
+        "title": "Darkness",
+        "coordinates": "(52,55)",
+        "terrain": "NORMAL",
+        "e": 870
+    },
+    "694": {
+        "title": "Darkness",
+        "coordinates": "(54,55)",
+        "terrain": "NORMAL",
+        "n": 693
+    },
+    "621": {
+        "title": "Darkness",
+        "coordinates": "(56,56)",
+        "terrain": "NORMAL",
+        "n": 572,
+        "s": 634
+    },
+    "634": {
+        "title": "Darkness",
+        "coordinates": "(56,55)",
+        "terrain": "NORMAL",
+        "n": 621,
+        "s": 639,
+        "w": 636
+    },
+    "636": {
+        "title": "Darkness",
+        "coordinates": "(55,55)",
+        "terrain": "NORMAL",
+        "e": 634
+    },
+    "639": {
+        "title": "Darkness",
+        "coordinates": "(56,54)",
+        "terrain": "NORMAL",
+        "n": 634,
+        "s": 653,
+        "w": 702
+    },
+    "702": {
+        "title": "Darkness",
+        "coordinates": "(55,54)",
+        "terrain": "NORMAL",
+        "e": 639,
+        "w": 715
+    },
+    "715": {
+        "title": "Darkness",
+        "coordinates": "(54,54)",
+        "terrain": "NORMAL",
+        "e": 702,
+        "w": 791
+    },
+    "791": {
+        "title": "Darkness",
+        "coordinates": "(53,54)",
+        "terrain": "NORMAL",
+        "s": 855,
+        "e": 715,
+        "w": 852
+    },
+    "852": {
+        "title": "Darkness",
+        "coordinates": "(52,54)",
+        "terrain": "NORMAL",
+        "s": 903,
+        "e": 791,
+        "w": 978
+    },
+    "978": {
+        "title": "Darkness",
+        "coordinates": "(51,54)",
+        "terrain": "NORMAL",
+        "e": 852
+    },
+    "903": {
+        "title": "Darkness",
+        "coordinates": "(52,53)",
+        "terrain": "NORMAL",
+        "n": 852,
+        "w": 951
+    },
+    "951": {
+        "title": "Darkness",
+        "coordinates": "(51,53)",
+        "terrain": "NORMAL",
+        "e": 903
+    },
+    "855": {
+        "title": "Darkness",
+        "coordinates": "(53,53)",
+        "terrain": "NORMAL",
+        "n": 791
+    },
+    "653": {
+        "title": "Darkness",
+        "coordinates": "(56,53)",
+        "terrain": "NORMAL",
+        "n": 639,
+        "s": 661,
+        "w": 690
+    },
+    "690": {
+        "title": "Darkness",
+        "coordinates": "(55,53)",
+        "terrain": "NORMAL",
+        "e": 653,
+        "w": 817
+    },
+    "817": {
+        "title": "Darkness",
+        "coordinates": "(54,53)",
+        "terrain": "NORMAL",
+        "e": 690
+    },
+    "661": {
+        "title": "Darkness",
+        "coordinates": "(56,52)",
+        "terrain": "NORMAL",
+        "n": 653,
+        "w": 788
+    },
+    "788": {
+        "title": "Darkness",
+        "coordinates": "(55,52)",
+        "terrain": "NORMAL",
+        "e": 661,
+        "w": 867
+    },
+    "867": {
+        "title": "Darkness",
+        "coordinates": "(54,52)",
+        "terrain": "NORMAL",
+        "e": 788,
+        "w": 881
+    },
+    "881": {
+        "title": "Darkness",
+        "coordinates": "(53,52)",
+        "terrain": "NORMAL",
+        "s": 898,
+        "e": 867,
+        "w": 884
+    },
+    "898": {
+        "title": "Darkness",
+        "coordinates": "(53,51)",
+        "terrain": "NORMAL",
+        "n": 881
+    },
+    "884": {
+        "title": "Darkness",
+        "coordinates": "(52,52)",
+        "terrain": "NORMAL",
+        "e": 881
+    },
+    "577": {
+        "title": "Darkness",
+        "coordinates": "(57,57)",
+        "terrain": "NORMAL",
+        "n": 530,
+        "s": 589
+    },
+    "589": {
+        "title": "Darkness",
+        "coordinates": "(57,56)",
+        "terrain": "NORMAL",
+        "n": 577
+    },
+    "538": {
+        "title": "Darkness",
+        "coordinates": "(58,57)",
+        "terrain": "NORMAL",
+        "n": 526,
+        "s": 564
+    },
+    "564": {
+        "title": "Darkness",
+        "coordinates": "(58,56)",
+        "terrain": "NORMAL",
+        "n": 538,
+        "s": 586
+    },
+    "586": {
+        "title": "Darkness",
+        "coordinates": "(58,55)",
+        "terrain": "NORMAL",
+        "n": 564,
+        "s": 619,
+        "w": 599
+    },
+    "619": {
+        "title": "Darkness",
+        "coordinates": "(58,54)",
+        "terrain": "NORMAL",
+        "n": 586,
+        "s": 670
+    },
+    "670": {
+        "title": "Darkness",
+        "coordinates": "(58,53)",
+        "terrain": "NORMAL",
+        "n": 619,
+        "s": 707
+    },
+    "707": {
+        "title": "Darkness",
+        "coordinates": "(58,52)",
+        "terrain": "NORMAL",
+        "n": 670,
+        "s": 719
+    },
+    "719": {
+        "title": "Darkness",
+        "coordinates": "(58,51)",
+        "terrain": "NORMAL",
+        "n": 707,
+        "s": 749,
+        "e": 800
+    },
+    "800": {
+        "title": "Darkness",
+        "coordinates": "(59,51)",
+        "terrain": "NORMAL",
+        "w": 719
+    },
+    "749": {
+        "title": "Darkness",
+        "coordinates": "(58,50)",
+        "terrain": "NORMAL",
+        "n": 719,
+        "s": 859,
+        "e": 822
+    },
+    "822": {
+        "title": "Darkness",
+        "coordinates": "(59,50)",
+        "terrain": "NORMAL",
+        "s": 872,
+        "w": 749
+    },
+    "872": {
+        "title": "Darkness",
+        "coordinates": "(59,49)",
+        "terrain": "NORMAL",
+        "n": 822,
+        "s": 906,
+        "e": 968
+    },
+    "968": {
+        "title": "Darkness",
+        "coordinates": "(60,49)",
+        "terrain": "NORMAL",
+        "w": 872
+    },
+    "906": {
+        "title": "Darkness",
+        "coordinates": "(59,48)",
+        "terrain": "NORMAL",
+        "n": 872
+    },
+    "859": {
+        "title": "Darkness",
+        "coordinates": "(58,49)",
+        "terrain": "NORMAL",
+        "n": 749,
+        "s": 938
+    },
+    "938": {
+        "title": "Darkness",
+        "coordinates": "(58,48)",
+        "terrain": "NORMAL",
+        "n": 859,
+        "s": 975
+    },
+    "975": {
+        "title": "Darkness",
+        "coordinates": "(58,47)",
+        "terrain": "NORMAL",
+        "n": 938,
+        "s": 983
+    },
+    "983": {
+        "title": "Darkness",
+        "coordinates": "(58,46)",
+        "terrain": "NORMAL",
+        "n": 975
+    },
+    "599": {
+        "title": "Darkness",
+        "coordinates": "(57,55)",
+        "terrain": "NORMAL",
+        "s": 632,
+        "e": 586
+    },
+    "632": {
+        "title": "Darkness",
+        "coordinates": "(57,54)",
+        "terrain": "NORMAL",
+        "n": 599,
+        "s": 654
+    },
+    "654": {
+        "title": "Darkness",
+        "coordinates": "(57,53)",
+        "terrain": "NORMAL",
+        "n": 632,
+        "s": 677
+    },
+    "677": {
+        "title": "Darkness",
+        "coordinates": "(57,52)",
+        "terrain": "NORMAL",
+        "n": 654,
+        "s": 691
+    },
+    "691": {
+        "title": "Darkness",
+        "coordinates": "(57,51)",
+        "terrain": "NORMAL",
+        "n": 677,
+        "s": 716,
+        "w": 704
+    },
+    "716": {
+        "title": "Darkness",
+        "coordinates": "(57,50)",
+        "terrain": "NORMAL",
+        "n": 691,
+        "s": 836,
+        "w": 761
+    },
+    "836": {
+        "title": "Darkness",
+        "coordinates": "(57,49)",
+        "terrain": "NORMAL",
+        "n": 716,
+        "s": 860
+    },
+    "860": {
+        "title": "Darkness",
+        "coordinates": "(57,48)",
+        "terrain": "NORMAL",
+        "n": 836,
+        "s": 941
+    },
+    "941": {
+        "title": "Darkness",
+        "coordinates": "(57,47)",
+        "terrain": "NORMAL",
+        "n": 860,
+        "s": 947
+    },
+    "947": {
+        "title": "Darkness",
+        "coordinates": "(57,46)",
+        "terrain": "NORMAL",
+        "n": 941
+    },
+    "761": {
+        "title": "Darkness",
+        "coordinates": "(56,50)",
+        "terrain": "NORMAL",
+        "s": 863,
+        "e": 716,
+        "w": 837
+    },
+    "863": {
+        "title": "Darkness",
+        "coordinates": "(56,49)",
+        "terrain": "NORMAL",
+        "n": 761,
+        "s": 913,
+        "w": 873
+    },
+    "913": {
+        "title": "Darkness",
+        "coordinates": "(56,48)",
+        "terrain": "NORMAL",
+        "n": 863,
+        "s": 922
+    },
+    "922": {
+        "title": "Darkness",
+        "coordinates": "(56,47)",
+        "terrain": "NORMAL",
+        "n": 913,
+        "s": 964,
+        "w": 959
+    },
+    "964": {
+        "title": "Darkness",
+        "coordinates": "(56,46)",
+        "terrain": "NORMAL",
+        "n": 922
+    },
+    "959": {
+        "title": "Darkness",
+        "coordinates": "(55,47)",
+        "terrain": "NORMAL",
+        "e": 922
+    },
+    "873": {
+        "title": "Darkness",
+        "coordinates": "(55,49)",
+        "terrain": "NORMAL",
+        "s": 914,
+        "e": 863,
+        "w": 899
+    },
+    "914": {
+        "title": "Darkness",
+        "coordinates": "(55,48)",
+        "terrain": "NORMAL",
+        "n": 873
+    },
+    "899": {
+        "title": "Darkness",
+        "coordinates": "(54,49)",
+        "terrain": "NORMAL",
+        "e": 873
+    },
+    "837": {
+        "title": "Darkness",
+        "coordinates": "(55,50)",
+        "terrain": "NORMAL",
+        "e": 761,
+        "w": 948
+    },
+    "948": {
+        "title": "Darkness",
+        "coordinates": "(54,50)",
+        "terrain": "NORMAL",
+        "e": 837,
+        "w": 998
+    },
+    "998": {
+        "title": "Darkness",
+        "coordinates": "(53,50)",
+        "terrain": "NORMAL",
+        "e": 948
+    },
+    "704": {
+        "title": "Darkness",
+        "coordinates": "(56,51)",
+        "terrain": "NORMAL",
+        "e": 691,
+        "w": 774
+    },
+    "774": {
+        "title": "Darkness",
+        "coordinates": "(55,51)",
+        "terrain": "NORMAL",
+        "e": 704,
+        "w": 842
+    },
+    "842": {
+        "title": "Darkness",
+        "coordinates": "(54,51)",
+        "terrain": "NORMAL",
+        "e": 774
+    },
+    "501": {
+        "title": "Darkness",
+        "coordinates": "(59,60)",
+        "terrain": "NORMAL",
+        "e": 500
+    },
+    "504": {
+        "title": "Darkness",
+        "coordinates": "(60,61)",
+        "terrain": "NORMAL",
+        "n": 506,
+        "s": 500,
+        "e": 544,
+        "w": 523
+    },
+    "544": {
+        "title": "Darkness",
+        "coordinates": "(61,61)",
+        "terrain": "NORMAL",
+        "e": 552,
+        "w": 504
+    },
+    "552": {
+        "title": "Darkness",
+        "coordinates": "(62,61)",
+        "terrain": "NORMAL",
+        "e": 604,
+        "w": 544
+    },
+    "604": {
+        "title": "Darkness",
+        "coordinates": "(63,61)",
+        "terrain": "NORMAL",
+        "w": 552
+    },
+    "523": {
+        "title": "Darkness",
+        "coordinates": "(59,61)",
+        "terrain": "NORMAL",
+        "e": 504
+    },
+    "506": {
+        "title": "Darkness",
+        "coordinates": "(60,62)",
+        "terrain": "NORMAL",
+        "n": 507,
+        "s": 504,
+        "e": 531,
+        "w": 529
+    },
+    "531": {
+        "title": "Darkness",
+        "coordinates": "(61,62)",
+        "terrain": "NORMAL",
+        "w": 506
+    },
+    "529": {
+        "title": "Darkness",
+        "coordinates": "(59,62)",
+        "terrain": "NORMAL",
+        "e": 506
+    },
+    "507": {
+        "title": "Darkness",
+        "coordinates": "(60,63)",
+        "terrain": "NORMAL",
+        "n": 514,
+        "s": 506,
+        "e": 518,
+        "w": 511
+    },
+    "511": {
+        "title": "Darkness",
+        "coordinates": "(59,63)",
+        "terrain": "NORMAL",
+        "n": 512,
+        "e": 507,
+        "w": 516
+    },
+    "516": {
+        "title": "Darkness",
+        "coordinates": "(58,63)",
+        "terrain": "NORMAL",
+        "s": 528,
+        "e": 511,
+        "w": 527
+    },
+    "528": {
+        "title": "Darkness",
+        "coordinates": "(58,62)",
+        "terrain": "NORMAL",
+        "n": 516,
+        "s": 555,
+        "w": 535
+    },
+    "555": {
+        "title": "Wishing Well",
+        "coordinates": "(58,61)",
+        "terrain": "NORMAL",
+        "n": 528
+    },
+    "535": {
+        "title": "Darkness",
+        "coordinates": "(57,62)",
+        "terrain": "NORMAL",
+        "e": 528,
+        "w": 562
+    },
+    "562": {
+        "title": "Darkness",
+        "coordinates": "(56,62)",
+        "terrain": "NORMAL",
+        "e": 535,
+        "w": 566
+    },
+    "566": {
+        "title": "Darkness",
+        "coordinates": "(55,62)",
+        "terrain": "NORMAL",
+        "s": 596,
+        "e": 562,
+        "w": 581
+    },
+    "596": {
+        "title": "Darkness",
+        "coordinates": "(55,61)",
+        "terrain": "NORMAL",
+        "n": 566,
+        "w": 597
+    },
+    "597": {
+        "title": "Darkness",
+        "coordinates": "(54,61)",
+        "terrain": "NORMAL",
+        "s": 626,
+        "e": 596,
+        "w": 657
+    },
+    "657": {
+        "title": "Darkness",
+        "coordinates": "(53,61)",
+        "terrain": "NORMAL",
+        "s": 705,
+        "e": 597
+    },
+    "705": {
+        "title": "Darkness",
+        "coordinates": "(53,60)",
+        "terrain": "NORMAL",
+        "n": 657,
+        "w": 708
+    },
+    "708": {
+        "title": "Darkness",
+        "coordinates": "(52,60)",
+        "terrain": "NORMAL",
+        "e": 705
+    },
+    "626": {
+        "title": "Darkness",
+        "coordinates": "(54,60)",
+        "terrain": "NORMAL",
+        "n": 597
+    },
+    "581": {
+        "title": "Darkness",
+        "coordinates": "(54,62)",
+        "terrain": "NORMAL",
+        "e": 566,
+        "w": 614
+    },
+    "614": {
+        "title": "Darkness",
+        "coordinates": "(53,62)",
+        "terrain": "NORMAL",
+        "e": 581
+    },
+    "527": {
+        "title": "Darkness",
+        "coordinates": "(57,63)",
+        "terrain": "NORMAL",
+        "e": 516,
+        "w": 537
+    },
+    "537": {
+        "title": "Darkness",
+        "coordinates": "(56,63)",
+        "terrain": "NORMAL",
+        "e": 527,
+        "w": 547
+    },
+    "547": {
+        "title": "Darkness",
+        "coordinates": "(55,63)",
+        "terrain": "NORMAL",
+        "e": 537,
+        "w": 575
+    },
+    "575": {
+        "title": "Darkness",
+        "coordinates": "(54,63)",
+        "terrain": "NORMAL",
+        "e": 547,
+        "w": 613
+    },
+    "613": {
+        "title": "Darkness",
+        "coordinates": "(53,63)",
+        "terrain": "NORMAL",
+        "e": 575,
+        "w": 616
+    },
+    "616": {
+        "title": "Darkness",
+        "coordinates": "(52,63)",
+        "terrain": "NORMAL",
+        "n": 638,
+        "s": 620,
+        "e": 613,
+        "w": 628
+    },
+    "620": {
+        "title": "Darkness",
+        "coordinates": "(52,62)",
+        "terrain": "NORMAL",
+        "n": 616,
+        "s": 660,
+        "w": 692
+    },
+    "692": {
+        "title": "Darkness",
+        "coordinates": "(51,62)",
+        "terrain": "NORMAL",
+        "s": 698,
+        "e": 620,
+        "w": 710
+    },
+    "710": {
+        "title": "Darkness",
+        "coordinates": "(50,62)",
+        "terrain": "NORMAL",
+        "e": 692
+    },
+    "698": {
+        "title": "Darkness",
+        "coordinates": "(51,61)",
+        "terrain": "NORMAL",
+        "n": 692,
+        "s": 714,
+        "w": 742
+    },
+    "742": {
+        "title": "Darkness",
+        "coordinates": "(50,61)",
+        "terrain": "NORMAL",
+        "e": 698,
+        "w": 843
+    },
+    "843": {
+        "title": "Darkness",
+        "coordinates": "(49,61)",
+        "terrain": "NORMAL",
+        "e": 742
+    },
+    "714": {
+        "title": "Darkness",
+        "coordinates": "(51,60)",
+        "terrain": "NORMAL",
+        "n": 698,
+        "w": 783
+    },
+    "783": {
+        "title": "Darkness",
+        "coordinates": "(50,60)",
+        "terrain": "NORMAL",
+        "e": 714,
+        "w": 871
+    },
+    "871": {
+        "title": "Darkness",
+        "coordinates": "(49,60)",
+        "terrain": "NORMAL",
+        "s": 942,
+        "e": 783
+    },
+    "942": {
+        "title": "Darkness",
+        "coordinates": "(49,59)",
+        "terrain": "NORMAL",
+        "n": 871
+    },
+    "660": {
+        "title": "Darkness",
+        "coordinates": "(52,61)",
+        "terrain": "NORMAL",
+        "n": 620
+    },
+    "628": {
+        "title": "Darkness",
+        "coordinates": "(51,63)",
+        "terrain": "NORMAL",
+        "n": 671,
+        "e": 616,
+        "w": 681
+    },
+    "681": {
+        "title": "Darkness",
+        "coordinates": "(50,63)",
+        "terrain": "NORMAL",
+        "e": 628,
+        "w": 685
+    },
+    "685": {
+        "title": "Darkness",
+        "coordinates": "(49,63)",
+        "terrain": "NORMAL",
+        "n": 767,
+        "s": 744,
+        "e": 681,
+        "w": 725
+    },
+    "767": {
+        "title": "Darkness",
+        "coordinates": "(49,64)",
+        "terrain": "NORMAL",
+        "n": 796,
+        "s": 685,
+        "w": 819
+    },
+    "796": {
+        "title": "Darkness",
+        "coordinates": "(49,65)",
+        "terrain": "NORMAL",
+        "s": 767,
+        "w": 850
+    },
+    "850": {
+        "title": "Darkness",
+        "coordinates": "(48,65)",
+        "terrain": "NORMAL",
+        "n": 954,
+        "e": 796,
+        "w": 973
+    },
+    "954": {
+        "title": "Darkness",
+        "coordinates": "(48,66)",
+        "terrain": "NORMAL",
+        "s": 850
+    },
+    "973": {
+        "title": "Darkness",
+        "coordinates": "(47,65)",
+        "terrain": "NORMAL",
+        "n": 981,
+        "e": 850
+    },
+    "981": {
+        "title": "Darkness",
+        "coordinates": "(47,66)",
+        "terrain": "NORMAL",
+        "s": 973
+    },
+    "819": {
+        "title": "Darkness",
+        "coordinates": "(48,64)",
+        "terrain": "NORMAL",
+        "e": 767,
+        "w": 893
+    },
+    "893": {
+        "title": "Darkness",
+        "coordinates": "(47,64)",
+        "terrain": "NORMAL",
+        "e": 819,
+        "w": 944
+    },
+    "944": {
+        "title": "Darkness",
+        "coordinates": "(46,64)",
+        "terrain": "NORMAL",
+        "e": 893
+    },
+    "725": {
+        "title": "Darkness",
+        "coordinates": "(48,63)",
+        "terrain": "NORMAL",
+        "e": 685
+    },
+    "744": {
+        "title": "Darkness",
+        "coordinates": "(49,62)",
+        "terrain": "NORMAL",
+        "n": 685,
+        "w": 797
+    },
+    "797": {
+        "title": "Darkness",
+        "coordinates": "(48,62)",
+        "terrain": "NORMAL",
+        "s": 812,
+        "e": 744,
+        "w": 807
+    },
+    "807": {
+        "title": "Darkness",
+        "coordinates": "(47,62)",
+        "terrain": "NORMAL",
+        "n": 856,
+        "s": 864,
+        "e": 797,
+        "w": 869
+    },
+    "864": {
+        "title": "Darkness",
+        "coordinates": "(47,61)",
+        "terrain": "NORMAL",
+        "n": 807,
+        "s": 927
+    },
+    "927": {
+        "title": "Darkness",
+        "coordinates": "(47,60)",
+        "terrain": "NORMAL",
+        "n": 864
+    },
+    "869": {
+        "title": "Darkness",
+        "coordinates": "(46,62)",
+        "terrain": "NORMAL",
+        "e": 807
+    },
+    "856": {
+        "title": "Darkness",
+        "coordinates": "(47,63)",
+        "terrain": "NORMAL",
+        "s": 807
+    },
+    "812": {
+        "title": "Darkness",
+        "coordinates": "(48,61)",
+        "terrain": "NORMAL",
+        "n": 797,
+        "s": 892
+    },
+    "892": {
+        "title": "Darkness",
+        "coordinates": "(48,60)",
+        "terrain": "NORMAL",
+        "n": 812,
+        "s": 943
+    },
+    "943": {
+        "title": "Darkness",
+        "coordinates": "(48,59)",
+        "terrain": "NORMAL",
+        "n": 892,
+        "w": 952
+    },
+    "952": {
+        "title": "Darkness",
+        "coordinates": "(47,59)",
+        "terrain": "NORMAL",
+        "e": 943
+    },
+    "671": {
+        "title": "Darkness",
+        "coordinates": "(51,64)",
+        "terrain": "NORMAL",
+        "s": 628,
+        "w": 781
+    },
+    "781": {
+        "title": "Darkness",
+        "coordinates": "(50,64)",
+        "terrain": "NORMAL",
+        "n": 787,
+        "e": 671
+    },
+    "787": {
+        "title": "Darkness",
+        "coordinates": "(50,65)",
+        "terrain": "NORMAL",
+        "n": 861,
+        "s": 781
+    },
+    "861": {
+        "title": "Darkness",
+        "coordinates": "(50,66)",
+        "terrain": "NORMAL",
+        "n": 930,
+        "s": 787,
+        "w": 862
+    },
+    "862": {
+        "title": "Darkness",
+        "coordinates": "(49,66)",
+        "terrain": "NORMAL",
+        "n": 878,
+        "e": 861
+    },
+    "878": {
+        "title": "Darkness",
+        "coordinates": "(49,67)",
+        "terrain": "NORMAL",
+        "s": 862
+    },
+    "930": {
+        "title": "Darkness",
+        "coordinates": "(50,67)",
+        "terrain": "NORMAL",
+        "s": 861
+    },
+    "638": {
+        "title": "Darkness",
+        "coordinates": "(52,64)",
+        "terrain": "NORMAL",
+        "n": 647,
+        "s": 616
+    },
+    "647": {
+        "title": "Darkness",
+        "coordinates": "(52,65)",
+        "terrain": "NORMAL",
+        "n": 666,
+        "s": 638,
+        "w": 701
+    },
+    "701": {
+        "title": "Darkness",
+        "coordinates": "(51,65)",
+        "terrain": "NORMAL",
+        "e": 647
+    },
+    "666": {
+        "title": "Darkness",
+        "coordinates": "(52,66)",
+        "terrain": "NORMAL",
+        "n": 833,
+        "s": 647,
+        "e": 729,
+        "w": 803
+    },
+    "833": {
+        "title": "Darkness",
+        "coordinates": "(52,67)",
+        "terrain": "NORMAL",
+        "n": 900,
+        "s": 666
+    },
+    "900": {
+        "title": "Darkness",
+        "coordinates": "(52,68)",
+        "terrain": "NORMAL",
+        "n": 928,
+        "s": 833
+    },
+    "928": {
+        "title": "Darkness",
+        "coordinates": "(52,69)",
+        "terrain": "NORMAL",
+        "s": 900
+    },
+    "803": {
+        "title": "Darkness",
+        "coordinates": "(51,66)",
+        "terrain": "NORMAL",
+        "n": 834,
+        "e": 666
+    },
+    "834": {
+        "title": "Darkness",
+        "coordinates": "(51,67)",
+        "terrain": "NORMAL",
+        "n": 905,
+        "s": 803
+    },
+    "905": {
+        "title": "Darkness",
+        "coordinates": "(51,68)",
+        "terrain": "NORMAL",
+        "n": 977,
+        "s": 834
+    },
+    "977": {
+        "title": "Darkness",
+        "coordinates": "(51,69)",
+        "terrain": "NORMAL",
+        "s": 905
+    },
+    "729": {
+        "title": "Darkness",
+        "coordinates": "(53,66)",
+        "terrain": "NORMAL",
+        "n": 731,
+        "w": 666
+    },
+    "731": {
+        "title": "Darkness",
+        "coordinates": "(53,67)",
+        "terrain": "NORMAL",
+        "s": 729
+    },
+    "512": {
+        "title": "Darkness",
+        "coordinates": "(59,64)",
+        "terrain": "NORMAL",
+        "n": 534,
+        "s": 511,
+        "w": 541
+    },
+    "534": {
+        "title": "Darkness",
+        "coordinates": "(59,65)",
+        "terrain": "NORMAL",
+        "n": 551,
+        "s": 512
+    },
+    "551": {
+        "title": "Darkness",
+        "coordinates": "(59,66)",
+        "terrain": "NORMAL",
+        "n": 591,
+        "s": 534,
+        "w": 558
+    },
+    "591": {
+        "title": "Darkness",
+        "coordinates": "(59,67)",
+        "terrain": "NORMAL",
+        "n": 627,
+        "s": 551
+    },
+    "627": {
+        "title": "Darkness",
+        "coordinates": "(59,68)",
+        "terrain": "NORMAL",
+        "n": 643,
+        "s": 591
+    },
+    "643": {
+        "title": "Darkness",
+        "coordinates": "(59,69)",
+        "terrain": "NORMAL",
+        "n": 676,
+        "s": 627,
+        "w": 668
+    },
+    "668": {
+        "title": "Darkness",
+        "coordinates": "(58,69)",
+        "terrain": "NORMAL",
+        "n": 706,
+        "s": 738,
+        "e": 643,
+        "w": 688
+    },
+    "688": {
+        "title": "Darkness",
+        "coordinates": "(57,69)",
+        "terrain": "NORMAL",
+        "n": 745,
+        "e": 668,
+        "w": 730
+    },
+    "745": {
+        "title": "Darkness",
+        "coordinates": "(57,70)",
+        "terrain": "NORMAL",
+        "s": 688,
+        "w": 792
+    },
+    "792": {
+        "title": "Darkness",
+        "coordinates": "(56,70)",
+        "terrain": "NORMAL",
+        "e": 745
+    },
+    "730": {
+        "title": "Darkness",
+        "coordinates": "(56,69)",
+        "terrain": "NORMAL",
+        "e": 688
+    },
+    "738": {
+        "title": "Darkness",
+        "coordinates": "(58,68)",
+        "terrain": "NORMAL",
+        "n": 668
+    },
+    "706": {
+        "title": "Darkness",
+        "coordinates": "(58,70)",
+        "terrain": "NORMAL",
+        "n": 743,
+        "s": 668
+    },
+    "743": {
+        "title": "Darkness",
+        "coordinates": "(58,71)",
+        "terrain": "NORMAL",
+        "n": 760,
+        "s": 706,
+        "w": 750
+    },
+    "760": {
+        "title": "Darkness",
+        "coordinates": "(58,72)",
+        "terrain": "NORMAL",
+        "s": 743
+    },
+    "750": {
+        "title": "Darkness",
+        "coordinates": "(57,71)",
+        "terrain": "NORMAL",
+        "n": 776,
+        "e": 743,
+        "w": 840
+    },
+    "776": {
+        "title": "Darkness",
+        "coordinates": "(57,72)",
+        "terrain": "NORMAL",
+        "n": 777,
+        "s": 750,
+        "w": 805
+    },
+    "805": {
+        "title": "Darkness",
+        "coordinates": "(56,72)",
+        "terrain": "NORMAL",
+        "e": 776,
+        "w": 838
+    },
+    "838": {
+        "title": "Darkness",
+        "coordinates": "(55,72)",
+        "terrain": "NORMAL",
+        "n": 851,
+        "e": 805,
+        "w": 845
+    },
+    "845": {
+        "title": "Darkness",
+        "coordinates": "(54,72)",
+        "terrain": "NORMAL",
+        "n": 895,
+        "e": 838
+    },
+    "895": {
+        "title": "Darkness",
+        "coordinates": "(54,73)",
+        "terrain": "NORMAL",
+        "s": 845,
+        "w": 916
+    },
+    "916": {
+        "title": "Darkness",
+        "coordinates": "(53,73)",
+        "terrain": "NORMAL",
+        "s": 993,
+        "e": 895,
+        "w": 987
+    },
+    "993": {
+        "title": "Darkness",
+        "coordinates": "(53,72)",
+        "terrain": "NORMAL",
+        "n": 916
+    },
+    "987": {
+        "title": "Darkness",
+        "coordinates": "(52,73)",
+        "terrain": "NORMAL",
+        "e": 916
+    },
+    "851": {
+        "title": "Darkness",
+        "coordinates": "(55,73)",
+        "terrain": "NORMAL",
+        "n": 940,
+        "s": 838
+    },
+    "940": {
+        "title": "Darkness",
+        "coordinates": "(55,74)",
+        "terrain": "NORMAL",
+        "s": 851
+    },
+    "777": {
+        "title": "Darkness",
+        "coordinates": "(57,73)",
+        "terrain": "NORMAL",
+        "s": 776,
+        "e": 785,
+        "w": 894
+    },
+    "894": {
+        "title": "Darkness",
+        "coordinates": "(56,73)",
+        "terrain": "NORMAL",
+        "n": 935,
+        "e": 777
+    },
+    "935": {
+        "title": "Darkness",
+        "coordinates": "(56,74)",
+        "terrain": "NORMAL",
+        "n": 957,
+        "s": 894
+    },
+    "957": {
+        "title": "Darkness",
+        "coordinates": "(56,75)",
+        "terrain": "NORMAL",
+        "s": 935
+    },
+    "785": {
+        "title": "Darkness",
+        "coordinates": "(58,73)",
+        "terrain": "NORMAL",
+        "w": 777
+    },
+    "840": {
+        "title": "Darkness",
+        "coordinates": "(56,71)",
+        "terrain": "NORMAL",
+        "e": 750,
+        "w": 887
+    },
+    "887": {
+        "title": "Darkness",
+        "coordinates": "(55,71)",
+        "terrain": "NORMAL",
+        "e": 840,
+        "w": 949
+    },
+    "949": {
+        "title": "Darkness",
+        "coordinates": "(54,71)",
+        "terrain": "NORMAL",
+        "e": 887
+    },
+    "676": {
+        "title": "Darkness",
+        "coordinates": "(59,70)",
+        "terrain": "NORMAL",
+        "n": 726,
+        "s": 643,
+        "e": 686
+    },
+    "726": {
+        "title": "Darkness",
+        "coordinates": "(59,71)",
+        "terrain": "NORMAL",
+        "n": 773,
+        "s": 676,
+        "e": 746
+    },
+    "773": {
+        "title": "Darkness",
+        "coordinates": "(59,72)",
+        "terrain": "NORMAL",
+        "n": 789,
+        "s": 726
+    },
+    "789": {
+        "title": "Darkness",
+        "coordinates": "(59,73)",
+        "terrain": "NORMAL",
+        "s": 773,
+        "e": 795
+    },
+    "795": {
+        "title": "Darkness",
+        "coordinates": "(60,73)",
+        "terrain": "NORMAL",
+        "n": 804,
+        "w": 789
+    },
+    "804": {
+        "title": "Darkness",
+        "coordinates": "(60,74)",
+        "terrain": "NORMAL",
+        "n": 971,
+        "s": 795,
+        "e": 970,
+        "w": 811
+    },
+    "970": {
+        "title": "Darkness",
+        "coordinates": "(61,74)",
+        "terrain": "NORMAL",
+        "w": 804
+    },
+    "811": {
+        "title": "Darkness",
+        "coordinates": "(59,74)",
+        "terrain": "NORMAL",
+        "e": 804,
+        "w": 934
+    },
+    "934": {
+        "title": "Darkness",
+        "coordinates": "(58,74)",
+        "terrain": "NORMAL",
+        "n": 945,
+        "e": 811
+    },
+    "945": {
+        "title": "Darkness",
+        "coordinates": "(58,75)",
+        "terrain": "NORMAL",
+        "n": 967,
+        "s": 934
+    },
+    "967": {
+        "title": "Darkness",
+        "coordinates": "(58,76)",
+        "terrain": "NORMAL",
+        "s": 945
+    },
+    "971": {
+        "title": "Darkness",
+        "coordinates": "(60,75)",
+        "terrain": "NORMAL",
+        "s": 804
+    },
+    "746": {
+        "title": "Darkness",
+        "coordinates": "(60,71)",
+        "terrain": "NORMAL",
+        "n": 771,
+        "w": 726
+    },
+    "771": {
+        "title": "Darkness",
+        "coordinates": "(60,72)",
+        "terrain": "NORMAL",
+        "s": 746,
+        "e": 801
+    },
+    "801": {
+        "title": "Darkness",
+        "coordinates": "(61,72)",
+        "terrain": "NORMAL",
+        "w": 771
+    },
+    "686": {
+        "title": "Darkness",
+        "coordinates": "(60,70)",
+        "terrain": "NORMAL",
+        "w": 676
+    },
+    "558": {
+        "title": "Darkness",
+        "coordinates": "(58,66)",
+        "terrain": "NORMAL",
+        "e": 551,
+        "w": 587
+    },
+    "587": {
+        "title": "Darkness",
+        "coordinates": "(57,66)",
+        "terrain": "NORMAL",
+        "n": 594,
+        "e": 558,
+        "w": 592
+    },
+    "592": {
+        "title": "Darkness",
+        "coordinates": "(56,66)",
+        "terrain": "NORMAL",
+        "e": 587,
+        "w": 697
+    },
+    "697": {
+        "title": "Darkness",
+        "coordinates": "(55,66)",
+        "terrain": "NORMAL",
+        "e": 592
+    },
+    "594": {
+        "title": "Darkness",
+        "coordinates": "(57,67)",
+        "terrain": "NORMAL",
+        "n": 649,
+        "s": 587,
+        "e": 622,
+        "w": 641
+    },
+    "622": {
+        "title": "Darkness",
+        "coordinates": "(58,67)",
+        "terrain": "NORMAL",
+        "w": 594
+    },
+    "649": {
+        "title": "Darkness",
+        "coordinates": "(57,68)",
+        "terrain": "NORMAL",
+        "s": 594
+    },
+    "641": {
+        "title": "Darkness",
+        "coordinates": "(56,67)",
+        "terrain": "NORMAL",
+        "n": 663,
+        "e": 594,
+        "w": 683
+    },
+    "663": {
+        "title": "Darkness",
+        "coordinates": "(56,68)",
+        "terrain": "NORMAL",
+        "s": 641
+    },
+    "683": {
+        "title": "Darkness",
+        "coordinates": "(55,67)",
+        "terrain": "NORMAL",
+        "n": 713,
+        "e": 641
+    },
+    "713": {
+        "title": "Darkness",
+        "coordinates": "(55,68)",
+        "terrain": "NORMAL",
+        "n": 747,
+        "s": 683
+    },
+    "747": {
+        "title": "Darkness",
+        "coordinates": "(55,69)",
+        "terrain": "NORMAL",
+        "n": 839,
+        "s": 713,
+        "w": 828
+    },
+    "828": {
+        "title": "Darkness",
+        "coordinates": "(54,69)",
+        "terrain": "NORMAL",
+        "e": 747
+    },
+    "839": {
+        "title": "Darkness",
+        "coordinates": "(55,70)",
+        "terrain": "NORMAL",
+        "s": 747,
+        "w": 911
+    },
+    "911": {
+        "title": "Darkness",
+        "coordinates": "(54,70)",
+        "terrain": "NORMAL",
+        "e": 839,
+        "w": 921
+    },
+    "921": {
+        "title": "Darkness",
+        "coordinates": "(53,70)",
+        "terrain": "NORMAL",
+        "e": 911,
+        "w": 990
+    },
+    "990": {
+        "title": "Darkness",
+        "coordinates": "(52,70)",
+        "terrain": "NORMAL",
+        "e": 921,
+        "w": 991
+    },
+    "991": {
+        "title": "Darkness",
+        "coordinates": "(51,70)",
+        "terrain": "NORMAL",
+        "e": 990
+    },
+    "541": {
+        "title": "Darkness",
+        "coordinates": "(58,64)",
+        "terrain": "NORMAL",
+        "n": 543,
+        "e": 512,
+        "w": 546
+    },
+    "543": {
+        "title": "Darkness",
+        "coordinates": "(58,65)",
+        "terrain": "NORMAL",
+        "s": 541
+    },
+    "546": {
+        "title": "Darkness",
+        "coordinates": "(57,64)",
+        "terrain": "NORMAL",
+        "n": 557,
+        "e": 541,
+        "w": 548
+    },
+    "548": {
+        "title": "Darkness",
+        "coordinates": "(56,64)",
+        "terrain": "NORMAL",
+        "n": 655,
+        "e": 546,
+        "w": 605
+    },
+    "655": {
+        "title": "Darkness",
+        "coordinates": "(56,65)",
+        "terrain": "NORMAL",
+        "s": 548
+    },
+    "605": {
+        "title": "Darkness",
+        "coordinates": "(55,64)",
+        "terrain": "NORMAL",
+        "n": 679,
+        "e": 548,
+        "w": 611
+    },
+    "611": {
+        "title": "Darkness",
+        "coordinates": "(54,64)",
+        "terrain": "NORMAL",
+        "n": 656,
+        "e": 605,
+        "w": 624
+    },
+    "624": {
+        "title": "Darkness",
+        "coordinates": "(53,64)",
+        "terrain": "NORMAL",
+        "n": 689,
+        "e": 611
+    },
+    "689": {
+        "title": "Darkness",
+        "coordinates": "(53,65)",
+        "terrain": "NORMAL",
+        "s": 624
+    },
+    "656": {
+        "title": "Darkness",
+        "coordinates": "(54,65)",
+        "terrain": "NORMAL",
+        "n": 727,
+        "s": 611
+    },
+    "727": {
+        "title": "Darkness",
+        "coordinates": "(54,66)",
+        "terrain": "NORMAL",
+        "n": 759,
+        "s": 656
+    },
+    "759": {
+        "title": "Darkness",
+        "coordinates": "(54,67)",
+        "terrain": "NORMAL",
+        "n": 880,
+        "s": 727
+    },
+    "880": {
+        "title": "Darkness",
+        "coordinates": "(54,68)",
+        "terrain": "NORMAL",
+        "s": 759,
+        "w": 886
+    },
+    "886": {
+        "title": "Darkness",
+        "coordinates": "(53,68)",
+        "terrain": "NORMAL",
+        "e": 880
+    },
+    "679": {
+        "title": "Darkness",
+        "coordinates": "(55,65)",
+        "terrain": "NORMAL",
+        "s": 605
+    },
+    "557": {
+        "title": "Darkness",
+        "coordinates": "(57,65)",
+        "terrain": "NORMAL",
+        "s": 546
+    },
+    "518": {
+        "title": "Darkness",
+        "coordinates": "(61,63)",
+        "terrain": "NORMAL",
+        "e": 519,
+        "w": 507
+    },
+    "519": {
+        "title": "Darkness",
+        "coordinates": "(62,63)",
+        "terrain": "NORMAL",
+        "n": 563,
+        "s": 583,
+        "e": 520,
+        "w": 518
+    },
+    "563": {
+        "title": "Darkness",
+        "coordinates": "(62,64)",
+        "terrain": "NORMAL",
+        "s": 519
+    },
+    "520": {
+        "title": "Darkness",
+        "coordinates": "(63,63)",
+        "terrain": "NORMAL",
+        "n": 579,
+        "e": 603,
+        "w": 519
+    },
+    "603": {
+        "title": "Darkness",
+        "coordinates": "(64,63)",
+        "terrain": "NORMAL",
+        "n": 618,
+        "s": 609,
+        "w": 520
+    },
+    "618": {
+        "title": "Darkness",
+        "coordinates": "(64,64)",
+        "terrain": "NORMAL",
+        "s": 603,
+        "e": 631
+    },
+    "631": {
+        "title": "Darkness",
+        "coordinates": "(65,64)",
+        "terrain": "NORMAL",
+        "s": 646,
+        "w": 618
+    },
+    "646": {
+        "title": "Darkness",
+        "coordinates": "(65,63)",
+        "terrain": "NORMAL",
+        "n": 631,
+        "e": 662
+    },
+    "662": {
+        "title": "Darkness",
+        "coordinates": "(66,63)",
+        "terrain": "NORMAL",
+        "n": 675,
+        "w": 646
+    },
+    "675": {
+        "title": "Darkness",
+        "coordinates": "(66,64)",
+        "terrain": "NORMAL",
+        "s": 662,
+        "e": 768
+    },
+    "768": {
+        "title": "Darkness",
+        "coordinates": "(67,64)",
+        "terrain": "NORMAL",
+        "w": 675
+    },
+    "609": {
+        "title": "Darkness",
+        "coordinates": "(64,62)",
+        "terrain": "NORMAL",
+        "n": 603,
+        "s": 623,
+        "e": 652
+    },
+    "652": {
+        "title": "Darkness",
+        "coordinates": "(65,62)",
+        "terrain": "NORMAL",
+        "w": 609
+    },
+    "623": {
+        "title": "Darkness",
+        "coordinates": "(64,61)",
+        "terrain": "NORMAL",
+        "n": 609,
+        "e": 633
+    },
+    "633": {
+        "title": "Darkness",
+        "coordinates": "(65,61)",
+        "terrain": "NORMAL",
+        "e": 711,
+        "w": 623
+    },
+    "711": {
+        "title": "Darkness",
+        "coordinates": "(66,61)",
+        "terrain": "NORMAL",
+        "n": 721,
+        "e": 724,
+        "w": 633
+    },
+    "721": {
+        "title": "Darkness",
+        "coordinates": "(66,62)",
+        "terrain": "NORMAL",
+        "s": 711
+    },
+    "724": {
+        "title": "Darkness",
+        "coordinates": "(67,61)",
+        "terrain": "NORMAL",
+        "n": 737,
+        "s": 748,
+        "e": 728,
+        "w": 711
+    },
+    "737": {
+        "title": "Darkness",
+        "coordinates": "(67,62)",
+        "terrain": "NORMAL",
+        "n": 756,
+        "s": 724
+    },
+    "756": {
+        "title": "Darkness",
+        "coordinates": "(67,63)",
+        "terrain": "NORMAL",
+        "s": 737,
+        "e": 868
+    },
+    "868": {
+        "title": "Darkness",
+        "coordinates": "(68,63)",
+        "terrain": "NORMAL",
+        "n": 885,
+        "w": 756
+    },
+    "885": {
+        "title": "Darkness",
+        "coordinates": "(68,64)",
+        "terrain": "NORMAL",
+        "s": 868
+    },
+    "728": {
+        "title": "Darkness",
+        "coordinates": "(68,61)",
+        "terrain": "NORMAL",
+        "n": 741,
+        "e": 762,
+        "w": 724
+    },
+    "762": {
+        "title": "Darkness",
+        "coordinates": "(69,61)",
+        "terrain": "NORMAL",
+        "e": 874,
+        "w": 728
+    },
+    "874": {
+        "title": "Darkness",
+        "coordinates": "(70,61)",
+        "terrain": "NORMAL",
+        "e": 902,
+        "w": 762
+    },
+    "902": {
+        "title": "Darkness",
+        "coordinates": "(71,61)",
+        "terrain": "NORMAL",
+        "e": 956,
+        "w": 874
+    },
+    "956": {
+        "title": "Darkness",
+        "coordinates": "(72,61)",
+        "terrain": "NORMAL",
+        "e": 960,
+        "w": 902
+    },
+    "960": {
+        "title": "Darkness",
+        "coordinates": "(73,61)",
+        "terrain": "NORMAL",
+        "e": 966,
+        "w": 956
+    },
+    "966": {
+        "title": "Darkness",
+        "coordinates": "(74,61)",
+        "terrain": "NORMAL",
+        "e": 992,
+        "w": 960
+    },
+    "992": {
+        "title": "Darkness",
+        "coordinates": "(75,61)",
+        "terrain": "NORMAL",
+        "w": 966
+    },
+    "741": {
+        "title": "Darkness",
+        "coordinates": "(68,62)",
+        "terrain": "NORMAL",
+        "s": 728,
+        "e": 793
+    },
+    "793": {
+        "title": "Darkness",
+        "coordinates": "(69,62)",
+        "terrain": "NORMAL",
+        "n": 808,
+        "e": 901,
+        "w": 741
+    },
+    "901": {
+        "title": "Darkness",
+        "coordinates": "(70,62)",
+        "terrain": "NORMAL",
+        "w": 793
+    },
+    "808": {
+        "title": "Darkness",
+        "coordinates": "(69,63)",
+        "terrain": "NORMAL",
+        "n": 821,
+        "s": 793,
+        "e": 920
+    },
+    "920": {
+        "title": "Darkness",
+        "coordinates": "(70,63)",
+        "terrain": "NORMAL",
+        "e": 946,
+        "w": 808
+    },
+    "946": {
+        "title": "Darkness",
+        "coordinates": "(71,63)",
+        "terrain": "NORMAL",
+        "w": 920
+    },
+    "821": {
+        "title": "Darkness",
+        "coordinates": "(69,64)",
+        "terrain": "NORMAL",
+        "n": 974,
+        "s": 808,
+        "e": 953
+    },
+    "974": {
+        "title": "Darkness",
+        "coordinates": "(69,65)",
+        "terrain": "NORMAL",
+        "s": 821
+    },
+    "953": {
+        "title": "Darkness",
+        "coordinates": "(70,64)",
+        "terrain": "NORMAL",
+        "w": 821
+    },
+    "748": {
+        "title": "Darkness",
+        "coordinates": "(67,60)",
+        "terrain": "NORMAL",
+        "n": 724,
+        "s": 772,
+        "e": 764
+    },
+    "772": {
+        "title": "Darkness",
+        "coordinates": "(67,59)",
+        "terrain": "NORMAL",
+        "n": 748,
+        "s": 780
+    },
+    "780": {
+        "title": "Darkness",
+        "coordinates": "(67,58)",
+        "terrain": "NORMAL",
+        "n": 772,
+        "s": 818
+    },
+    "818": {
+        "title": "Darkness",
+        "coordinates": "(67,57)",
+        "terrain": "NORMAL",
+        "n": 780,
+        "s": 877,
+        "e": 829
+    },
+    "877": {
+        "title": "Darkness",
+        "coordinates": "(67,56)",
+        "terrain": "NORMAL",
+        "n": 818,
+        "s": 997,
+        "e": 937
+    },
+    "937": {
+        "title": "Darkness",
+        "coordinates": "(68,56)",
+        "terrain": "NORMAL",
+        "w": 877
+    },
+    "997": {
+        "title": "Darkness",
+        "coordinates": "(67,55)",
+        "terrain": "NORMAL",
+        "n": 877
+    },
+    "829": {
+        "title": "Darkness",
+        "coordinates": "(68,57)",
+        "terrain": "NORMAL",
+        "e": 912,
+        "w": 818
+    },
+    "912": {
+        "title": "Darkness",
+        "coordinates": "(69,57)",
+        "terrain": "NORMAL",
+        "w": 829
+    },
+    "764": {
+        "title": "Darkness",
+        "coordinates": "(68,60)",
+        "terrain": "NORMAL",
+        "s": 769,
+        "e": 848,
+        "w": 748
+    },
+    "769": {
+        "title": "Darkness",
+        "coordinates": "(68,59)",
+        "terrain": "NORMAL",
+        "n": 764,
+        "s": 799,
+        "e": 847
+    },
+    "799": {
+        "title": "Darkness",
+        "coordinates": "(68,58)",
+        "terrain": "NORMAL",
+        "n": 769,
+        "e": 908
+    },
+    "908": {
+        "title": "Darkness",
+        "coordinates": "(69,58)",
+        "terrain": "NORMAL",
+        "w": 799
+    },
+    "847": {
+        "title": "Darkness",
+        "coordinates": "(69,59)",
+        "terrain": "NORMAL",
+        "w": 769
+    },
+    "848": {
+        "title": "Darkness",
+        "coordinates": "(69,60)",
+        "terrain": "NORMAL",
+        "e": 853,
+        "w": 764
+    },
+    "853": {
+        "title": "Darkness",
+        "coordinates": "(70,60)",
+        "terrain": "NORMAL",
+        "s": 958,
+        "e": 939,
+        "w": 848
+    },
+    "939": {
+        "title": "Darkness",
+        "coordinates": "(71,60)",
+        "terrain": "NORMAL",
+        "w": 853
+    },
+    "958": {
+        "title": "Darkness",
+        "coordinates": "(70,59)",
+        "terrain": "NORMAL",
+        "n": 853,
+        "s": 972
+    },
+    "972": {
+        "title": "Darkness",
+        "coordinates": "(70,58)",
+        "terrain": "NORMAL",
+        "n": 958
+    },
+    "579": {
+        "title": "Darkness",
+        "coordinates": "(63,64)",
+        "terrain": "NORMAL",
+        "n": 601,
+        "s": 520
+    },
+    "601": {
+        "title": "Darkness",
+        "coordinates": "(63,65)",
+        "terrain": "NORMAL",
+        "n": 617,
+        "s": 579,
+        "e": 629
+    },
+    "629": {
+        "title": "Darkness",
+        "coordinates": "(64,65)",
+        "terrain": "NORMAL",
+        "n": 684,
+        "e": 667,
+        "w": 601
+    },
+    "684": {
+        "title": "Darkness",
+        "coordinates": "(64,66)",
+        "terrain": "NORMAL",
+        "n": 718,
+        "s": 629,
+        "e": 687
+    },
+    "687": {
+        "title": "Darkness",
+        "coordinates": "(65,66)",
+        "terrain": "NORMAL",
+        "e": 806,
+        "w": 684
+    },
+    "806": {
+        "title": "Darkness",
+        "coordinates": "(66,66)",
+        "terrain": "NORMAL",
+        "n": 909,
+        "w": 687
+    },
+    "909": {
+        "title": "Darkness",
+        "coordinates": "(66,67)",
+        "terrain": "NORMAL",
+        "n": 910,
+        "s": 806,
+        "e": 917
+    },
+    "917": {
+        "title": "Darkness",
+        "coordinates": "(67,67)",
+        "terrain": "NORMAL",
+        "e": 929,
+        "w": 909
+    },
+    "929": {
+        "title": "Darkness",
+        "coordinates": "(68,67)",
+        "terrain": "NORMAL",
+        "w": 917
+    },
+    "910": {
+        "title": "Darkness",
+        "coordinates": "(66,68)",
+        "terrain": "NORMAL",
+        "s": 909
+    },
+    "718": {
+        "title": "Darkness",
+        "coordinates": "(64,67)",
+        "terrain": "NORMAL",
+        "n": 734,
+        "s": 684,
+        "e": 782
+    },
+    "782": {
+        "title": "Darkness",
+        "coordinates": "(65,67)",
+        "terrain": "NORMAL",
+        "w": 718
+    },
+    "734": {
+        "title": "Darkness",
+        "coordinates": "(64,68)",
+        "terrain": "NORMAL",
+        "s": 718
+    },
+    "667": {
+        "title": "Darkness",
+        "coordinates": "(65,65)",
+        "terrain": "NORMAL",
+        "e": 717,
+        "w": 629
+    },
+    "717": {
+        "title": "Darkness",
+        "coordinates": "(66,65)",
+        "terrain": "NORMAL",
+        "e": 820,
+        "w": 667
+    },
+    "820": {
+        "title": "Darkness",
+        "coordinates": "(67,65)",
+        "terrain": "NORMAL",
+        "n": 866,
+        "e": 876,
+        "w": 717
+    },
+    "866": {
+        "title": "Darkness",
+        "coordinates": "(67,66)",
+        "terrain": "NORMAL",
+        "s": 820
+    },
+    "876": {
+        "title": "Darkness",
+        "coordinates": "(68,65)",
+        "terrain": "NORMAL",
+        "w": 820
+    },
+    "617": {
+        "title": "Darkness",
+        "coordinates": "(63,66)",
+        "terrain": "NORMAL",
+        "n": 645,
+        "s": 601
+    },
+    "645": {
+        "title": "Darkness",
+        "coordinates": "(63,67)",
+        "terrain": "NORMAL",
+        "s": 617
+    },
+    "583": {
+        "title": "Darkness",
+        "coordinates": "(62,62)",
+        "terrain": "NORMAL",
+        "n": 519,
+        "e": 595
+    },
+    "595": {
+        "title": "Darkness",
+        "coordinates": "(63,62)",
+        "terrain": "NORMAL",
+        "w": 583
+    },
+    "514": {
+        "title": "Darkness",
+        "coordinates": "(60,64)",
+        "terrain": "NORMAL",
+        "n": 521,
+        "s": 507,
+        "e": 515
+    },
+    "515": {
+        "title": "Darkness",
+        "coordinates": "(61,64)",
+        "terrain": "NORMAL",
+        "n": 576,
+        "w": 514
+    },
+    "576": {
+        "title": "Darkness",
+        "coordinates": "(61,65)",
+        "terrain": "NORMAL",
+        "n": 582,
+        "s": 515,
+        "e": 578
+    },
+    "582": {
+        "title": "Darkness",
+        "coordinates": "(61,66)",
+        "terrain": "NORMAL",
+        "n": 642,
+        "s": 576,
+        "e": 644
+    },
+    "644": {
+        "title": "Darkness",
+        "coordinates": "(62,66)",
+        "terrain": "NORMAL",
+        "n": 664,
+        "w": 582
+    },
+    "664": {
+        "title": "Darkness",
+        "coordinates": "(62,67)",
+        "terrain": "NORMAL",
+        "n": 680,
+        "s": 644
+    },
+    "680": {
+        "title": "Darkness",
+        "coordinates": "(62,68)",
+        "terrain": "NORMAL",
+        "s": 664
+    },
+    "642": {
+        "title": "Darkness",
+        "coordinates": "(61,67)",
+        "terrain": "NORMAL",
+        "s": 582
+    },
+    "578": {
+        "title": "Darkness",
+        "coordinates": "(62,65)",
+        "terrain": "NORMAL",
+        "w": 576
+    },
+    "521": {
+        "title": "Darkness",
+        "coordinates": "(60,65)",
+        "terrain": "NORMAL",
+        "n": 522,
+        "s": 514
+    },
+    "522": {
+        "title": "Darkness",
+        "coordinates": "(60,66)",
+        "terrain": "NORMAL",
+        "n": 536,
+        "s": 521
+    },
+    "536": {
+        "title": "Darkness",
+        "coordinates": "(60,67)",
+        "terrain": "NORMAL",
+        "n": 658,
+        "s": 522
+    },
+    "658": {
+        "title": "Darkness",
+        "coordinates": "(60,68)",
+        "terrain": "NORMAL",
+        "n": 678,
+        "s": 536,
+        "e": 672
+    },
+    "672": {
+        "title": "Darkness",
+        "coordinates": "(61,68)",
+        "terrain": "NORMAL",
+        "w": 658
+    },
+    "678": {
+        "title": "Darkness",
+        "coordinates": "(60,69)",
+        "terrain": "NORMAL",
+        "s": 658,
+        "e": 703
+    },
+    "703": {
+        "title": "Darkness",
+        "coordinates": "(61,69)",
+        "terrain": "NORMAL",
+        "n": 709,
+        "e": 733,
+        "w": 678
+    },
+    "733": {
+        "title": "Darkness",
+        "coordinates": "(62,69)",
+        "terrain": "NORMAL",
+        "e": 740,
+        "w": 703
+    },
+    "740": {
+        "title": "Darkness",
+        "coordinates": "(63,69)",
+        "terrain": "NORMAL",
+        "s": 770,
+        "e": 751,
+        "w": 733
+    },
+    "770": {
+        "title": "Darkness",
+        "coordinates": "(63,68)",
+        "terrain": "NORMAL",
+        "n": 740
+    },
+    "751": {
+        "title": "Darkness",
+        "coordinates": "(64,69)",
+        "terrain": "NORMAL",
+        "n": 810,
+        "e": 794,
+        "w": 740
+    },
+    "810": {
+        "title": "Darkness",
+        "coordinates": "(64,70)",
+        "terrain": "NORMAL",
+        "s": 751
+    },
+    "794": {
+        "title": "Darkness",
+        "coordinates": "(65,69)",
+        "terrain": "NORMAL",
+        "n": 802,
+        "s": 896,
+        "e": 841,
+        "w": 751
+    },
+    "896": {
+        "title": "Darkness",
+        "coordinates": "(65,68)",
+        "terrain": "NORMAL",
+        "n": 794
+    },
+    "802": {
+        "title": "Darkness",
+        "coordinates": "(65,70)",
+        "terrain": "NORMAL",
+        "n": 830,
+        "s": 794,
+        "e": 865
+    },
+    "865": {
+        "title": "Darkness",
+        "coordinates": "(66,70)",
+        "terrain": "NORMAL",
+        "n": 924,
+        "e": 897,
+        "w": 802
+    },
+    "897": {
+        "title": "Darkness",
+        "coordinates": "(67,70)",
+        "terrain": "NORMAL",
+        "e": 986,
+        "w": 865
+    },
+    "986": {
+        "title": "Darkness",
+        "coordinates": "(68,70)",
+        "terrain": "NORMAL",
+        "w": 897
+    },
+    "924": {
+        "title": "Darkness",
+        "coordinates": "(66,71)",
+        "terrain": "NORMAL",
+        "s": 865,
+        "e": 979
+    },
+    "979": {
+        "title": "Darkness",
+        "coordinates": "(67,71)",
+        "terrain": "NORMAL",
+        "w": 924
+    },
+    "830": {
+        "title": "Darkness",
+        "coordinates": "(65,71)",
+        "terrain": "NORMAL",
+        "s": 802
+    },
+    "841": {
+        "title": "Darkness",
+        "coordinates": "(66,69)",
+        "terrain": "NORMAL",
+        "e": 962,
+        "w": 794
+    },
+    "962": {
+        "title": "Darkness",
+        "coordinates": "(67,69)",
+        "terrain": "NORMAL",
+        "s": 963,
+        "w": 841
+    },
+    "963": {
+        "title": "Darkness",
+        "coordinates": "(67,68)",
+        "terrain": "NORMAL",
+        "n": 962,
+        "e": 982
+    },
+    "982": {
+        "title": "Darkness",
+        "coordinates": "(68,68)",
+        "terrain": "NORMAL",
+        "n": 995,
+        "w": 963
+    },
+    "995": {
+        "title": "Darkness",
+        "coordinates": "(68,69)",
+        "terrain": "NORMAL",
+        "s": 982,
+        "e": 996
+    },
+    "996": {
+        "title": "Darkness",
+        "coordinates": "(69,69)",
+        "terrain": "NORMAL",
+        "w": 995
+    },
+    "709": {
+        "title": "Darkness",
+        "coordinates": "(61,70)",
+        "terrain": "NORMAL",
+        "n": 736,
+        "s": 703,
+        "e": 712
+    },
+    "736": {
+        "title": "Darkness",
+        "coordinates": "(61,71)",
+        "terrain": "NORMAL",
+        "s": 709,
+        "e": 786
+    },
+    "786": {
+        "title": "Darkness",
+        "coordinates": "(62,71)",
+        "terrain": "NORMAL",
+        "n": 798,
+        "e": 961,
+        "w": 736
+    },
+    "961": {
+        "title": "Darkness",
+        "coordinates": "(63,71)",
+        "terrain": "NORMAL",
+        "w": 786
+    },
+    "798": {
+        "title": "Darkness",
+        "coordinates": "(62,72)",
+        "terrain": "NORMAL",
+        "n": 889,
+        "s": 786
+    },
+    "889": {
+        "title": "Darkness",
+        "coordinates": "(62,73)",
+        "terrain": "NORMAL",
+        "n": 919,
+        "s": 798,
+        "e": 923,
+        "w": 915
+    },
+    "915": {
+        "title": "Darkness",
+        "coordinates": "(61,73)",
+        "terrain": "NORMAL",
+        "e": 889
+    },
+    "923": {
+        "title": "Darkness",
+        "coordinates": "(63,73)",
+        "terrain": "NORMAL",
+        "w": 889
+    },
+    "919": {
+        "title": "Darkness",
+        "coordinates": "(62,74)",
+        "terrain": "NORMAL",
+        "s": 889
+    },
+    "712": {
+        "title": "Darkness",
+        "coordinates": "(62,70)",
+        "terrain": "NORMAL",
+        "e": 739,
+        "w": 709
+    },
+    "739": {
+        "title": "Darkness",
+        "coordinates": "(63,70)",
+        "terrain": "NORMAL",
+        "w": 712
+    },
+    "503": {
+        "title": "Darkness",
+        "coordinates": "(61,60)",
+        "terrain": "NORMAL",
+        "w": 500
     }
 }

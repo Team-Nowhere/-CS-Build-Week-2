@@ -153,7 +153,7 @@ class CPU:
     def pra(self):
         mar = self.ram_read(self.PC + 1)
         mdr = self.reg[mar]
-        print('Printing from PRA:', chr(mdr))
+        print(chr(mdr))
         self.PC += 2
 
     def andd(self):

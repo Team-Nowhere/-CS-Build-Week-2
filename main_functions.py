@@ -207,3 +207,24 @@ def fast_travel(starting_room_id, destination_room_id, collect_treasure=False):
                         print(f'>>>>>>>>>> Made it to room {bfs_room_id}')
 
             print('============> Fast travel complete')
+
+def dash_check(room_arr, dir_arr):
+    last = dir_arr[0]
+    new_path = []
+    temp_path = []
+    for i, direction in enumerate(dir_arr):
+        if direction == last:
+            tup = (room_arr[i+1], direction)
+            temp_path.append(tup)
+        else:
+            new_path.append(temp_path)
+            temp_path = []
+            tup = (room_arr[i+1], direction)
+            temp_path.append(tup)
+
+        # Catch for the very last one
+        if i is len(dir_arr)-1 and temp_path is not None and len(temp_path) > 0:
+            new_path.append(temp_path)
+            return new_path
+
+        last = direction

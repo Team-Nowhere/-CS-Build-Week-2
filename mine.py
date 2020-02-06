@@ -3,8 +3,10 @@ import requests
 from decouple import config
 import sys
 import json
+from main_functions import cooldown
 from uuid import uuid4
 from timeit import default_timer as timer
+import random
 import random
 SECRET_TOKEN = config('SECRET_TOKEN')
 TOKEN_HEADER = 'Token ' + SECRET_TOKEN
@@ -24,7 +26,7 @@ def proof_of_work(last_proof, difficulty):
     print("Searching for next proof")
     block_string = json.dumps(last_proof, sort_keys=True)
     # print(block_string, last_proof, difficulty)
-    proof = 0
+    proof = random.randint(0, 10000000000)
     while valid_proof(block_string, proof, difficulty) is False:
         proof += 1
     print("Proof found: " + str(proof) + " in " + str(timer() - start))
@@ -61,6 +63,7 @@ if __name__ == '__main__':
         print(post_data)
         r = requests.post(url=node + "/mine", json=post_data, headers={'Authorization': TOKEN_HEADER})
         data = r.json()
+        cooldown(data)
         print('data', data)
         if data.get('message') == 'New Block Forged':
             coins_mined += 1
