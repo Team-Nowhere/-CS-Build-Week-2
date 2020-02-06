@@ -53,6 +53,13 @@ if __name__ == '__main__':
         node = bc_url
     coins_mined = 0
     # Run forever until interrupted
+    if __name__ == '__main__':
+    # What node are we interacting with?
+    if len(sys.argv) > 1:
+        node = sys.argv[1]
+    else:
+        node = bc_url
+    # Run forever until interrupted
     while True:
         # Get the last proof from the server
         r = requests.get(url=node + "/last_proof", headers={'Authorization': TOKEN_HEADER})
@@ -60,14 +67,12 @@ if __name__ == '__main__':
         # print(data)
         new_proof = proof_of_work(data.get('proof'), data.get('difficulty'))
         post_data = {"proof": new_proof}
-        print(post_data)
         r = requests.post(url=node + "/mine", json=post_data, headers={'Authorization': TOKEN_HEADER})
         data = r.json()
         cooldown(data)
-        print('data', data)
-        if data.get('message') == 'New Block Forged':
-            coins_mined += 1
-            print("Total coins mined: " + str(coins_mined))
-        else:
-            print('Breaking...')
+        try:
+            data["messages"] == ['New Block Forged']
+            print('\n!!!! Coin Mined !!!!')
             break
+        except:
+            print('Trying again... No coin mined\n')
