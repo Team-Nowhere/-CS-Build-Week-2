@@ -90,7 +90,7 @@ while captured < want:
     res = recall()
     cooldown(res)
     res = warp()
-    cooldown(warp)
+    cooldown(res)
 
     os.system(f'python fast_travel.py --room 555')
 
