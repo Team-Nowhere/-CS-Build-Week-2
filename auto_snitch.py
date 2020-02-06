@@ -12,6 +12,18 @@ want = int(args.snitches)
 
 os.system('pipenv shell')
 
+current_room = get_current_room()
+cooldown(current_room)
+
+if int(current_room["room_id"]) < 500:
+    print('>>>>>>> Warping to underworld')
+    warp_res = warp()
+    cooldown(warp_res)
+
+if int(current_room["room_id"]) != 555:
+    os.system('python fast_travel.py --room 555')
+
+
 def well_number():
     data = examine('Well')
     cooldown(data)
@@ -55,32 +67,25 @@ while captured < want:
         while new_num == start_snitch:
             new_num, data = well_number()
 
-    warp_data = warp()
-    cooldown(warp_data)
+    os.system(f'python fast_travel.py --room {new_num}')
 
-    os.system(f'python fast_travel.py --room {str(int(new_num) - 500)}')
+    current_room = get_current_room()
+    cooldown(current_room)
 
-    warp_data = warp()
-    cooldown(warp_data)
-
-    if warp_data['items']:
-        for i in warp_data['items']:
+    if current_room['items']:
+        for i in current_room['items']:
             take_res = take(i)
             cooldown(take_res)
             if 'warmth' in take_res['messages'][0]:
-                print('Caputured Snitch!')
+                print('\n!!!! Caputured Snitch !!!!')
                 captured += 1
+                print(f'Snitches Captured: {captured}\n')
                 wait_for_snitch = False
             else:
                 wait_for_snitch = True
                 print('Not Captured')
 
-    warp_data = warp()
-    cooldown(warp_data)
+    os.system(f'python fast_travel.py --room 555')
 
-    os.system(f'python fast_travel.py --room 55')
-
-    warp_data = warp()
-    cooldown(warp_data)
 
 
