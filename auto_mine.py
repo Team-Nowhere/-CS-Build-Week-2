@@ -16,11 +16,17 @@ coins_to_mine = int(args.coin)
 coins_mined = 0
 
 current_room = get_current_room()
-cooldown(current_room)
 
-if int(current_room['room_id']) > 499:
-    warp_res = warp()
-    cooldown(warp_res)
+# Cooldown penalty check
+if current_room['errors'] is not None and len(current_room['errors']) > 0:
+    print('\n!!!! Cooldown Penalty !!!!')
+    cooldown(current_room)
+    print('Getting current room id...')
+    current_room = get_current_room()
+    cooldown(current_room)
+else:
+    print('Getting current room id...')
+    cooldown(current_room)
 
 while coins_mined < coins_to_mine:
 
