@@ -85,7 +85,13 @@ while captured < want:
                 cooldown(take_res)
                 if take_res['messages']:
                     if 'warmth' in take_res['messages'][0]:
-                        print('\n!!!! Caputured Snitch !!!!')
+                        print('''
+                        >!!!!!!!!!!!!!!!!!!!!!!!<
+                        >!!!                 !!!<
+                        >!!! Snitch Captured !!!<
+                        >!!!                 !!!<
+                        >!!!!!!!!!!!!!!!!!!!!!!!<
+                        ''')
                         captured += 1
                         print(f'Snitches Captured: {captured}\n')
                         wait_for_snitch = False
