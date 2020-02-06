@@ -15,11 +15,6 @@ os.system('pipenv shell')
 current_room = get_current_room()
 cooldown(current_room)
 
-if int(current_room["room_id"]) < 500:
-    print('>>>>>>> Warping to underworld')
-    warp_res = warp()
-    cooldown(warp_res)
-
 if int(current_room["room_id"]) != 555:
     os.system('python fast_travel.py --room 555')
 

@@ -105,9 +105,11 @@ def fast_travel(starting_room_id, destination_room_id, collect_treasure=False):
     have_fly = 'fly' in stats['abilities']
     have_dash = 'dash' in stats['abilities']
     have_recall = 'recall' in stats['abilities']
+    have_warp = 'warp' in stats['abilities']
     cooldown(stats)
 
-    if int(destination_room_id) == 0 and have_recall is True:
+    # Check if destination is starting point
+    if int(destination_room_id) == 0 and have_recall is True and collect_treasure is False:
         if collect_treasure == False:
             print('Recalling...')
             rec_res = recall()
@@ -115,6 +117,27 @@ def fast_travel(starting_room_id, destination_room_id, collect_treasure=False):
             recall_message = rec_res['messages'][0]
             print(recall_message)
             return
+
+    # If underworld is destination AND player in overworld, warp first; vice versa
+    if int(destination_room_id) >= 500 and int(starting_room_id) < 500 and have_warp is True:
+        print('\nWarping to underworld...')
+        warp_res = warp()
+        cooldown(warp_res)
+        print('Getting room info...')
+        current_room = get_current_room()
+        cooldown(current_room)
+        starting_room_id = current_room['room_id']
+    elif int(destination_room_id) < 500 and int(starting_room_id) >= 500 and have_warp is True:
+        print('\nWarping to overworld...')
+        warp_res = warp()
+        cooldown(warp_res)
+        print('Getting room info...')
+        current_room = get_current_room()
+        cooldown(current_room)
+        starting_room_id = current_room['room_id']
+    elif have_warp is False:
+        print('You do not have the ability to go there yet...')
+        return
 
     # Get that path
     path_to_next = bfs(starting_room_id, map_graph, destination_room_id)
@@ -142,6 +165,7 @@ def fast_travel(starting_room_id, destination_room_id, collect_treasure=False):
     # Avg is ~3, so path should be 12 or more to justify recall/warp
     if 555 in path_to_next \
         and have_recall is True \
+        and have_warp is True \
         and path_to_next.index(555) == len(path_to_next)-1 \
         and path_to_next.index(555) >= 12 \
         and collect_treasure is False:
