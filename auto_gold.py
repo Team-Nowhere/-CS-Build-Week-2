@@ -57,7 +57,7 @@ while current_gold < gold_goal:
     cooldown(status_res)
 
     # Check to see if encumbered
-    if strength < encumbrance:
+    if strength <= encumbrance:
         # Head to shop to sell everything first
         os.system(f'python fast_travel.py --room 1')
     
