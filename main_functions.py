@@ -36,8 +36,7 @@ class Queue():
 def cooldown(data):
     cd = data['cooldown']
     print(f'Cooldown: {cd} seconds')
-    wait_time = int(cd + 1)  # Add extra second to avoid program updating too fast
-    time.sleep(wait_time)
+    time.sleep(cd)
     print('Cooldown Done!')
 
 def bfs(starting_room_id, map_graph, destination_room_id=None):
