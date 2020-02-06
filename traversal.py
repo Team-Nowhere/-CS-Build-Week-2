@@ -170,9 +170,9 @@ while True:
                             print(f'Next room should be {path_to_next[index + 1]}...')
 
                             if have_fly is True and mapped_area[path_to_next[index+1]]['terrain'] is not 'CAVE':
-                                move_res = move(direction, path_to_next[index + 1])
-                            else:
                                 move_res = fly(direction, path_to_next[index + 1])
+                            else:
+                                move_res = move(direction, path_to_next[index + 1])
 
                             cooldown(move_res)
                             bfs_room_id = move_res['room_id']

@@ -107,7 +107,7 @@ def fly(move_direction:str, next_room_id = None):
             'next_room_id': f'{next_room_id}'
         }
     return requests.post(
-        url=base_url+'move/',
+        url=base_url+'fly/',
         headers=AUTH_HEADER,
         json=data
     ).json()
