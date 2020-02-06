@@ -276,11 +276,18 @@ def fast_travel(starting_room_id, destination_room_id, collect_treasure=False):
             for index in range(len(path_to_next) - 1):
                 for direction in map_graph[path_to_next[index]]:
                     if map_graph[path_to_next[index]][direction] == path_to_next[index + 1]:
-
-                        print(f'Walking {direction}...')
-                        print(f'Next room should be {path_to_next[index + 1]}...')
-                        move_res = move(direction, path_to_next[index + 1])
-                        cooldown(move_res)
+                        next_terrain = map_graph[path_to_next[index + 1]]['terrain']
+                        
+                        if next_terrain != 'CAVE' and have_fly is True:
+                            print(f'Flying {direction}...')
+                            print(f'Next room should be {path_to_next[index + 1]}...')
+                            move_res = fly(direction, path_to_next[index + 1])
+                            cooldown(move_res)
+                        else:
+                            print(f'Walking {direction}...')
+                            print(f'Next room should be {path_to_next[index + 1]}...')
+                            move_res = move(direction, path_to_next[index + 1])
+                            cooldown(move_res)
 
                         if collect_treasure == True:
                             if len(move_res['items']) > 0:
