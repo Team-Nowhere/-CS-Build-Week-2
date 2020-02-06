@@ -40,7 +40,7 @@ def cooldown(data):
     time.sleep(wait_time)
     print('Cooldown Done!')
 
-def bfs(starting_room_id, map_graph):
+def bfs(starting_room_id, map_graph, destination_room_id=None):
     queue = Queue()
     queue.enqueue([starting_room_id])
     visited = set()
@@ -54,8 +54,11 @@ def bfs(starting_room_id, map_graph):
         
         # looks through an array that contains similarities
         for direction in set(list('nsew')).intersection(map_graph[current_room]):
-            if map_graph[current_room][direction] == '?':
-                return path    
+            if destination_room_id is None and map_graph[current_room][direction] == '?':
+                return path
+            elif destination_room_id is not None and map_graph[current_room][direction] == int(destination_room_id):
+                path.append(int(destination_room_id))
+                return path
             elif map_graph[current_room][direction] not in visited:
                 # create a new path to append direction
                 new_path = list(path)
@@ -95,10 +98,6 @@ def fast_travel(starting_room_id, destination_room_id, collect_treasure=False):
         map_graph = json.load(map_file)
 
     map_graph = {int(k):v for k,v in map_graph.items()}
-    queue = Queue()
-    queue.enqueue([starting_room_id])
-    visited = set()
-    path_found = False
 
     # Check abilites
     stats = status()
@@ -106,9 +105,11 @@ def fast_travel(starting_room_id, destination_room_id, collect_treasure=False):
     have_fly = 'fly' in stats['abilities']
     have_dash = 'dash' in stats['abilities']
     have_recall = 'recall' in stats['abilities']
+    have_warp = 'warp' in stats['abilities']
     cooldown(stats)
 
-    if int(destination_room_id) == 0 and have_recall is True:
+    # Check if destination is starting point
+    if int(destination_room_id) == 0 and have_recall is True and collect_treasure is False:
         if collect_treasure == False:
             print('Recalling...')
             rec_res = recall()
@@ -117,30 +118,33 @@ def fast_travel(starting_room_id, destination_room_id, collect_treasure=False):
             print(recall_message)
             return
 
+    # If underworld is destination AND player in overworld, warp first; vice versa
+    if int(destination_room_id) >= 500 and int(starting_room_id) < 500 and have_warp is True:
+        print('\nWarping to underworld...')
+        warp_res = warp()
+        cooldown(warp_res)
+        print('Getting room info...')
+        current_room = get_current_room()
+        cooldown(current_room)
+        starting_room_id = current_room['room_id']
+    elif int(destination_room_id) < 500 and int(starting_room_id) >= 500 and have_warp is True:
+        print('\nWarping to overworld...')
+        warp_res = warp()
+        cooldown(warp_res)
+        print('Getting room info...')
+        current_room = get_current_room()
+        cooldown(current_room)
+        starting_room_id = current_room['room_id']
+    elif have_warp is False:
+        print('You do not have the ability to go there yet...')
+        return
 
-
-    while queue.size() > 0 and path_found == False:
-        # grab path
-        path = queue.dequeue()
-        # take last in path
-        current_room = path[-1]
-        visited.add(current_room)
-        
-        # looks through an array that contains similarities
-        for direction in set(list('nsew')).intersection(map_graph[current_room]):
-            if map_graph[current_room][direction] == int(destination_room_id):
-                path.append(int(destination_room_id))
-                path_to_next = path
-                break
-            elif map_graph[current_room][direction] not in visited:
-                # create a new path to append direction
-                new_path = list(path)
-                new_path.append(map_graph[current_room][direction])
-                queue.enqueue(new_path)
+    # Get that path
+    path_to_next = bfs(starting_room_id, map_graph, destination_room_id)
 
     print(f'\nProposed path:\n{path_to_next}\n')
 
-    # Check to see if it's worth recalling first before continuing
+    # Check to see if it's worth recalling first before continuing (overworld)
     if 0 in path_to_next \
         and have_recall is True \
         and path_to_next.index(0) >= 3 \
@@ -151,6 +155,28 @@ def fast_travel(starting_room_id, destination_room_id, collect_treasure=False):
 
         zero_pos = path_to_next.index(0)
         path_to_next = path_to_next[zero_pos:]
+        print(f'\nNew proposed path:\n{path_to_next}\n')
+
+    # Check to see if it's worth recalling first before continuing (underworld)
+    # Used for snitch hunting
+    # Recalling and warping is worth it if better than about 36 seconds
+    #   7s recall; 7s warp; another 3s for 7 rooms after (21s)
+    #   take account for n+7 rooms away
+    # Avg is ~3, so path should be 12 or more to justify recall/warp
+    if 555 in path_to_next \
+        and have_recall is True \
+        and have_warp is True \
+        and path_to_next.index(555) == len(path_to_next)-1 \
+        and path_to_next.index(555) >= 12 \
+        and collect_treasure is False:
+        print('Recalling...')
+        recall_res = recall()
+        cooldown(recall_res)
+        print('Warping to underworld...')
+        warp_res = warp()
+        cooldown(warp_res)
+        
+        path_to_next = bfs(500, map_graph, 555)
         print(f'\nNew proposed path:\n{path_to_next}\n')
 
     path_directions = []
