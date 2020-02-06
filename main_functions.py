@@ -185,7 +185,7 @@ def fast_travel(starting_room_id, destination_room_id, collect_treasure=False):
                         cooldown(move_res)
 
                 bfs_room_id = move_res['room_id']
-                print(f'>>>>>>>>>> Made it to room {bfs_room_id}')
+                print(f'>>>>>>>>>> Made it to room {bfs_room_id}\n')
             else:
                 number_of_rooms = len(direction_chunks[chunk])
                 dash_direction = direction_chunks[chunk][0]
@@ -197,7 +197,7 @@ def fast_travel(starting_room_id, destination_room_id, collect_treasure=False):
                 cooldown(dash_res)
                 last_movement = 'dash'
                 dash_room_id = dash_res["room_id"]
-                print(f'>>>>>>>>>> Made it to room {dash_room_id}')
+                print(f'>>>>>>>>>> Made it to room {dash_room_id}\n')
 
 
         print('============> Fast travel complete')
@@ -214,7 +214,7 @@ def fast_travel(starting_room_id, destination_room_id, collect_treasure=False):
                 cooldown(move_res)
 
                 bfs_room_id = move_res['room_id']
-                print(f'>>>>>>>>>> Made it to room {bfs_room_id}')
+                print(f'>>>>>>>>>> Made it to room {bfs_room_id}\n')
 
             else:
                 number_of_rooms = len(direction_chunks[chunk])
@@ -227,7 +227,7 @@ def fast_travel(starting_room_id, destination_room_id, collect_treasure=False):
                 cooldown(dash_res)
                 last_movement = 'dash'
                 dash_room_id = dash_res["room_id"]
-                print(f'>>>>>>>>>> Made it to room {dash_room_id}')
+                print(f'>>>>>>>>>> Made it to room {dash_room_id}\n')
 
 
         print('============> Fast travel complete')
@@ -252,7 +252,7 @@ def fast_travel(starting_room_id, destination_room_id, collect_treasure=False):
                             cooldown(move_res)
 
                         bfs_room_id = move_res['room_id']
-                        print(f'>>>>>>>>>> Made it to room {bfs_room_id}')
+                        print(f'>>>>>>>>>> Made it to room {bfs_room_id}\n')
 
             print('============> Fast travel complete')
 
@@ -277,7 +277,7 @@ def fast_travel(starting_room_id, destination_room_id, collect_treasure=False):
                                     cooldown(take_res)
 
                         bfs_room_id = move_res['room_id']
-                        print(f'>>>>>>>>>> Made it to room {bfs_room_id}')
+                        print(f'>>>>>>>>>> Made it to room {bfs_room_id}\n')
 
             print('============> Fast travel complete')
 

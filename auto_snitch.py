@@ -58,6 +58,7 @@ def well_number():
 
 captured = 0
 wait_for_snitch = False
+
 while captured < want:
     # Examine the well
     start_snitch, data = well_number()
@@ -82,10 +83,10 @@ while captured < want:
                     captured += 1
                     print(f'Snitches Captured: {captured}\n')
                     wait_for_snitch = False
-                else:
-                    wait_for_snitch = True
-                    print('\nNot Captured')
-                    print(take_res['messages'][0])
+    else:
+        print('\nThere is no snitch here\n')
+        wait_for_snitch = True
+
 
     res = recall()
     print('Recalling...')
