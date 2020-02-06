@@ -91,14 +91,6 @@ while captured < want:
         print('\nThere is no snitch here\n')
         wait_for_snitch = True
 
-
-    res = recall()
-    print('Recalling...')
-    cooldown(res)
-    print('Warping to underworld...')
-    res = warp()
-    cooldown(res)
-
     os.system(f'python fast_travel.py --room 555')
 
 
