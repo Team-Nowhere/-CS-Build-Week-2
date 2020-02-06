@@ -141,7 +141,10 @@ def fast_travel(starting_room_id, destination_room_id, collect_treasure=False):
     print(f'\nProposed path: {path_to_next}\n')
 
     # Check to see if it's worth recalling first before continuing
-    if 0 in path_to_next and have_recall is True and path_to_next.index(0) >= 3:
+    if 0 in path_to_next \
+        and have_recall is True \
+        and path_to_next.index(0) >= 3 \
+        and collect_treasure is False:
         print('Recalling...')
         recall_res = recall()
         cooldown(recall_res)
@@ -291,8 +294,8 @@ def fast_travel(starting_room_id, destination_room_id, collect_treasure=False):
 
                         if collect_treasure == True:
                             if len(move_res['items']) > 0:
+                                print('Picking up items first...')
                                 for item in move_res['items']:
-
                                     take_res = take(item)
                                     print(take_res['messages'])
                                     cooldown(take_res)
