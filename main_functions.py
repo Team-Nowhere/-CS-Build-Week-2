@@ -328,7 +328,7 @@ def fast_travel(starting_room_id, destination_room_id, collect_treasure=False):
                                     take_res = take(item)
                                     print(take_res['messages'])
                                     cooldown(take_res)
-                                    print('>>>>>>>>>> Ready to leave\n')
+                                print('>>>>>>>>>> Ready to leave\n')
 
             print('============> Fast travel complete')
 
