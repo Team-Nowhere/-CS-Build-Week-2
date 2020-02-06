@@ -58,6 +58,7 @@ def well_number():
 
 captured = 0
 wait_for_snitch = False
+
 while captured < want:
     # Examine the well
     start_snitch, data = well_number()
@@ -71,20 +72,28 @@ while captured < want:
 
     current_room = get_current_room()
     cooldown(current_room)
-
+    print(current_room['items'])
     if current_room['items']:
         for i in current_room['items']:
-            take_res = take(i)
-            cooldown(take_res)
-            if 'warmth' in take_res['messages'][0]:
-                print('\n!!!! Caputured Snitch !!!!')
-                captured += 1
-                print(f'Snitches Captured: {captured}\n')
-                wait_for_snitch = False
-            else:
-                wait_for_snitch = True
-                print('\nNot Captured')
-                print(take_res['messages'][0])
+            if i.upper() == 'GOLDEN SNITCH':
+                take_res = take(i)
+                cooldown(take_res)
+                if 'warmth' in take_res['messages'][0]:
+                    print('\n!!!! Caputured Snitch !!!!')
+                    captured += 1
+                    print(f'Snitches Captured: {captured}\n')
+                    wait_for_snitch = False
+    else:
+        print('\nThere is no snitch here\n')
+        wait_for_snitch = True
+
+
+    res = recall()
+    print('Recalling...')
+    cooldown(res)
+    print('Warping to underworld...')
+    res = warp()
+    cooldown(res)
 
     os.system(f'python fast_travel.py --room 555')
 
