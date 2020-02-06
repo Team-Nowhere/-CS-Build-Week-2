@@ -37,8 +37,9 @@ if not args.room:
 else:
     current_room = get_current_room()
     current_room['room_id']
+    # Cooldown penalty check
     if current_room['errors'] is not None and len(current_room['errors']) > 0:
-        print('!!! Cooldown Penalty !!!')
+        print('\n!!!! Cooldown Penalty !!!!')
         cooldown(current_room)
         print('Getting current room id...')
         current_room = get_current_room()
