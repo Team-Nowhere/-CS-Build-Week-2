@@ -15,6 +15,13 @@ args = parser.parse_args()
 coins_to_mine = int(args.coin)
 coins_mined = 0
 
+current_room = get_current_room()
+cooldown(current_room)
+
+if int(current_room['room_id']) > 499:
+    warp_res = warp()
+    cooldown(warp_res)
+
 while coins_mined < coins_to_mine:
 
     # Travel to well

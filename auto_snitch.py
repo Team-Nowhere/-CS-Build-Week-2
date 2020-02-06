@@ -83,7 +83,8 @@ while captured < want:
                 wait_for_snitch = False
             else:
                 wait_for_snitch = True
-                print('Not Captured')
+                print('\nNot Captured')
+                print(take_res['messages'][0])
 
     os.system(f'python fast_travel.py --room 555')
 
