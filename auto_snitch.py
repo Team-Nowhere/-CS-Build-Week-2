@@ -74,7 +74,7 @@ while captured < want:
     print(current_room['items'])
     if current_room['items']:
         for i in current_room['items']:
-            if i.upper() == 'GOLDEN SNITCH'
+            if i.upper() == 'GOLDEN SNITCH':
                 take_res = take(i)
                 cooldown(take_res)
                 if 'warmth' in take_res['messages'][0]:
