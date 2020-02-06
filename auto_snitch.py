@@ -86,11 +86,11 @@ while captured < want:
                 if take_res['messages']:
                     if 'warmth' in take_res['messages'][0]:
                         print('''
-                        >!!!!!!!!!!!!!!!!!!!!!!!<
-                        >!!!                 !!!<
-                        >!!! Snitch Captured !!!<
-                        >!!!                 !!!<
-                        >!!!!!!!!!!!!!!!!!!!!!!!<
+>!!!!!!!!!!!!!!!!!!!!!!!<
+>!!!                 !!!<
+>!!! Snitch Captured !!!<
+>!!!                 !!!<
+>!!!!!!!!!!!!!!!!!!!!!!!<
                         ''')
                         captured += 1
                         print(f'Snitches Captured: {captured}\n')
