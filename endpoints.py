@@ -48,13 +48,20 @@ def drop(treasure_name:str):
             }
         ).json()
 
-def sell(treasure_name:str):
+def sell(treasure_name:str, confirm=False):
+    if confirm is False:
+        data={
+            'name': f'{treasure_name}'
+        }
+    else:
+        data={
+            'name': f'{treasure_name}'
+            'confirm': 'yes',
+        }
     return requests.post(
             url=base_url+'sell/',
             headers=AUTH_HEADER,
-            json={
-                'name': f'{treasure_name}'
-            }
+            json=data
         ).json()
 
 def status():
