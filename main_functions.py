@@ -102,11 +102,13 @@ def fast_travel(starting_room_id, destination_room_id, collect_treasure=False):
 
     # Check abilites
     stats = status()
-    print('Checking abilities')
+    print('Checking abilities...')
+    have_fly = 'fly' in stats['abilities']
+    have_dash = 'dash' in stats['abilities']
+    have_recall = 'recall' in stats['abilities']
     cooldown(stats)
-    abilities = stats['abilities']
 
-    if int(destination_room_id) == 0 and 'recall' in abilities:
+    if int(destination_room_id) == 0 and have_recall is True:
         if collect_treasure == False:
             print('Recalling...')
             rec_res = recall()
@@ -136,6 +138,18 @@ def fast_travel(starting_room_id, destination_room_id, collect_treasure=False):
                 new_path.append(map_graph[current_room][direction])
                 queue.enqueue(new_path)
 
+    print(f'Proposed path: {path_to_next}')
+
+    # Check to see if it's worth recalling first before continuing
+    if 0 in path_to_next and have_recall is True and path_to_next.index(0) >= 3:
+        print('Recalling...')
+        recall_res = recall()
+        cooldown(recall_res)
+
+        zero_pos = path_to_next.index(0)
+        path_to_next = path_to_next[zero_pos:]
+        print(f'New proposed path: {path_to_next}')
+
     path_directions = []
 
     for i in range(len(path_to_next) - 1):
@@ -154,7 +168,7 @@ def fast_travel(starting_room_id, destination_room_id, collect_treasure=False):
         number_chunks.append(temp[:chunk_length])
         temp = temp[chunk_length:]
 
-    if 'dash' in abilities and 'fly' in abilities and collect_treasure==False:
+    if have_dash is True and have_fly is True and collect_treasure==False:
         for chunk in range(len(direction_chunks)):
             if len(direction_chunks[chunk]) < 2:
                 path_to_next = number_chunks[chunk][0]
@@ -202,7 +216,7 @@ def fast_travel(starting_room_id, destination_room_id, collect_treasure=False):
 
         print('============> Fast travel complete')
 
-    elif 'dash' in abilities and 'fly' not in abilities and collect_treasure==False:
+    elif have_dash is True and have_fly is False and collect_treasure==False:
         for chunk in range(len(direction_chunks)):
             if len(direction_chunks[chunk]) < 2:
                 path_to_next = number_chunks[chunk][0]
@@ -232,7 +246,7 @@ def fast_travel(starting_room_id, destination_room_id, collect_treasure=False):
 
         print('============> Fast travel complete')
 
-    elif 'dash' not in abilities and 'fly' in abilities and collect_treasure == False:
+    elif have_dash is False and have_fly is True and collect_treasure == False:
         if path_to_next is not None and len(path_to_next) > 0:
             # Have the player travel back to room with unknown exits
             for index in range(len(path_to_next) - 1):
@@ -301,3 +315,40 @@ def dash_check(room_arr, dir_arr):
             return new_path
 
         last = direction
+
+def sell_all(current_room_id):
+    if current_room_id is not 1:
+        print('You can only sell at the shop.')
+    else:
+        print('========== Welcome to the shop!')
+        status_res = status()
+        inventory = status_res['inventory']
+        print(f'Current inventory: {inventory}')
+        cooldown(status_res)
+
+        if len(inventory) > 0 and inventory is not None:
+            for item in inventory:
+                print(f'>>>>>>>>>> Selling {item}...')
+                sell_res = sell(item, True)
+                cooldown(sell_res)
+                print(f'!!!!!!!!!! Sold {item}!')
+            print('========== All items sold!')
+        else:
+            print('========== Nothing to sell!')
+
+def say_prayer(current_room_id):
+    if current_room_id not in [22, 374, 461, 492, 499]:
+        print('You can only pray at shrines.')
+    else:
+        print('========== You are at a place of worship...')
+        status_res = status()
+        cooldown(status_res)
+
+        if 'pray' in status_res['abilities']:
+            print('>>>>>>>>>> Praying...')
+            pray_res = pray()
+            cooldown(pray_res)
+            messages = pray_res['messages']
+            print(f'!!!!!!!!!! {messages[0]}')
+        else:
+            print('========== You do not have the ability to pray!')
