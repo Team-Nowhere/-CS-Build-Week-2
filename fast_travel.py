@@ -36,8 +36,10 @@ if not args.room:
     print('Please choose room ($ python fast_travel.py --room <room number>)')
 else:
     current_room = get_current_room()
+    current_room['room_id']
+    # Cooldown penalty check
     if current_room['errors'] is not None and len(current_room['errors']) > 0:
-        print('!!! Cooldown Penalty !!!')
+        print('\n!!!! Cooldown Penalty !!!!')
         cooldown(current_room)
         print('Getting current room id...')
         current_room = get_current_room()
@@ -47,8 +49,7 @@ else:
         cooldown(current_room)
     
     print('\n== STARTING FAST TRAVEL ==\n')
-
-
+    
     fast_travel(current_room['room_id'],
                 str(args.room),
                 collect_treasure=bool(args.collect_treasure))

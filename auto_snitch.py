@@ -13,12 +13,17 @@ want = int(args.snitches)
 os.system('pipenv shell')
 
 current_room = get_current_room()
-cooldown(current_room)
 
-if int(current_room["room_id"]) < 500:
-    print('>>>>>>> Warping to underworld')
-    warp_res = warp()
-    cooldown(warp_res)
+# Cooldown penalty check
+if current_room['errors'] is not None and len(current_room['errors']) > 0:
+    print('\n!!!! Cooldown Penalty !!!!')
+    cooldown(current_room)
+    print('Getting current room id...')
+    current_room = get_current_room()
+    cooldown(current_room)
+else:
+    print('Getting current room id...')
+    cooldown(current_room)
 
 if int(current_room["room_id"]) != 555:
     os.system('python fast_travel.py --room 555')
@@ -80,7 +85,13 @@ while captured < want:
                 cooldown(take_res)
                 if take_res['messages']:
                     if 'warmth' in take_res['messages'][0]:
-                        print('\n!!!! Caputured Snitch !!!!')
+                        print('''
+>!!!!!!!!!!!!!!!!!!!!!!!<
+>!!!                 !!!<
+>!!! Snitch Captured !!!<
+>!!!                 !!!<
+>!!!!!!!!!!!!!!!!!!!!!!!<
+                        ''')
                         captured += 1
                         print(f'Snitches Captured: {captured}\n')
                         wait_for_snitch = False
@@ -90,14 +101,6 @@ while captured < want:
     else:
         print('\nThere is no snitch here\n')
         wait_for_snitch = True
-
-
-    res = recall()
-    print('Recalling...')
-    cooldown(res)
-    print('Warping to underworld...')
-    res = warp()
-    cooldown(res)
 
     os.system(f'python fast_travel.py --room 555')
 
