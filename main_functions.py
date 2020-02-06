@@ -136,14 +136,14 @@ def fast_travel(starting_room_id, destination_room_id, collect_treasure=False):
 
     # Check to see if it's worth recalling first before continuing (underworld)
     # Used for snitch hunting
-    # Recalling and warping is worth it if better than about 48 seconds
-    #   7s recall; 7s warp; another 3s for 7 rooms after (21)
+    # Recalling and warping is worth it if better than about 36 seconds
+    #   7s recall; 7s warp; another 3s for 7 rooms after (21s)
     #   take account for n+7 rooms away
-    # Avg is ~3, so path should be 16 or more to justify recall/warp
+    # Avg is ~3, so path should be 12 or more to justify recall/warp
     if 555 in path_to_next \
         and have_recall is True \
         and path_to_next.index(555) == len(path_to_next)-1 \
-        and path_to_next.index(555) >= 16 \
+        and path_to_next.index(555) >= 12 \
         and collect_treasure is False:
         print('Recalling...')
         recall_res = recall()
