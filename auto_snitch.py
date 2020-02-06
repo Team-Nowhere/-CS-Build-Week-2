@@ -71,7 +71,7 @@ while captured < want:
 
     current_room = get_current_room()
     cooldown(current_room)
-
+    print(current_room['items'])
     if current_room['items']:
         for i in current_room['items']:
             if i.upper() == 'GOLDEN SNITCH'
