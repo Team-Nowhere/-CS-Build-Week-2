@@ -154,9 +154,60 @@ def fast_travel(starting_room_id, destination_room_id, collect_treasure=False):
         number_chunks.append(temp[:chunk_length])
         temp = temp[chunk_length:]
 
+<<<<<<< Updated upstream
     if 'dash' in abilities and collect_treasure==False:
+=======
+    if have_dash is True and have_fly is True and collect_treasure==False:
+        for chunk in range(len(direction_chunks)):
+            if len(direction_chunks[chunk]) < 3:
+                for step in range(len(direction_chunks[chunk])):
+                    try:
+                        next_terrain = map_graph[number_chunks[chunk + 1][0]]['terrain']
+                        if next_terrain == 'CAVE':
+                            print(f'Walking {direction_chunks[chunk][step]}...')
+                            print(f'Next room should be {number_chunks[chunk][step]}...')
+                            move_res = move(direction_chunks[chunk][step], number_chunks[chunk][step])
+                            cooldown(move_res)
+                        else:
+                            print(f'Flying {direction_chunks[chunk][step]}...')
+                            print(f'Next room should be {number_chunks[chunk][step]}...')
+                            move_res = fly(direction_chunks[chunk][step], number_chunks[chunk][step])
+                            cooldown(move_res)
+                    except:
+                        next_terrain = map_graph[int(destination_room_id)]['terrain']
+                        if next_terrain == 'CAVE':
+                            print(f'Walking {direction_chunks[chunk][step]}...')
+                            print(f'Next room should be {number_chunks[chunk][step]}...')
+                            move_res = move(direction_chunks[chunk][step], number_chunks[chunk][step])
+                            cooldown(move_res)
+                        else:
+                            print(f'Flying {direction_chunks[chunk][step]}...')
+                            print(f'Next room should be {number_chunks[chunk][step]}...')
+                            move_res = fly(direction_chunks[chunk][step], number_chunks[chunk][step])
+                            cooldown(move_res)
+
+                    bfs_room_id = move_res['room_id']
+                    print(f'>>>>>>>>>> Made it to room {bfs_room_id}\n')
+                    
+            else:
+                number_of_rooms = len(direction_chunks[chunk])
+                dash_direction = direction_chunks[chunk][0]
+                dash_room_ids = ','.join([str(x) for x in number_chunks[chunk]])
+
+
+                print(f'Dashing {dash_direction.upper()} through {number_of_rooms} rooms...')
+                dash_res = dash(dash_direction, number_of_rooms, dash_room_ids)
+                cooldown(dash_res)
+                last_movement = 'dash'
+                dash_room_id = dash_res["room_id"]
+                print(f'>>>>>>>>>> Made it to room {dash_room_id}\n')
+
+
+        print('============> Fast travel complete')
+>>>>>>> Stashed changes
 
         for chunk in range(len(direction_chunks)):
+<<<<<<< Updated upstream
             if len(direction_chunks[chunk]) < 2:
                 path_to_next = number_chunks[chunk][0]
 
@@ -167,6 +218,19 @@ def fast_travel(starting_room_id, destination_room_id, collect_treasure=False):
 
                 bfs_room_id = move_res['room_id']
                 print(f'>>>>>>>>>> Made it to room {bfs_room_id}')
+=======
+            if len(direction_chunks[chunk]) < 3:
+                for step in range(len(direction_chunks[chunk])):
+                    print(f'Walking {direction_chunks[chunk][step]}...')
+                    print(f'Next room should be {number_chunks[chunk][step]}...')
+
+                    move_res = move(direction_chunks[chunk][step], number_chunks[chunk][step])
+                    cooldown(move_res)
+
+                    bfs_room_id = move_res['room_id']
+                    print(f'>>>>>>>>>> Made it to room {bfs_room_id}\n')
+
+>>>>>>> Stashed changes
             else:
                 number_of_rooms = len(direction_chunks[chunk])
                 dash_direction = direction_chunks[chunk][0]
@@ -206,4 +270,43 @@ def fast_travel(starting_room_id, destination_room_id, collect_treasure=False):
                         bfs_room_id = move_res['room_id']
                         print(f'>>>>>>>>>> Made it to room {bfs_room_id}')
 
+<<<<<<< Updated upstream
             print('============> Fast travel complete')
+=======
+def sell_all(current_room_id):
+    if current_room_id != 1:
+        print('You can only sell at the shop.')
+    else:
+        print('========== Welcome to the shop!')
+        status_res = status()
+        inventory = status_res['inventory']
+        print(f'Current inventory: {inventory}')
+        cooldown(status_res)
+
+        if len(inventory) > 0 and inventory is not None:
+            for item in inventory:
+                print(f'>>>>>>>>>> Selling {item}...')
+                sell_res = sell(item, True)
+                cooldown(sell_res)
+                print(f'!!!!!!!!!! Sold {item}!')
+            print('========== All items sold!')
+        else:
+            print('========== Nothing to sell!')
+
+def say_prayer(current_room_id):
+    if current_room_id not in [22, 374, 461, 492, 499]:
+        print('You can only pray at shrines.')
+    else:
+        print('========== You are at a place of worship...')
+        status_res = status()
+        cooldown(status_res)
+
+        if 'pray' in status_res['abilities']:
+            print('>>>>>>>>>> Praying...')
+            pray_res = pray()
+            cooldown(pray_res)
+            messages = pray_res['messages']
+            print(f'!!!!!!!!!! {messages[0]}')
+        else:
+            print('========== You do not have the ability to pray!')
+>>>>>>> Stashed changes
