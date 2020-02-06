@@ -65,7 +65,11 @@ if __name__ == '__main__':
         cooldown(data)
         try:
             data["messages"] == ['New Block Forged']
-            print('\n!!!! Coin Mined !!!!')
+            print('''
+            >!!!!!!!!!!!!!!!!!!<
+            >!!! Coin Mined !!!<
+            >!!!!!!!!!!!!!!!!!!<
+            ''')
             break
         except:
             print('Trying again... No coin mined\n')
