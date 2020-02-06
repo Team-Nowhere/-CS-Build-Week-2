@@ -6,7 +6,16 @@ import argparse
 import random
 
 """
-Use this file to farm gold
+Use this file to farm gold.
+
+Make sure you uncomment:
+
+    # if args.room is '1':
+    #     shop_room = get_current_room()
+    #     cooldown(shop_room)
+    #     sell_all(shop_room['room_id'])
+
+in fast_travel.py first!
 
 examples:
 python auto_gold.py
