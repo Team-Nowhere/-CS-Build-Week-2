@@ -55,8 +55,8 @@ def sell(treasure_name:str, confirm=False):
         }
     else:
         data={
-            'name': f'{treasure_name}'
-            'confirm': 'yes',
+            'name': f'{treasure_name}',
+            'confirm':'yes',
         }
     return requests.post(
             url=base_url+'sell/',

@@ -54,11 +54,11 @@ else:
                 collect_treasure=bool(args.collect_treasure))
 
     # Comment out if not selling all or praying
-    # if args.room is '1':
-    #     shop_room = get_current_room()
-    #     cooldown(shop_room)
-    #     sell_all(shop_room['room_id'])
-    # elif args.room in ['22', '374', '461', '492', '499']:
-    #     prayer_room = get_current_room()
-    #     cooldown(prayer_room)
-    #     say_prayer(prayer_room['room_id'])
+    if args.room == '1':
+        shop_room = get_current_room()
+        cooldown(shop_room)
+        sell_all(shop_room['room_id'])
+    elif args.room in ['22', '374', '461', '492', '499']:
+        prayer_room = get_current_room()
+        cooldown(prayer_room)
+        say_prayer(prayer_room['room_id'])

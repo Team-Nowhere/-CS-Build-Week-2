@@ -25,7 +25,7 @@ if int(current_room['room_id']) > 499:
 while coins_mined < coins_to_mine:
 
     # Travel to well
-    os.system('python fast_travel.py --room 55')
+    os.system('python fast_travel.py --room 55 --collect_treasure True')
 
     # Get Message
     print('Getting Well Data...')
@@ -55,11 +55,17 @@ while coins_mined < coins_to_mine:
             continue
     
     print(f'Traveling to room {mining_room} to mine')
-    os.system(f'python fast_travel.py --room {mining_room}')
+    os.system(f'python fast_travel.py --room {mining_room} --collect_treasure True')
 
     os.system('python mine.py')
 
     coins_mined += 1
+    print(f"You've mined {coins_mined} out of {coins_to_mine}")
+
+    if coins_mined % 7 == 0:
+      #sell everything
+      os.system('python fast_travel.py --room 1 --collect_treasure True')
+
 
 balance = get_balance()
 cooldown(balance)
