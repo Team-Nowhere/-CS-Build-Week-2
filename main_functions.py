@@ -138,17 +138,20 @@ def fast_travel(starting_room_id, destination_room_id, collect_treasure=False):
                 new_path.append(map_graph[current_room][direction])
                 queue.enqueue(new_path)
 
-    print(f'Proposed path: {path_to_next}')
+    print(f'\nProposed path:\n{path_to_next}\n')
 
     # Check to see if it's worth recalling first before continuing
-    if 0 in path_to_next and have_recall is True and path_to_next.index(0) >= 3:
+    if 0 in path_to_next \
+        and have_recall is True \
+        and path_to_next.index(0) >= 3 \
+        and collect_treasure is False:
         print('Recalling...')
         recall_res = recall()
         cooldown(recall_res)
 
         zero_pos = path_to_next.index(0)
         path_to_next = path_to_next[zero_pos:]
-        print(f'New proposed path: {path_to_next}')
+        print(f'\nNew proposed path:\n{path_to_next}\n')
 
     path_directions = []
 
@@ -276,16 +279,23 @@ def fast_travel(starting_room_id, destination_room_id, collect_treasure=False):
             for index in range(len(path_to_next) - 1):
                 for direction in map_graph[path_to_next[index]]:
                     if map_graph[path_to_next[index]][direction] == path_to_next[index + 1]:
-
-                        print(f'Walking {direction}...')
-                        print(f'Next room should be {path_to_next[index + 1]}...')
-                        move_res = move(direction, path_to_next[index + 1])
-                        cooldown(move_res)
+                        next_terrain = map_graph[path_to_next[index + 1]]['terrain']
+                        
+                        if next_terrain != 'CAVE' and have_fly is True:
+                            print(f'Flying {direction}...')
+                            print(f'Next room should be {path_to_next[index + 1]}...')
+                            move_res = fly(direction, path_to_next[index + 1])
+                            cooldown(move_res)
+                        else:
+                            print(f'Walking {direction}...')
+                            print(f'Next room should be {path_to_next[index + 1]}...')
+                            move_res = move(direction, path_to_next[index + 1])
+                            cooldown(move_res)
 
                         if collect_treasure == True:
                             if len(move_res['items']) > 0:
+                                print('Picking up items first...')
                                 for item in move_res['items']:
-
                                     take_res = take(item)
                                     print(take_res['messages'])
                                     cooldown(take_res)
@@ -317,7 +327,7 @@ def dash_check(room_arr, dir_arr):
         last = direction
 
 def sell_all(current_room_id):
-    if current_room_id is not 1:
+    if current_room_id != 1:
         print('You can only sell at the shop.')
     else:
         print('========== Welcome to the shop!')
