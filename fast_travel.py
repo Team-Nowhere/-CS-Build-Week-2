@@ -58,7 +58,7 @@ else:
         shop_room = get_current_room()
         cooldown(shop_room)
         sell_all(shop_room['room_id'])
-    elif args.room in ['22', '374', '461', '492', '499']:
-        prayer_room = get_current_room()
-        cooldown(prayer_room)
-        say_prayer(prayer_room['room_id'])
+    # elif args.room in ['22', '374', '461', '492', '499']:
+    #     prayer_room = get_current_room()
+    #     cooldown(prayer_room)
+    #     say_prayer(prayer_room['room_id'])

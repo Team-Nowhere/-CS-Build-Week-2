@@ -78,11 +78,15 @@ while captured < want:
             if i.upper() == 'GOLDEN SNITCH':
                 take_res = take(i)
                 cooldown(take_res)
-                if 'warmth' in take_res['messages'][0]:
-                    print('\n!!!! Caputured Snitch !!!!')
-                    captured += 1
-                    print(f'Snitches Captured: {captured}\n')
-                    wait_for_snitch = False
+                if take_res['messages']:
+                    if 'warmth' in take_res['messages'][0]:
+                        print('\n!!!! Caputured Snitch !!!!')
+                        captured += 1
+                        print(f'Snitches Captured: {captured}\n')
+                        wait_for_snitch = False
+                    else:
+                        print('\nThere is no snitch here\n')
+                        wait_for_snitch = True
     else:
         print('\nThere is no snitch here\n')
         wait_for_snitch = True
