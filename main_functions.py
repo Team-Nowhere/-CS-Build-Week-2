@@ -138,7 +138,7 @@ def fast_travel(starting_room_id, destination_room_id, collect_treasure=False):
                 new_path.append(map_graph[current_room][direction])
                 queue.enqueue(new_path)
 
-    print(f'Proposed path: {path_to_next}')
+    print(f'\nProposed path: {path_to_next}\n')
 
     # Check to see if it's worth recalling first before continuing
     if 0 in path_to_next and have_recall is True and path_to_next.index(0) >= 3:
@@ -148,7 +148,7 @@ def fast_travel(starting_room_id, destination_room_id, collect_treasure=False):
 
         zero_pos = path_to_next.index(0)
         path_to_next = path_to_next[zero_pos:]
-        print(f'New proposed path: {path_to_next}')
+        print(f'\nNew proposed path: {path_to_next}\n')
 
     path_directions = []
 
