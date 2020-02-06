@@ -74,17 +74,23 @@ while captured < want:
 
     if current_room['items']:
         for i in current_room['items']:
-            take_res = take(i)
-            cooldown(take_res)
-            if 'warmth' in take_res['messages'][0]:
-                print('\n!!!! Caputured Snitch !!!!')
-                captured += 1
-                print(f'Snitches Captured: {captured}\n')
-                wait_for_snitch = False
-            else:
-                wait_for_snitch = True
-                print('\nNot Captured')
-                print(take_res['messages'][0])
+            if i.upper() == 'GOLDEN SNITCH'
+                take_res = take(i)
+                cooldown(take_res)
+                if 'warmth' in take_res['messages'][0]:
+                    print('\n!!!! Caputured Snitch !!!!')
+                    captured += 1
+                    print(f'Snitches Captured: {captured}\n')
+                    wait_for_snitch = False
+                else:
+                    wait_for_snitch = True
+                    print('\nNot Captured')
+                    print(take_res['messages'][0])
+
+    res = recall()
+    cooldown(res)
+    res = warp()
+    cooldown(warp)
 
     os.system(f'python fast_travel.py --room 555')
 
