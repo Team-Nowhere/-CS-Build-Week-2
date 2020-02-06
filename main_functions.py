@@ -318,16 +318,17 @@ def fast_travel(starting_room_id, destination_room_id, collect_treasure=False):
                             move_res = move(direction, path_to_next[index + 1])
                             cooldown(move_res)
 
+                        bfs_room_id = move_res['room_id']
+                        print(f'>>>>>>>>>> Made it to room {bfs_room_id}\n')
+
                         if collect_treasure == True:
                             if len(move_res['items']) > 0:
-                                print('Picking up items first...')
+                                print('Picking up items before leaving...')
                                 for item in move_res['items']:
                                     take_res = take(item)
                                     print(take_res['messages'])
                                     cooldown(take_res)
-
-                        bfs_room_id = move_res['room_id']
-                        print(f'>>>>>>>>>> Made it to room {bfs_room_id}\n')
+                                    print('>>>>>>>>>> Ready to leave\n')
 
             print('============> Fast travel complete')
 
@@ -356,7 +357,7 @@ def sell_all(current_room_id):
     if current_room_id != 1:
         print('You can only sell at the shop.')
     else:
-        print('========== Welcome to the shop!')
+        print('\n========== Welcome to the shop!')
         status_res = status()
         inventory = status_res['inventory']
         print(f'Current inventory: {inventory}')
@@ -364,27 +365,26 @@ def sell_all(current_room_id):
 
         if len(inventory) > 0 and inventory is not None:
             for item in inventory:
-                print(f'>>>>>>>>>> Selling {item}...')
+                print(f'\n>>>>>>>>>> Selling {item}...')
                 sell_res = sell(item, True)
                 cooldown(sell_res)
-                print(f'!!!!!!!!!! Sold {item}!')
-            print('========== All items sold!')
+                print(sell_res['messages'])
+            print('\n==========> All items sold!')
         else:
-            print('========== Nothing to sell!')
+            print('\n==========> Nothing to sell!')
 
 def say_prayer(current_room_id):
     if current_room_id not in [22, 374, 461, 492, 499]:
         print('You can only pray at shrines.')
     else:
-        print('========== You are at a place of worship...')
+        print('\n========== You are at a place of worship...')
         status_res = status()
         cooldown(status_res)
 
         if 'pray' in status_res['abilities']:
-            print('>>>>>>>>>> Praying...')
+            print('\n>>>>>>>>>> Praying...')
             pray_res = pray()
             cooldown(pray_res)
-            messages = pray_res['messages']
-            print(f'!!!!!!!!!! {messages[0]}')
+            print(pray_res['messages'])
         else:
-            print('========== You do not have the ability to pray!')
+            print('\n==========> You do not have the ability to pray!')
