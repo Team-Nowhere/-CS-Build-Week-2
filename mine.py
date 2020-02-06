@@ -45,15 +45,8 @@ def valid_proof(last_hash, proof, difficulty):
     # hash_last_hash = hashlib.sha256(encoded_hash).hexdigest()
     # print(guess_hash, difficultStr)
     return guess_hash[:difficulty] == difficultStr
+
 if __name__ == '__main__':
-    # What node are we interacting with?
-    if len(sys.argv) > 1:
-        node = sys.argv[1]
-    else:
-        node = bc_url
-    coins_mined = 0
-    # Run forever until interrupted
-    if __name__ == '__main__':
     # What node are we interacting with?
     if len(sys.argv) > 1:
         node = sys.argv[1]
