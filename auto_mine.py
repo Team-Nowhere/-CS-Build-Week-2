@@ -62,7 +62,7 @@ while coins_mined < coins_to_mine:
     coins_mined += 1
     print(f"You've mined {coins_mined} out of {coins_to_mine}")
 
-    if coins_mined % 7 == 0:
+    if coins_mined % 4 == 0:
       #sell everything
       os.system('python fast_travel.py --room 1 --collect_treasure True')
 
