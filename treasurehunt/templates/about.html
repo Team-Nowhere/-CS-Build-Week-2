@@ -1,0 +1,128 @@
+<!-- Extend imports the base file -->
+{% extends 'base.html' %} 
+<!-- Import the static files aka images and media -->
+{% load static %}
+
+<!-- You can then add code depending on what you want for the specific page -->
+<!-- Simply input a block wherever it is necessary on the base file and then input the code here -->
+{% block title %}
+About Us
+{% endblock %}
+
+{% block style %}
+  <style>
+    .bio {
+      margin: 0 auto;
+      color: rgb(44, 8, 143);
+      font-size: 3.5rem;
+      font-weight: bold;
+      text-align: center;
+    }
+    .imgRow {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      flex-wrap: wrap;
+      margin: 0 2.5%;
+    }
+  
+    .img_desc {
+      display: flex;
+      flex-direction: column;
+      color: rgb(44, 8, 143);
+      align-items: center;
+    }
+
+    .img_desc img {
+      width: 250px;
+      height: auto;
+    }
+
+    .social {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .social img {
+      width: 20px;
+      height: 20px;
+    }
+
+    .disclaimer {
+      margin-top: 10%;
+      white-space: nowrap;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      color: rgb(44, 8, 143);
+      text-decoration: none;
+    }
+
+    .disclaimer p {
+      margin: 0;
+    }
+  </style>
+{% endblock %}
+
+{% block content %}
+
+  <!-- You can write Python code by just adding a line of brackets with % in it, do not use (), use a end <name of used python item> -->
+  
+  <!-- You can use passed variables from views with double brackets  -->
+  
+  <h2 class="bio"> Project used to test our abilities with Computer Science made by Lambda, done by Team NoWhere</h2>
+  <div class="imgRow">
+    <div class="img_desc">
+      <img src='{% static "ryan.jpg" %}' alt="ryan">
+      <h2 class="name">Ryan Wisniewski</h2>
+      <p class="desc">Lambda Student</p>
+      <div class="social">
+        <a href="http://"> <img src="{% static 'github.png' %}" alt=""> Github</a>
+        <a href="http://"> <img src="{% static 'linkedin.png' %}" alt=""> LinkedIn</a>
+      </div>
+      
+    </div>
+    <div class="img_desc">
+      <img src='{% static "arvin.jpg" %}' alt="arvin">
+      <h2 class="name">Arvin Agas</h2>
+      <p class="desc">Lambda Student</p>
+      <div class="social">
+        <a href="http://"> <img src="{% static 'github.png' %}" alt=""> Github</a>
+        <a href="http://"> <img src="{% static 'linkedin.png' %}" alt=""> LinkedIn</a>
+      </div>
+      
+    </div>
+    <div class="img_desc">
+      <img src='{% static "chance.jpg" %}' alt="chance">
+      <h2 class="name">Chance Dare</h2>
+      <p class="desc">Lambda Student</p>
+      <div class="social">
+        <a href="http://"> <img src="{% static 'github.png' %}" alt=""> Github</a>
+        <a href="http://"> <img src="{% static 'linkedin.png' %}" alt=""> LinkedIn</a>
+      </div>
+      
+    </div>
+    <div class="img_desc">
+      <img src='{% static "tunji.jpg" %}' alt="tunji">
+      <h2 class="name">Adetunji Shennaike</h2>
+      <p class="desc">Lambda Student</p>
+      <div class="social">
+        <a href="http://"> <img src="{% static 'github.png' %}" alt=""> Github</a>
+        <a href="http://"> <img src="{% static 'linkedin.png' %}" alt=""> LinkedIn</a>
+      </div>
+      
+    </div>
+  </div>
+  <div class="disclaimer">
+    <p>
+      Icons made by <a href="https://www.flaticon.com/authors/geotatah" title="geotatah">geotatah</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
+    </p>
+    <p>
+      Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
+    </p>
+
+  </div>
+{% endblock %}
