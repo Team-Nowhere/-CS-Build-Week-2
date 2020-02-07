@@ -123,6 +123,16 @@ def fast_travel(starting_room_id, destination_room_id, collect_treasure=False, a
             print(recall_message)
             return
 
+    if int(destination_room_id) == 1 and have_recall is True:
+          print('Recalling...')
+          rec_res = recall()
+          cooldown(rec_res)
+          recall_message = rec_res['messages'][0]
+          print(recall_message)
+          move_res = move("w", "1")
+          cooldown(move_res)
+          return
+
     # If underworld is destination AND player in overworld, warp first; vice versa
     if int(destination_room_id) >= 500 and int(starting_room_id) < 500 and have_warp is True:
         print('\nWarping to underworld...')
