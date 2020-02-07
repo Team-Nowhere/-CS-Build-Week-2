@@ -60,7 +60,7 @@ else:
                 abilities=args.abilities)
 
     # Comment out if not selling all or praying
-    if args.room is '1':
+    if args.room == '1':
         shop_room = get_current_room()
         cooldown(shop_room)
         sell_all(shop_room['room_id'])
