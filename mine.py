@@ -7,6 +7,7 @@ from uuid import uuid4
 from timeit import default_timer as timer
 import random
 from endpoints import *
+import time
 
 def proof_of_work(last_proof, difficulty):
     """
@@ -53,11 +54,13 @@ if __name__ == '__main__':
     while True:
         # Get the last proof from the server
         last_proof_res = last_proof()
+        time.sleep(last_proof_res['cooldown']) # still add CD just in case find proof > 1s
         new_proof = proof_of_work(last_proof_res['proof'], last_proof_res['difficulty'])
 
         # Check to see if mining with found proof works
         mine_res = mine(new_proof)
         cooldown(mine_res)
+        
         if not mine_res['errors']:
             if mine_res['messages']:
                 if 'New Block Forged' in mine_res['messages']:
