@@ -4,6 +4,7 @@ import os
 import subprocess
 import argparse
 import random
+import datetime
 
 """
 Use this file to play automatically.
@@ -40,13 +41,13 @@ play_counter = 0
 play_odds = dict()
 
 # populate odds
-for i in range(0, 29):
+for i in range(0, 10):
     play_odds[i] = 'gold'
-for i in range(30, 59):
+for i in range(10, 50):
     play_odds[i] = 'coin'
-for i in range(60, 89):
+for i in range(50, 90):
     play_odds[i] = 'snitch'
-for i in range(90, 101):
+for i in range(90, 100):
     play_odds[i] = 'transmogrify'
 
 while play_counter != plays:
@@ -61,27 +62,33 @@ while play_counter != plays:
         os.system(f'python fast_travel.py --room 1')
 
     # randomly choose an action
-    lets_do = random.randint(0, 101)
+    lets_do = random.randint(0, 99)
 
     # execute that action
     if play_odds[lets_do] == 'gold':
-        random_num = random.randint(1000, 10001)
-        print('\n>>>>>>>>>> Going to loot some treasure!')
+        random_num = random.randint(1000, 1500)
+        print(f'\n{datetime.datetime.now().time()}')
+        print('>>>>>>>>>> Going to loot some treasure!')
         print(f'>>>>>>>>>> Worth {random_num} gold\n')
         os.system(f'python auto_gold.py --gold {random_num}')
     elif play_odds[lets_do] == 'coin':
-        random_num = random.randint(1, 16)
-        print('\n>>>>>>>>>> Going to the mines!')
+        random_num = random.randint(1, 10)
+        print(f'\n{datetime.datetime.now().time()}')
+        print('>>>>>>>>>> Going to the mines!')
         print(f'>>>>>>>>>> Mining {random_num} coins\n')
         os.system(f'python auto_mine.py --coin {random_num}')
     elif play_odds[lets_do] == 'snitch':
-        random_num = random.randint(1, 16)
-        print('\n>>>>>>>>>> Going to become a wizard!')
+        random_num = random.randint(1, 5)
+        print(f'\n{datetime.datetime.now().time()}')
+        print('>>>>>>>>>> Going to become a wizard!')
         print(f'>>>>>>>>>> Getting {random_num} snitches\n')
         os.system(f'python auto_snitch.py --snitches {random_num}')
     elif play_odds[lets_do] == 'transmogrify':
-        print('\n>>>>>>>>>> Going to roll for exquisite gear!\n')
+        print(f'\n{datetime.datetime.now().time()}')
+        print('>>>>>>>>>> Going to roll for exquisite gear!\n')
         os.system(f'python reroll.py')
+    else:
+        continue
 
     # let's do it again
     play_counter += 1
