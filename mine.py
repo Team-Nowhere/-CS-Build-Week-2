@@ -63,15 +63,18 @@ if __name__ == '__main__':
         r = requests.post(url=node + "/mine", json=post_data, headers={'Authorization': TOKEN_HEADER})
         data = r.json()
         cooldown(data)
-        try:
-            data["messages"] == ['New Block Forged']
-            print('''
+        if not data['errors']:
+            if data['messages']:
+                if 'New Block Forged' in data['messages']:
+                    print('''
 >!!!!!!!!!!!!!!!!!!!!<
 >!!!              !!!<
 >!!!  Coin Mined  !!!<
 >!!!              !!!<
 >!!!!!!!!!!!!!!!!!!!!<
-            ''')
-            break
-        except:
-            print('Trying again... No coin mined\n')
+                    ''')
+                    break
+
+        else:
+            print(data['errors'][0])
+            print('Trying again...\n')

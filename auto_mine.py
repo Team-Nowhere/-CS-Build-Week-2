@@ -28,10 +28,21 @@ else:
     print('Getting current room id...')
     cooldown(current_room)
 
+status_res = status()
+cooldown(status_res)
+
+
+
 while coins_mined < coins_to_mine:
 
     # Travel to well
-    os.system('python fast_travel.py --room 55 --collect_treasure True')
+    run_script = 'python fast_travel.py --room 55 --collect_treasure True'
+    if status_res['abilities']:
+        run_script += ' --abilities'
+        for ability in status_res['abilities']:
+            run_script += f' {ability}'
+    
+    os.system(run_script)
 
     # Get Message
     print('Getting Well Data...')
@@ -61,7 +72,13 @@ while coins_mined < coins_to_mine:
             continue
     
     print(f'Traveling to room {mining_room} to mine')
-    os.system(f'python fast_travel.py --room {mining_room} --collect_treasure True')
+    run_script = f'python fast_travel.py --room {mining_room} --collect_treasure True'
+    if status_res['abilities']:
+        run_script += ' --abilities'
+        for ability in status_res['abilities']:
+            run_script += f' {ability}'
+    
+    os.system(run_script)
 
     os.system('python mine.py')
 
