@@ -370,10 +370,11 @@ def sell_all(current_room_id):
 
         if len(inventory) > 0 and inventory is not None:
             for item in inventory:
-                print(f'\n>>>>>>>>>> Selling {item}...')
-                sell_res = sell(item, True)
-                cooldown(sell_res)
-                print(sell_res['messages'])
+                if 'exquisite' not in item:
+                    print(f'\n>>>>>>>>>> Selling {item}...')
+                    sell_res = sell(item, True)
+                    cooldown(sell_res)
+                    print(sell_res['messages'])
             print('\n==========> All items sold!')
         else:
             print('\n==========> Nothing to sell!')
