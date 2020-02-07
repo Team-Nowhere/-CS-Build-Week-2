@@ -37,7 +37,7 @@ while found_exq == False:
     balance_res = get_balance()
     cooldown(balance_res)
 
-    balance = int(balance_res['messages'][0].split(' ')[5].rstrip('.0'))
+    balance = int(balance_res['messages'][0].split(' ')[5].rstrip('\.0'))
 
     print('Balance: ', balance)
 

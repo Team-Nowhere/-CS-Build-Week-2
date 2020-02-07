@@ -45,13 +45,13 @@ def well_number():
     cmd = ['python', 'ls8.py', 'well_data.txt']
 
 
-    output = subprocess.Popen(cmd, stdout=subprocess.PIPE).communicate()[0].decode('utf-8')
-    dig1 = output[72:73] # hundreds
-    dig2 = output[75:76] # tens
-    dig3 = output[78:79] # ones
-    snitch_room = dig1+dig2+dig3
+    output = subprocess.Popen(cmd, stdout=subprocess.PIPE).communicate()[0]
+    output = output.decode('utf-8').replace('\n', '').split(' ')[-3]
+    snitch_room = output.rstrip('HALTING')
 
     return snitch_room, data
+
+
 
 
 captured = 0
