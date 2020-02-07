@@ -61,12 +61,9 @@ while coins_mined < coins_to_mine:
     time.sleep(2)
     cmd = ['python', 'ls8.py', 'well_data.txt']
 
-    output = subprocess.Popen(cmd, stdout=subprocess.PIPE).communicate()[0].decode('utf-8')
-    dig1 = output[69:70] # hundreds
-    dig2 = output[72:73] # tens
-    dig3 = output[75:76] # ones
-
-    mining_room = dig1+dig2+dig3
+    output = subprocess.Popen(cmd, stdout=subprocess.PIPE).communicate()[0]
+    output = output.decode('utf-8').replace('\n', '').split(' ')[-3]
+    mining_room = output.rstrip('HALTING')
     
     print(f'\nTraveling to room {mining_room} to mine\n')
 
