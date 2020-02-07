@@ -1,26 +1,28 @@
 {% load static %}
-
-
+<!-- Load the imgs from the static files directory, this is unsafe for real world production -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>{% block title %} <!-- You can set a default inbetween incase nothing is passed --> {% endblock %}</title>
+  <title>{% block title %} <!-- You can set a default inbetween incase nothing is passed --> Treasure Hunting NoWhere{% endblock %}</title>
   {% block style %}
   {% endblock %}
   <style>
     .container {
+      min-height: 800px;
       margin: 0 5%;
       background-image: url('{% static "bg_map.jpg" %}');
+      background-size: contain;
+      background-position: center;
     }
     .navbar {
       display: flex;
       flex-direction: row;
       justify-content: space-between;
       align-items: flex-end;
-      border-bottom: 2px dashed black;
+      border-bottom: 2px dashed rgb(44, 8, 143);
     }
     .logo {
       margin-left: 25%;
@@ -28,11 +30,17 @@
     .navbar nav {
       display: flex;
       flex-direction: row;
-      justify-content: space-evenly;
+      justify-content: space-around;
+      width: 15%;
     }
     .navbar nav a {
       text-decoration: none;
-      color: black;
+      color: rgb(44, 8, 143);
+      margin: 0 1%;
+    }
+    .icons {
+      width: 30px;
+      height: 30px;
     }
   </style>
 </head>
@@ -40,10 +48,10 @@
   <div class="container">
     <div class="navbar">
       <!-- logo? -->
-      <img class='logo' src='https://fontmeme.com/permalink/200207/edd0aa7375b81327ec4037d6fc1ad78b.png' alt="title">
+      <img class='logo' src='https://fontmeme.com/permalink/200207/ececc5329e34eee8d0368f58b2e6a020.png' alt="title">
       <nav>
-        <a href="/"><img src="/static/earth.png" alt="">Game</a>
-        <a href="/about"><img src="/static/innovation.png" alt="">About</a>
+        <a href="/"><img class='icons' src="/static/earth.png" alt="">Game</a>
+        <a href="/about"><img class='icons' src="/static/innovation.png" alt="">About</a>
       </nav>
     </div>
     <!-- Blocks allow for things to be passed into the template without having to recreate everything that is required on the page -->
