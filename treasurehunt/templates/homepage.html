@@ -4,18 +4,137 @@
 <!-- Simply input a block wherever it is necessary on the base file and then input the code here -->
 
 {% block style %}
+<style>
+  .gamewindow {
+    width: 100%;
+    background-color: rgb(189, 147, 69);
+  }
+  /* ============== Top Bar ============== */
+
+  .topBar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border: 1px solid rgb(44, 8, 143);
+    background-color: rgb(44, 8, 143);
+    align-items: center;
+  }
+
+  .topBar img {
+    width: auto;
+    height: 50px;
+  }
+
+  .topBar h1 {
+    color: honeydew;
+    font-size: 2rem;
+    font-weight: bold;
+  }
+
+  .topBar a {
+    color: honeydew;
+  }
+
+  .topBar a img {
+    width: auto;
+    height: 30px;
+  }
+
+  /* ============== Mid Section ============== */
+  .midBar {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: flex-start;
+  }
+  
+  .statusWindow {
+    color: rgb(24, 24, 24);
+    background-color: rgb(128, 122, 145);
+  }
+  
+  .map {
+    /* svg styles */
+    background-color: rgb(189, 147, 69);
+  }
+
+  .rightWindow {
+    color: rgb(24, 24, 24);
+    background-color: rgb(68, 64, 78);
+  }
+
+  .roomInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: rgb(83, 149, 236);
+  }
+
+  .itemInfo {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .currency {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .inventory {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* ============== Bottom Section ==============  */
+  .botBar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .botBar h3 {
+    color: honeydew;
+    border: 1px solid rgb(58, 12, 185);
+    background-color: rgb(58, 12, 185);
+  }
+
+  .botBar h4 {
+    
+    color: rgb(58, 12, 185);
+    border: 1px solid rgb(205, 226, 238);
+    background-color: rgb(205, 226, 238);
+  }
+
+  .directions {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: 1px solid rgb(58, 12, 185);
+    background-color: rgb(58, 12, 185);
+    color: honeydew;
+    text-align: center;
+  }
+</style>
+
 {% endblock %}
 
 {% block content %}
   <div class="gamewindow">
     <div class="topBar">
+      <img src="{% static 'default.png'%}" alt="starting">
+      <h1>Welcome to the hunt <!-- player name --></h1>
+      <a href="/"><img src="{% static 'mapIcon.png' %}" alt="map icon"> Map</a>
+      <a href="/info"><img src="{% static 'infoIcon.png' %}" alt="information icon"> Info</a>
+    </div>
+    <div class="midBar">
       <div class="statusWindow">
         <div class="stats" >
           <!-- Player stats from request call -->
-           
+          <h2>Stats</h2>
         </div>
         <div class="skills">
           <!-- inputs for the skills when making request -->
+          <h2>Current Skills</h2>
         </div>
       </div>
 
@@ -26,10 +145,20 @@
       <div class="rightWindow">
         <div class="roomInfo">
           <!-- Room information -->
+          <h2>Current Room</h2>
         </div>
 
         <div class="itemInfo">
-          <!-- Item information and equip dequip -->
+          <!-- Inventory and currency Info-->
+          <h2>Item information</h2>
+          
+          <div class="currency">
+            <p>testing</p>
+          </div>
+
+          <div class="inventory">
+            <p>currency</p>
+          </div>
         </div>
       </div>
     </div>
@@ -38,9 +167,8 @@
     <!-- You can use passed variables from views with double brackets  -->
     
     <div class="bottomBar">
-      <div class="skills">
-
-      </div>
+      <h3>Explore</h3>
+      <h4><!-- response from the message or error -->test</h4>
       <!-- response from movement request -->
       <div class="directions">
         <button onclick="moveup()">North</button>
