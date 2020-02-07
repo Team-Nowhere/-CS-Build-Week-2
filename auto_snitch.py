@@ -3,6 +3,7 @@ from main_functions import *
 import os
 import subprocess
 import argparse
+import time
 
 parser = argparse.ArgumentParser(description='Snitch Locator')
 parser.add_argument('--snitches')
@@ -31,7 +32,7 @@ if int(current_room["room_id"]) != 555:
 
 def well_number():
     data = examine('Well')
-    cooldown(data)
+    time.sleep(data['cooldown'])
     desc = data['description']
 
     desc = desc.strip('You see a faint pattern in the water...\n\n').split('\n')
@@ -40,7 +41,6 @@ def well_number():
         for i in desc:
             data.write(f'{i}\n')
 
-    print('Updating well_data.txt...')
     time.sleep(2)
     cmd = ['python', 'ls8.py', 'well_data.txt']
 
@@ -59,17 +59,20 @@ wait_for_snitch = False
 
 # Get abilities
 status_res = status()
-print('\nGetting abilities...\n')
+print('\nGetting abilities...')
 cooldown(status_res)
 tries = 0
 while captured < want:
     # Examine the well
     start_snitch, data = well_number()
     new_num = start_snitch
+    camp_wait = 0
 
-    # if wait_for_snitch == True:
-    while new_num == start_snitch:
+    print('\nCamping for 60 iterations')
+
+    while new_num == start_snitch and camp_wait < 60:
         new_num, data = well_number()
+        camp_wait += 1
 
     tries += 1
     print(f'\nSnitch located in room {new_num}\n')
