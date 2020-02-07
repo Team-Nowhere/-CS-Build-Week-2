@@ -62,16 +62,14 @@ while coins_mined < coins_to_mine:
     cmd = ['python', 'ls8.py', 'well_data.txt']
 
     output = subprocess.Popen(cmd, stdout=subprocess.PIPE).communicate()[0].decode('utf-8')
-    output = output.split('\n')
-    mining_room = ''
-    for i in output:
-        try:
-            int(i)
-            mining_room += i
-        except:
-            continue
+    dig1 = output[69:70] # hundreds
+    dig2 = output[72:73] # tens
+    dig3 = output[75:76] # ones
+
+    mining_room = dig1+dig2+dig3
     
-    print(f'Traveling to room {mining_room} to mine')
+    print(f'\nTraveling to room {mining_room} to mine\n')
+
     run_script = f'python fast_travel.py --room {mining_room}'
     if status_res['abilities']:
         run_script += ' --abilities'

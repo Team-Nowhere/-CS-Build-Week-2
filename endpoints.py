@@ -180,7 +180,7 @@ def mine(new_proof):
             url=bc_url+'mine/',
             headers=AUTH_HEADER,
             json={
-                "proof": f'{new_proof}'
+                "proof": new_proof
             }
         ).json()
 
