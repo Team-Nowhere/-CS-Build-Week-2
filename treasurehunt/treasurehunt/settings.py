@@ -125,6 +125,10 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
+STATICFILES_DIRS = (
+  os.path.join(BASE_DIR,'img'),
+)
+
 # Boilerplate for REST framework
 REST_FRAMEWORK = {
     'DEFAULT_PERMISSION_CLASSES': [

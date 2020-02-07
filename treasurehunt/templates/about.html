@@ -1,5 +1,5 @@
 <!-- Extend imports the base file -->
-{% extends 'templates/base.html' %} 
+{% extends 'base.html' %} 
 <!-- You can then add code depending on what you want for the specific page -->
 <!-- Simply input a block wherever it is necessary on the base file and then input the code here -->
 {% block title %}
@@ -10,27 +10,26 @@
 
 {% block content %}
 
-  <!-- You can write Python code by just adding a line of brackets with % in it{%%}, do not use (), use a end <name of used python item> -->
-  {% for ... %}
-  {% endfor %}  
-  <!-- You can use passed variables from views with double brackets {{}} -->
-  {{}}
+  <!-- You can write Python code by just adding a line of brackets with % in it, do not use (), use a end <name of used python item> -->
+  
+  <!-- You can use passed variables from views with double brackets  -->
+  
   <p> Project used to test our abilities with Computer Science made by Lambda, done by Team NoWhere</p>
   <div class="imgRow">
     <div class="img_desc">
-      <img src="../../img/ryan.jpg" alt="">
+      <img src="../img/ryan.jpg" alt="">
       
     </div>
     <div class="img_desc">
-      <img src="../../img/arvin.jpg" alt="">
+      <img src="../img/arvin.jpg" alt="">
       
     </div>
     <div class="img_desc">
-      <img src="../../img/chance.jpg" alt="">
+      <img src="../img/chance.jpg" alt="">
       
     </div>
     <div class="img_desc">
-      <img src="../../img/tunji.jpg" alt="">
+      <img src="../img/tunji.jpg" alt="">
       
     </div>
   </div>

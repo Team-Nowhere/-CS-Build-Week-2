@@ -1,3 +1,6 @@
+{% load static %}
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,15 +10,40 @@
   <title>{% block title %} <!-- You can set a default inbetween incase nothing is passed --> {% endblock %}</title>
   {% block style %}
   {% endblock %}
+  <style>
+    .container {
+      margin: 0 5%;
+      background-image: url('{% static "bg_map.jpg" %}');
+    }
+    .navbar {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-end;
+      border-bottom: 2px dashed black;
+    }
+    .logo {
+      margin-left: 25%;
+    }
+    .navbar nav {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+    }
+    .navbar nav a {
+      text-decoration: none;
+      color: black;
+    }
+  </style>
 </head>
 <body>
   <div class="container">
     <div class="navbar">
       <!-- logo? -->
-      Treasure Hunting Nowhere
+      <img class='logo' src='https://fontmeme.com/permalink/200207/edd0aa7375b81327ec4037d6fc1ad78b.png' alt="title">
       <nav>
-        <a href="./homepage.html"><img src="../../img/earth.png" alt="">Game</a>
-        <a href="./about.html"><img src="../../img/earth.png" alt="">About</a>
+        <a href="/"><img src="/static/earth.png" alt="">Game</a>
+        <a href="/about"><img src="/static/innovation.png" alt="">About</a>
       </nav>
     </div>
     <!-- Blocks allow for things to be passed into the template without having to recreate everything that is required on the page -->

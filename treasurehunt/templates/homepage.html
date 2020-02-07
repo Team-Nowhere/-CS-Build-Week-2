@@ -1,7 +1,5 @@
-{{from ...endpoints import *}}
-
 <!-- Extend imports the base file -->
-{% extends 'templates/base.html' %} 
+{% extends 'base.html' %} 
 <!-- You can then add code depending on what you want for the specific page -->
 <!-- Simply input a block wherever it is necessary on the base file and then input the code here -->
 {% block title %}
@@ -15,10 +13,11 @@
     <div class="topBar">
       <div class="statusWindow">
         <div class="stats" >
-          <!-- {{Player stats from request call}} -->
+          <!-- Player stats from request call -->
+           
         </div>
         <div class="skills">
-          <!-- {{inputs for the skills when making request}} -->
+          <!-- inputs for the skills when making request -->
         </div>
       </div>
 
@@ -28,24 +27,23 @@
       
       <div class="rightWindow">
         <div class="roomInfo">
-          <!-- {{Room information}} -->
+          <!-- Room information -->
         </div>
 
         <div class="itemInfo">
-          <!-- {{Item information and equip dequip}} -->
+          <!-- Item information and equip dequip -->
         </div>
       </div>
     </div>
-    <!-- You can write Python code by just adding a line of brackets with % in it{%%}, do not use (), use a end <name of used python item> -->
-    {% for ... %}
-    {% endfor %}  
-    <!-- You can use passed variables from views with double brackets {{}} -->
-    {{}}
+    <!-- You can write Python code by just adding a line of brackets with % in it, do not use (), use a end <name of used python item> -->
+    
+    <!-- You can use passed variables from views with double brackets  -->
+    
     <div class="bottomBar">
       <div class="skills">
 
       </div>
-      <!-- {{response from movement request}} -->
+      <!-- response from movement request -->
       <div class="directions">
         <button onclick="moveup()">North</button>
         <button onclick="movedown()">South</button>
