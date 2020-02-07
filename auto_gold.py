@@ -44,31 +44,34 @@ else:
     print('Grabbing player gold...')
     cooldown(status_res)
 
+strength = status_res['strength']
+encumbrance = status_res['encumbrance']
+
 current_gold = status_res['gold']
 gold_goal = current_gold + gold
 
 while current_gold < gold_goal:
-    # Update player status
-    print('Updating player info...')
-    status_res = status()
-    strength = status_res['strength']
-    encumbrance = status_res['encumbrance']
-    current_gold = status_res['gold']
-    cooldown(status_res)
 
     # Check to see if encumbered
     if strength <= encumbrance:
         # Head to shop to sell everything first
         os.system(f'python fast_travel.py --room 1')
-    
-    # Get random number for room destination: 1 > n > 500
-    room_to_go = random.choice(list(range(2, 500)))
+    else:
+        # Get random number for room destination: 1 > n > 500
+        room_to_go = random.choice(list(range(2, 500)))
 
-    # Get collecting!
-    run_script = f'python fast_travel.py --room {room_to_go} --collect_treasure True'
-    if status_res['abilities']:
-        run_script += ' --abilities'
-        for ability in status_res['abilities']:
-            run_script += f' {ability}'
-        
-    os.system(run_script)
+        # Get collecting!
+        run_script = f'python fast_travel.py --room {room_to_go} --collect_treasure True'
+        if status_res['abilities']:
+            run_script += ' --abilities'
+            for ability in status_res['abilities']:
+                run_script += f' {ability}'
+            
+        os.system(run_script)
+    
+    # Update player status
+    print('Updating player info...')
+    status_res = status()
+    current_gold = status_res['gold']
+    encumbrance = status_res['encumbrance']
+    cooldown(status_res)

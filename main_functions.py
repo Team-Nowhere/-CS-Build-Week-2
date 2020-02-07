@@ -114,15 +114,32 @@ def fast_travel(starting_room_id, destination_room_id, collect_treasure=False, a
         have_warp = 'warp' in stats['abilities']
         cooldown(stats)
 
+    # Check to make sure starting room != destination room
+    if int(starting_room_id) == int(destination_room_id):
+        print('============> Already at your destination.\n')
+        return
+
     # Check if destination is starting point
-    if int(destination_room_id) == 0 and have_recall is True and collect_treasure is False:
+    if int(destination_room_id) == 0 and have_recall is True:
         if collect_treasure == False:
             print('Recalling...')
             rec_res = recall()
             cooldown(rec_res)
             recall_message = rec_res['messages'][0]
             print(recall_message)
+            print('============> Fast travel complete\n')
             return
+
+    if int(destination_room_id) == 1 and have_recall is True:
+          print('Recalling...')
+          rec_res = recall()
+          cooldown(rec_res)
+          recall_message = rec_res['messages'][0]
+          print(recall_message)
+          move_res = move("w", "1")
+          cooldown(move_res)
+          print('============> Fast travel complete\n')
+          return
 
     # If underworld is destination AND player in overworld, warp first; vice versa
     if int(destination_room_id) >= 500 and int(starting_room_id) < 500 and have_warp is True:
@@ -386,10 +403,11 @@ def sell_all(current_room_id):
 
         if len(inventory) > 0 and inventory is not None:
             for item in inventory:
-                print(f'\n>>>>>>>>>> Selling {item}...')
-                sell_res = sell(item, True)
-                cooldown(sell_res)
-                print(sell_res['messages'])
+                if 'exquisite' not in item:
+                    print(f'\n>>>>>>>>>> Selling {item}...')
+                    sell_res = sell(item, True)
+                    cooldown(sell_res)
+                    print(sell_res['messages'])
             print('\n==========> All items sold!')
         else:
             print('\n==========> Nothing to sell!')

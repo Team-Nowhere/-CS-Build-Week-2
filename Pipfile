@@ -8,7 +8,6 @@ verify_ssl = true
 [packages]
 django = "*"
 djangorestframework = "*"
-psycopg2-binary = "*"
 requests = "*"
 django-cors-headers = "*"
 python-decouple = "*"

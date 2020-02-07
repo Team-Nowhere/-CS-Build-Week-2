@@ -36,6 +36,7 @@ cooldown(status_res)
 while coins_mined < coins_to_mine:
 
     # Travel to well
+    # run_script = 'python fast_travel.py --room 55 --collect_treasure True'
     run_script = 'python fast_travel.py --room 55'
     if status_res['abilities']:
         run_script += ' --abilities'
@@ -66,7 +67,7 @@ while coins_mined < coins_to_mine:
     mining_room = output.rstrip('HALTING')
     
     print(f'\nTraveling to room {mining_room} to mine\n')
-
+    # run_script = f'python fast_travel.py --room {mining_room} --collect_treasure True'
     run_script = f'python fast_travel.py --room {mining_room}'
     if status_res['abilities']:
         run_script += ' --abilities'
@@ -78,6 +79,12 @@ while coins_mined < coins_to_mine:
     os.system('python mine.py')
 
     coins_mined += 1
+    print(f"\nYou've mined {coins_mined} out of {coins_to_mine}\n")
+
+    # if coins_mined % 4 == 0:
+    #   #sell everything
+    #   os.system('python fast_travel.py --room 1 --collect_treasure True')
+
 
 balance = get_balance()
 cooldown(balance)
