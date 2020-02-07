@@ -92,11 +92,12 @@ def get_paths(room_id: str):
 
     return paths
 
-def fast_travel(starting_room_id, destination_room_id, collect_treasure=False, abilities=None):
-    with open('traversal_graph.json', 'r') as map_file:
-        map_graph = json.load(map_file)
+def fast_travel(starting_room_id, destination_room_id, collect_treasure=False, abilities=None, map_graph=None):
+    if map_graph == None:
+        with open('traversal_graph.json', 'r') as map_file:
+            map_graph = json.load(map_file)
 
-    map_graph = {int(k):v for k,v in map_graph.items()}
+        map_graph = {int(k):v for k,v in map_graph.items()}
 
     # Check abilites
     if abilities:
@@ -182,6 +183,21 @@ def fast_travel(starting_room_id, destination_room_id, collect_treasure=False, a
         cooldown(warp_res)
         
         path_to_next = bfs(500, map_graph, 555)
+        print(f'\nNew proposed path:\n{path_to_next}\n')
+
+    if 500 in path_to_next \
+        and have_recall is True \
+        and have_warp is True \
+        and path_to_next.index(500) > 5 \
+        and collect_treasure is False:
+        print('Recalling...')
+        recall_res = recall()
+        cooldown(recall_res)
+        print('Warping to underworld...')
+        warp_res = warp()
+        cooldown(warp_res)
+        
+        path_to_next = bfs(500, map_graph, path_to_next[-1])
         print(f'\nNew proposed path:\n{path_to_next}\n')
 
     path_directions = []
@@ -393,3 +409,128 @@ def say_prayer(current_room_id):
             print(pray_res['messages'])
         else:
             print('\n==========> You do not have the ability to pray!')
+
+
+
+def adv_fast_travel(starting_room_id, destination_room_id, collect_treasure=False, abilities=None, map_graph=None):
+    if map_graph == None:
+        with open('traversal_graph.json', 'r') as map_file:
+            map_graph = json.load(map_file)
+
+        map_graph = {int(k):v for k,v in map_graph.items()}
+
+    # Get that path
+    path_to_next = bfs(starting_room_id, map_graph, destination_room_id)
+
+    print(f'\nProposed path:\n{path_to_next}\n')
+
+    # Check to see if it's worth recalling first before continuing (overworld)
+    if 0 in path_to_next \
+        and path_to_next.index(0) >= 3:
+        print('Recalling...')
+        recall_res = recall()
+        cooldown(recall_res)
+
+        zero_pos = path_to_next.index(0)
+        path_to_next = path_to_next[zero_pos:]
+        print(f'\nNew proposed path:\n{path_to_next}\n')
+
+    # Check to see if it's worth recalling first before continuing (underworld)
+    # Used for snitch hunting
+    # Recalling and warping is worth it if better than about 31 seconds
+    #   6s recall; 6s warp; another 2.7s for 7 rooms after (19s)
+    #   take account for n+7 rooms away
+    # Avg is ~3, so path should be 11 or more to justify recall/warp
+    if 555 in path_to_next \
+        and path_to_next.index(555) == len(path_to_next)-1 \
+        and path_to_next.index(555) >= 11:
+        print('Recalling...')
+        recall_res = recall()
+        cooldown(recall_res)
+        print('Warping to underworld...')
+        warp_res = warp()
+        cooldown(warp_res)
+        
+        path_to_next = bfs(500, map_graph, 555)
+        print(f'\nNew proposed path:\n{path_to_next}\n')
+
+    if 500 in path_to_next \
+        and path_to_next.index(500) > 5:
+        print('Recalling...')
+        recall_res = recall()
+        cooldown(recall_res)
+        print('Warping to underworld...')
+        warp_res = warp()
+        cooldown(warp_res)
+        
+        path_to_next = bfs(500, map_graph, path_to_next[-1])
+        print(f'\nNew proposed path:\n{path_to_next}\n')
+
+    path_directions = []
+
+    for i in range(len(path_to_next) - 1):
+        for direction, room_number in map_graph[path_to_next[i]].items():
+            if room_number == path_to_next[i + 1]:
+                path_directions.append(direction)
+
+    
+    direction_chunks = [list(g) for k, g in groupby(path_directions)]
+    
+    number_chunks = []
+
+    temp = path_to_next[1:]
+    for i in direction_chunks:
+        chunk_length = len(i)
+        number_chunks.append(temp[:chunk_length])
+        temp = temp[chunk_length:]
+
+
+    for chunk in range(len(direction_chunks)):
+        if len(direction_chunks[chunk]) < 3:
+            for step in range(len(direction_chunks[chunk])):
+                try:
+                    next_terrain = map_graph[number_chunks[chunk + 1][0]]['terrain']
+                    if next_terrain == 'CAVE':
+                        print(f'Walking {direction_chunks[chunk][step]}...')
+                        print(f'Next room should be {number_chunks[chunk][step]}...')
+                        move_res = move(direction_chunks[chunk][step], number_chunks[chunk][step])
+                        cooldown(move_res)
+                    else:
+                        print(f'Flying {direction_chunks[chunk][step]}...')
+                        print(f'Next room should be {number_chunks[chunk][step]}...')
+                        move_res = fly(direction_chunks[chunk][step], number_chunks[chunk][step])
+                        cooldown(move_res)
+                except:
+                    next_terrain = map_graph[int(destination_room_id)]['terrain']
+                    if next_terrain == 'CAVE':
+                        print(f'Walking {direction_chunks[chunk][step]}...')
+                        print(f'Next room should be {number_chunks[chunk][step]}...')
+                        move_res = move(direction_chunks[chunk][step], number_chunks[chunk][step])
+                        cooldown(move_res)
+                    else:
+                        print(f'Flying {direction_chunks[chunk][step]}...')
+                        print(f'Next room should be {number_chunks[chunk][step]}...')
+                        move_res = fly(direction_chunks[chunk][step], number_chunks[chunk][step])
+                        cooldown(move_res)
+
+                bfs_room_id = move_res['room_id']
+                print(f'>>>>>>>>>> Made it to room {bfs_room_id}\n')
+
+
+        else:
+            number_of_rooms = len(direction_chunks[chunk])
+            dash_direction = direction_chunks[chunk][0]
+            dash_room_ids = ','.join([str(x) for x in number_chunks[chunk]])
+
+
+            print(f'Dashing {dash_direction.upper()} through {number_of_rooms} rooms...')
+            dash_res = dash(dash_direction, number_of_rooms, dash_room_ids)
+            cooldown(dash_res)
+            last_movement = 'dash'
+            dash_room_id = dash_res["room_id"]
+            print(f'>>>>>>>>>> Made it to room {dash_room_id}\n')
+
+
+    print('============> Fast travel complete\n')
+
+    
