@@ -50,9 +50,11 @@ while found_exq == False:
         break
 
     new_tier = trans_res['messages'][0].strip('!').split(' ')[-2]
+    print(trans_res['message'][0])
 
-    if new_tier == 'exquisite':
+    if 'exquisite' == new_tier:
         print('\nFOUND EXQUISITE ITEM\n')
+        print(new_item)
         break
 
     
