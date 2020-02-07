@@ -46,17 +46,10 @@ def well_number():
 
 
     output = subprocess.Popen(cmd, stdout=subprocess.PIPE).communicate()[0].decode('utf-8')
-    output = output.split('\n')
-    snitch_room = ''
-
-    for i in output:
-        try:
-            int(i)
-            snitch_room += i
-        except:
-            continue
-
-    print('Snitch Room: ', snitch_room)
+    dig1 = output[72:73] # hundreds
+    dig2 = output[75:76] # tens
+    dig3 = output[78:79] # ones
+    snitch_room = dig1+dig2+dig3
 
     return snitch_room, data
 
@@ -77,6 +70,8 @@ while captured < want:
     if wait_for_snitch == True:
         while new_num == start_snitch:
             new_num, data = well_number()
+
+    print(f'\nSnitch located in room {new_num}\n')
 
     run_script = f'python fast_travel.py --room {new_num}'
     if status_res['abilities']:

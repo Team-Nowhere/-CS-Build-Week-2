@@ -1,5 +1,4 @@
 import hashlib
-import requests
 from decouple import config
 import sys
 import json
@@ -7,12 +6,8 @@ from main_functions import cooldown
 from uuid import uuid4
 from timeit import default_timer as timer
 import random
-import random
-SECRET_TOKEN = config('SECRET_TOKEN')
-TOKEN_HEADER = 'Token ' + SECRET_TOKEN
-AUTH_HEADER = {'Authorization': TOKEN_HEADER}
-base_url = 'https://lambda-treasure-hunt.herokuapp.com/api/adv/'
-bc_url = 'https://lambda-treasure-hunt.herokuapp.com/api/bc/'
+from endpoints import *
+
 def proof_of_work(last_proof, difficulty):
     """
     Multi-Ouroboros of Work Algorithm
@@ -31,6 +26,7 @@ def proof_of_work(last_proof, difficulty):
         proof += 1
     print("Proof found: " + str(proof) + " in " + str(timer() - start))
     return proof
+
 def valid_proof(last_hash, proof, difficulty):
     """
     Validates the Proof:  Multi-ouroborus:  Do the last six characters of
@@ -52,20 +48,19 @@ if __name__ == '__main__':
         node = sys.argv[1]
     else:
         node = bc_url
+
     # Run forever until interrupted
     while True:
         # Get the last proof from the server
-        r = requests.get(url=node + "/last_proof", headers={'Authorization': TOKEN_HEADER})
-        data = r.json()
-        # print(data)
-        new_proof = proof_of_work(data.get('proof'), data.get('difficulty'))
-        post_data = {"proof": new_proof}
-        r = requests.post(url=node + "/mine", json=post_data, headers={'Authorization': TOKEN_HEADER})
-        data = r.json()
-        cooldown(data)
-        if not data['errors']:
-            if data['messages']:
-                if 'New Block Forged' in data['messages']:
+        last_proof_res = last_proof()
+        new_proof = proof_of_work(last_proof_res['proof'], last_proof_res['difficulty'])
+
+        # Check to see if mining with found proof works
+        mine_res = mine(new_proof)
+        cooldown(mine_res)
+        if not mine_res['errors']:
+            if mine_res['messages']:
+                if 'New Block Forged' in mine_res['messages']:
                     print('''
 >!!!!!!!!!!!!!!!!!!!!<
 >!!!              !!!<
@@ -76,5 +71,5 @@ if __name__ == '__main__':
                     break
 
         else:
-            print(data['errors'][0])
+            print(mine_res['errors'][0])
             print('Trying again...\n')

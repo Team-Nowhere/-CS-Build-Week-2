@@ -65,4 +65,10 @@ while current_gold < gold_goal:
     room_to_go = random.choice(list(range(2, 500)))
 
     # Get collecting!
-    os.system(f'python fast_travel.py --room {room_to_go} --collect_treasure True')
+    run_script = f'python fast_travel.py --room {room_to_go} --collect_treasure True'
+    if status_res['abilities']:
+        run_script += ' --abilities'
+        for ability in status_res['abilities']:
+            run_script += f' {ability}'
+        
+    os.system(run_script)

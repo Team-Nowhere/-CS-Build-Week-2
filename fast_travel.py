@@ -46,7 +46,7 @@ else:
         current_room = get_current_room()
         cooldown(current_room)
     else:
-        print('Getting current room id...\n')
+        print('Getting current room id...')
         cooldown(current_room)
 
     print('\n== STARTING FAST TRAVEL ==\n')
