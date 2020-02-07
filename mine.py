@@ -18,15 +18,22 @@ def proof_of_work(last_proof, difficulty):
     - p is the previous proof, and p' is the new proof
     - Use the same method to generate SHA-256 hashes as the examples in class
     """
-    start = timer()
-    print("Searching for next proof")
+    
     block_string = json.dumps(last_proof, sort_keys=True)
+
     # print(block_string, last_proof, difficulty)
     proof = random.randint(0, 10000000000)
-    while valid_proof(block_string, proof, difficulty) is False:
+
+    start = timer()
+
+    while valid_proof(block_string, proof, difficulty) == False and timer() - start < 5:
         proof += 1
-    print("Proof found: " + str(proof) + " in " + str(timer() - start))
-    return proof
+    
+    if valid_proof(block_string, proof, difficulty) == True:
+        print("Proof found: " + str(proof) + " in " + str(timer() - start))
+        return proof
+    else:
+        return None
 
 def valid_proof(last_hash, proof, difficulty):
     """
@@ -52,10 +59,15 @@ if __name__ == '__main__':
 
     # Run forever until interrupted
     while True:
-        # Get the last proof from the server
-        last_proof_res = last_proof()
-        time.sleep(last_proof_res['cooldown']) # still add CD just in case find proof > 1s
-        new_proof = proof_of_work(last_proof_res['proof'], last_proof_res['difficulty'])
+        print('Searching for new proof...')
+
+        new_proof = None
+        while new_proof == None:
+            # Get the last proof from the server
+            last_proof_res = last_proof()
+            time.sleep(last_proof_res['cooldown']) # still add CD just in case find proof > 1s
+
+            new_proof = proof_of_work(last_proof_res['proof'], last_proof_res['difficulty'])
 
         # Check to see if mining with found proof works
         mine_res = mine(new_proof)

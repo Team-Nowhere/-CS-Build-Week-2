@@ -70,7 +70,7 @@ while captured < want:
     # if wait_for_snitch == True:
     while new_num == start_snitch:
         new_num, data = well_number()
-        
+
     tries += 1
     print(f'\nSnitch located in room {new_num}\n')
 
@@ -99,11 +99,12 @@ while captured < want:
                 ''')
 
                 captured += 1
-                print(f'Snitches Captured: {captured} out of {tries}\n')
                 wait_for_snitch = False
             else:
                 print('\nThere is no snitch here\n')
                 wait_for_snitch = True
+
+    print(f'\nSnitches Captured: {captured} out of {tries}\n')
 
     run_script = 'python fast_travel.py --room 555'
     if status_res['abilities']:
