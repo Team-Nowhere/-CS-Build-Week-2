@@ -31,34 +31,41 @@ parser = argparse.ArgumentParser(description='Fast travel')
 parser.add_argument('--room')
 parser.add_argument('--collect_treasure', default=False)
 parser.add_argument('--abilities', default=None, nargs='+')
+parser.add_argument('--start_room', default=None)
 args = parser.parse_args()
 
 if not args.room:
     print('Please choose room ($ python fast_travel.py --room <room number>)')
 else:
-    current_room = get_current_room()
-    current_room['room_id']
-    # Cooldown penalty check
-    if current_room['errors'] is not None and len(current_room['errors']) > 0:
-        print('\n!!!! Cooldown Penalty !!!!')
-        cooldown(current_room)
-        print('Getting current room id...')
+    if not args.start_room:
         current_room = get_current_room()
-        cooldown(current_room)
-    else:
-        print('Getting current room id...')
-        cooldown(current_room)
+        current_room['room_id']
+        # Cooldown penalty check
+        if current_room['errors'] is not None and len(current_room['errors']) > 0:
+            print('\n!!!! Cooldown Penalty !!!!')
+            cooldown(current_room)
+            print('Getting current room id...')
+            current_room = get_current_room()
+            cooldown(current_room)
+        else:
+            print('Getting current room id...')
+            cooldown(current_room)
 
-    print('\n== STARTING FAST TRAVEL ==\n')
+        print('\n== STARTING FAST TRAVEL ==\n')
 
     
 
 
-    fast_travel(current_room['room_id'],
-                str(args.room),
-                collect_treasure=bool(args.collect_treasure),
-                abilities=args.abilities)
+        fast_travel(current_room['room_id'],
+                    str(args.room),
+                    collect_treasure=bool(args.collect_treasure),
+                    abilities=args.abilities)
 
+    else:
+        fast_travel(int(args.start_room),
+                    int(args.room),
+                    collect_treasure=bool(args.collect_treasure),
+                    abilities=args.abilities)
     # Comment out if not selling all or praying
     if args.room == '1':
         shop_room = get_current_room()
