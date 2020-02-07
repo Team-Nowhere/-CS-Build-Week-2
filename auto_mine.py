@@ -79,7 +79,7 @@ while coins_mined < coins_to_mine:
     os.system('python mine.py')
 
     coins_mined += 1
-    print(f"You've mined {coins_mined} out of {coins_to_mine}")
+    print(f"\nYou've mined {coins_mined} out of {coins_to_mine}\n")
 
     # if coins_mined % 4 == 0:
     #   #sell everything
