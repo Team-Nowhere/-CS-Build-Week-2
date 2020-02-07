@@ -113,14 +113,20 @@ def fast_travel(starting_room_id, destination_room_id, collect_treasure=False, a
         have_warp = 'warp' in stats['abilities']
         cooldown(stats)
 
+    # Check to make sure starting room != destination room
+    if int(starting_room_id) == int(destination_room_id):
+        print('============> Already at your destination.\n')
+        return
+
     # Check if destination is starting point
-    if int(destination_room_id) == 0 and have_recall is True and collect_treasure is False:
+    if int(destination_room_id) == 0 and have_recall is True:
         if collect_treasure == False:
             print('Recalling...')
             rec_res = recall()
             cooldown(rec_res)
             recall_message = rec_res['messages'][0]
             print(recall_message)
+            print('============> Fast travel complete\n')
             return
 
     if int(destination_room_id) == 1 and have_recall is True:
@@ -131,6 +137,7 @@ def fast_travel(starting_room_id, destination_room_id, collect_treasure=False, a
           print(recall_message)
           move_res = move("w", "1")
           cooldown(move_res)
+          print('============> Fast travel complete\n')
           return
 
     # If underworld is destination AND player in overworld, warp first; vice versa
