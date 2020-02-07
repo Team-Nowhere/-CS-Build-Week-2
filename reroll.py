@@ -12,13 +12,14 @@ cooldown(current_room)
 if int(current_room['room_id']) != 495:
     os.system('python fast_travel.py --room 495')
 
-player_status = status()
-cooldown(player_status)
 found_exq = False
 
 while found_exq == False:
     reroll_item = None
     # Get an item
+    player_status = status()
+    cooldown(player_status)
+
     if player_status['inventory']:
         for item in player_status['inventory']:
             if 'exquisite' not in item:
