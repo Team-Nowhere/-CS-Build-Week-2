@@ -17,6 +17,9 @@ functions = {
 def base(request):
   return render(request, 'base.html', )
 
+def info(request):
+  return render(request, 'info.html',)
+
 def home(request):
   return render(request, 'homepage.html', {})
 
